@@ -20,15 +20,15 @@ export default function Home() {
           Treine seu <span className="text-blue-600">raciocínio lógico</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-          Dois modos de treino: puzzles dedutivos estilo Einstein e questões reais de concursos públicos.
-          Progressão por nível, explicações detalhadas.
+          Clique num modo e um desafio é sorteado pra você. Puzzles dedutivos estilo Einstein
+          ou questões reais de concursos públicos.
         </p>
         <div className="flex gap-4 justify-center pt-4">
           <Link href="/puzzles" className="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-lg">
-            Jogar Puzzles
+            Jogar Puzzle
           </Link>
-          <Link href="/questoes" className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors text-lg">
-            Questões de Concurso
+          <Link href="/questoes" className="bg-white text-purple-600 border-2 border-purple-600 px-8 py-3 rounded-xl font-semibold hover:bg-purple-50 transition-colors text-lg">
+            Questão de Concurso
           </Link>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function Home() {
             ))}
           </div>
           <Link href="/puzzles" className="block text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
-            Começar →
+            Sortear puzzle →
           </Link>
         </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </div>
           <Link href="/questoes" className="block text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors">
-            Começar →
+            Sortear questão →
           </Link>
         </div>
       </section>
@@ -87,9 +87,9 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-center text-gray-900">Como funciona</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: '🎯', title: 'Escolha o nível', desc: 'Fácil, Médio, Difícil ou Expert. Comece devagar e avance conforme fica confortável.' },
+            { icon: '🎲', title: 'Desafio aleatório', desc: 'Clique em um dos modos e um puzzle ou questão é sorteado automaticamente. Sem escolher — vai direto.' },
             { icon: '🧩', title: 'Resolva o desafio', desc: 'Puzzles: preencha a grade usando as pistas. Questões: escolha a alternativa correta.' },
-            { icon: '📚', title: 'Aprenda com os erros', desc: 'Cada erro vem com explicação detalhada do raciocínio. Você ainda pode tentar de novo antes.' },
+            { icon: '📚', title: 'Aprenda com os erros', desc: 'Cada erro vem com explicação detalhada do raciocínio. Tente de novo ou passe para o próximo.' },
           ].map(item => (
             <div key={item.title} className="text-center space-y-2">
               <div className="text-3xl">{item.icon}</div>

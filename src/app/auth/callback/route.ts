@@ -4,8 +4,17 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = request.nextUrl
-  const code = searchParams.get('code')
-  const next = searchParams.get('next') ?? '/'
+  const code             = searchParams.get('code')
+  const oauthError       = searchParams.get('error')
+  const oauthErrorDesc   = searchParams.get('error_description')
+  const next             = searchParams.get('next') ?? '/'
+
+  // Google/Supabase returned an explicit OAuth error
+  if (oauthError) {
+    const reason = oauthError === 'access_denied' ? 'access_denied' : 'oauth_error'
+    const desc   = oauthErrorDesc ? encodeURIComponent(oauthErrorDesc) : ''
+    return NextResponse.redirect(`${origin}/auth/auth-error?reason=${reason}&desc=${desc}`)
+  }
 
   if (!code) {
     return NextResponse.redirect(`${origin}/auth/auth-error?reason=no_code`)

@@ -1,18 +1,6 @@
 import Link from 'next/link'
-import { allPuzzles, allQuestoes, NIVEL_LABELS } from '@/lib/data'
 
 export default function Home() {
-  const puzzleStats = {
-    facil:   allPuzzles.filter(p => p.nivel === 'facil').length,
-    medio:   allPuzzles.filter(p => p.nivel === 'medio').length,
-    dificil: allPuzzles.filter(p => p.nivel === 'dificil').length,
-    expert:  allPuzzles.filter(p => p.nivel === 'expert').length,
-  }
-  const questaoStats = {
-    total:  allQuestoes.length,
-    bancas: [...new Set(allQuestoes.map(q => q.banca))].length,
-  }
-
   return (
     <div className="space-y-12">
       <section className="text-center py-16 space-y-4">
@@ -42,16 +30,7 @@ export default function Home() {
             descobrir a combinação exata de atributos para cada posição. Treina raciocínio por
             eliminação e lógica relacional.
           </p>
-          <div className="grid grid-cols-4 gap-2 pt-2">
-            {(['facil','medio','dificil','expert'] as const).map(n => (
-              <div key={n} className={`rounded-lg p-2 text-center text-xs font-semibold nivel-${n}`}>
-                <div className="text-lg font-black">
-                  {puzzleStats[n]}
-                </div>
-                <div>{NIVEL_LABELS[n]}</div>
-              </div>
-            ))}
-          </div>
+          <p className="text-xs text-gray-400">Novos puzzles adicionados todo mês.</p>
           <Link href="/puzzles" className="block text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
             Sortear puzzle →
           </Link>
@@ -64,19 +43,7 @@ export default function Home() {
             Questões reais de provas das principais bancas brasileiras. Quando errar, você escolhe:
             tentar de novo ou ver a explicação completa com o raciocínio passo a passo.
           </p>
-          <div className="bg-gray-50 rounded-xl p-4 space-y-1 text-sm text-gray-600">
-            <div className="flex justify-between">
-              <span>Total de questões</span>
-              <span className="font-bold text-gray-900">{questaoStats.total}</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Bancas representadas</span>
-              <span className="font-bold text-gray-900">{questaoStats.bancas}</span>
-            </div>
-            <div className="flex justify-between text-xs text-gray-400">
-              <span>CESPE · FCC · FGV · VUNESP · IBFC e mais</span>
-            </div>
-          </div>
+          <p className="text-xs text-gray-400">Novas questões adicionadas todo mês.</p>
           <Link href="/questoes" className="block text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors">
             Sortear questão →
           </Link>

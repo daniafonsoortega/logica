@@ -21,10 +21,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex gap-6 text-sm font-medium">
-                <Link href="/puzzles" className="text-gray-600 hover:text-blue-700 transition-colors">Puzzles</Link>
+                <Link href="/puzzles"  className="text-gray-600 hover:text-blue-700 transition-colors">Puzzles</Link>
                 <Link href="/questoes" className="text-gray-600 hover:text-blue-700 transition-colors">Questões</Link>
-                <Link href="/ranking" className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
-                <Link href="/premium" className="text-yellow-600 hover:text-yellow-700 font-semibold transition-colors">⚡ Premium</Link>
+                <Link href="/ranking"  className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
+                <Link href="/premium"  className="text-yellow-600 hover:text-yellow-700 font-semibold transition-colors">⚡ Premium</Link>
               </div>
               <DailyCounter />
               <AuthButton />

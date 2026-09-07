@@ -1,19 +1,32 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import type { Questao } from '@/types'
-import { CheckCircle, XCircle, ChevronRight, RotateCcw, BookOpen } from 'lucide-react'
+import { CheckCircle, XCircle, ChevronRight, RotateCcw, BookOpen, Lightbulb } from 'lucide-react'
 
 interface Props { questao: Questao }
 type EstadoQuestao = 'respondendo' | 'errou' | 'acertou'
+
+function gerarDicas(questao: Questao): string[] {
+  if (questao.dicas && questao.dicas.length > 0) return questao.dicas
+
+  const numAlts = Object.keys(questao.alternativas).length
+
+  return [
+    `Releia o enunciado com atenção e separe as informações concretas (fatos dados) das condições lógicas (se/então, todo/nenhum, sempre/nunca). O que exatamente está sendo perguntado?`,
+    `Tente construir um esquema ou lista com os elementos do enunciado. Questões de ${questao.area} costumam ficar muito mais claras quando você visualiza as relações no papel.`,
+    `Das ${numAlts} alternativas, descarte as que contradizem diretamente algum dado do enunciado. Às vezes eliminar 2 ou 3 opções já deixa o caminho óbvio — você não precisa provar a correta, só descartar as erradas.`,
+  ]
+}
 
 export default function QuestaoGame({ questao }: Props) {
   const [selecionada, setSelecionada] = useState<string | null>(null)
   const [estado, setEstado] = useState<EstadoQuestao>('respondendo')
   const [mostrarExplicacao, setMostrarExplicacao] = useState(false)
+  const [dicaAtual, setDicaAtual] = useState(0)
 
   const alternativas = Object.entries(questao.alternativas) as [string, string][]
+  const dicas = gerarDicas(questao)
 
   const responder = () => {
     if (!selecionada) return
@@ -25,6 +38,7 @@ export default function QuestaoGame({ questao }: Props) {
     setSelecionada(null)
     setEstado('respondendo')
     setMostrarExplicacao(false)
+    setDicaAtual(0)
   }
 
   const corAlternativa = (letra: string) => {
@@ -39,12 +53,14 @@ export default function QuestaoGame({ questao }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Enunciado */}
       <div className="bg-white rounded-2xl border border-gray-200 p-6">
         <div className="text-gray-800 whitespace-pre-line leading-relaxed text-sm">
           {questao.enunciado}
         </div>
       </div>
 
+      {/* Alternativas */}
       <div className="space-y-2">
         {alternativas.map(([letra, texto]) => (
           <button key={letra}
@@ -59,6 +75,7 @@ export default function QuestaoGame({ questao }: Props) {
         ))}
       </div>
 
+      {/* Confirmar */}
       {estado === 'respondendo' && (
         <button onClick={responder} disabled={!selecionada}
           className="w-full bg-purple-600 text-white py-3 rounded-xl font-semibold hover:bg-purple-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2">
@@ -66,6 +83,39 @@ export default function QuestaoGame({ questao }: Props) {
         </button>
       )}
 
+      {/* Dicas — só enquanto responde */}
+      {estado === 'respondendo' && (
+        <div className="border border-amber-200 bg-amber-50 rounded-2xl p-4 space-y-3">
+          <div className="flex items-center gap-2 text-amber-700 font-semibold text-sm">
+            <Lightbulb size={16} className="text-amber-500 shrink-0" />
+            Dicas
+          </div>
+
+          {dicaAtual > 0 && (
+            <div className="space-y-2">
+              {dicas.slice(0, dicaAtual).map((dica, i) => (
+                <div key={i} className="flex gap-2 text-sm text-amber-900">
+                  <span className="font-bold shrink-0 text-amber-500">{i + 1}.</span>
+                  <span>{dica}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {dicaAtual < dicas.length ? (
+            <button
+              onClick={() => setDicaAtual(d => d + 1)}
+              className="text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors flex items-center gap-1"
+            >
+              {dicaAtual === 0 ? '💡 Pedir uma dica' : 'Mais uma dica →'}
+            </button>
+          ) : (
+            <p className="text-xs text-amber-600 italic">Todas as dicas foram reveladas.</p>
+          )}
+        </div>
+      )}
+
+      {/* Errou */}
       {estado === 'errou' && !mostrarExplicacao && (
         <div className="bg-red-50 border border-red-200 rounded-2xl p-5 space-y-4">
           <div className="flex items-center gap-2">
@@ -86,6 +136,7 @@ export default function QuestaoGame({ questao }: Props) {
         </div>
       )}
 
+      {/* Acertou */}
       {estado === 'acertou' && (
         <div className="bg-green-50 border border-green-200 rounded-xl p-4 flex items-center gap-3">
           <CheckCircle size={22} className="text-green-600 shrink-0" />
@@ -96,21 +147,18 @@ export default function QuestaoGame({ questao }: Props) {
         </div>
       )}
 
+      {/* Explicação */}
       {mostrarExplicacao && (
         <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 space-y-3">
           <div className="flex items-center gap-2 font-bold text-blue-800">
             <BookOpen size={18} /> Explicação
           </div>
           <p className="text-blue-900 text-sm leading-relaxed whitespace-pre-line">{questao.explicacao}</p>
-          <div className="pt-2 flex gap-3">
+          <div className="pt-2">
             <button onClick={reiniciar}
               className="px-4 py-2 bg-white border border-blue-300 rounded-xl text-blue-700 text-sm font-medium hover:bg-blue-50 transition-colors flex items-center gap-2">
               <RotateCcw size={14} /> Tentar novamente
             </button>
-            <Link href="/questoes"
-              className="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-medium hover:bg-blue-700 transition-colors">
-              Próxima questão →
-            </Link>
           </div>
         </div>
       )}

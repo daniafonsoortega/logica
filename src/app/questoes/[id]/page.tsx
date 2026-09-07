@@ -1,5 +1,6 @@
 import { getQuestaoById, allQuestoes, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import QuestaoGame from '@/components/questao/QuestaoGame'
 
 export async function generateStaticParams() {
@@ -26,9 +27,9 @@ export default async function QuestaoPage({ params }: { params: Promise<{ id: st
           </div>
           <h1 className="text-xl font-bold text-gray-900">{questao.orgao} · {questao.ano}</h1>
         </div>
-        <a href="/questoes" className="text-sm text-purple-600 hover:underline whitespace-nowrap">
+        <Link href="/questoes" className="text-sm text-purple-600 hover:underline whitespace-nowrap">
           ← Todas as questões
-        </a>
+        </Link>
       </div>
       <QuestaoGame questao={questao} />
     </div>

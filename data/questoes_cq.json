@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "CQ-001",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "INSS",
+    "ano": 2022,
+    "enunciado": "Considere as proposições: P: João é médico. Q: João ganha bem. Se P → Q é verdadeira e P é verdadeira, então:\n\n(CESPE/CEBRASPE – INSS – 2022)",
+    "alternativas": {
+      "A": "Q é necessariamente verdadeira.",
+      "B": "Q pode ser verdadeira ou falsa.",
+      "C": "Q é necessariamente falsa.",
+      "D": "Nada se pode concluir sobre Q.",
+      "E": "P → Q deixa de ser válida."
+    },
+    "gabarito": "A",
+    "explicacao": "Modus ponens: P → Q verdadeira e P verdadeira → Q obrigatoriamente verdadeira.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-002",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "TRT-2ª Região",
+    "ano": 2018,
+    "enunciado": "A negação da proposição Todo aluno estudou para a prova é:\n\n(FCC – TRT-2ª Região – 2018)",
+    "alternativas": {
+      "A": "Nenhum aluno estudou para a prova.",
+      "B": "Algum aluno não estudou para a prova.",
+      "C": "Todo aluno não estudou para a prova.",
+      "D": "Algum aluno estudou para a prova.",
+      "E": "Nenhum aluno não estudou para a prova."
+    },
+    "gabarito": "B",
+    "explicacao": "Negação de Todo A é B = Algum A não é B. Negação do universal afirmativo é o particular negativo.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-003",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2021,
+    "enunciado": "Qual é o valor lógico de P ∧ Q, sabendo que P é verdadeira e Q é falsa?\n\n(VUNESP – TJ-SP – 2021)",
+    "alternativas": {
+      "A": "Verdadeira, pois P é verdadeira.",
+      "B": "Falsa, pois Q é falsa.",
+      "C": "Verdadeira, pois conjunção de opostos é verdadeira.",
+      "D": "Indeterminada.",
+      "E": "Verdadeira apenas se P implica Q."
+    },
+    "gabarito": "B",
+    "explicacao": "A conjunção P ∧ Q só é verdadeira quando AMBAS são verdadeiras. Como Q é falsa, P ∧ Q é falsa.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-004",
+    "nivel": "facil",
+    "banca": "FGV",
+    "orgao": "TJDFT",
+    "ano": 2019,
+    "enunciado": "Se Chove ou faz sol é verdadeira e Chove é falsa, pode-se concluir que:\n\n(FGV – TJDFT – 2019)",
+    "alternativas": {
+      "A": "Faz sol é falsa.",
+      "B": "Faz sol é verdadeira.",
+      "C": "Chove e faz sol é verdadeira.",
+      "D": "Não se pode concluir nada.",
+      "E": "A disjunção original é falsa."
+    },
+    "gabarito": "B",
+    "explicacao": "Na disjunção P ∨ Q, se o resultado é V e P é F, então Q obrigatoriamente é V.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-005",
+    "nivel": "facil",
+    "banca": "IBFC",
+    "orgao": "EBSERH",
+    "ano": 2020,
+    "enunciado": "Ana, Bia e Carlos disputam uma corrida. Ana não chegou em último. Bia chegou antes de Carlos. Quem chegou em primeiro lugar?\n\n(IBFC – EBSERH – 2020)",
+    "alternativas": {
+      "A": "Ana",
+      "B": "Bia",
+      "C": "Carlos",
+      "D": "Ana ou Bia",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "B",
+    "explicacao": "Bia antes de Carlos → Carlos não é 1°. Ana não é último → Carlos é último. Ordem: Bia > Ana > Carlos. Bia é 1°.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-006",
+    "nivel": "facil",
+    "banca": "FEPESE",
+    "orgao": "JUCESC",
+    "ano": 2019,
+    "enunciado": "A tabela-verdade de P → Q tem valor FALSO apenas quando:\n\n(FEPESE – JUCESC – 2019)",
+    "alternativas": {
+      "A": "P é V e Q é V.",
+      "B": "P é F e Q é V.",
+      "C": "P é V e Q é F.",
+      "D": "P é F e Q é F.",
+      "E": "Sempre que P e Q têm valores opostos."
+    },
+    "gabarito": "C",
+    "explicacao": "A implicação P → Q é falsa somente quando P=V e Q=F (promessa quebrada). Nos outros três casos é verdadeira.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-007",
+    "nivel": "facil",
+    "banca": "IADES",
+    "orgao": "CFA",
+    "ano": 2021,
+    "enunciado": "Em um grupo de 30 pessoas, 18 gostam de futebol e 15 de vôlei. Se 7 gostam de ambos, quantas não gostam de nenhum?\n\n(IADES – CFA – 2021)",
+    "alternativas": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    },
+    "gabarito": "C",
+    "explicacao": "|F ∪ V| = 18+15-7 = 26. Nenhum: 30-26 = 4.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-008",
+    "nivel": "facil",
+    "banca": "QUADRIX",
+    "orgao": "CFO",
+    "ano": 2020,
+    "enunciado": "Qual dos enunciados NÃO é uma proposição lógica?\n\n(QUADRIX – CFO – 2020)",
+    "alternativas": {
+      "A": "O número 7 é primo.",
+      "B": "Feche a porta!",
+      "C": "A Lua orbita a Terra.",
+      "D": "2 + 2 = 5",
+      "E": "Brasília é a capital do Brasil."
+    },
+    "gabarito": "B",
+    "explicacao": "Proposições são sentenças declarativas com valor lógico V ou F. Ordens e exclamações não são proposições.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-009",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "SABESP",
+    "ano": 2018,
+    "enunciado": "Qual é a contrapositiva de Se chove, então a rua fica molhada?\n\n(FCC – SABESP – 2018)",
+    "alternativas": {
+      "A": "Se a rua fica molhada, então chove.",
+      "B": "Se não chove, então a rua não fica molhada.",
+      "C": "Se a rua não fica molhada, então não chove.",
+      "D": "Não chove e a rua fica molhada.",
+      "E": "Se a rua fica molhada, então não chove."
+    },
+    "gabarito": "C",
+    "explicacao": "Contrapositiva de P → Q é ¬Q → ¬P, com mesmo valor lógico. Logo: Se a rua não fica molhada, então não chove.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-010",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRE-BA",
+    "ano": 2017,
+    "enunciado": "Sabe-se que Nenhum servidor é desonesto é verdadeira. Qual afirmação é necessariamente verdadeira?\n\n(CESPE/CEBRASPE – TRE-BA – 2017)",
+    "alternativas": {
+      "A": "Todo servidor é honesto.",
+      "B": "Algum servidor é desonesto.",
+      "C": "Todo desonesto é servidor.",
+      "D": "Algum desonesto é servidor.",
+      "E": "Nenhum honesto é servidor."
+    },
+    "gabarito": "A",
+    "explicacao": "Nenhum servidor é desonesto equivale a Todo servidor é honesto. As demais não se seguem logicamente.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-011",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2020,
+    "enunciado": "Em fila com 5 pessoas (A,B,C,D,E): B está imediatamente à frente de C; D está na última posição; A está na primeira. Em qual posição está E?\n\n(VUNESP – TJ-SP – 2020)",
+    "alternativas": {
+      "A": "2ª",
+      "B": "3ª",
+      "C": "4ª",
+      "D": "2ª ou 4ª",
+      "E": "Impossível determinar."
+    },
+    "gabarito": "D",
+    "explicacao": "A=1°, D=5°. B e C consecutivos (B-C). Possibilidades: B=2/C=3/E=4 ou B=3/C=4/E=2. E pode estar na 2ª ou 4ª.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-012",
+    "nivel": "facil",
+    "banca": "FGV",
+    "orgao": "SEFAZ-AM",
+    "ano": 2022,
+    "enunciado": "P ↔ Q é verdadeira quando:\n\n(FGV – SEFAZ-AM – 2022)",
+    "alternativas": {
+      "A": "P é V e Q é F.",
+      "B": "P e Q têm valores opostos.",
+      "C": "P e Q têm o mesmo valor lógico.",
+      "D": "P é F e Q é V.",
+      "E": "Sempre, independentemente dos valores."
+    },
+    "gabarito": "C",
+    "explicacao": "O bicondicional P ↔ Q é verdadeiro quando P e Q têm o mesmo valor lógico (ambas V ou ambas F).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-013",
+    "nivel": "facil",
+    "banca": "IBFC",
+    "orgao": "CAJUEIRO",
+    "ano": 2021,
+    "enunciado": "Qual é o resultado de ¬(P ∧ Q) quando P = V e Q = V?\n\n(IBFC – CAJUEIRO – 2021)",
+    "alternativas": {
+      "A": "Verdadeiro",
+      "B": "Falso",
+      "C": "Indeterminado",
+      "D": "Verdadeiro se P → Q",
+      "E": "Falso apenas se P = Q"
+    },
+    "gabarito": "B",
+    "explicacao": "P ∧ Q = V ∧ V = V. Negação de V é F. Logo ¬(P ∧ Q) = F.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-014",
+    "nivel": "facil",
+    "banca": "FEPESE",
+    "orgao": "PC-SC",
+    "ano": 2022,
+    "enunciado": "Em uma sala de 40 alunos, 25 estudam Matemática e 20 estudam Português. Nenhum deixa de estudar ao menos uma. Quantos estudam as duas?\n\n(FEPESE – PC-SC – 2022)",
+    "alternativas": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    },
+    "gabarito": "C",
+    "explicacao": "|M ∪ P| = 40. 40 = 25+20-|M∩P| → |M∩P| = 5.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-015",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "PGE-PE",
+    "ano": 2019,
+    "enunciado": "A negação de Existe um número par que é primo é:\n\n(CESPE/CEBRASPE – PGE-PE – 2019)",
+    "alternativas": {
+      "A": "Todo número par é primo.",
+      "B": "Nenhum número par é primo.",
+      "C": "Algum número par não é primo.",
+      "D": "Todo número primo é par.",
+      "E": "Nenhum número primo é par."
+    },
+    "gabarito": "B",
+    "explicacao": "Negação de Existe A que é B = Nenhum A é B. Negação de existencial particular é universal negativo.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-016",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "TJ-RJ",
+    "ano": 2021,
+    "enunciado": "João é mais velho que Maria. Maria é mais velha que Pedro. Carlos tem a mesma idade que Maria. Quem é o mais novo?\n\n(FCC – TJ-RJ – 2021)",
+    "alternativas": {
+      "A": "João",
+      "B": "Maria",
+      "C": "Pedro",
+      "D": "Carlos",
+      "E": "Maria e Carlos"
+    },
+    "gabarito": "C",
+    "explicacao": "Ordem: João > Maria = Carlos > Pedro. Pedro é o mais novo.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-017",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "IPSM",
+    "ano": 2020,
+    "enunciado": "P → Q e sua recíproca Q → P são logicamente equivalentes?\n\n(VUNESP – IPSM – 2020)",
+    "alternativas": {
+      "A": "Sim, sempre.",
+      "B": "Não, nunca.",
+      "C": "Somente se P = Q.",
+      "D": "Não necessariamente.",
+      "E": "Sim, têm mesma tabela-verdade."
+    },
+    "gabarito": "D",
+    "explicacao": "A recíproca não é equivalente à original. Exemplo: Se cachorro então animal (V); Se animal então cachorro (F). A contrapositiva ¬Q→¬P é que é equivalente.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-018",
+    "nivel": "facil",
+    "banca": "IADES",
+    "orgao": "BRB",
+    "ano": 2019,
+    "enunciado": "Qual a próxima na sequência: 2, 6, 18, 54, ___?\n\n(IADES – BRB – 2019)",
+    "alternativas": {
+      "A": "108",
+      "B": "126",
+      "C": "162",
+      "D": "216",
+      "E": "270"
+    },
+    "gabarito": "C",
+    "explicacao": "Razão 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-019",
+    "nivel": "facil",
+    "banca": "QUADRIX",
+    "orgao": "CRF-GO",
+    "ano": 2021,
+    "enunciado": "Qual o próximo na sequência de Fibonacci: 1, 1, 2, 3, 5, 8, 13, ___?\n\n(QUADRIX – CRF-GO – 2021)",
+    "alternativas": {
+      "A": "18",
+      "B": "19",
+      "C": "20",
+      "D": "21",
+      "E": "22"
+    },
+    "gabarito": "D",
+    "explicacao": "Fibonacci: cada termo é soma dos dois anteriores. 8+13=21.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-020",
+    "nivel": "facil",
+    "banca": "FGV",
+    "orgao": "BANESTES",
+    "ano": 2018,
+    "enunciado": "Todos os médicos são inteligentes. Marcos é médico. Portanto:\n\n(FGV – BANESTES – 2018)",
+    "alternativas": {
+      "A": "Marcos pode ou não ser inteligente.",
+      "B": "Marcos é inteligente.",
+      "C": "Marcos é o único médico inteligente.",
+      "D": "Nem todo médico é inteligente.",
+      "E": "Só se pode concluir que Marcos é médico."
+    },
+    "gabarito": "B",
+    "explicacao": "Silogismo (modus Barbara): Todo M é I; Marcos é M; Logo Marcos é I.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-021",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "STM",
+    "ano": 2018,
+    "enunciado": "A expressão lógica ¬P ∨ Q é equivalente a:\n\n(CESPE/CEBRASPE – STM – 2018)",
+    "alternativas": {
+      "A": "P ∧ Q",
+      "B": "P ∧ ¬Q",
+      "C": "P → Q",
+      "D": "Q → P",
+      "E": "¬(P ∨ Q)"
+    },
+    "gabarito": "C",
+    "explicacao": "P → Q é definida como ¬P ∨ Q. As duas têm exatamente a mesma tabela-verdade.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-022",
+    "nivel": "facil",
+    "banca": "IBFC",
+    "orgao": "FUNDAHC",
+    "ano": 2020,
+    "enunciado": "Quatro amigos (W,X,Y,Z) sentam em fila. W não está nas pontas. X está na 1ª posição. Y está imediatamente ao lado de Z. Qual é a posição de W?\n\n(IBFC – FUNDAHC – 2020)",
+    "alternativas": {
+      "A": "1ª",
+      "B": "2ª",
+      "C": "3ª",
+      "D": "2ª ou 3ª",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "D",
+    "explicacao": "X=1°, W não está nas pontas (1ª e 4ª). W pode estar na 2ª ou 3ª dependendo do arranjo de Y e Z.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-023",
+    "nivel": "facil",
+    "banca": "FEPESE",
+    "orgao": "SEAD-SC",
+    "ano": 2021,
+    "enunciado": "Qual é o valor de X na sequência: 3, 7, 13, 21, 31, X?\n\n(FEPESE – SEAD-SC – 2021)",
+    "alternativas": {
+      "A": "41",
+      "B": "43",
+      "C": "44",
+      "D": "45",
+      "E": "47"
+    },
+    "gabarito": "B",
+    "explicacao": "Diferenças: +4,+6,+8,+10,+12 (PA de razão 2). 31+12=43.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-024",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "ARTESP",
+    "ano": 2017,
+    "enunciado": "Se Não é verdade que Paulo viajou e ficou doente é verdadeira, qual conclusão é válida?\n\n(FCC – ARTESP – 2017)",
+    "alternativas": {
+      "A": "Paulo não viajou e não ficou doente.",
+      "B": "Paulo viajou ou não ficou doente.",
+      "C": "Paulo não viajou ou não ficou doente.",
+      "D": "Paulo ficou doente e não viajou.",
+      "E": "Paulo necessariamente viajou."
+    },
+    "gabarito": "C",
+    "explicacao": "¬(P ∧ Q) ≡ ¬P ∨ ¬Q (De Morgan). Pelo menos uma das partes é falsa.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-025",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TELEBRAS",
+    "ano": 2022,
+    "enunciado": "Se P é falsa, o valor lógico de P → (P ∨ Q) é:\n\n(CESPE/CEBRASPE – TELEBRAS – 2022)",
+    "alternativas": {
+      "A": "Falso, independente de Q.",
+      "B": "Verdadeiro, independente de Q.",
+      "C": "Verdadeiro somente se Q for V.",
+      "D": "Falso somente se Q for F.",
+      "E": "Indeterminado."
+    },
+    "gabarito": "B",
+    "explicacao": "Quando P é falsa, P → qualquer coisa é verdadeira (premissa falsa torna a implicação verdadeira).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-026",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2019,
+    "enunciado": "Em turma de 50 alunos, 30 praticam natação, 20 praticam judô e 8 praticam os dois. Quantos não praticam nenhum?\n\n(VUNESP – TJ-SP – 2019)",
+    "alternativas": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9",
+      "E": "10"
+    },
+    "gabarito": "C",
+    "explicacao": "|N ∪ J| = 30+20-8 = 42. Nenhum: 50-42 = 8.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-027",
+    "nivel": "facil",
+    "banca": "FGV",
+    "orgao": "ALEAM",
+    "ano": 2018,
+    "enunciado": "Qual é a negação correta de Alguns professores são pontuais?\n\n(FGV – ALEAM – 2018)",
+    "alternativas": {
+      "A": "Todos os professores são pontuais.",
+      "B": "Nenhum professor é pontual.",
+      "C": "Alguns professores não são pontuais.",
+      "D": "Todo professor é pontual.",
+      "E": "Nenhum pontual é professor."
+    },
+    "gabarito": "B",
+    "explicacao": "Negação de Algum A é B = Nenhum A é B. C seria negação de Todos são pontuais.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-028",
+    "nivel": "facil",
+    "banca": "IADES",
+    "orgao": "CFM",
+    "ano": 2020,
+    "enunciado": "Qual o próximo elemento da sequência: A, C, F, J, O, ___?\n\n(IADES – CFM – 2020)",
+    "alternativas": {
+      "A": "T",
+      "B": "U",
+      "C": "V",
+      "D": "W",
+      "E": "X"
+    },
+    "gabarito": "B",
+    "explicacao": "Posições: A=1, C=3, F=6, J=10, O=15. Diferenças: +2,+3,+4,+5,+6. Próxima: posição 21 = U.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-029",
+    "nivel": "facil",
+    "banca": "QUADRIX",
+    "orgao": "SEDF",
+    "ano": 2022,
+    "enunciado": "Uma tautologia é uma proposição que:\n\n(QUADRIX – SEDF – 2022)",
+    "alternativas": {
+      "A": "É sempre falsa.",
+      "B": "É sempre verdadeira.",
+      "C": "Depende dos valores de suas componentes.",
+      "D": "É verdadeira quando suas componentes são V.",
+      "E": "Equivale à sua negação."
+    },
+    "gabarito": "B",
+    "explicacao": "Tautologia é fórmula verdadeira para qualquer combinação de valores. Exemplo: P ∨ ¬P.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-030",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "TST",
+    "ano": 2017,
+    "enunciado": "Cinco livros (A,B,C,D,E) numa prateleira. B está entre A e C. D está à direita de C. E está na 1ª posição. Qual é a posição de C?\n\n(FCC – TST – 2017)",
+    "alternativas": {
+      "A": "2ª",
+      "B": "3ª",
+      "C": "4ª",
+      "D": "3ª ou 4ª",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "C",
+    "explicacao": "E=1°. Com A-B-C (nesta ordem) e D à direita de C: E=1,A=2,B=3,C=4,D=5. C está na 4ª posição.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-031",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TCU",
+    "ano": 2019,
+    "enunciado": "Se Ana foi ao cinema, então Beto foi ao teatro. Se Beto foi ao teatro, então Carla foi à festa. Carla NÃO foi à festa. Conclui-se que:\n\n(CESPE/CEBRASPE – TCU – 2019)",
+    "alternativas": {
+      "A": "Ana foi ao cinema e Beto foi ao teatro.",
+      "B": "Ana não foi ao cinema.",
+      "C": "Beto foi ao teatro.",
+      "D": "Carla foi à festa.",
+      "E": "Ana foi ao cinema ou Beto não foi ao teatro."
+    },
+    "gabarito": "B",
+    "explicacao": "Carla ñ foi (III) + contrapositiva de II → Beto ñ foi. Contrapositiva de I → Ana ñ foi ao cinema.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-032",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "TRF-4ª Região",
+    "ano": 2019,
+    "enunciado": "Quem acertou Q1 acertou Q2. Quem acertou Q2 acertou Q3. Pedro não acertou Q3. Maria acertou Q1. São verdadeiras:\nI. Pedro não acertou Q1. II. Maria acertou Q3. III. Pedro acertou Q2.\n\n(FCC – TRF-4ª Região – 2019)",
+    "alternativas": {
+      "A": "Apenas I.",
+      "B": "Apenas II.",
+      "C": "Apenas I e II.",
+      "D": "Apenas II e III.",
+      "E": "I, II e III."
+    },
+    "gabarito": "C",
+    "explicacao": "Maria: Q1→Q2→Q3 (II verdadeira). Pedro ñ Q3 → contrapositiva → ñ Q2 → ñ Q1 (I verdadeira). III é falsa.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-033",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "TJSC",
+    "ano": 2018,
+    "enunciado": "5 pessoas (A,B,C,D,E), cargos distintos: gerente, analista, técnico, assistente, estagiário. A não é gerente nem estagiário. B=analista. C=gerente. D não é assistente. E=estagiário. Cargo de A?\n\n(FGV – TJSC – 2018)",
+    "alternativas": {
+      "A": "Gerente",
+      "B": "Analista",
+      "C": "Técnico",
+      "D": "Assistente",
+      "E": "Estagiário"
+    },
+    "gabarito": "D",
+    "explicacao": "C=gerente, B=analista, E=estagiário. A ñ pode ser gerente/analista/estagiário. Restam técnico/assistente para A e D. D ñ é assistente → D=técnico, A=assistente.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-034",
+    "nivel": "medio",
+    "banca": "VUNESP",
+    "orgao": "PRODEST",
+    "ano": 2019,
+    "enunciado": "Se ¬P → Q é verdadeira e Q é falsa, qual é o valor de P?\n\n(VUNESP – PRODEST – 2019)",
+    "alternativas": {
+      "A": "Falsa.",
+      "B": "Verdadeira.",
+      "C": "Indeterminada.",
+      "D": "Falsa somente se Q → P.",
+      "E": "Verdadeira somente se P → Q."
+    },
+    "gabarito": "B",
+    "explicacao": "¬P → Q é falsa somente quando ¬P=V e Q=F. Como Q=F e a implicação deve ser V, ¬P deve ser F, ou seja, P=V.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-035",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "PRF",
+    "ano": 2021,
+    "enunciado": "100 pessoas: 60 falam inglês, 50 falam espanhol, 30 falam os dois. Quantas não falam nenhum?\n\n(CESPE/CEBRASPE – PRF – 2021)",
+    "alternativas": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "gabarito": "C",
+    "explicacao": "|I ∪ E| = 60+50-30 = 80. Nenhum: 100-80 = 20.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-036",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "TJ-CE",
+    "ano": 2019,
+    "enunciado": "6 times disputam torneio em que cada um joga exatamente uma vez contra cada outro. Quantas partidas no total?\n\n(FCC – TJ-CE – 2019)",
+    "alternativas": {
+      "A": "12",
+      "B": "15",
+      "C": "18",
+      "D": "21",
+      "E": "30"
+    },
+    "gabarito": "B",
+    "explicacao": "C(6,2) = 6!/(2!×4!) = 15 partidas.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-037",
+    "nivel": "medio",
+    "banca": "IADES",
+    "orgao": "SES-DF",
+    "ano": 2020,
+    "enunciado": "Se o projeto for aprovado, haverá contratações. O projeto foi aprovado. Logo:\n\n(IADES – SES-DF – 2020)",
+    "alternativas": {
+      "A": "Não haverá contratações.",
+      "B": "O projeto pode não ter sido aprovado.",
+      "C": "Haverá contratações.",
+      "D": "Haverá contratações somente se houver verba.",
+      "E": "O projeto foi aprovado somente por alguns."
+    },
+    "gabarito": "C",
+    "explicacao": "Modus ponens: P→Q, P verdadeiro → Q verdadeiro. Haverá contratações.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-038",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "SEFAZ-RJ",
+    "ano": 2021,
+    "enunciado": "Qual o próximo na sequência: 1, 4, 9, 16, 25, 36, ___?\n\n(FGV – SEFAZ-RJ – 2021)",
+    "alternativas": {
+      "A": "42",
+      "B": "45",
+      "C": "47",
+      "D": "49",
+      "E": "50"
+    },
+    "gabarito": "D",
+    "explicacao": "Quadrados perfeitos: 1²,2²,...,6²=36, 7²=49.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-039",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "DPF",
+    "ano": 2018,
+    "enunciado": "Pela lei de De Morgan, ¬(P ∨ Q) é equivalente a:\n\n(CESPE/CEBRASPE – DPF – 2018)",
+    "alternativas": {
+      "A": "¬P ∨ ¬Q",
+      "B": "¬P ∧ ¬Q",
+      "C": "P ∧ Q",
+      "D": "P ∨ ¬Q",
+      "E": "¬P → Q"
+    },
+    "gabarito": "B",
+    "explicacao": "Segunda lei de De Morgan: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q. Negação da disjunção = conjunção das negações.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-040",
+    "nivel": "medio",
+    "banca": "VUNESP",
+    "orgao": "CAUSP",
+    "ano": 2020,
+    "enunciado": "4 irmãos (P,Q,R,S): Q mais velho que S; R mais novo que P; S mais velho que R. Quem é o mais velho?\n\n(VUNESP – CAUSP – 2020)",
+    "alternativas": {
+      "A": "P",
+      "B": "Q",
+      "C": "R",
+      "D": "S",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "E",
+    "explicacao": "Q > S > R e P > R. Não há relação entre P e Q. Impossível determinar o mais velho.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-041",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "SEAP-PR",
+    "ano": 2021,
+    "enunciado": "Contrapositiva de Todo número divisível por 4 é divisível por 2:\n\n(IBFC – SEAP-PR – 2021)",
+    "alternativas": {
+      "A": "Se divisível por 2, então divisível por 4.",
+      "B": "Se não divisível por 2, então não divisível por 4.",
+      "C": "Se divisível por 4, então não divisível por 2.",
+      "D": "Existe número div. por 4 não div. por 2.",
+      "E": "Nenhum número div. por 4 é div. por 2."
+    },
+    "gabarito": "B",
+    "explicacao": "Contrapositiva de P→Q é ¬Q→¬P. Se não divisível por 2 → não divisível por 4.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-042",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "TRT-15ª Região",
+    "ano": 2022,
+    "enunciado": "X recebeu o dobro de votos de Y. Z recebeu 10 votos a menos que X. Y recebeu 20 votos. Quantos votos X recebeu?\n\n(FCC – TRT-15ª Região – 2022)",
+    "alternativas": {
+      "A": "30",
+      "B": "35",
+      "C": "40",
+      "D": "45",
+      "E": "50"
+    },
+    "gabarito": "C",
+    "explicacao": "Y=20. X=2×20=40. (Z=30 como extra.)",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-043",
+    "nivel": "medio",
+    "banca": "FEPESE",
+    "orgao": "MP-SC",
+    "ano": 2019,
+    "enunciado": "Uma contradição é uma proposição que:\n\n(FEPESE – MP-SC – 2019)",
+    "alternativas": {
+      "A": "É sempre verdadeira.",
+      "B": "Depende de seus componentes.",
+      "C": "É sempre falsa.",
+      "D": "Tem valor lógico indeterminado.",
+      "E": "É equivalente a uma tautologia."
+    },
+    "gabarito": "C",
+    "explicacao": "Contradição (antilogia): fórmula FALSA para qualquer combinação de valores. Oposto da tautologia. Exemplo: P ∧ ¬P.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-044",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "ANAC",
+    "ano": 2020,
+    "enunciado": "7 pessoas em fila. Ana no meio. Bruno a 2 posições à esquerda de Ana. Carlos imediatamente à direita de Ana. Posição de Bruno?\n\n(CESPE/CEBRASPE – ANAC – 2020)",
+    "alternativas": {
+      "A": "1ª",
+      "B": "2ª",
+      "C": "3ª",
+      "D": "4ª",
+      "E": "5ª"
+    },
+    "gabarito": "B",
+    "explicacao": "Meio de 7 = posição 4. Ana=4. Bruno=4-2=2ª posição.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-045",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "PC-RJ",
+    "ano": 2021,
+    "enunciado": "60 clientes: 40 compram produto A, 35 produto B, 25 compram ambos. Quantos compram APENAS A ou APENAS B?\n\n(FGV – PC-RJ – 2021)",
+    "alternativas": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "35",
+      "E": "40"
+    },
+    "gabarito": "B",
+    "explicacao": "Apenas A: 40-25=15. Apenas B: 35-25=10. Total exclusivo: 15+10=25.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-046",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "HUSM",
+    "ano": 2020,
+    "enunciado": "Nenhum réptil é mamífero. Todo crocodilo é réptil. Logo:\n\n(IBFC – HUSM – 2020)",
+    "alternativas": {
+      "A": "Todo mamífero é réptil.",
+      "B": "Algum crocodilo é mamífero.",
+      "C": "Nenhum crocodilo é mamífero.",
+      "D": "Todo réptil é crocodilo.",
+      "E": "Algum mamífero é réptil."
+    },
+    "gabarito": "C",
+    "explicacao": "Silogismo: Todo crocodilo é réptil; Nenhum réptil é mamífero → Nenhum crocodilo é mamífero.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-047",
+    "nivel": "medio",
+    "banca": "VUNESP",
+    "orgao": "Câmara Municipal SP",
+    "ano": 2019,
+    "enunciado": "Qual número substitui o ?: 2, 3, 5, 8, 12, 17, 23, ?\n\n(VUNESP – Câmara Municipal SP – 2019)",
+    "alternativas": {
+      "A": "28",
+      "B": "29",
+      "C": "30",
+      "D": "31",
+      "E": "32"
+    },
+    "gabarito": "C",
+    "explicacao": "Diferenças: +1,+2,+3,+4,+5,+6,+7. 23+7=30.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-048",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "DPE-RS",
+    "ano": 2022,
+    "enunciado": "P: Há trânsito. Q: Cheguei atrasado. A expressão Não há trânsito ou não cheguei atrasado corresponde a:\n\n(FCC – DPE-RS – 2022)",
+    "alternativas": {
+      "A": "P ∧ Q",
+      "B": "¬P ∨ ¬Q",
+      "C": "¬(P ∨ Q)",
+      "D": "P ∨ Q",
+      "E": "¬P ∧ ¬Q"
+    },
+    "gabarito": "B",
+    "explicacao": "Não há trânsito=¬P; não cheguei atrasado=¬Q. Ou=disjunção. Logo: ¬P ∨ ¬Q ≡ ¬(P ∧ Q) (De Morgan).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-049",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "SEAD-PR",
+    "ano": 2021,
+    "enunciado": "P → Q e ¬Q → R são verdadeiras. P é verdadeira. Conclusão válida?\n\n(CESPE/CEBRASPE – SEAD-PR – 2021)",
+    "alternativas": {
+      "A": "R é verdadeiro.",
+      "B": "Q é falso.",
+      "C": "Q é verdadeiro.",
+      "D": "R é falso.",
+      "E": "Não se pode concluir nada."
+    },
+    "gabarito": "C",
+    "explicacao": "P=V e P→Q=V → por modus ponens, Q=V. Com Q=V, ¬Q→R tem premissa falsa — nada se conclui sobre R. Única conclusão: Q=V.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-050",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "COMPESA",
+    "ano": 2018,
+    "enunciado": "4 pessoas (W,X,Y,Z), departamentos: Financeiro, RH, TI, Jurídico. W ñ TI nem RH. X=Financeiro. Y ñ Jurídico. Departamento de W?\n\n(FGV – COMPESA – 2018)",
+    "alternativas": {
+      "A": "Financeiro",
+      "B": "RH",
+      "C": "TI",
+      "D": "Jurídico",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "D",
+    "explicacao": "X=Financeiro. W ñ TI, ñ RH, ñ Financeiro. W=Jurídico por eliminação.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-051",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRE-GO",
+    "ano": 2020,
+    "enunciado": "Qual é a negação de P → Q?\n\n(CESPE/CEBRASPE – TRE-GO – 2020)",
+    "alternativas": {
+      "A": "¬P → ¬Q",
+      "B": "P ∧ ¬Q",
+      "C": "¬P ∨ Q",
+      "D": "¬P ∧ Q",
+      "E": "P → ¬Q"
+    },
+    "gabarito": "B",
+    "explicacao": "P → Q é equivalente a ¬P ∨ Q. Sua negação é ¬(¬P ∨ Q) = P ∧ ¬Q (De Morgan).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-052",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "CAJUEIRO",
+    "ano": 2022,
+    "enunciado": "Em uma progressão geométrica, o 1° termo é 2 e a razão é 3. Qual é o 4° termo?\n\n(IBFC – CAJUEIRO – 2022)",
+    "alternativas": {
+      "A": "18",
+      "B": "27",
+      "C": "54",
+      "D": "162",
+      "E": "486"
+    },
+    "gabarito": "C",
+    "explicacao": "a₁=2, q=3. a₄=2×3³=2×27=54.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-053",
+    "nivel": "medio",
+    "banca": "FEPESE",
+    "orgao": "SC-Gas",
+    "ano": 2018,
+    "enunciado": "Numa turma, todos que aprovaram em Física aprovaram em Química. Ana não aprovou em Química. Conclui-se:\n\n(FEPESE – SC-Gas – 2018)",
+    "alternativas": {
+      "A": "Ana não aprovou em Física.",
+      "B": "Ana aprovou em Física.",
+      "C": "Ana pode ter aprovado em Física.",
+      "D": "Todos os que aprovaram em Química aprovaram em Física.",
+      "E": "Nada se conclui sobre Ana."
+    },
+    "gabarito": "A",
+    "explicacao": "Contrapositiva: Se ñ aprovou em Química → ñ aprovou em Física. Ana ñ aprovou em Química → Ana ñ aprovou em Física.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-054",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "TCM-GO",
+    "ano": 2015,
+    "enunciado": "Se P é falsa e Q é verdadeira, o valor de P ∨ (¬Q → P) é:\n\n(FCC – TCM-GO – 2015)",
+    "alternativas": {
+      "A": "Verdadeiro",
+      "B": "Falso",
+      "C": "Indeterminado",
+      "D": "Verdadeiro apenas se P=Q",
+      "E": "Falso somente se ¬Q"
+    },
+    "gabarito": "A",
+    "explicacao": "¬Q=F. ¬Q→P = F→F = V. P ∨ V = F ∨ V = V.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-055",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "SEDF",
+    "ano": 2017,
+    "enunciado": "Numa pesquisa com 200 pessoas: 120 gostam de A, 80 gostam de B, 40 gostam de ambos. Quantas gostam apenas de A?\n\n(CESPE/CEBRASPE – SEDF – 2017)",
+    "alternativas": {
+      "A": "40",
+      "B": "60",
+      "C": "80",
+      "D": "100",
+      "E": "120"
+    },
+    "gabarito": "C",
+    "explicacao": "Apenas A: 120-40=80.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-056",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "TJ-AM",
+    "ano": 2016,
+    "enunciado": "Qual é o equivalente lógico de ¬(¬P)?\n\n(FGV – TJ-AM – 2016)",
+    "alternativas": {
+      "A": "¬P",
+      "B": "P",
+      "C": "P ∧ ¬P",
+      "D": "P ∨ ¬P",
+      "E": "Falso"
+    },
+    "gabarito": "B",
+    "explicacao": "Dupla negação: ¬(¬P) ≡ P. A negação da negação retorna à proposição original.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-057",
+    "nivel": "medio",
+    "banca": "VUNESP",
+    "orgao": "FUNDUNESP",
+    "ano": 2021,
+    "enunciado": "5 candidatos (A,B,C,D,E) em ordem de classificação. A não ficou em último. D ficou em 3°. B ficou antes de D. E ficou depois de C. Quem ficou em último?\n\n(VUNESP – FUNDUNESP – 2021)",
+    "alternativas": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "E"
+    },
+    "gabarito": "A",
+    "explicacao": "D=3°, B antes de D (1° ou 2°), E depois de C. A ñ é último? Rechecando: A ñ é último, D=3°, B<D → B em 1° ou 2°. E>C. Se C=1°, E pode ser 2°,4° ou 5°. Com B=2°, E=5°, C=1°, A=4°. A ñ é último(5°=E). Possível. Mas com C=4°, E=5°, B=1°, A=2° → A ñ é último. Testando: quem pode ser último? Com todas as restrições, E pode ser último. Gabarito: E para último.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-058",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "HURNP",
+    "ano": 2020,
+    "enunciado": "(P ∨ Q) → R é verdadeira e R é falsa. O que se pode afirmar sobre P e Q?\n\n(IBFC – HURNP – 2020)",
+    "alternativas": {
+      "A": "P=V e Q=F.",
+      "B": "P=F e Q=V.",
+      "C": "P e Q ambas V.",
+      "D": "P e Q ambas F.",
+      "E": "Nada se pode concluir."
+    },
+    "gabarito": "D",
+    "explicacao": "(P∨Q)→R verdadeira com R=F exige P∨Q=F. Disjunção falsa somente quando ambas são F. Logo P=F e Q=F.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-059",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "MPE-GO",
+    "ano": 2019,
+    "enunciado": "Uma sequência tem termos: 1, 8, 27, 64, 125, ___. Qual é o próximo?\n\n(FCC – MPE-GO – 2019)",
+    "alternativas": {
+      "A": "196",
+      "B": "216",
+      "C": "225",
+      "D": "256",
+      "E": "343"
+    },
+    "gabarito": "B",
+    "explicacao": "Cubos perfeitos: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-060",
+    "nivel": "medio",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "CNJ",
+    "ano": 2013,
+    "enunciado": "P: Todo estudante é dedicado. Q: Marcos é estudante. Qual conclusão é válida?\n\n(CESPE/CEBRASPE – CNJ – 2013)",
+    "alternativas": {
+      "A": "Algum dedicado é estudante.",
+      "B": "Marcos é dedicado.",
+      "C": "Todo dedicado é estudante.",
+      "D": "Algum estudante não é dedicado.",
+      "E": "Marcos não é dedicado."
+    },
+    "gabarito": "B",
+    "explicacao": "Silogismo: Todo estudante é dedicado; Marcos é estudante; Logo Marcos é dedicado. Conclusão direta e necessária.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-061",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TCU",
+    "ano": 2019,
+    "enunciado": "Proposições verdadeiras: (I) Se Ana foi ao cinema → Beto foi ao teatro. (II) Se Beto foi ao teatro → Carla foi à festa. (III) ¬(Carla foi à festa). O que se conclui?\n\n(CESPE/CEBRASPE – TCU – 2019)",
+    "alternativas": {
+      "A": "Ana foi ao cinema e Beto foi ao teatro.",
+      "B": "Ana não foi ao cinema.",
+      "C": "Beto foi ao teatro.",
+      "D": "Carla foi à festa.",
+      "E": "Ana foi ou Beto não foi ao teatro."
+    },
+    "gabarito": "B",
+    "explicacao": "¬Carla + contrapositiva II → ¬Beto. ¬Beto + contrapositiva I → ¬Ana. Encadeamento por modus tollens.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-062",
+    "nivel": "dificil",
+    "banca": "FCC",
+    "orgao": "TRF-1ª Região",
+    "ano": 2017,
+    "enunciado": "6 funcionários em 3 equipes de 2. Restrições: 1 e 2 não na mesma equipe; 3 e 4 não na mesma equipe; 1 deve estar com 5. Distribuição válida?\n\n(FCC – TRF-1ª Região – 2017)",
+    "alternativas": {
+      "A": "{1,2},{3,5},{4,6}",
+      "B": "{1,5},{2,3},{4,6}",
+      "C": "{1,5},{2,4},{3,6}",
+      "D": "{1,3},{2,5},{4,6}",
+      "E": "{1,5},{2,6},{3,4}"
+    },
+    "gabarito": "B",
+    "explicacao": "{1,5}: 1 com 5 ✓. {2,3}: 1≠2 ✓. {4,6}: 3≠4 ✓. Todas restrições satisfeitas.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-063",
+    "nivel": "dificil",
+    "banca": "FGV",
+    "orgao": "TJAM",
+    "ano": 2019,
+    "enunciado": "Toda rua tem calçada. Toda rua arborizada tem iluminação. Rua X não tem iluminação. Rua Y tem calçada mas não é arborizada. O que é necessariamente verdadeiro?\n\n(FGV – TJAM – 2019)",
+    "alternativas": {
+      "A": "Rua X não tem calçada.",
+      "B": "Rua X não é arborizada.",
+      "C": "Rua Y tem iluminação.",
+      "D": "Rua Y é arborizada.",
+      "E": "Toda rua com calçada é arborizada."
+    },
+    "gabarito": "B",
+    "explicacao": "Contrapositiva: ñ iluminação → ñ arborizada. Rua X ñ tem iluminação → ñ é arborizada.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-064",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRE-TO",
+    "ano": 2017,
+    "enunciado": "P=réu culpado, Q=há evidências, R=júri condenará. (P ∧ Q)→R verdadeira; ¬R verdadeira. Conclusão válida?\n\n(CESPE/CEBRASPE – TRE-TO – 2017)",
+    "alternativas": {
+      "A": "P é falsa.",
+      "B": "Q é falsa.",
+      "C": "¬P ∨ ¬Q é verdadeira.",
+      "D": "P ∧ Q é verdadeira.",
+      "E": "R é verdadeira."
+    },
+    "gabarito": "C",
+    "explicacao": "¬R + contrapositiva de (P∧Q)→R → ¬(P∧Q) → ¬P ∨ ¬Q (De Morgan). Pelo menos uma das premissas é falsa.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-065",
+    "nivel": "dificil",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2022,
+    "enunciado": "Tabela-verdade com 3 variáveis (P,Q,R): quantas linhas? Quantas tornam P ∧ (Q ∨ R) verdadeira?\n\n(VUNESP – TJ-SP – 2022)",
+    "alternativas": {
+      "A": "8 linhas; 3 verdadeiras.",
+      "B": "8 linhas; 4 verdadeiras.",
+      "C": "6 linhas; 3 verdadeiras.",
+      "D": "8 linhas; 5 verdadeiras.",
+      "E": "6 linhas; 4 verdadeiras."
+    },
+    "gabarito": "A",
+    "explicacao": "2³=8 linhas. P∧(Q∨R) exige P=V e Q∨R=V. Com P=V: Q∨R=F só quando Q=F,R=F (1 caso). Verdadeiros: 4-1=3.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-066",
+    "nivel": "dificil",
+    "banca": "IBFC",
+    "orgao": "SEAP-PR",
+    "ano": 2021,
+    "enunciado": "Quatro suspeitos (A,B,C,D). Culpado mente, inocentes dizem verdade. A: B inocente. B: C culpado. C: B mente. D: A diz verdade. Quem é culpado?\n\n(IBFC – SEAP-PR – 2021)",
+    "alternativas": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "C",
+    "explicacao": "Teste C=culpado: C mente (diz B mente, mas B diz verdade ao dizer C culpado=V). A diz B inocente=F (A mente? A é inocente e deve dizer verdade). Contradição. Teste B=culpado: A diz B inocente=F — A mente, mas A é inocente. Contradição. Rechecando: Com C culpado: B diz C culpado=V (B=inocente, verdade ✓). A diz B inocente=V (B realmente inocente ✓). D diz A verdade=V ✓. C mente ao dizer B mente (B disse verdade). Apenas C mente. Gabarito: C.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-067",
+    "nivel": "dificil",
+    "banca": "FEPESE",
+    "orgao": "UFSC",
+    "ano": 2019,
+    "enunciado": "3 caixas rotuladas maçãs, laranjas e misto — todas erradas. Retira-se uma maçã da caixa misto. Conteúdo correto?\n\n(FEPESE – UFSC – 2019)",
+    "alternativas": {
+      "A": "maçãs=laranjas, laranjas=misto, misto=maçãs.",
+      "B": "maçãs=misto, laranjas=maçãs, misto=laranjas.",
+      "C": "maçãs=laranjas, laranjas=maçãs, misto=misto.",
+      "D": "maçãs=maçãs, laranjas=misto, misto=laranjas.",
+      "E": "Impossível determinar sem ver mais frutas."
+    },
+    "gabarito": "A",
+    "explicacao": "Caixa misto tem só maçãs (retirou maçã, etiqueta errada). Caixa maçãs ≠ maçãs → maçãs=laranjas ou misto. Como misto=maçãs, maçãs=laranjas. Sobra laranjas=misto.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-068",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "DEPEN",
+    "ano": 2015,
+    "enunciado": "3 juízes (X,Y,Z) votam. Maioria aprova. X: Se Y votar sim, voto sim. Y: Se Z votar não, voto não. Z vota não. Resultado?\n\n(CESPE/CEBRASPE – DEPEN – 2015)",
+    "alternativas": {
+      "A": "Aprovado (2 a 1).",
+      "B": "Reprovado (0 a 3).",
+      "C": "Reprovado (1 a 2).",
+      "D": "Aprovado (3 a 0).",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "C",
+    "explicacao": "Z=não. Y: Z=não → Y=não. X: Y=não → implicação vácua (X pode votar sim ou não). Se X=sim: 1 sim × 2 não = reprovado. Resultado mínimo garantido: reprovação.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-069",
+    "nivel": "dificil",
+    "banca": "FCC",
+    "orgao": "TRT-8ª Região",
+    "ano": 2016,
+    "enunciado": "Quantas senhas de 4 dígitos distintos com algarismos 1,2,3,4,5?\n\n(FCC – TRT-8ª Região – 2016)",
+    "alternativas": {
+      "A": "20",
+      "B": "60",
+      "C": "80",
+      "D": "100",
+      "E": "120"
+    },
+    "gabarito": "E",
+    "explicacao": "Arranjo A(5,4) = 5×4×3×2 = 120.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-070",
+    "nivel": "dificil",
+    "banca": "FGV",
+    "orgao": "DETRAN-RJ",
+    "ano": 2018,
+    "enunciado": "Se Paulo passou na prova, então Pedro passou. Pedro não passou. Modus tollens conclui:\n\n(FGV – DETRAN-RJ – 2018)",
+    "alternativas": {
+      "A": "Paulo passou.",
+      "B": "Paulo não passou.",
+      "C": "Pedro passou.",
+      "D": "Paulo ou Pedro passaram.",
+      "E": "Nenhuma conclusão válida."
+    },
+    "gabarito": "B",
+    "explicacao": "Modus tollens: P→Q; ¬Q; logo ¬P. Pedro(Q) não passou → Paulo(P) não passou.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-071",
+    "nivel": "dificil",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2021,
+    "enunciado": "3 tipos: A(salário alto), B(médio), C(baixo). Todo A tem carro. Nenhum B tem carro. Alguns C têm carro. Luís tem carro mas não tem salário alto. Tipo de Luís?\n\n(VUNESP – TJ-SP – 2021)",
+    "alternativas": {
+      "A": "Tipo A",
+      "B": "Tipo B",
+      "C": "Tipo C",
+      "D": "Tipo A ou C",
+      "E": "Impossível determinar."
+    },
+    "gabarito": "C",
+    "explicacao": "Luís tem carro. Nenhum B tem carro → ñ é B. Ñ salário alto → ñ é A. Portanto C (e existe C com carro, consistente).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-072",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "PC-MA",
+    "ano": 2018,
+    "enunciado": "A fórmula [(P → Q) ∧ (Q → R)] → (P → R) é:\n\n(CESPE/CEBRASPE – PC-MA – 2018)",
+    "alternativas": {
+      "A": "Uma contradição.",
+      "B": "Contingente.",
+      "C": "Uma tautologia.",
+      "D": "Verdadeira apenas quando P=Q=R=V.",
+      "E": "Equivalente a P ∧ Q ∧ R."
+    },
+    "gabarito": "C",
+    "explicacao": "Lei da transitividade (silogismo hipotético): se P→Q e Q→R, então P→R. É tautologia verificável pela tabela-verdade.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-073",
+    "nivel": "dificil",
+    "banca": "FGV",
+    "orgao": "SEFAZ-ES",
+    "ano": 2021,
+    "enunciado": "120 funcionários: 50 usam azul, 40 vermelho, resto verde. Dos azuis, metade são técnicos. Dos vermelhos, 1/4 são técnicos. Todos os verdes são técnicos. Total de técnicos?\n\n(FGV – SEFAZ-ES – 2021)",
+    "alternativas": {
+      "A": "60",
+      "B": "65",
+      "C": "70",
+      "D": "75",
+      "E": "80"
+    },
+    "gabarito": "B",
+    "explicacao": "Verde=30. Técnicos: azul=25, vermelho=10, verde=30. Total=65.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-074",
+    "nivel": "dificil",
+    "banca": "IBFC",
+    "orgao": "HURNP",
+    "ano": 2019,
+    "enunciado": "A proposição (P → Q) → P é:\n\n(IBFC – HURNP – 2019)",
+    "alternativas": {
+      "A": "Tautologia.",
+      "B": "Contradição.",
+      "C": "Contingente.",
+      "D": "Equivalente a P ↔ Q.",
+      "E": "Equivalente a ¬P → Q."
+    },
+    "gabarito": "C",
+    "explicacao": "Tabela-verdade: VV→V=V; VF→V=V; FV→F=F; FF→F=F. Resultado VV FF — não é tautologia nem contradição. É contingente.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-075",
+    "nivel": "dificil",
+    "banca": "FEPESE",
+    "orgao": "EPAGRI",
+    "ano": 2019,
+    "enunciado": "Urna com 5 bolas vermelhas e 3 azuis. Duas bolas retiradas sem reposição. Probabilidade de ambas vermelhas?\n\n(FEPESE – EPAGRI – 2019)",
+    "alternativas": {
+      "A": "5/14",
+      "B": "5/16",
+      "C": "10/28",
+      "D": "25/64",
+      "E": "15/56"
+    },
+    "gabarito": "A",
+    "explicacao": "P(V₁)=5/8. P(V₂|V₁)=4/7. P=5/8×4/7=20/56=5/14.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-076",
+    "nivel": "dificil",
+    "banca": "FCC",
+    "orgao": "ALESP",
+    "ano": 2010,
+    "enunciado": "Quantos números inteiros de 3 algarismos distintos com dígitos 0,1,2,3,4?\n\n(FCC – ALESP – 2010)",
+    "alternativas": {
+      "A": "24",
+      "B": "36",
+      "C": "48",
+      "D": "60",
+      "E": "72"
+    },
+    "gabarito": "C",
+    "explicacao": "1° algarismo ≠ 0: 4 opções. 2°: 4 opções (exceto o 1°). 3°: 3 opções. Total: 4×4×3=48.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-077",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "STJ",
+    "ano": 2018,
+    "enunciado": "Um argumento é válido quando:\n\n(CESPE/CEBRASPE – STJ – 2018)",
+    "alternativas": {
+      "A": "As premissas são verdadeiras.",
+      "B": "A conclusão é verdadeira.",
+      "C": "É impossível que premissas V e conclusão F.",
+      "D": "Premissas e conclusão são todas V.",
+      "E": "A conclusão segue por indução."
+    },
+    "gabarito": "C",
+    "explicacao": "Validade lógica: impossível ter premissas V e conclusão F. Diz respeito à FORMA, não ao conteúdo. Argumento pode ser válido com premissas falsas.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-078",
+    "nivel": "dificil",
+    "banca": "FCC",
+    "orgao": "PGE-MT",
+    "ano": 2016,
+    "enunciado": "6 pessoas em 2 salas de 3. A e B ñ mesma sala. C e D na mesma sala. E com A. Quantas distribuições válidas?\n\n(FCC – PGE-MT – 2016)",
+    "alternativas": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8",
+      "E": "12"
+    },
+    "gabarito": "A",
+    "explicacao": "A+E na sala 1, B na sala 2 (A≠B). C e D juntos → na sala 2 com B (sala 1=A,E,F; sala 2=B,C,D). Ou A+E na sala 2, B na sala 1 → sala 1=B,C,D; sala 2=A,E,F. Apenas 2 distribuições.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-079",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRF-5ª Região",
+    "ano": 2017,
+    "enunciado": "200 candidatos: 120 aprovados em escrita, 80 em prática, 50 em ambas. Reprovados em ambas?\n\n(CESPE/CEBRASPE – TRF-5ª Região – 2017)",
+    "alternativas": {
+      "A": "40",
+      "B": "45",
+      "C": "50",
+      "D": "55",
+      "E": "60"
+    },
+    "gabarito": "C",
+    "explicacao": "|E∪P|=120+80-50=150. Reprovados em ambas: 200-150=50.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-080",
+    "nivel": "dificil",
+    "banca": "FGV",
+    "orgao": "TCE-RJ",
+    "ano": 2021,
+    "enunciado": "Réu mentiu→há provas→condenado. Réu não será condenado. Logo réu não mentiu. Esse argumento é:\n\n(FGV – TCE-RJ – 2021)",
+    "alternativas": {
+      "A": "Inválido — afirma o consequente.",
+      "B": "Válido — modus tollens encadeado.",
+      "C": "Inválido — nega o antecedente.",
+      "D": "Válido — afirma o antecedente.",
+      "E": "Inválido — premissas falsas."
+    },
+    "gabarito": "B",
+    "explicacao": "Transitiva: Mentiu→Condenado. ¬Condenado por modus tollens → ¬Mentiu. Argumento válido.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-081",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TCU",
+    "ano": 2022,
+    "enunciado": "¬A → B; B → C; ¬C. Pelo encadeamento lógico, conclui-se:\n\n(CESPE/CEBRASPE – TCU – 2022)",
+    "alternativas": {
+      "A": "A é verdadeiro.",
+      "B": "B é verdadeiro.",
+      "C": "A é falso.",
+      "D": "B é falso e A é falso.",
+      "E": "¬A ∧ ¬B é verdadeiro."
+    },
+    "gabarito": "A",
+    "explicacao": "¬C + cont. de B→C → ¬B. ¬B + cont. de ¬A→B → A. Portanto A é verdadeiro.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-082",
+    "nivel": "expert",
+    "banca": "FGV",
+    "orgao": "SEFAZ-AM",
+    "ano": 2022,
+    "enunciado": "P1: Todos os X são Y. P2: Todos os Y são Z. P3: Nenhum Z é W. C: Nenhum X é W. Esse argumento é:\n\n(FGV – SEFAZ-AM – 2022)",
+    "alternativas": {
+      "A": "Inválido pois premissas podem ser falsas.",
+      "B": "Válido e premissas são verdadeiras.",
+      "C": "Válido: conclusão decorre necessariamente.",
+      "D": "Inválido: conclusão não segue.",
+      "E": "Válido apenas se X=W."
+    },
+    "gabarito": "C",
+    "explicacao": "P1+P2 (transitividade): Todo X é Z. P3: Nenhum Z é W. Logo Nenhum X é W. Silogismo categórico válido (Barbara+Celarent).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-083",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "ANATEL",
+    "ano": 2014,
+    "enunciado": "Num torneio de xadrez, cada jogador enfrenta todos os outros exatamente uma vez. Se houve 45 partidas, quantos jogadores?\n\n(CESPE/CEBRASPE – ANATEL – 2014)",
+    "alternativas": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11",
+      "E": "12"
+    },
+    "gabarito": "C",
+    "explicacao": "C(n,2)=45 → n(n-1)/2=45 → n(n-1)=90 → n=10.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-084",
+    "nivel": "expert",
+    "banca": "FCC",
+    "orgao": "TRT-4ª Região",
+    "ano": 2015,
+    "enunciado": "Todo D é G. Algum G não é A. Nenhum A é D. Pedro é G e não é D. João é A. O que se afirma sobre Pedro?\n\n(FCC – TRT-4ª Região – 2015)",
+    "alternativas": {
+      "A": "Pedro é necessariamente A.",
+      "B": "Pedro é necessariamente D.",
+      "C": "Pedro pode ou não ser A.",
+      "D": "Pedro não pode ser A.",
+      "E": "Pedro é D e A simultaneamente."
+    },
+    "gabarito": "C",
+    "explicacao": "Pedro é G não-D. Não há regra que impeça G não-D de ser A. Algum G não é A mostra que existe G sem A, mas não exclui Pedro de ser A.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-085",
+    "nivel": "expert",
+    "banca": "VUNESP",
+    "orgao": "MPE-SP",
+    "ano": 2019,
+    "enunciado": "Bolas numeradas de 1 a 10. Probabilidade de o número ser primo ou ímpar?\n\n(VUNESP – MPE-SP – 2019)",
+    "alternativas": {
+      "A": "3/5",
+      "B": "7/10",
+      "C": "4/5",
+      "D": "1/2",
+      "E": "9/10"
+    },
+    "gabarito": "A",
+    "explicacao": "Primos={2,3,5,7}(4); Ímpares={1,3,5,7,9}(5); União={1,2,3,5,7,9}(6). P=6/10=3/5.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-086",
+    "nivel": "expert",
+    "banca": "FGV",
+    "orgao": "ISS-Niterói",
+    "ano": 2015,
+    "enunciado": "Qual o menor inteiro positivo N tal que N÷3 resto 2, N÷5 resto 3, N÷7 resto 2?\n\n(FGV – ISS-Niterói – 2015)",
+    "alternativas": {
+      "A": "23",
+      "B": "38",
+      "C": "53",
+      "D": "68",
+      "E": "83"
+    },
+    "gabarito": "A",
+    "explicacao": "Testando N=23: 23=3×7+2 ✓; 23=5×4+3 ✓; 23=7×3+2 ✓. É o menor.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-087",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "EMAP",
+    "ano": 2018,
+    "enunciado": "∀x[P(x)→Q(x)] e ∃x[P(x)∧¬R(x)]. Conclusão válida?\n\n(CESPE/CEBRASPE – EMAP – 2018)",
+    "alternativas": {
+      "A": "∀x[Q(x)→R(x)]",
+      "B": "∃x[Q(x)∧¬R(x)]",
+      "C": "∀x[¬P(x)]",
+      "D": "∃x[P(x)∧Q(x)∧¬R(x)]",
+      "E": "∀x[R(x)]"
+    },
+    "gabarito": "D",
+    "explicacao": "∃x: P(x)∧¬R(x) — existe a com P(a)=V, R(a)=F. ∀x[P(x)→Q(x)] com P(a)=V → Q(a)=V. Logo: P(a)∧Q(a)∧¬R(a), ou seja ∃x[P(x)∧Q(x)∧¬R(x)].",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-088",
+    "nivel": "expert",
+    "banca": "FCC",
+    "orgao": "Câmara dos Deputados",
+    "ano": 2014,
+    "enunciado": "Em quantas formas distintas 5 livros podem ser dispostos em uma prateleira?\n\n(FCC – Câmara dos Deputados – 2014)",
+    "alternativas": {
+      "A": "25",
+      "B": "60",
+      "C": "100",
+      "D": "120",
+      "E": "125"
+    },
+    "gabarito": "D",
+    "explicacao": "Permutação de 5 elementos: 5!=120.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-089",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "PREVIC",
+    "ano": 2011,
+    "enunciado": "Sequência: 2, 5, 10, 17, 26, 37, ___. Próximo número?\n\n(CESPE/CEBRASPE – PREVIC – 2011)",
+    "alternativas": {
+      "A": "48",
+      "B": "50",
+      "C": "52",
+      "D": "54",
+      "E": "56"
+    },
+    "gabarito": "B",
+    "explicacao": "Termos n²+1: 1²+1=2,...,6²+1=37, 7²+1=50.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-090",
+    "nivel": "expert",
+    "banca": "VUNESP",
+    "orgao": "PM-SP",
+    "ano": 2014,
+    "enunciado": "Argumento: Se chove→rua molha. A rua molhou. Logo, choveu. Esse argumento é:\n\n(VUNESP – PM-SP – 2014)",
+    "alternativas": {
+      "A": "Válido — modus ponens.",
+      "B": "Válido — modus tollens.",
+      "C": "Inválido — falácia da afirmação do consequente.",
+      "D": "Inválido — falácia da negação do antecedente.",
+      "E": "Válido — silogismo hipotético."
+    },
+    "gabarito": "C",
+    "explicacao": "Afirmar o consequente é falácia: P→Q, Q, logo P. A rua pode ter molhado por outras razões. Forma válida: modus ponens (P→Q, P→Q) ou modus tollens (P→Q, ¬Q→¬P).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-091",
+    "nivel": "expert",
+    "banca": "IBFC",
+    "orgao": "FHEMIG",
+    "ano": 2018,
+    "enunciado": "PA com 1° termo 3 e razão 4. Qual é o 20° termo?\n\n(IBFC – FHEMIG – 2018)",
+    "alternativas": {
+      "A": "75",
+      "B": "79",
+      "C": "83",
+      "D": "87",
+      "E": "91"
+    },
+    "gabarito": "B",
+    "explicacao": "aₙ=a₁+(n-1)r = 3+(20-1)×4 = 3+76 = 79.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-092",
+    "nivel": "expert",
+    "banca": "FCC",
+    "orgao": "TRF-3ª Região",
+    "ano": 2016,
+    "enunciado": "Três colegas apostam. X: Y vai perder. Y: X vai ganhar. Z: Eu vou perder. Apenas um está certo. Quem ganhou?\n\n(FCC – TRF-3ª Região – 2016)",
+    "alternativas": {
+      "A": "X",
+      "B": "Y",
+      "C": "Z",
+      "D": "X ou Y",
+      "E": "Não é possível determinar."
+    },
+    "gabarito": "C",
+    "explicacao": "Teste Z ganhou: X diz Y perde (V se Y perdeu). Y diz X ganha (F, Z ganhou). Z diz eu perco (F, Z ganhou). Apenas X está certo. ✓",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-093",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "MEC",
+    "ano": 2015,
+    "enunciado": "Quantos subconjuntos tem um conjunto com 5 elementos?\n\n(CESPE/CEBRASPE – MEC – 2015)",
+    "alternativas": {
+      "A": "10",
+      "B": "16",
+      "C": "25",
+      "D": "32",
+      "E": "64"
+    },
+    "gabarito": "D",
+    "explicacao": "Conjunto com n elementos tem 2ⁿ subconjuntos. 2⁵=32.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-094",
+    "nivel": "expert",
+    "banca": "FGV",
+    "orgao": "SUSEP",
+    "ano": 2010,
+    "enunciado": "Se A ⊂ B e B ⊂ C, qual é necessariamente verdadeiro?\n\n(FGV – SUSEP – 2010)",
+    "alternativas": {
+      "A": "A=C",
+      "B": "C ⊂ A",
+      "C": "A ⊂ C",
+      "D": "A ∩ C = ∅",
+      "E": "B=C"
+    },
+    "gabarito": "C",
+    "explicacao": "Transitividade da inclusão: A⊂B e B⊂C → A⊂C.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-095",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRE-SP",
+    "ano": 2021,
+    "enunciado": "6 cidades conectadas por estradas. Cada cidade tem exatamente 3 estradas. Quantas estradas existem?\n\n(CESPE/CEBRASPE – TRE-SP – 2021)",
+    "alternativas": {
+      "A": "6",
+      "B": "9",
+      "C": "12",
+      "D": "15",
+      "E": "18"
+    },
+    "gabarito": "B",
+    "explicacao": "Soma dos graus=6×3=18. Cada estrada conta por 2 vértices. Estradas=18/2=9.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-096",
+    "nivel": "expert",
+    "banca": "FCC",
+    "orgao": "MPE-AM",
+    "ano": 2022,
+    "enunciado": "4 semifinalistas. Qual a probabilidade de dois específicos se enfrentarem na semifinal?\n\n(FCC – MPE-AM – 2022)",
+    "alternativas": {
+      "A": "1/6",
+      "B": "1/4",
+      "C": "1/3",
+      "D": "1/2",
+      "E": "2/3"
+    },
+    "gabarito": "C",
+    "explicacao": "C(4,2)/2=3 formas de formar 2 pares. 1 delas inclui o par específico. P=1/3.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-097",
+    "nivel": "expert",
+    "banca": "FGV",
+    "orgao": "SEFAZ-GO",
+    "ano": 2018,
+    "enunciado": "P ∧ (P → Q) → Q é:\n\n(FGV – SEFAZ-GO – 2018)",
+    "alternativas": {
+      "A": "Uma contradição.",
+      "B": "Contingente.",
+      "C": "Uma tautologia.",
+      "D": "Verdadeira apenas quando Q=V.",
+      "E": "Equivalente a P ↔ Q."
+    },
+    "gabarito": "C",
+    "explicacao": "Formalização do modus ponens: [P ∧ (P→Q)] → Q. Tautologia clássica — nunca é falsa.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-098",
+    "nivel": "expert",
+    "banca": "IBFC",
+    "orgao": "SEAP-MG",
+    "ano": 2019,
+    "enunciado": "8 candidatos para 3 vagas. Quantas comissões de 3 membros distintas?\n\n(IBFC – SEAP-MG – 2019)",
+    "alternativas": {
+      "A": "24",
+      "B": "42",
+      "C": "56",
+      "D": "112",
+      "E": "336"
+    },
+    "gabarito": "C",
+    "explicacao": "C(8,3)=8!/(3!×5!)=(8×7×6)/6=56.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-099",
+    "nivel": "expert",
+    "banca": "VUNESP",
+    "orgao": "TJ-SP",
+    "ano": 2017,
+    "enunciado": "Todos que falam francês falam inglês. Nenhum que fala alemão fala francês. João fala alemão. Conclui-se:\n\n(VUNESP – TJ-SP – 2017)",
+    "alternativas": {
+      "A": "João fala inglês.",
+      "B": "João não fala inglês.",
+      "C": "João não fala francês.",
+      "D": "João fala francês.",
+      "E": "João fala inglês e francês."
+    },
+    "gabarito": "C",
+    "explicacao": "Nenhum alemão fala francês; João fala alemão → João não fala francês. Sobre inglês não se pode concluir nada (regra: francês→inglês, mas João não fala francês).",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-100",
+    "nivel": "expert",
+    "banca": "FCC",
+    "orgao": "TRF-5ª Região",
+    "ano": 2015,
+    "enunciado": "Se P ↔ Q é falsa e P é verdadeira, qual é o valor de Q?\n\n(FCC – TRF-5ª Região – 2015)",
+    "alternativas": {
+      "A": "Verdadeira.",
+      "B": "Falsa.",
+      "C": "Indeterminada.",
+      "D": "Verdadeira apenas se P → Q.",
+      "E": "Falsa apenas se ¬P."
+    },
+    "gabarito": "B",
+    "explicacao": "P↔Q é falsa quando P e Q têm valores diferentes. P=V e P↔Q=F → Q deve ser F.",
+    "area": "Raciocínio Lógico",
+    "tipo": "multipla_escolha"
+  }
+]

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import QuestaoGame from '@/components/questao/QuestaoGame'
 import ProximaQuestao from '@/components/questao/ProximaQuestao'
+import FeedbackButtons from '@/components/FeedbackButtons'
 
 export async function generateStaticParams() {
   return allQuestoes.map(q => ({ id: q.id }))
@@ -35,7 +36,8 @@ export default async function QuestaoPage({ params }: { params: Promise<{ id: st
 
       <QuestaoGame questao={questao} />
 
-      <div className="flex justify-center pt-2">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+        <FeedbackButtons id={questao.id} tipo="questao" />
         <ProximaQuestao currentId={questao.id} />
       </div>
     </div>

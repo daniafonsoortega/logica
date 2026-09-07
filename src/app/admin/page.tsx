@@ -7,7 +7,7 @@ import {
   RefreshCw, LogOut, CreditCard, Percent, UserCheck
 } from 'lucide-react'
 
-const ADMIN_EMAILS = ['app.usemia@gmail.com', 'daniafonsoortega@amazon.com']
+const ADMIN_EMAILS = ['app.usemia@gmail.com', 'mensagemparadani@gmail.com']
 
 interface Metrics {
   totalUsers: number; premiumUsers: number; conversionPct: number

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 
-const ADMIN_EMAILS = ['app.usemia@gmail.com', 'daniafonsoortega@amazon.com']
+const ADMIN_EMAILS = ['app.usemia@gmail.com', 'mensagemparadani@gmail.com']
 const supabaseAdmin = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!

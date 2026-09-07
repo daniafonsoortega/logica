@@ -34,11 +34,11 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 3 tem animal de estimação: Cachorro.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com profissão Médico.",
-      "A casa com profissão Professora é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A casa com cor da casa Azul fica à esquerda da casa com animal de estimação Cachorro.",
-      "A pessoa com profissão Engenheiro também tem animal de estimação Gato."
+      "A pessoa na posição 3 tem um cachorro.",
+      "A casa vermelha é vizinha imediata da casa do médico.",
+      "A casa da professora é vizinha imediata da casa com cachorro.",
+      "A casa azul fica à esquerda da casa com cachorro.",
+      "O engenheiro também tem um gato."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -97,11 +97,11 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 1 tem bebida favorita: Suco.",
-      "A casa com hobby Pintura fica à esquerda da casa com cor da casa Azul.",
-      "A última casa tem cor da casa: Verde.",
-      "A casa com hobby Leitura fica à esquerda da casa com cor da casa Verde.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com cor da casa Azul."
+      "A bebida favorita da pessoa na posição 1 é suco.",
+      "A pessoa que tem o hobby pintura mora à esquerda da casa azul.",
+      "A última casa é verde.",
+      "A pessoa com hobby leitura fica mora à esquerda da casa verde.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa azul."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -160,11 +160,11 @@
       }
     ],
     "pistas": [
-      "A pessoa com profissão Médico também tem meio de transporte Moto.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com profissão Engenheiro.",
-      "A pessoa na posição 1 tem hobby: Pintura.",
-      "A casa com hobby Leitura é vizinha imediata da casa com meio de transporte Bicicleta.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com hobby Leitura."
+      "O médico também tem meio de transporte moto.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa do engenheiro.",
+      "O hobby da pessoa na posição 1 é pintura.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com meio de transporte bicicleta.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa com hobby leitura."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -223,11 +223,11 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Peixe fica a exatamente 2 posição(ões) da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com esporte favorito Futebol.",
-      "A pessoa com esporte favorito Tênis também tem animal de estimação Gato.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com esporte favorito Natação."
+      "A casa com peixe fica a exatamente 2 posição(ões) da casa vermelha.",
+      "A casa verde é vizinha imediata da casa com esporte favorito futebol.",
+      "A pessoa com esporte favorito tênis também tem um gato.",
+      "A casa com gato é vizinha imediata da casa vermelha.",
+      "A casa com peixe fica à esquerda da casa com esporte favorito natação."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -286,11 +286,11 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Pintura fica à esquerda da casa com profissão Médico.",
-      "A casa com comida favorita Sushi fica a exatamente 2 posição(ões) da casa com profissão Engenheiro.",
-      "A casa com comida favorita Churrasco é vizinha imediata da casa com profissão Engenheiro.",
-      "A pessoa na posição 3 tem profissão: Engenheiro.",
-      "A casa com comida favorita Sushi é vizinha imediata da casa com hobby Música."
+      "A pessoa com hobby pintura fica à esquerda da casa do médico.",
+      "A pessoa cuja comida favorita é sushi fica a exatamente 2 posição(ões) da casa do engenheiro.",
+      "A pessoa cuja comida favorita é churrasco é vizinha imediata da casa do engenheiro.",
+      "A pessoa na posição 3 é engenheiro.",
+      "A pessoa cuja comida favorita é sushi é vizinha imediata da casa com hobby música."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -349,11 +349,11 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Verde é vizinha imediata da casa com profissão Professora.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com profissão Médico.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A pessoa com profissão Médico também tem animal de estimação Gato.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com cor da casa Azul."
+      "A casa verde é vizinha imediata da casa da professora.",
+      "A casa com cachorro fica à esquerda da casa do médico.",
+      "A casa do engenheiro é vizinha imediata da casa com cachorro.",
+      "O médico também tem um gato.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa azul."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -412,12 +412,12 @@
       }
     ],
     "pistas": [
-      "A casa com flor preferida Rosa fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com hobby Leitura fica à esquerda da casa com flor preferida Orquídea.",
-      "A casa com flor preferida Rosa é vizinha imediata da casa com hobby Pintura.",
-      "A pessoa com bebida favorita Água também tem hobby Pintura.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com hobby Pintura.",
-      "A pessoa na posição 3 tem flor preferida: Orquídea."
+      "A pessoa cuja flor preferida é rosa fica à esquerda da casa com bebida favorita suco.",
+      "A pessoa com hobby leitura fica à esquerda da casa com flor preferida orquídea.",
+      "A pessoa cuja flor preferida é rosa é vizinha imediata da casa com hobby pintura.",
+      "A pessoa com bebida favorita água também tem hobby pintura.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa com hobby pintura.",
+      "A flor preferida da pessoa na posição 3 é orquídea."
     ],
     "num_pistas": 6,
     "solucao": [
@@ -476,10 +476,10 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Futebol fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com meio de transporte Moto fica à esquerda da casa com profissão Médico.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com meio de transporte Carro."
+      "A pessoa com esporte favorito futebol fica à esquerda da casa do engenheiro.",
+      "A pessoa com meio de transporte moto fica à esquerda da casa do médico.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa do engenheiro.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com meio de transporte carro."
     ],
     "num_pistas": 4,
     "solucao": [
@@ -538,11 +538,11 @@
       }
     ],
     "pistas": [
-      "A casa com flor preferida Orquídea fica à esquerda da casa com hobby Pintura.",
-      "A pessoa na posição 3 tem hobby: Leitura.",
-      "A pessoa com meio de transporte Moto também tem hobby Música.",
-      "A casa com flor preferida Rosa é vizinha imediata da casa com hobby Leitura.",
-      "A pessoa com flor preferida Girassol também tem meio de transporte Bicicleta."
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa com hobby pintura.",
+      "O hobby da pessoa na posição 3 é leitura.",
+      "A pessoa com meio de transporte moto também tem hobby música.",
+      "A pessoa cuja flor preferida é rosa é vizinha imediata da casa com hobby leitura.",
+      "A pessoa com flor preferida girassol também tem meio de transporte bicicleta."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -601,11 +601,11 @@
       }
     ],
     "pistas": [
-      "A casa com nacionalidade Portuguesa fica a exatamente 2 posição(ões) da casa com animal de estimação Peixe.",
-      "A casa com cor da casa Azul fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com nacionalidade Brasileira.",
-      "A pessoa com cor da casa Azul também tem nacionalidade Portuguesa.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Vermelha."
+      "A pessoa com nacionalidade portuguesa fica a exatamente 2 posição(ões) da casa com peixe.",
+      "A casa azul fica à esquerda da casa com cachorro.",
+      "A casa azul é vizinha imediata da casa com nacionalidade brasileira.",
+      "Quem mora na casa azul também tem nacionalidade portuguesa.",
+      "A casa com peixe é vizinha imediata da casa vermelha."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -664,11 +664,11 @@
       }
     ],
     "pistas": [
-      "A casa com nacionalidade Brasileira fica à esquerda da casa com comida favorita Pizza.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com comida favorita Pizza.",
-      "A pessoa na posição 2 tem bebida favorita: Café.",
-      "A casa com comida favorita Churrasco fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com nacionalidade Portuguesa."
+      "A pessoa com nacionalidade brasileira fica à esquerda da casa com comida favorita pizza.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com comida favorita pizza.",
+      "A bebida favorita da pessoa na posição 2 é café.",
+      "A pessoa cuja comida favorita é churrasco fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa com nacionalidade portuguesa."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -727,10 +727,10 @@
       }
     ],
     "pistas": [
-      "A pessoa com hobby Leitura também tem bebida favorita Café.",
-      "A casa com bebida favorita Água fica a exatamente 2 posição(ões) da casa com flor preferida Girassol.",
-      "A casa com flor preferida Orquídea fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com bebida favorita Suco."
+      "A pessoa com hobby leitura também tem bebida favorita café.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 2 posição(ões) da casa com flor preferida girassol.",
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa com bebida favorita suco."
     ],
     "num_pistas": 4,
     "solucao": [
@@ -789,11 +789,11 @@
       }
     ],
     "pistas": [
-      "A pessoa com esporte favorito Tênis também tem bebida favorita Suco.",
-      "A pessoa com esporte favorito Natação também tem bebida favorita Café.",
-      "A casa com hobby Pintura é vizinha imediata da casa com esporte favorito Natação.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com hobby Música."
+      "A pessoa com esporte favorito tênis também tem bebida favorita suco.",
+      "A pessoa com esporte favorito natação também tem bebida favorita café.",
+      "A pessoa com hobby pintura é vizinha imediata da casa com esporte favorito natação.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com hobby música."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -852,11 +852,11 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Carro fica a exatamente 2 posição(ões) da casa com nacionalidade Argentina.",
-      "A casa com hobby Leitura é vizinha imediata da casa com nacionalidade Brasileira.",
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com nacionalidade Argentina.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com nacionalidade Argentina.",
-      "A primeira casa tem nacionalidade: Brasileira."
+      "A pessoa com meio de transporte carro fica a exatamente 2 posição(ões) da casa com nacionalidade argentina.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com nacionalidade brasileira.",
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com nacionalidade argentina.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa com nacionalidade argentina.",
+      "A primeira casa tem nacionalidade brasileira."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -915,11 +915,11 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Tênis é vizinha imediata da casa com hobby Leitura.",
-      "A casa com esporte favorito Tênis fica à esquerda da casa com profissão Médico.",
-      "A pessoa na posição 1 tem esporte favorito: Futebol.",
-      "A pessoa na posição 2 tem profissão: Professora.",
-      "A última casa tem hobby: Música."
+      "A pessoa com esporte favorito tênis é vizinha imediata da casa com hobby leitura.",
+      "A pessoa com esporte favorito tênis fica à esquerda da casa do médico.",
+      "O esporte favorito da pessoa na posição 1 é futebol.",
+      "A pessoa na posição 2 é professora.",
+      "O hobby de quem mora na última casa é música."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -978,10 +978,10 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 3 tem cor da casa: Azul.",
-      "A pessoa com profissão Engenheiro também tem animal de estimação Gato.",
-      "A casa com profissão Médico é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Vermelha."
+      "A pessoa na posição 3 mora na casa azul.",
+      "O engenheiro também tem um gato.",
+      "A casa do médico é vizinha imediata da casa verde.",
+      "A casa com peixe fica à esquerda da casa vermelha."
     ],
     "num_pistas": 4,
     "solucao": [
@@ -1040,11 +1040,11 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Suco é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com hobby Pintura é vizinha imediata da casa com cor da casa Azul.",
-      "A primeira casa tem hobby: Pintura.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com hobby Leitura.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com bebida favorita Água."
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa vermelha.",
+      "A pessoa com hobby pintura é vizinha imediata da casa azul.",
+      "O hobby de quem mora na primeira casa é pintura.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa com hobby leitura.",
+      "A casa vermelha fica à esquerda da casa com bebida favorita água."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1103,11 +1103,11 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Engenheiro é vizinha imediata da casa com meio de transporte Moto.",
-      "A última casa tem profissão: Médico.",
-      "A casa com meio de transporte Carro fica à esquerda da casa com hobby Música.",
-      "A pessoa com profissão Médico também tem meio de transporte Moto.",
-      "A pessoa com profissão Médico também tem hobby Pintura."
+      "A casa do engenheiro é vizinha imediata da casa com meio de transporte moto.",
+      "A pessoa na última casa é médico.",
+      "A pessoa com meio de transporte carro fica à esquerda da casa com hobby música.",
+      "O médico também tem meio de transporte moto.",
+      "O médico também tem hobby pintura."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1166,11 +1166,11 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com cor da casa Verde.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com esporte favorito Tênis fica à esquerda da casa com animal de estimação Gato.",
-      "A casa com esporte favorito Futebol é vizinha imediata da casa com cor da casa Verde.",
-      "A pessoa com esporte favorito Futebol também tem animal de estimação Peixe."
+      "A casa com cachorro fica à esquerda da casa verde.",
+      "A casa vermelha é vizinha imediata da casa com esporte favorito tênis.",
+      "A pessoa com esporte favorito tênis fica à esquerda da casa com gato.",
+      "A pessoa com esporte favorito futebol é vizinha imediata da casa verde.",
+      "A pessoa com esporte favorito futebol também tem um peixe."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1229,11 +1229,11 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Pintura fica à esquerda da casa com comida favorita Pizza.",
-      "A pessoa na posição 1 tem hobby: Música.",
-      "A casa com comida favorita Sushi é vizinha imediata da casa com profissão Professora.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com comida favorita Pizza.",
-      "A pessoa com profissão Professora também tem hobby Pintura."
+      "A pessoa com hobby pintura fica à esquerda da casa com comida favorita pizza.",
+      "O hobby da pessoa na posição 1 é música.",
+      "A pessoa cuja comida favorita é sushi é vizinha imediata da casa da professora.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa com comida favorita pizza.",
+      "A professora também tem hobby pintura."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1292,11 +1292,11 @@
       }
     ],
     "pistas": [
-      "A primeira casa tem cor da casa: Vermelha.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com profissão Engenheiro.",
-      "A última casa tem profissão: Engenheiro.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Azul.",
-      "A pessoa com profissão Médico também tem animal de estimação Cachorro."
+      "A primeira casa é vermelha.",
+      "A casa com peixe é vizinha imediata da casa do engenheiro.",
+      "A pessoa na última casa é engenheiro.",
+      "A casa com peixe fica à esquerda da casa azul.",
+      "O médico também tem um cachorro."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1355,11 +1355,11 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 3 tem hobby: Pintura.",
-      "A pessoa na posição 1 tem hobby: Leitura.",
-      "A pessoa na posição 1 tem bebida favorita: Suco.",
-      "A pessoa na posição 2 tem flor preferida: Girassol.",
-      "A casa com bebida favorita Café fica à esquerda da casa com flor preferida Orquídea."
+      "O hobby da pessoa na posição 3 é pintura.",
+      "O hobby da pessoa na posição 1 é leitura.",
+      "A bebida favorita da pessoa na posição 1 é suco.",
+      "A flor preferida da pessoa na posição 2 é girassol.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa com flor preferida orquídea."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1418,11 +1418,11 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Engenheiro fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com profissão Médico fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com meio de transporte Bicicleta fica à esquerda da casa com esporte favorito Futebol.",
-      "A pessoa na posição 2 tem profissão: Engenheiro.",
-      "A pessoa na posição 3 tem meio de transporte: Carro."
+      "A casa do engenheiro fica à esquerda da casa com esporte favorito natação.",
+      "A casa do médico fica à esquerda da casa com esporte favorito natação.",
+      "A pessoa com meio de transporte bicicleta fica à esquerda da casa com esporte favorito futebol.",
+      "A pessoa na posição 2 é engenheiro.",
+      "O meio de transporte da pessoa na posição 3 é carro."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1481,11 +1481,11 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com flor preferida Orquídea.",
-      "A casa com flor preferida Rosa fica à esquerda da casa com meio de transporte Carro.",
-      "A casa com meio de transporte Moto fica à esquerda da casa com hobby Música.",
-      "A casa com hobby Música é vizinha imediata da casa com meio de transporte Carro.",
-      "A casa com meio de transporte Carro é vizinha imediata da casa com hobby Leitura."
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com flor preferida orquídea.",
+      "A pessoa cuja flor preferida é rosa fica à esquerda da casa com meio de transporte carro.",
+      "A pessoa com meio de transporte moto fica à esquerda da casa com hobby música.",
+      "A pessoa com hobby música é vizinha imediata da casa com meio de transporte carro.",
+      "A pessoa com meio de transporte carro é vizinha imediata da casa com hobby leitura."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1544,11 +1544,11 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Vermelha fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com nacionalidade Brasileira fica à esquerda da casa com animal de estimação Peixe.",
-      "A casa com cor da casa Verde fica à esquerda da casa com nacionalidade Argentina.",
-      "A pessoa na posição 3 tem animal de estimação: Cachorro.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com nacionalidade Argentina."
+      "A casa vermelha fica à esquerda da casa com cachorro.",
+      "A pessoa com nacionalidade brasileira fica à esquerda da casa com peixe.",
+      "A casa verde fica à esquerda da casa com nacionalidade argentina.",
+      "A pessoa na posição 3 tem um cachorro.",
+      "A casa com cachorro é vizinha imediata da casa com nacionalidade argentina."
     ],
     "num_pistas": 5,
     "solucao": [
@@ -1610,14 +1610,14 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com profissão Engenheiro.",
-      "A pessoa na posição 1 tem cor da casa: Amarela.",
-      "A pessoa com cor da casa Azul também tem profissão Advogada.",
-      "A pessoa com cor da casa Amarela também tem animal de estimação Gato.",
-      "A casa com cor da casa Verde fica à esquerda da casa com profissão Professora.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com cor da casa Azul.",
-      "A casa com cor da casa Azul fica a exatamente 2 posição(ões) da casa com profissão Professora.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com animal de estimação Peixe."
+      "A casa com cachorro é vizinha imediata da casa do engenheiro.",
+      "A pessoa na posição 1 mora na casa amarela.",
+      "Quem mora na casa azul é advogada.",
+      "Quem mora na casa amarela também tem um gato.",
+      "A casa verde fica à esquerda da casa da professora.",
+      "A casa do engenheiro fica à esquerda da casa azul.",
+      "A casa azul fica a exatamente 2 posição(ões) da casa da professora.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com peixe."
     ],
     "num_pistas": 8,
     "solucao": [
@@ -1685,14 +1685,14 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Vermelha fica à esquerda da casa com hobby Música.",
-      "A pessoa na posição 3 tem hobby: Pintura.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com cor da casa Azul.",
-      "A pessoa com hobby Leitura também tem bebida favorita Chá.",
-      "A pessoa na posição 2 tem cor da casa: Azul.",
-      "A casa com hobby Música é vizinha imediata da casa com bebida favorita Água.",
-      "A pessoa na posição 1 tem cor da casa: Vermelha.",
-      "A casa com bebida favorita Água fica a exatamente 2 posição(ões) da casa com cor da casa Verde."
+      "A casa vermelha fica à esquerda da casa com hobby música.",
+      "O hobby da pessoa na posição 3 é pintura.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa azul.",
+      "A pessoa com hobby leitura também tem bebida favorita chá.",
+      "A pessoa na posição 2 mora na casa azul.",
+      "A pessoa com hobby música é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa na posição 1 mora na casa vermelha.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 2 posição(ões) da casa verde."
     ],
     "num_pistas": 8,
     "solucao": [
@@ -1760,14 +1760,14 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 2 tem profissão: Médico.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com meio de transporte Carro fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com meio de transporte Bicicleta fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com profissão Advogada fica à esquerda da casa com meio de transporte Bicicleta.",
-      "A pessoa na posição 2 tem hobby: Jardinagem.",
-      "A pessoa com meio de transporte Moto também tem hobby Música.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com hobby Leitura."
+      "A pessoa na posição 2 é médico.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa do engenheiro.",
+      "A pessoa com meio de transporte carro fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A pessoa com meio de transporte bicicleta fica à esquerda da casa do engenheiro.",
+      "A casa da advogada fica à esquerda da casa com meio de transporte bicicleta.",
+      "O hobby da pessoa na posição 2 é jardinagem.",
+      "A pessoa com meio de transporte moto também tem hobby música.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa com hobby leitura."
     ],
     "num_pistas": 8,
     "solucao": [
@@ -1835,14 +1835,14 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Verde é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com esporte favorito Tênis fica à esquerda da casa com animal de estimação Gato.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com animal de estimação Coelho.",
-      "A primeira casa tem esporte favorito: Futebol.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com esporte favorito Vôlei."
+      "A casa verde é vizinha imediata da casa com esporte favorito tênis.",
+      "A casa com peixe é vizinha imediata da casa verde.",
+      "A pessoa com esporte favorito tênis fica à esquerda da casa com gato.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa com coelho.",
+      "O esporte favorito de quem mora na primeira casa é futebol.",
+      "A casa verde é vizinha imediata da casa com gato.",
+      "A casa com cachorro é vizinha imediata da casa vermelha.",
+      "A casa amarela fica à esquerda da casa com esporte favorito vôlei."
     ],
     "num_pistas": 8,
     "solucao": [
@@ -1910,13 +1910,13 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Leitura é vizinha imediata da casa com comida favorita Sushi.",
-      "A pessoa com profissão Professora também tem comida favorita Sushi.",
-      "A casa com hobby Jardinagem fica a exatamente 3 posição(ões) da casa com profissão Professora.",
-      "A casa com comida favorita Churrasco é vizinha imediata da casa com profissão Advogada.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com comida favorita Pizza.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com hobby Música fica à esquerda da casa com profissão Médico."
+      "A pessoa com hobby leitura é vizinha imediata da casa com comida favorita sushi.",
+      "A professora também tem comida favorita sushi.",
+      "A pessoa com hobby jardinagem fica a exatamente 3 posição(ões) da casa da professora.",
+      "A pessoa cuja comida favorita é churrasco é vizinha imediata da casa da advogada.",
+      "A casa do engenheiro fica à esquerda da casa com comida favorita pizza.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa do engenheiro.",
+      "A pessoa com hobby música fica à esquerda da casa do médico."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -1984,13 +1984,13 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Amarela é vizinha imediata da casa com profissão Advogada.",
-      "A pessoa com profissão Médico também tem animal de estimação Coelho.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Azul.",
-      "A casa com profissão Médico é vizinha imediata da casa com animal de estimação Peixe.",
-      "A casa com profissão Médico fica a exatamente 3 posição(ões) da casa com cor da casa Azul.",
-      "A casa com profissão Professora fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com animal de estimação Cachorro."
+      "A casa amarela é vizinha imediata da casa da advogada.",
+      "O médico também tem um coelho.",
+      "A casa com peixe fica à esquerda da casa azul.",
+      "A casa do médico é vizinha imediata da casa com peixe.",
+      "A casa do médico fica a exatamente 3 posição(ões) da casa azul.",
+      "A casa da professora fica à esquerda da casa amarela.",
+      "A casa verde é vizinha imediata da casa com cachorro."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2058,12 +2058,12 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Suco fica à esquerda da casa com hobby Música.",
-      "A casa com flor preferida Rosa fica à esquerda da casa com hobby Pintura.",
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com flor preferida Rosa.",
-      "A primeira casa tem flor preferida: Tulipa.",
-      "A casa com flor preferida Rosa é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com bebida favorita Água fica a exatamente 3 posição(ões) da casa com flor preferida Orquídea."
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com hobby música.",
+      "A pessoa cuja flor preferida é rosa fica à esquerda da casa com hobby pintura.",
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com flor preferida rosa.",
+      "A primeira casa tem flor preferida tulipa.",
+      "A pessoa cuja flor preferida é rosa é vizinha imediata da casa com bebida favorita café.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 3 posição(ões) da casa com flor preferida orquídea."
     ],
     "num_pistas": 6,
     "solucao": [
@@ -2131,13 +2131,13 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Futebol fica a exatamente 3 posição(ões) da casa com meio de transporte Ônibus.",
-      "A casa com meio de transporte Carro fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com esporte favorito Vôlei.",
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 2 posição(ões) da casa com profissão Advogada.",
-      "A casa com meio de transporte Moto fica a exatamente 2 posição(ões) da casa com esporte favorito Natação.",
-      "A casa com profissão Médico fica a exatamente 3 posição(ões) da casa com esporte favorito Natação."
+      "A pessoa com esporte favorito futebol fica a exatamente 3 posição(ões) da casa com meio de transporte ônibus.",
+      "A pessoa com meio de transporte carro fica à esquerda da casa com esporte favorito natação.",
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com esporte favorito vôlei.",
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa do engenheiro.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 2 posição(ões) da casa da advogada.",
+      "A pessoa com meio de transporte moto fica a exatamente 2 posição(ões) da casa com esporte favorito natação.",
+      "A casa do médico fica a exatamente 3 posição(ões) da casa com esporte favorito natação."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2205,13 +2205,13 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com meio de transporte Bicicleta.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com flor preferida Tulipa.",
-      "A pessoa com flor preferida Rosa também tem meio de transporte Bicicleta.",
-      "A casa com flor preferida Orquídea fica a exatamente 3 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com flor preferida Orquídea fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com meio de transporte Carro fica a exatamente 2 posição(ões) da casa com flor preferida Tulipa.",
-      "A pessoa na posição 4 tem meio de transporte: Moto."
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com meio de transporte bicicleta.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa com flor preferida tulipa.",
+      "A pessoa com flor preferida rosa também tem meio de transporte bicicleta.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 3 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa com hobby jardinagem.",
+      "A pessoa com meio de transporte carro fica a exatamente 2 posição(ões) da casa com flor preferida tulipa.",
+      "O meio de transporte da pessoa na posição 4 é moto."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2279,13 +2279,13 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com animal de estimação Peixe.",
-      "A pessoa com nacionalidade Argentina também tem animal de estimação Coelho.",
-      "A pessoa com cor da casa Azul também tem animal de estimação Gato.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com animal de estimação Peixe.",
-      "A primeira casa tem cor da casa: Vermelha.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com nacionalidade Brasileira.",
-      "A última casa tem nacionalidade: Italiana."
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com peixe.",
+      "A pessoa com nacionalidade argentina também tem um coelho.",
+      "Quem mora na casa azul também tem um gato.",
+      "A casa amarela fica à esquerda da casa com peixe.",
+      "A primeira casa é vermelha.",
+      "A casa vermelha é vizinha imediata da casa com nacionalidade brasileira.",
+      "A última casa tem nacionalidade italiana."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2353,13 +2353,13 @@
       }
     ],
     "pistas": [
-      "A casa com nacionalidade Brasileira fica à esquerda da casa com bebida favorita Café.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com nacionalidade Italiana.",
-      "A pessoa na posição 2 tem comida favorita: Pizza.",
-      "A casa com nacionalidade Argentina fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Café fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A casa com bebida favorita Chá fica a exatamente 3 posição(ões) da casa com comida favorita Sushi.",
-      "A casa com comida favorita Churrasco é vizinha imediata da casa com bebida favorita Suco."
+      "A pessoa com nacionalidade brasileira fica à esquerda da casa com bebida favorita café.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com nacionalidade italiana.",
+      "A comida favorita da pessoa na posição 2 é pizza.",
+      "A pessoa com nacionalidade argentina fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa com nacionalidade portuguesa.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 3 posição(ões) da casa com comida favorita sushi.",
+      "A pessoa cuja comida favorita é churrasco é vizinha imediata da casa com bebida favorita suco."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2427,12 +2427,12 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Chá fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A pessoa com hobby Leitura também tem flor preferida Girassol.",
-      "A casa com flor preferida Orquídea fica a exatamente 2 posição(ões) da casa com bebida favorita Água.",
-      "A casa com flor preferida Tulipa é vizinha imediata da casa com hobby Música.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com flor preferida Tulipa.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com bebida favorita Café."
+      "A pessoa cuja bebida favorita é chá fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A pessoa com hobby leitura também tem flor preferida girassol.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 2 posição(ões) da casa com bebida favorita água.",
+      "A pessoa cuja flor preferida é tulipa é vizinha imediata da casa com hobby música.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com flor preferida tulipa.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa com bebida favorita café."
     ],
     "num_pistas": 6,
     "solucao": [
@@ -2500,15 +2500,15 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Futebol fica à esquerda da casa com bebida favorita Água.",
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com bebida favorita Água.",
-      "A pessoa com hobby Música também tem bebida favorita Água.",
-      "A pessoa na posição 3 tem bebida favorita: Chá.",
-      "A casa com esporte favorito Vôlei fica à esquerda da casa com bebida favorita Água.",
-      "A casa com esporte favorito Futebol é vizinha imediata da casa com hobby Pintura.",
-      "A primeira casa tem hobby: Jardinagem.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Leitura é vizinha imediata da casa com bebida favorita Suco."
+      "A pessoa com esporte favorito futebol fica à esquerda da casa com bebida favorita água.",
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com bebida favorita água.",
+      "A pessoa com hobby música também tem bebida favorita água.",
+      "A bebida favorita da pessoa na posição 3 é chá.",
+      "A pessoa com esporte favorito vôlei fica à esquerda da casa com bebida favorita água.",
+      "A pessoa com esporte favorito futebol é vizinha imediata da casa com hobby pintura.",
+      "O hobby de quem mora na primeira casa é jardinagem.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com bebida favorita suco."
     ],
     "num_pistas": 9,
     "solucao": [
@@ -2576,14 +2576,14 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com nacionalidade Italiana.",
-      "A pessoa com nacionalidade Argentina também tem hobby Jardinagem.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com hobby Jardinagem.",
-      "A primeira casa tem hobby: Leitura.",
-      "A pessoa na posição 2 tem hobby: Pintura.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com nacionalidade Brasileira.",
-      "A casa com hobby Música é vizinha imediata da casa com meio de transporte Ônibus.",
-      "A casa com nacionalidade Portuguesa é vizinha imediata da casa com meio de transporte Moto."
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com nacionalidade italiana.",
+      "A pessoa com nacionalidade argentina também tem hobby jardinagem.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com hobby jardinagem.",
+      "O hobby de quem mora na primeira casa é leitura.",
+      "O hobby da pessoa na posição 2 é pintura.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com nacionalidade brasileira.",
+      "A pessoa com hobby música é vizinha imediata da casa com meio de transporte ônibus.",
+      "A pessoa com nacionalidade portuguesa é vizinha imediata da casa com meio de transporte moto."
     ],
     "num_pistas": 8,
     "solucao": [
@@ -2651,13 +2651,13 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Leitura é vizinha imediata da casa com profissão Médico.",
-      "A casa com esporte favorito Vôlei fica à esquerda da casa com hobby Leitura.",
-      "A pessoa com esporte favorito Tênis também tem hobby Música.",
-      "A casa com esporte favorito Futebol fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com esporte favorito Vôlei.",
-      "A casa com hobby Pintura é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com profissão Professora."
+      "A pessoa com hobby leitura é vizinha imediata da casa do médico.",
+      "A pessoa com esporte favorito vôlei fica à esquerda da casa com hobby leitura.",
+      "A pessoa com esporte favorito tênis também tem hobby música.",
+      "A pessoa com esporte favorito futebol fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa com esporte favorito vôlei.",
+      "A pessoa com hobby pintura é vizinha imediata da casa do engenheiro.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa da professora."
     ],
     "num_pistas": 7,
     "solucao": [
@@ -2735,16 +2735,16 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com cor da casa Vermelha fica a exatamente 2 posição(ões) da casa com profissão Médico.",
-      "A pessoa com profissão Advogada também tem bebida favorita Água.",
-      "A casa com animal de estimação Coelho fica a exatamente 2 posição(ões) da casa com profissão Professora.",
-      "A casa com cor da casa Azul fica a exatamente 3 posição(ões) da casa com bebida favorita Café.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com profissão Advogada.",
-      "A casa com profissão Advogada é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com profissão Advogada.",
-      "A casa com cor da casa Azul fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com profissão Professora é vizinha imediata da casa com animal de estimação Gato."
+      "A casa com peixe é vizinha imediata da casa azul.",
+      "A casa vermelha fica a exatamente 2 posição(ões) da casa do médico.",
+      "A advogada também tem bebida favorita água.",
+      "A casa com coelho fica a exatamente 2 posição(ões) da casa da professora.",
+      "A casa azul fica a exatamente 3 posição(ões) da casa com bebida favorita café.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa da advogada.",
+      "A casa da advogada é vizinha imediata da casa com coelho.",
+      "A casa verde é vizinha imediata da casa da advogada.",
+      "A casa azul fica à esquerda da casa com bebida favorita chá.",
+      "A casa da professora é vizinha imediata da casa com gato."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -2826,17 +2826,17 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Coelho fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A última casa tem cor da casa: Verde.",
-      "A casa com hobby Música fica à esquerda da casa com animal de estimação Coelho.",
-      "A casa com animal de estimação Coelho fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com bebida favorita Água fica a exatamente 2 posição(ões) da casa com hobby Pintura.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com animal de estimação Peixe.",
-      "A pessoa com hobby Música também tem bebida favorita Água.",
-      "A casa com bebida favorita Água fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com cor da casa Azul fica à esquerda da casa com bebida favorita Suco.",
-      "A pessoa com hobby Pintura também tem animal de estimação Gato.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com animal de estimação Cachorro."
+      "A casa com coelho fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A última casa é verde.",
+      "A pessoa com hobby música fica à esquerda da casa com coelho.",
+      "A casa com coelho fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 2 posição(ões) da casa com hobby pintura.",
+      "A casa azul é vizinha imediata da casa com peixe.",
+      "A pessoa com hobby música também tem bebida favorita água.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa amarela.",
+      "A casa azul fica à esquerda da casa com bebida favorita suco.",
+      "A pessoa com hobby pintura também tem um gato.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com cachorro."
     ],
     "num_pistas": 11,
     "solucao": [
@@ -2918,15 +2918,15 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Moto fica à esquerda da casa com profissão Professora.",
-      "A pessoa com meio de transporte Ônibus também tem cor da casa Amarela.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com cor da casa Verde fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com hobby Música fica a exatamente 3 posição(ões) da casa com meio de transporte Carro.",
-      "A primeira casa tem meio de transporte: Moto.",
-      "A pessoa com meio de transporte Ônibus também tem hobby Leitura.",
-      "A pessoa com profissão Médico também tem meio de transporte Ônibus.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com hobby Pintura."
+      "A pessoa com meio de transporte moto fica à esquerda da casa da professora.",
+      "A pessoa com meio de transporte ônibus também tem amarela.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa do engenheiro.",
+      "A casa verde fica à esquerda da casa com hobby jardinagem.",
+      "A pessoa com hobby música fica a exatamente 3 posição(ões) da casa com meio de transporte carro.",
+      "O meio de transporte de quem mora na primeira casa é moto.",
+      "A pessoa com meio de transporte ônibus também tem hobby leitura.",
+      "O médico também tem meio de transporte ônibus.",
+      "A casa vermelha é vizinha imediata da casa com hobby pintura."
     ],
     "num_pistas": 9,
     "solucao": [
@@ -3008,16 +3008,16 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Tênis é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com bebida favorita Suco fica a exatamente 3 posição(ões) da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com esporte favorito Vôlei.",
-      "A pessoa com animal de estimação Coelho também tem bebida favorita Água.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com esporte favorito Tênis.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com cor da casa Azul fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com bebida favorita Suco fica a exatamente 3 posição(ões) da casa com cor da casa Verde."
+      "A pessoa com esporte favorito tênis é vizinha imediata da casa vermelha.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 3 posição(ões) da casa com gato.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com esporte favorito vôlei.",
+      "A pessoa com coelho também tem bebida favorita água.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com esporte favorito tênis.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com gato.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com cachorro.",
+      "A casa verde é vizinha imediata da casa com esporte favorito tênis.",
+      "A casa azul fica à esquerda da casa com esporte favorito natação.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 3 posição(ões) da casa verde."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3099,17 +3099,17 @@
       }
     ],
     "pistas": [
-      "A pessoa com comida favorita Sushi também tem animal de estimação Peixe.",
-      "A casa com profissão Professora fica à esquerda da casa com hobby Pintura.",
-      "A pessoa com profissão Engenheiro também tem comida favorita Salada.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com profissão Advogada.",
-      "A casa com profissão Professora fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com comida favorita Churrasco.",
-      "A pessoa na posição 2 tem hobby: Pintura.",
-      "A casa com profissão Médico fica à esquerda da casa com animal de estimação Peixe.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com hobby Música.",
-      "A casa com animal de estimação Coelho fica à esquerda da casa com hobby Música.",
-      "A casa com animal de estimação Coelho é vizinha imediata da casa com comida favorita Salada."
+      "A pessoa com comida favorita sushi também tem um peixe.",
+      "A casa da professora fica à esquerda da casa com hobby pintura.",
+      "O engenheiro também tem comida favorita salada.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa da advogada.",
+      "A casa da professora fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A casa com cachorro fica à esquerda da casa com comida favorita churrasco.",
+      "O hobby da pessoa na posição 2 é pintura.",
+      "A casa do médico fica à esquerda da casa com peixe.",
+      "A casa do engenheiro é vizinha imediata da casa com hobby música.",
+      "A casa com coelho fica à esquerda da casa com hobby música.",
+      "A casa com coelho é vizinha imediata da casa com comida favorita salada."
     ],
     "num_pistas": 11,
     "solucao": [
@@ -3191,16 +3191,16 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Médico é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com hobby Leitura fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com profissão Médico fica a exatamente 3 posição(ões) da casa com animal de estimação Peixe.",
-      "A casa com profissão Médico fica a exatamente 2 posição(ões) da casa com animal de estimação Gato.",
-      "A casa com hobby Pintura é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com hobby Jardinagem.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com hobby Pintura.",
-      "A casa com animal de estimação Coelho fica a exatamente 2 posição(ões) da casa com profissão Professora."
+      "A casa do médico é vizinha imediata da casa amarela.",
+      "A pessoa com hobby leitura fica à esquerda da casa do engenheiro.",
+      "A casa do médico fica a exatamente 3 posição(ões) da casa com peixe.",
+      "A casa do médico fica a exatamente 2 posição(ões) da casa com gato.",
+      "A pessoa com hobby pintura é vizinha imediata da casa azul.",
+      "A casa vermelha é vizinha imediata da casa do engenheiro.",
+      "A casa amarela fica à esquerda da casa do engenheiro.",
+      "A casa com cachorro é vizinha imediata da casa com hobby jardinagem.",
+      "A casa com gato fica à esquerda da casa com hobby pintura.",
+      "A casa com coelho fica a exatamente 2 posição(ões) da casa da professora."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3282,17 +3282,17 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Vermelha fica à esquerda da casa com flor preferida Orquídea.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Água fica à esquerda da casa com cor da casa Verde.",
-      "A pessoa na posição 2 tem flor preferida: Rosa.",
-      "A casa com bebida favorita Suco fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com bebida favorita Chá fica a exatamente 3 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com flor preferida Girassol é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com hobby Música.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com cor da casa Vermelha.",
-      "A pessoa na posição 3 tem hobby: Música.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com hobby Leitura."
+      "A casa vermelha fica à esquerda da casa com flor preferida orquídea.",
+      "A casa amarela fica à esquerda da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa verde.",
+      "A flor preferida da pessoa na posição 2 é rosa.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 2 posição(ões) da casa verde.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 3 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa cuja flor preferida é girassol é vizinha imediata da casa verde.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com hobby música.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa vermelha.",
+      "O hobby da pessoa na posição 3 é música.",
+      "A casa vermelha é vizinha imediata da casa com hobby leitura."
     ],
     "num_pistas": 11,
     "solucao": [
@@ -3374,16 +3374,16 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Natação fica a exatamente 2 posição(ões) da casa com meio de transporte Carro.",
-      "A pessoa com profissão Professora também tem meio de transporte Moto.",
-      "A pessoa com profissão Advogada também tem cor da casa Azul.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com profissão Advogada.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com cor da casa Verde fica a exatamente 2 posição(ões) da casa com profissão Engenheiro.",
-      "A pessoa com profissão Engenheiro também tem esporte favorito Vôlei.",
-      "A casa com meio de transporte Bicicleta fica à esquerda da casa com profissão Professora.",
-      "A última casa tem profissão: Engenheiro.",
-      "A casa com meio de transporte Carro é vizinha imediata da casa com esporte favorito Tênis."
+      "A pessoa com esporte favorito natação fica a exatamente 2 posição(ões) da casa com meio de transporte carro.",
+      "A professora também tem meio de transporte moto.",
+      "A advogada também tem azul.",
+      "A casa amarela é vizinha imediata da casa da advogada.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa verde.",
+      "A casa verde fica a exatamente 2 posição(ões) da casa do engenheiro.",
+      "O engenheiro também tem esporte favorito vôlei.",
+      "A pessoa com meio de transporte bicicleta fica à esquerda da casa da professora.",
+      "A pessoa na última casa é engenheiro.",
+      "A pessoa com meio de transporte carro é vizinha imediata da casa com esporte favorito tênis."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3465,16 +3465,16 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Café fica à esquerda da casa com hobby Pintura.",
-      "A casa com hobby Pintura fica à esquerda da casa com flor preferida Girassol.",
-      "A pessoa na posição 2 tem flor preferida: Tulipa.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com meio de transporte Ônibus.",
-      "A casa com bebida favorita Água fica a exatamente 3 posição(ões) da casa com meio de transporte Moto.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com hobby Leitura é vizinha imediata da casa com flor preferida Rosa.",
-      "A casa com flor preferida Rosa fica à esquerda da casa com hobby Pintura.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com bebida favorita Chá.",
-      "A pessoa com meio de transporte Moto também tem bebida favorita Chá."
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa com hobby pintura.",
+      "A pessoa com hobby pintura fica à esquerda da casa com flor preferida girassol.",
+      "A flor preferida da pessoa na posição 2 é tulipa.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com meio de transporte ônibus.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 3 posição(ões) da casa com meio de transporte moto.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com flor preferida rosa.",
+      "A pessoa cuja flor preferida é rosa fica à esquerda da casa com hobby pintura.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa com meio de transporte moto também tem bebida favorita chá."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3556,16 +3556,16 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Chá é vizinha imediata da casa com cor da casa Vermelha.",
-      "A pessoa com cor da casa Verde também tem bebida favorita Café.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com bebida favorita Suco.",
-      "A casa com cor da casa Azul fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com cor da casa Azul fica à esquerda da casa com nacionalidade Brasileira.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com nacionalidade Portuguesa.",
-      "A casa com nacionalidade Argentina é vizinha imediata da casa com bebida favorita Água."
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa vermelha.",
+      "Quem mora na casa verde também tem bebida favorita café.",
+      "A casa com peixe fica à esquerda da casa amarela.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa com bebida favorita suco.",
+      "A casa com cachorro é vizinha imediata da casa verde.",
+      "A casa com gato é vizinha imediata da casa com bebida favorita suco.",
+      "A casa azul fica à esquerda da casa com bebida favorita suco.",
+      "A casa azul fica à esquerda da casa com nacionalidade brasileira.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com nacionalidade portuguesa.",
+      "A pessoa com nacionalidade argentina é vizinha imediata da casa com bebida favorita água."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3647,16 +3647,16 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Música fica à esquerda da casa com comida favorita Churrasco.",
-      "A casa com nacionalidade Brasileira fica à esquerda da casa com bebida favorita Água.",
-      "A pessoa com bebida favorita Café também tem nacionalidade Argentina.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com nacionalidade Portuguesa.",
-      "A casa com comida favorita Churrasco fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com nacionalidade Argentina.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com comida favorita Pizza fica a exatamente 2 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com comida favorita Salada fica a exatamente 2 posição(ões) da casa com hobby Leitura."
+      "A pessoa com hobby música fica à esquerda da casa com comida favorita churrasco.",
+      "A pessoa com nacionalidade brasileira fica à esquerda da casa com bebida favorita água.",
+      "A pessoa com bebida favorita café também tem nacionalidade argentina.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa com nacionalidade portuguesa.",
+      "A pessoa cuja comida favorita é churrasco fica à esquerda da casa com hobby jardinagem.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa com nacionalidade argentina.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa cuja comida favorita é pizza fica a exatamente 2 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com bebida favorita café.",
+      "A pessoa cuja comida favorita é salada fica a exatamente 2 posição(ões) da casa com hobby leitura."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3738,16 +3738,16 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 3 tem profissão: Professora.",
-      "A casa com profissão Advogada fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com hobby Leitura é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com flor preferida Orquídea fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A pessoa na posição 2 tem flor preferida: Rosa.",
-      "A casa com bebida favorita Café fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com hobby Pintura é vizinha imediata da casa com profissão Médico.",
-      "A casa com flor preferida Orquídea fica à esquerda da casa com hobby Leitura.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com flor preferida Girassol.",
-      "A casa com hobby Leitura fica à esquerda da casa com bebida favorita Água."
+      "A pessoa na posição 3 é professora.",
+      "A casa da advogada fica à esquerda da casa com bebida favorita suco.",
+      "A pessoa com hobby leitura é vizinha imediata da casa do engenheiro.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A flor preferida da pessoa na posição 2 é rosa.",
+      "A pessoa cuja bebida favorita é café fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A pessoa com hobby pintura é vizinha imediata da casa do médico.",
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa com hobby leitura.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com flor preferida girassol.",
+      "A pessoa com hobby leitura fica à esquerda da casa com bebida favorita água."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -3829,15 +3829,15 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Futebol é vizinha imediata da casa com bebida favorita Suco.",
-      "A pessoa com hobby Jardinagem também tem bebida favorita Café.",
-      "A casa com hobby Pintura é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com hobby Leitura é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com cor da casa Azul fica à esquerda da casa com hobby Música.",
-      "A casa com hobby Música fica à esquerda da casa com cor da casa Verde.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com esporte favorito Tênis.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com hobby Música.",
-      "A casa com esporte favorito Vôlei fica a exatamente 3 posição(ões) da casa com bebida favorita Água."
+      "A pessoa com esporte favorito futebol é vizinha imediata da casa com bebida favorita suco.",
+      "A pessoa com hobby jardinagem também tem bebida favorita café.",
+      "A pessoa com hobby pintura é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa com hobby leitura é vizinha imediata da casa amarela.",
+      "A casa azul fica à esquerda da casa com hobby música.",
+      "A pessoa com hobby música fica à esquerda da casa verde.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com esporte favorito tênis.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com hobby música.",
+      "A pessoa com esporte favorito vôlei fica a exatamente 3 posição(ões) da casa com bebida favorita água."
     ],
     "num_pistas": 9,
     "solucao": [
@@ -3919,17 +3919,17 @@
       }
     ],
     "pistas": [
-      "A pessoa com nacionalidade Italiana também tem comida favorita Salada.",
-      "A casa com comida favorita Churrasco fica à esquerda da casa com hobby Pintura.",
-      "A casa com hobby Música é vizinha imediata da casa com meio de transporte Carro.",
-      "A casa com meio de transporte Ônibus fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A casa com comida favorita Salada fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A primeira casa tem nacionalidade: Argentina.",
-      "A casa com hobby Leitura é vizinha imediata da casa com meio de transporte Bicicleta.",
-      "A pessoa na posição 4 tem comida favorita: Pizza.",
-      "A pessoa na posição 3 tem meio de transporte: Bicicleta.",
-      "A casa com hobby Pintura fica à esquerda da casa com nacionalidade Brasileira.",
-      "A casa com meio de transporte Ônibus fica a exatamente 3 posição(ões) da casa com hobby Jardinagem."
+      "A pessoa com nacionalidade italiana também tem comida favorita salada.",
+      "A pessoa cuja comida favorita é churrasco fica à esquerda da casa com hobby pintura.",
+      "A pessoa com hobby música é vizinha imediata da casa com meio de transporte carro.",
+      "A pessoa com meio de transporte ônibus fica à esquerda da casa com nacionalidade portuguesa.",
+      "A pessoa cuja comida favorita é salada fica à esquerda da casa com nacionalidade portuguesa.",
+      "A primeira casa tem nacionalidade argentina.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com meio de transporte bicicleta.",
+      "A comida favorita da pessoa na posição 4 é pizza.",
+      "O meio de transporte da pessoa na posição 3 é bicicleta.",
+      "A pessoa com hobby pintura fica à esquerda da casa com nacionalidade brasileira.",
+      "A pessoa com meio de transporte ônibus fica a exatamente 3 posição(ões) da casa com hobby jardinagem."
     ],
     "num_pistas": 11,
     "solucao": [
@@ -4011,16 +4011,16 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Professora fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com hobby Música fica à esquerda da casa com profissão Advogada.",
-      "A pessoa na posição 4 tem esporte favorito: Vôlei.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com hobby Leitura é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com esporte favorito Vôlei.",
-      "A pessoa na posição 4 tem profissão: Advogada.",
-      "A casa com hobby Leitura fica à esquerda da casa com esporte favorito Tênis."
+      "A casa da professora fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com hobby música fica à esquerda da casa da advogada.",
+      "O esporte favorito da pessoa na posição 4 é vôlei.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com esporte favorito natação.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com bebida favorita café.",
+      "A casa do engenheiro fica à esquerda da casa com hobby jardinagem.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa com esporte favorito vôlei.",
+      "A pessoa na posição 4 é advogada.",
+      "A pessoa com hobby leitura fica à esquerda da casa com esporte favorito tênis."
     ],
     "num_pistas": 10,
     "solucao": [
@@ -4106,21 +4106,21 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com bebida favorita Chá.",
-      "A casa com profissão Professora fica a exatamente 3 posição(ões) da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com profissão Médico.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com cor da casa Amarela.",
-      "A última casa tem cor da casa: Vermelha.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com cor da casa Azul.",
-      "A casa com profissão Advogada é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com bebida favorita Água.",
-      "A casa com bebida favorita Leite fica à esquerda da casa com animal de estimação Papagaio.",
-      "A casa com animal de estimação Papagaio fica à esquerda da casa com cor da casa Azul.",
-      "A casa com cor da casa Branca fica à esquerda da casa com animal de estimação Papagaio.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com bebida favorita Água.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com animal de estimação Peixe.",
-      "A pessoa com animal de estimação Coelho também tem bebida favorita Suco.",
-      "A casa com animal de estimação Papagaio é vizinha imediata da casa com bebida favorita Suco."
+      "A casa com cachorro é vizinha imediata da casa com bebida favorita chá.",
+      "A casa da professora fica a exatamente 3 posição(ões) da casa vermelha.",
+      "A casa vermelha é vizinha imediata da casa do médico.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa amarela.",
+      "A última casa é vermelha.",
+      "A casa com gato fica à esquerda da casa azul.",
+      "A casa da advogada é vizinha imediata da casa azul.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é leite fica à esquerda da casa com papagaio.",
+      "A casa com papagaio fica à esquerda da casa azul.",
+      "A casa branca fica à esquerda da casa com papagaio.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com peixe.",
+      "A pessoa com coelho também tem bebida favorita suco.",
+      "A casa com papagaio é vizinha imediata da casa com bebida favorita suco."
     ],
     "num_pistas": 15,
     "solucao": [
@@ -4213,21 +4213,21 @@
       }
     ],
     "pistas": [
-      "A pessoa com cor da casa Verde também tem hobby Pintura.",
-      "A pessoa na posição 4 tem bebida favorita: Chá.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com hobby Leitura é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com bebida favorita Água fica à esquerda da casa com hobby Culinária.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com animal de estimação Coelho.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com animal de estimação Peixe.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com cor da casa Azul.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Vermelha.",
-      "A última casa tem animal de estimação: Coelho.",
-      "A casa com hobby Leitura é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com animal de estimação Gato."
+      "Quem mora na casa verde também tem hobby pintura.",
+      "A bebida favorita da pessoa na posição 4 é chá.",
+      "A casa com cachorro fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa com hobby leitura é vizinha imediata da casa amarela.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa branca.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa com hobby culinária.",
+      "A casa vermelha fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa com coelho.",
+      "A casa com gato é vizinha imediata da casa vermelha.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa com peixe.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa azul.",
+      "A casa com peixe fica à esquerda da casa vermelha.",
+      "A última casa tem um coelho.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com gato.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com gato."
     ],
     "num_pistas": 15,
     "solucao": [
@@ -4320,18 +4320,18 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Carro é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Branca fica a exatamente 2 posição(ões) da casa com profissão Professora.",
-      "A casa com hobby Leitura fica a exatamente 3 posição(ões) da casa com profissão Engenheiro.",
-      "A casa com profissão Professora fica a exatamente 2 posição(ões) da casa com cor da casa Vermelha.",
-      "A pessoa com profissão Dentista também tem meio de transporte Bicicleta.",
-      "A casa com hobby Culinária fica à esquerda da casa com cor da casa Verde.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 4 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com hobby Leitura fica à esquerda da casa com cor da casa Azul.",
-      "A pessoa com meio de transporte Metrô também tem cor da casa Vermelha.",
-      "A casa com cor da casa Branca é vizinha imediata da casa com profissão Advogada.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com hobby Culinária.",
-      "A casa com hobby Música fica a exatamente 4 posição(ões) da casa com profissão Engenheiro."
+      "A pessoa com meio de transporte carro é vizinha imediata da casa vermelha.",
+      "A casa branca fica a exatamente 2 posição(ões) da casa da professora.",
+      "A pessoa com hobby leitura fica a exatamente 3 posição(ões) da casa do engenheiro.",
+      "A casa da professora fica a exatamente 2 posição(ões) da casa vermelha.",
+      "O dentista também tem meio de transporte bicicleta.",
+      "A pessoa com hobby culinária fica à esquerda da casa verde.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 4 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa com hobby leitura fica à esquerda da casa azul.",
+      "A pessoa com meio de transporte metrô também tem vermelha.",
+      "A casa branca é vizinha imediata da casa da advogada.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa com hobby culinária.",
+      "A pessoa com hobby música fica a exatamente 4 posição(ões) da casa do engenheiro."
     ],
     "num_pistas": 12,
     "solucao": [
@@ -4424,18 +4424,18 @@
       }
     ],
     "pistas": [
-      "A casa com esporte favorito Vôlei fica a exatamente 2 posição(ões) da casa com bebida favorita Água.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A casa com cor da casa Verde fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com esporte favorito Basquete.",
-      "A casa com animal de estimação Coelho fica a exatamente 3 posição(ões) da casa com esporte favorito Basquete.",
-      "A casa com cor da casa Branca é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com esporte favorito Basquete.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com bebida favorita Café.",
-      "A casa com animal de estimação Coelho fica a exatamente 2 posição(ões) da casa com esporte favorito Futebol.",
-      "A casa com animal de estimação Papagaio fica a exatamente 4 posição(ões) da casa com cor da casa Azul."
+      "A pessoa com esporte favorito vôlei fica a exatamente 2 posição(ões) da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa amarela.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa com cachorro.",
+      "A casa verde fica à esquerda da casa com esporte favorito natação.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa branca.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com esporte favorito basquete.",
+      "A casa com coelho fica a exatamente 3 posição(ões) da casa com esporte favorito basquete.",
+      "A casa branca é vizinha imediata da casa com bebida favorita café.",
+      "A casa com gato fica à esquerda da casa com esporte favorito basquete.",
+      "A casa vermelha fica à esquerda da casa com bebida favorita café.",
+      "A casa com coelho fica a exatamente 2 posição(ões) da casa com esporte favorito futebol.",
+      "A casa com papagaio fica a exatamente 4 posição(ões) da casa azul."
     ],
     "num_pistas": 12,
     "solucao": [
@@ -4528,20 +4528,20 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Jardinagem é vizinha imediata da casa com profissão Médico.",
-      "A casa com profissão Dentista fica a exatamente 2 posição(ões) da casa com comida favorita Macarrão.",
-      "A casa com comida favorita Sushi é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A pessoa na posição 4 tem profissão: Professora.",
-      "A casa com comida favorita Sushi fica a exatamente 3 posição(ões) da casa com animal de estimação Papagaio.",
-      "A pessoa na posição 1 tem animal de estimação: Gato.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com comida favorita Macarrão.",
-      "A casa com comida favorita Pizza é vizinha imediata da casa com hobby Música.",
-      "A casa com hobby Pintura fica à esquerda da casa com profissão Advogada.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com hobby Pintura.",
-      "A pessoa na posição 3 tem animal de estimação: Cachorro.",
-      "A pessoa com profissão Professora também tem comida favorita Salada.",
-      "A casa com profissão Dentista é vizinha imediata da casa com hobby Música.",
-      "A pessoa com hobby Culinária também tem comida favorita Sushi."
+      "A pessoa com hobby jardinagem é vizinha imediata da casa do médico.",
+      "A casa do dentista fica a exatamente 2 posição(ões) da casa com comida favorita macarrão.",
+      "A pessoa cuja comida favorita é sushi é vizinha imediata da casa com cachorro.",
+      "A pessoa na posição 4 é professora.",
+      "A pessoa cuja comida favorita é sushi fica a exatamente 3 posição(ões) da casa com papagaio.",
+      "A pessoa na posição 1 tem um gato.",
+      "A casa com gato fica à esquerda da casa com comida favorita macarrão.",
+      "A pessoa cuja comida favorita é pizza é vizinha imediata da casa com hobby música.",
+      "A pessoa com hobby pintura fica à esquerda da casa da advogada.",
+      "A casa com peixe fica à esquerda da casa com hobby pintura.",
+      "A pessoa na posição 3 tem um cachorro.",
+      "A professora também tem comida favorita salada.",
+      "A casa do dentista é vizinha imediata da casa com hobby música.",
+      "A pessoa com hobby culinária também tem comida favorita sushi."
     ],
     "num_pistas": 14,
     "solucao": [
@@ -4634,17 +4634,17 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Cachorro fica a exatamente 4 posição(ões) da casa com cor da casa Branca.",
-      "A casa com cor da casa Verde fica a exatamente 4 posição(ões) da casa com profissão Médico.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Amarela.",
-      "A pessoa com cor da casa Branca também tem hobby Leitura.",
-      "A pessoa com cor da casa Vermelha também tem profissão Engenheiro.",
-      "A primeira casa tem hobby: Culinária.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com profissão Advogada fica à esquerda da casa com hobby Música.",
-      "A casa com profissão Professora fica a exatamente 3 posição(ões) da casa com animal de estimação Coelho.",
-      "A casa com hobby Leitura é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com cor da casa Amarela."
+      "A casa com cachorro fica a exatamente 4 posição(ões) da casa branca.",
+      "A casa verde fica a exatamente 4 posição(ões) da casa do médico.",
+      "A casa com peixe é vizinha imediata da casa amarela.",
+      "Quem mora na casa branca também tem hobby leitura.",
+      "Quem mora na casa vermelha é engenheiro.",
+      "O hobby de quem mora na primeira casa é culinária.",
+      "A casa com peixe fica à esquerda da casa com hobby jardinagem.",
+      "A casa da advogada fica à esquerda da casa com hobby música.",
+      "A casa da professora fica a exatamente 3 posição(ões) da casa com coelho.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com papagaio.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa amarela."
     ],
     "num_pistas": 11,
     "solucao": [
@@ -4737,19 +4737,19 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Jardinagem fica à esquerda da casa com cor da casa Azul.",
-      "A casa com flor preferida Margarida é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com hobby Pintura é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com flor preferida Margarida é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com hobby Leitura.",
-      "A casa com flor preferida Orquídea fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com cor da casa Branca.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com flor preferida Margarida.",
-      "A casa com flor preferida Girassol fica à esquerda da casa com bebida favorita Água.",
-      "A casa com bebida favorita Chá fica a exatamente 3 posição(ões) da casa com cor da casa Branca.",
-      "A casa com hobby Música fica à esquerda da casa com flor preferida Rosa.",
-      "A pessoa na posição 4 tem cor da casa: Verde.",
-      "A pessoa com hobby Música também tem flor preferida Girassol."
+      "A pessoa com hobby jardinagem fica à esquerda da casa azul.",
+      "A pessoa cuja flor preferida é margarida é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa com hobby pintura é vizinha imediata da casa com bebida favorita leite.",
+      "A pessoa cuja flor preferida é margarida é vizinha imediata da casa com bebida favorita café.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa com hobby leitura.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa branca.",
+      "A casa amarela é vizinha imediata da casa com flor preferida margarida.",
+      "A pessoa cuja flor preferida é girassol fica à esquerda da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 3 posição(ões) da casa branca.",
+      "A pessoa com hobby música fica à esquerda da casa com flor preferida rosa.",
+      "A pessoa na posição 4 mora na casa verde.",
+      "A pessoa com hobby música também tem flor preferida girassol."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -4842,20 +4842,20 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Ônibus é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com meio de transporte Metrô.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com profissão Médico.",
-      "A casa com esporte favorito Vôlei fica à esquerda da casa com profissão Dentista.",
-      "A casa com cor da casa Branca fica à esquerda da casa com profissão Advogada.",
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com esporte favorito Vôlei.",
-      "A casa com profissão Dentista fica a exatamente 2 posição(ões) da casa com cor da casa Vermelha.",
-      "A casa com meio de transporte Ônibus é vizinha imediata da casa com esporte favorito Futebol.",
-      "A casa com meio de transporte Metrô é vizinha imediata da casa com esporte favorito Futebol.",
-      "A casa com cor da casa Verde fica à esquerda da casa com esporte favorito Tênis.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com profissão Dentista fica à esquerda da casa com meio de transporte Ônibus.",
-      "A casa com meio de transporte Moto fica à esquerda da casa com cor da casa Amarela."
+      "A pessoa com meio de transporte ônibus é vizinha imediata da casa amarela.",
+      "A casa do engenheiro fica à esquerda da casa com meio de transporte metrô.",
+      "A casa amarela fica à esquerda da casa com esporte favorito natação.",
+      "A casa verde é vizinha imediata da casa do médico.",
+      "A pessoa com esporte favorito vôlei fica à esquerda da casa do dentista.",
+      "A casa branca fica à esquerda da casa da advogada.",
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com esporte favorito vôlei.",
+      "A casa do dentista fica a exatamente 2 posição(ões) da casa vermelha.",
+      "A pessoa com meio de transporte ônibus é vizinha imediata da casa com esporte favorito futebol.",
+      "A pessoa com meio de transporte metrô é vizinha imediata da casa com esporte favorito futebol.",
+      "A casa verde fica à esquerda da casa com esporte favorito tênis.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa branca.",
+      "A casa do dentista fica à esquerda da casa com meio de transporte ônibus.",
+      "A pessoa com meio de transporte moto fica à esquerda da casa amarela."
     ],
     "num_pistas": 14,
     "solucao": [
@@ -4948,19 +4948,19 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Café fica à esquerda da casa com flor preferida Tulipa.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com hobby Música.",
-      "A casa com flor preferida Margarida é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com bebida favorita Chá fica a exatamente 3 posição(ões) da casa com flor preferida Girassol.",
-      "A casa com meio de transporte Moto fica à esquerda da casa com hobby Jardinagem.",
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com flor preferida Tulipa.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com flor preferida Rosa.",
-      "A casa com flor preferida Orquídea fica a exatamente 4 posição(ões) da casa com bebida favorita Leite.",
-      "A casa com flor preferida Orquídea fica a exatamente 4 posição(ões) da casa com hobby Jardinagem.",
-      "A primeira casa tem hobby: Leitura.",
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com bebida favorita Leite.",
-      "A pessoa com meio de transporte Carro também tem hobby Pintura.",
-      "A casa com meio de transporte Metrô fica a exatamente 3 posição(ões) da casa com flor preferida Girassol."
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa com flor preferida tulipa.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa com hobby música.",
+      "A pessoa cuja flor preferida é margarida é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 3 posição(ões) da casa com flor preferida girassol.",
+      "A pessoa com meio de transporte moto fica à esquerda da casa com hobby jardinagem.",
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com flor preferida tulipa.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com flor preferida rosa.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 4 posição(ões) da casa com bebida favorita leite.",
+      "A pessoa cuja flor preferida é orquídea fica a exatamente 4 posição(ões) da casa com hobby jardinagem.",
+      "O hobby de quem mora na primeira casa é leitura.",
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com bebida favorita leite.",
+      "A pessoa com meio de transporte carro também tem hobby pintura.",
+      "A pessoa com meio de transporte metrô fica a exatamente 3 posição(ões) da casa com flor preferida girassol."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5053,19 +5053,19 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Coelho fica a exatamente 4 posição(ões) da casa com bebida favorita Café.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com bebida favorita Café.",
-      "A pessoa na posição 2 tem animal de estimação: Gato.",
-      "A casa com nacionalidade Brasileira fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com bebida favorita Suco fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com cor da casa Vermelha fica a exatamente 2 posição(ões) da casa com nacionalidade Argentina.",
-      "A casa com nacionalidade Italiana fica a exatamente 3 posição(ões) da casa com cor da casa Verde.",
-      "A pessoa com nacionalidade Argentina também tem animal de estimação Papagaio.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com bebida favorita Leite.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com nacionalidade Portuguesa.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com cor da casa Branca."
+      "A casa com coelho fica a exatamente 4 posição(ões) da casa com bebida favorita café.",
+      "A casa azul é vizinha imediata da casa com bebida favorita café.",
+      "A pessoa na posição 2 tem um gato.",
+      "A pessoa com nacionalidade brasileira fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 2 posição(ões) da casa verde.",
+      "A casa vermelha fica a exatamente 2 posição(ões) da casa com nacionalidade argentina.",
+      "A pessoa com nacionalidade italiana fica a exatamente 3 posição(ões) da casa verde.",
+      "A pessoa com nacionalidade argentina também tem um papagaio.",
+      "A casa com cachorro fica à esquerda da casa com bebida favorita leite.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com bebida favorita água.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com nacionalidade portuguesa.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com cachorro.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa branca."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5158,19 +5158,19 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Chá é vizinha imediata da casa com nacionalidade Francesa.",
-      "A casa com comida favorita Salada fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A pessoa com bebida favorita Suco também tem hobby Pintura.",
-      "A última casa tem hobby: Jardinagem.",
-      "A casa com nacionalidade Argentina fica a exatamente 3 posição(ões) da casa com bebida favorita Café.",
-      "A casa com nacionalidade Italiana fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com hobby Música fica a exatamente 4 posição(ões) da casa com nacionalidade Brasileira.",
-      "A casa com comida favorita Sushi fica a exatamente 2 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com hobby Culinária fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com nacionalidade Portuguesa.",
-      "A última casa tem comida favorita: Churrasco.",
-      "A casa com bebida favorita Água fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Culinária é vizinha imediata da casa com comida favorita Macarrão."
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com nacionalidade francesa.",
+      "A pessoa cuja comida favorita é salada fica à esquerda da casa com nacionalidade portuguesa.",
+      "A pessoa com bebida favorita suco também tem hobby pintura.",
+      "O hobby de quem mora na última casa é jardinagem.",
+      "A pessoa com nacionalidade argentina fica a exatamente 3 posição(ões) da casa com bebida favorita café.",
+      "A pessoa com nacionalidade italiana fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com hobby música fica a exatamente 4 posição(ões) da casa com nacionalidade brasileira.",
+      "A pessoa cuja comida favorita é sushi fica a exatamente 2 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa com hobby culinária fica à esquerda da casa com nacionalidade portuguesa.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com nacionalidade portuguesa.",
+      "A última casa tem comida favorita churrasco.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby culinária é vizinha imediata da casa com comida favorita macarrão."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5263,18 +5263,18 @@
       }
     ],
     "pistas": [
-      "A casa com flor preferida Rosa fica a exatamente 4 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com profissão Dentista.",
-      "A pessoa na posição 3 tem profissão: Advogada.",
-      "A casa com bebida favorita Água fica a exatamente 3 posição(ões) da casa com flor preferida Margarida.",
-      "A casa com profissão Médico é vizinha imediata da casa com flor preferida Girassol.",
-      "A casa com hobby Leitura fica à esquerda da casa com flor preferida Orquídea.",
-      "A pessoa com hobby Leitura também tem flor preferida Rosa.",
-      "A casa com bebida favorita Café fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com flor preferida Orquídea é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com flor preferida Orquídea é vizinha imediata da casa com bebida favorita Suco.",
-      "A casa com flor preferida Margarida é vizinha imediata da casa com profissão Professora.",
-      "A casa com hobby Culinária fica à esquerda da casa com flor preferida Girassol."
+      "A pessoa cuja flor preferida é rosa fica a exatamente 4 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa do dentista.",
+      "A pessoa na posição 3 é advogada.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 3 posição(ões) da casa com flor preferida margarida.",
+      "A casa do médico é vizinha imediata da casa com flor preferida girassol.",
+      "A pessoa com hobby leitura fica à esquerda da casa com flor preferida orquídea.",
+      "A pessoa com hobby leitura também tem flor preferida rosa.",
+      "A pessoa cuja bebida favorita é café fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A pessoa cuja flor preferida é orquídea é vizinha imediata da casa com bebida favorita leite.",
+      "A pessoa cuja flor preferida é orquídea é vizinha imediata da casa com bebida favorita suco.",
+      "A pessoa cuja flor preferida é margarida é vizinha imediata da casa da professora.",
+      "A pessoa com hobby culinária fica à esquerda da casa com flor preferida girassol."
     ],
     "num_pistas": 12,
     "solucao": [
@@ -5367,19 +5367,19 @@
       }
     ],
     "pistas": [
-      "A pessoa com esporte favorito Vôlei também tem bebida favorita Suco.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com esporte favorito Futebol.",
-      "A casa com bebida favorita Café fica à esquerda da casa com cor da casa Branca.",
-      "A casa com hobby Leitura fica a exatamente 3 posição(ões) da casa com bebida favorita Água.",
-      "A pessoa na posição 2 tem cor da casa: Verde.",
-      "A casa com esporte favorito Vôlei é vizinha imediata da casa com hobby Leitura.",
-      "A casa com hobby Música fica à esquerda da casa com esporte favorito Basquete.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com cor da casa Azul.",
-      "A casa com esporte favorito Vôlei fica a exatamente 2 posição(ões) da casa com hobby Pintura.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com esporte favorito Futebol.",
-      "A pessoa na posição 3 tem bebida favorita: Chá."
+      "A pessoa com esporte favorito vôlei também tem bebida favorita suco.",
+      "A casa azul é vizinha imediata da casa com esporte favorito futebol.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa branca.",
+      "A pessoa com hobby leitura fica a exatamente 3 posição(ões) da casa com bebida favorita água.",
+      "A pessoa na posição 2 mora na casa verde.",
+      "A pessoa com esporte favorito vôlei é vizinha imediata da casa com hobby leitura.",
+      "A pessoa com hobby música fica à esquerda da casa com esporte favorito basquete.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A casa vermelha é vizinha imediata da casa com esporte favorito tênis.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa azul.",
+      "A pessoa com esporte favorito vôlei fica a exatamente 2 posição(ões) da casa com hobby pintura.",
+      "A casa vermelha é vizinha imediata da casa com esporte favorito futebol.",
+      "A bebida favorita da pessoa na posição 3 é chá."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5472,18 +5472,18 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Música fica a exatamente 4 posição(ões) da casa com nacionalidade Italiana.",
-      "A casa com hobby Culinária é vizinha imediata da casa com comida favorita Churrasco.",
-      "A casa com meio de transporte Metrô é vizinha imediata da casa com hobby Música.",
-      "A pessoa com meio de transporte Carro também tem comida favorita Sushi.",
-      "A casa com comida favorita Salada fica a exatamente 4 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com comida favorita Salada fica a exatamente 4 posição(ões) da casa com meio de transporte Ônibus.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com hobby Pintura.",
-      "A casa com meio de transporte Bicicleta fica à esquerda da casa com nacionalidade Argentina.",
-      "A casa com nacionalidade Italiana é vizinha imediata da casa com comida favorita Macarrão.",
-      "A pessoa com nacionalidade Portuguesa também tem hobby Pintura.",
-      "A casa com comida favorita Churrasco fica à esquerda da casa com meio de transporte Ônibus.",
-      "A casa com nacionalidade Francesa é vizinha imediata da casa com meio de transporte Moto."
+      "A pessoa com hobby música fica a exatamente 4 posição(ões) da casa com nacionalidade italiana.",
+      "A pessoa com hobby culinária é vizinha imediata da casa com comida favorita churrasco.",
+      "A pessoa com meio de transporte metrô é vizinha imediata da casa com hobby música.",
+      "A pessoa com meio de transporte carro também tem comida favorita sushi.",
+      "A pessoa cuja comida favorita é salada fica a exatamente 4 posição(ões) da casa com hobby jardinagem.",
+      "A pessoa cuja comida favorita é salada fica a exatamente 4 posição(ões) da casa com meio de transporte ônibus.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com hobby pintura.",
+      "A pessoa com meio de transporte bicicleta fica à esquerda da casa com nacionalidade argentina.",
+      "A pessoa com nacionalidade italiana é vizinha imediata da casa com comida favorita macarrão.",
+      "A pessoa com nacionalidade portuguesa também tem hobby pintura.",
+      "A pessoa cuja comida favorita é churrasco fica à esquerda da casa com meio de transporte ônibus.",
+      "A pessoa com nacionalidade francesa é vizinha imediata da casa com meio de transporte moto."
     ],
     "num_pistas": 12,
     "solucao": [
@@ -5576,18 +5576,18 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Médico fica a exatamente 2 posição(ões) da casa com hobby Jardinagem.",
-      "A pessoa com profissão Dentista também tem esporte favorito Vôlei.",
-      "A casa com hobby Música fica a exatamente 3 posição(ões) da casa com bebida favorita Água.",
-      "A casa com profissão Professora fica a exatamente 3 posição(ões) da casa com bebida favorita Água.",
-      "A pessoa com profissão Advogada também tem hobby Culinária.",
-      "A pessoa com esporte favorito Futebol também tem hobby Culinária.",
-      "A primeira casa tem bebida favorita: Café.",
-      "A pessoa com profissão Dentista também tem bebida favorita Suco.",
-      "A casa com esporte favorito Basquete fica a exatamente 3 posição(ões) da casa com hobby Culinária.",
-      "A casa com profissão Advogada é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com hobby Leitura é vizinha imediata da casa com esporte favorito Futebol.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com esporte favorito Tênis."
+      "A casa do médico fica a exatamente 2 posição(ões) da casa com hobby jardinagem.",
+      "O dentista também tem esporte favorito vôlei.",
+      "A pessoa com hobby música fica a exatamente 3 posição(ões) da casa com bebida favorita água.",
+      "A casa da professora fica a exatamente 3 posição(ões) da casa com bebida favorita água.",
+      "A advogada também tem hobby culinária.",
+      "A pessoa com esporte favorito futebol também tem hobby culinária.",
+      "A bebida favorita de quem mora na primeira casa é café.",
+      "O dentista também tem bebida favorita suco.",
+      "A pessoa com esporte favorito basquete fica a exatamente 3 posição(ões) da casa com hobby culinária.",
+      "A casa da advogada é vizinha imediata da casa com bebida favorita leite.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com esporte favorito futebol.",
+      "A casa do engenheiro é vizinha imediata da casa com esporte favorito tênis."
     ],
     "num_pistas": 12,
     "solucao": [
@@ -5680,19 +5680,19 @@
       }
     ],
     "pistas": [
-      "A pessoa com cor da casa Azul também tem bebida favorita Leite.",
-      "A casa com bebida favorita Suco fica a exatamente 2 posição(ões) da casa com cor da casa Amarela.",
-      "A pessoa com animal de estimação Coelho também tem bebida favorita Leite.",
-      "A casa com bebida favorita Café fica a exatamente 3 posição(ões) da casa com profissão Professora.",
-      "A casa com bebida favorita Café fica à esquerda da casa com profissão Advogada.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com profissão Dentista.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com animal de estimação Gato fica a exatamente 4 posição(ões) da casa com bebida favorita Leite.",
-      "A pessoa com cor da casa Verde também tem profissão Advogada.",
-      "A casa com cor da casa Branca fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com animal de estimação Papagaio fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com animal de estimação Papagaio fica a exatamente 3 posição(ões) da casa com profissão Engenheiro."
+      "Quem mora na casa azul também tem bebida favorita leite.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 2 posição(ões) da casa amarela.",
+      "A pessoa com coelho também tem bebida favorita leite.",
+      "A pessoa cuja bebida favorita é café fica a exatamente 3 posição(ões) da casa da professora.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa da advogada.",
+      "A casa com cachorro é vizinha imediata da casa do dentista.",
+      "A casa com cachorro é vizinha imediata da casa vermelha.",
+      "A casa com gato fica a exatamente 4 posição(ões) da casa com bebida favorita leite.",
+      "Quem mora na casa verde é advogada.",
+      "A casa branca fica à esquerda da casa com cachorro.",
+      "A casa com cachorro é vizinha imediata da casa com bebida favorita leite.",
+      "A casa com papagaio fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A casa com papagaio fica a exatamente 3 posição(ões) da casa do engenheiro."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5785,20 +5785,20 @@
       }
     ],
     "pistas": [
-      "A pessoa na posição 1 tem hobby: Culinária.",
-      "A pessoa com hobby Jardinagem também tem animal de estimação Peixe.",
-      "A última casa tem cor da casa: Branca.",
-      "A casa com hobby Pintura é vizinha imediata da casa com bebida favorita Água.",
-      "A última casa tem animal de estimação: Coelho.",
-      "A casa com hobby Música é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com hobby Pintura é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com hobby Música é vizinha imediata da casa com bebida favorita Chá.",
-      "A casa com animal de estimação Cachorro é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com hobby Pintura.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com hobby Leitura.",
-      "A casa com animal de estimação Cachorro fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com bebida favorita Leite."
+      "O hobby da pessoa na posição 1 é culinária.",
+      "A pessoa com hobby jardinagem também tem um peixe.",
+      "A última casa é branca.",
+      "A pessoa com hobby pintura é vizinha imediata da casa com bebida favorita água.",
+      "A última casa tem um coelho.",
+      "A pessoa com hobby música é vizinha imediata da casa verde.",
+      "A pessoa com hobby pintura é vizinha imediata da casa amarela.",
+      "A pessoa com hobby música é vizinha imediata da casa com bebida favorita chá.",
+      "A casa com cachorro é vizinha imediata da casa verde.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa com hobby pintura.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa com papagaio.",
+      "A casa azul é vizinha imediata da casa com hobby leitura.",
+      "A casa com cachorro fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com bebida favorita leite."
     ],
     "num_pistas": 14,
     "solucao": [
@@ -5891,19 +5891,19 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Médico fica à esquerda da casa com meio de transporte Metrô.",
-      "A casa com profissão Médico fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com meio de transporte Ônibus é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com hobby Pintura fica a exatamente 4 posição(ões) da casa com meio de transporte Ônibus.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com meio de transporte Moto.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com hobby Culinária.",
-      "A casa com cor da casa Verde fica à esquerda da casa com profissão Professora.",
-      "A casa com cor da casa Azul fica a exatamente 4 posição(ões) da casa com hobby Leitura.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com cor da casa Vermelha fica a exatamente 2 posição(ões) da casa com meio de transporte Metrô.",
-      "A casa com hobby Leitura é vizinha imediata da casa com meio de transporte Metrô.",
-      "A casa com profissão Advogada fica à esquerda da casa com meio de transporte Moto.",
-      "A casa com hobby Música fica a exatamente 3 posição(ões) da casa com profissão Dentista."
+      "A casa do médico fica à esquerda da casa com meio de transporte metrô.",
+      "A casa do médico fica a exatamente 2 posição(ões) da casa verde.",
+      "A pessoa com meio de transporte ônibus é vizinha imediata da casa amarela.",
+      "A pessoa com hobby pintura fica a exatamente 4 posição(ões) da casa com meio de transporte ônibus.",
+      "A casa vermelha fica à esquerda da casa com meio de transporte moto.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa com hobby culinária.",
+      "A casa verde fica à esquerda da casa da professora.",
+      "A casa azul fica a exatamente 4 posição(ões) da casa com hobby leitura.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 2 posição(ões) da casa verde.",
+      "A casa vermelha fica a exatamente 2 posição(ões) da casa com meio de transporte metrô.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com meio de transporte metrô.",
+      "A casa da advogada fica à esquerda da casa com meio de transporte moto.",
+      "A pessoa com hobby música fica a exatamente 3 posição(ões) da casa do dentista."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -5996,21 +5996,21 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Vermelha fica a exatamente 3 posição(ões) da casa com esporte favorito Basquete.",
-      "A casa com cor da casa Vermelha fica a exatamente 2 posição(ões) da casa com esporte favorito Natação.",
-      "A casa com animal de estimação Papagaio é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com cor da casa Azul.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com cor da casa Vermelha fica a exatamente 4 posição(ões) da casa com bebida favorita Água.",
-      "A pessoa na posição 2 tem animal de estimação: Papagaio.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com cor da casa Branca.",
-      "A casa com animal de estimação Papagaio fica à esquerda da casa com esporte favorito Tênis.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com bebida favorita Água.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com bebida favorita Café.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com bebida favorita Leite.",
-      "A casa com esporte favorito Vôlei é vizinha imediata da casa com animal de estimação Papagaio."
+      "A casa vermelha fica a exatamente 3 posição(ões) da casa com esporte favorito basquete.",
+      "A casa vermelha fica a exatamente 2 posição(ões) da casa com esporte favorito natação.",
+      "A casa com papagaio é vizinha imediata da casa amarela.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa azul.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa com coelho.",
+      "A casa com gato é vizinha imediata da casa com esporte favorito tênis.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com esporte favorito natação.",
+      "A casa vermelha fica a exatamente 4 posição(ões) da casa com bebida favorita água.",
+      "A pessoa na posição 2 tem um papagaio.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa branca.",
+      "A casa com papagaio fica à esquerda da casa com esporte favorito tênis.",
+      "A casa com peixe fica à esquerda da casa com bebida favorita água.",
+      "A casa amarela é vizinha imediata da casa com bebida favorita café.",
+      "A casa com cachorro fica à esquerda da casa com bebida favorita leite.",
+      "A pessoa com esporte favorito vôlei é vizinha imediata da casa com papagaio."
     ],
     "num_pistas": 15,
     "solucao": [
@@ -6103,20 +6103,20 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Peixe fica a exatamente 4 posição(ões) da casa com comida favorita Pizza.",
-      "A casa com profissão Professora é vizinha imediata da casa com comida favorita Churrasco.",
-      "A pessoa na posição 3 tem hobby: Jardinagem.",
-      "A casa com comida favorita Salada é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com profissão Advogada é vizinha imediata da casa com hobby Culinária.",
-      "A pessoa com profissão Dentista também tem comida favorita Macarrão.",
-      "A casa com comida favorita Salada fica a exatamente 2 posição(ões) da casa com animal de estimação Coelho.",
-      "A pessoa com profissão Engenheiro também tem hobby Música.",
-      "A casa com profissão Médico fica a exatamente 2 posição(ões) da casa com animal de estimação Cachorro.",
-      "A casa com comida favorita Sushi fica a exatamente 2 posição(ões) da casa com animal de estimação Papagaio.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com comida favorita Macarrão.",
-      "A pessoa na posição 5 tem comida favorita: Pizza.",
-      "A casa com comida favorita Macarrão é vizinha imediata da casa com hobby Leitura.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com animal de estimação Papagaio."
+      "A casa com peixe fica a exatamente 4 posição(ões) da casa com comida favorita pizza.",
+      "A casa da professora é vizinha imediata da casa com comida favorita churrasco.",
+      "O hobby da pessoa na posição 3 é jardinagem.",
+      "A pessoa cuja comida favorita é salada é vizinha imediata da casa do engenheiro.",
+      "A casa da advogada é vizinha imediata da casa com hobby culinária.",
+      "O dentista também tem comida favorita macarrão.",
+      "A pessoa cuja comida favorita é salada fica a exatamente 2 posição(ões) da casa com coelho.",
+      "O engenheiro também tem hobby música.",
+      "A casa do médico fica a exatamente 2 posição(ões) da casa com cachorro.",
+      "A pessoa cuja comida favorita é sushi fica a exatamente 2 posição(ões) da casa com papagaio.",
+      "A casa do engenheiro fica à esquerda da casa com comida favorita macarrão.",
+      "A comida favorita da pessoa na posição 5 é pizza.",
+      "A pessoa cuja comida favorita é macarrão é vizinha imediata da casa com hobby leitura.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa com papagaio."
     ],
     "num_pistas": 14,
     "solucao": [
@@ -6220,21 +6220,21 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Leitura fica a exatamente 4 posição(ões) da casa com bebida favorita Café.",
-      "A casa com cor da casa Azul fica a exatamente 2 posição(ões) da casa com animal de estimação Gato.",
-      "A casa com profissão Professora fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com cor da casa Branca.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com profissão Dentista.",
-      "A casa com bebida favorita Chá fica a exatamente 2 posição(ões) da casa com cor da casa Branca.",
-      "A casa com profissão Médico é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com animal de estimação Coelho fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com animal de estimação Peixe.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com bebida favorita Suco.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com cor da casa Verde fica à esquerda da casa com hobby Pintura.",
-      "A casa com animal de estimação Coelho fica à esquerda da casa com hobby Culinária.",
-      "A casa com profissão Engenheiro fica a exatamente 3 posição(ões) da casa com animal de estimação Papagaio.",
-      "A pessoa com animal de estimação Coelho também tem bebida favorita Leite."
+      "A pessoa com hobby leitura fica a exatamente 4 posição(ões) da casa com bebida favorita café.",
+      "A casa azul fica a exatamente 2 posição(ões) da casa com gato.",
+      "A casa da professora fica à esquerda da casa com bebida favorita chá.",
+      "A casa com peixe fica à esquerda da casa branca.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa do dentista.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 2 posição(ões) da casa branca.",
+      "A casa do médico é vizinha imediata da casa verde.",
+      "A casa com coelho fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A casa do engenheiro fica à esquerda da casa com peixe.",
+      "A casa amarela fica à esquerda da casa com bebida favorita suco.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A casa verde fica à esquerda da casa com hobby pintura.",
+      "A casa com coelho fica à esquerda da casa com hobby culinária.",
+      "A casa do engenheiro fica a exatamente 3 posição(ões) da casa com papagaio.",
+      "A pessoa com coelho também tem bebida favorita leite."
     ],
     "num_pistas": 15,
     "solucao": [
@@ -6343,22 +6343,22 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Professora é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com cor da casa Branca fica à esquerda da casa com profissão Professora.",
-      "A casa com profissão Advogada fica à esquerda da casa com animal de estimação Papagaio.",
-      "A casa com hobby Culinária fica a exatamente 2 posição(ões) da casa com cor da casa Vermelha.",
-      "A casa com animal de estimação Coelho fica a exatamente 4 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com profissão Engenheiro fica a exatamente 4 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com profissão Professora.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com hobby Leitura.",
-      "A casa com hobby Culinária é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com profissão Advogada.",
-      "A casa com profissão Médico fica à esquerda da casa com cor da casa Vermelha.",
-      "A primeira casa tem hobby: Pintura.",
-      "A casa com cor da casa Verde fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com animal de estimação Peixe."
+      "A casa da professora é vizinha imediata da casa verde.",
+      "A casa branca fica à esquerda da casa da professora.",
+      "A casa da advogada fica à esquerda da casa com papagaio.",
+      "A pessoa com hobby culinária fica a exatamente 2 posição(ões) da casa vermelha.",
+      "A casa com coelho fica a exatamente 4 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa amarela.",
+      "A casa do engenheiro fica a exatamente 4 posição(ões) da casa com bebida favorita suco.",
+      "A casa azul é vizinha imediata da casa com cachorro.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa da professora.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com hobby leitura.",
+      "A pessoa com hobby culinária é vizinha imediata da casa com coelho.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa da advogada.",
+      "A casa do médico fica à esquerda da casa vermelha.",
+      "O hobby de quem mora na primeira casa é pintura.",
+      "A casa verde fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa com peixe."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -6467,24 +6467,24 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Bicicleta é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com meio de transporte Moto fica a exatamente 2 posição(ões) da casa com animal de estimação Cachorro.",
-      "A casa com animal de estimação Papagaio é vizinha imediata da casa com profissão Advogada.",
-      "A casa com profissão Engenheiro fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A casa com cor da casa Branca é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com meio de transporte Metrô.",
-      "A casa com meio de transporte Metrô fica à esquerda da casa com profissão Advogada.",
-      "A última casa tem meio de transporte: Ônibus.",
-      "A primeira casa tem hobby: Culinária.",
-      "A casa com cor da casa Azul fica à esquerda da casa com profissão Advogada.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com animal de estimação Coelho.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com profissão Dentista.",
-      "A casa com cor da casa Branca é vizinha imediata da casa com hobby Leitura.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com meio de transporte Bicicleta.",
-      "A casa com animal de estimação Papagaio fica à esquerda da casa com profissão Professora.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com meio de transporte Ônibus.",
-      "A casa com profissão Professora é vizinha imediata da casa com animal de estimação Coelho.",
-      "A pessoa com meio de transporte Moto também tem cor da casa Verde."
+      "A pessoa com meio de transporte bicicleta é vizinha imediata da casa com gato.",
+      "A pessoa com meio de transporte moto fica a exatamente 2 posição(ões) da casa com cachorro.",
+      "A casa com papagaio é vizinha imediata da casa da advogada.",
+      "A casa do engenheiro fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A casa branca é vizinha imediata da casa com papagaio.",
+      "A casa do engenheiro fica à esquerda da casa com meio de transporte metrô.",
+      "A pessoa com meio de transporte metrô fica à esquerda da casa da advogada.",
+      "O meio de transporte de quem mora na última casa é ônibus.",
+      "O hobby de quem mora na primeira casa é culinária.",
+      "A casa azul fica à esquerda da casa da advogada.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com coelho.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa do dentista.",
+      "A casa branca é vizinha imediata da casa com hobby leitura.",
+      "A casa com cachorro fica à esquerda da casa com meio de transporte bicicleta.",
+      "A casa com papagaio fica à esquerda da casa da professora.",
+      "A casa amarela é vizinha imediata da casa com meio de transporte ônibus.",
+      "A casa da professora é vizinha imediata da casa com coelho.",
+      "A pessoa com meio de transporte moto também tem verde."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -6593,22 +6593,22 @@
       }
     ],
     "pistas": [
-      "A pessoa com cor da casa Branca também tem bebida favorita Suco.",
-      "A casa com esporte favorito Basquete fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com bebida favorita Café fica a exatamente 3 posição(ões) da casa com profissão Advogada.",
-      "A casa com esporte favorito Vôlei fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com bebida favorita Leite fica a exatamente 3 posição(ões) da casa com animal de estimação Coelho.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com animal de estimação Papagaio.",
-      "A casa com animal de estimação Papagaio fica à esquerda da casa com esporte favorito Tênis.",
-      "A pessoa na posição 2 tem cor da casa: Amarela.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com esporte favorito Basquete.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com profissão Professora.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com profissão Dentista.",
-      "A primeira casa tem cor da casa: Verde.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com animal de estimação Peixe.",
-      "A casa com bebida favorita Leite fica a exatamente 2 posição(ões) da casa com profissão Advogada.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com cor da casa Azul."
+      "Quem mora na casa branca também tem bebida favorita suco.",
+      "A pessoa com esporte favorito basquete fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com bebida favorita chá.",
+      "A pessoa cuja bebida favorita é café fica a exatamente 3 posição(ões) da casa da advogada.",
+      "A pessoa com esporte favorito vôlei fica à esquerda da casa do engenheiro.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 3 posição(ões) da casa com coelho.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com papagaio.",
+      "A casa com papagaio fica à esquerda da casa com esporte favorito tênis.",
+      "A pessoa na posição 2 mora na casa amarela.",
+      "A casa do engenheiro é vizinha imediata da casa com esporte favorito basquete.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa da professora.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa do dentista.",
+      "A primeira casa é verde.",
+      "A casa amarela fica à esquerda da casa com peixe.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 2 posição(ões) da casa da advogada.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa azul."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -6717,19 +6717,19 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Engenheiro fica à esquerda da casa com animal de estimação Gato.",
-      "A pessoa com hobby Leitura também tem animal de estimação Cachorro.",
-      "A casa com profissão Médico fica à esquerda da casa com cor da casa Azul.",
-      "A casa com cor da casa Azul fica à esquerda da casa com hobby Música.",
-      "A casa com hobby Pintura fica a exatamente 4 posição(ões) da casa com comida favorita Sushi.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com comida favorita Salada.",
-      "A pessoa na posição 4 tem comida favorita: Churrasco.",
-      "A casa com animal de estimação Peixe fica à esquerda da casa com profissão Dentista.",
-      "A casa com cor da casa Verde fica a exatamente 4 posição(ões) da casa com profissão Professora.",
-      "A casa com profissão Dentista fica a exatamente 2 posição(ões) da casa com comida favorita Churrasco.",
-      "A casa com comida favorita Macarrão fica a exatamente 4 posição(ões) da casa com cor da casa Vermelha."
+      "A casa do engenheiro fica à esquerda da casa com gato.",
+      "A pessoa com hobby leitura também tem um cachorro.",
+      "A casa do médico fica à esquerda da casa azul.",
+      "A casa azul fica à esquerda da casa com hobby música.",
+      "A pessoa com hobby pintura fica a exatamente 4 posição(ões) da casa com comida favorita sushi.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa com hobby jardinagem.",
+      "A casa amarela é vizinha imediata da casa com papagaio.",
+      "A casa com gato fica à esquerda da casa com comida favorita salada.",
+      "A comida favorita da pessoa na posição 4 é churrasco.",
+      "A casa com peixe fica à esquerda da casa do dentista.",
+      "A casa verde fica a exatamente 4 posição(ões) da casa da professora.",
+      "A casa do dentista fica a exatamente 2 posição(ões) da casa com comida favorita churrasco.",
+      "A pessoa cuja comida favorita é macarrão fica a exatamente 4 posição(ões) da casa vermelha."
     ],
     "num_pistas": 13,
     "solucao": [
@@ -6838,22 +6838,22 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Advogada fica à esquerda da casa com bebida favorita Leite.",
-      "A casa com profissão Advogada fica a exatamente 2 posição(ões) da casa com animal de estimação Gato.",
-      "A pessoa com profissão Professora também tem hobby Música.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com hobby Música.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com hobby Leitura.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com profissão Médico.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com hobby Leitura fica a exatamente 4 posição(ões) da casa com cor da casa Azul.",
-      "A casa com hobby Pintura fica à esquerda da casa com profissão Médico.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com animal de estimação Coelho.",
-      "A pessoa com cor da casa Amarela também tem bebida favorita Água.",
-      "A casa com hobby Música é vizinha imediata da casa com profissão Dentista.",
-      "A casa com bebida favorita Água fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com cor da casa Vermelha.",
-      "A casa com animal de estimação Peixe fica a exatamente 4 posição(ões) da casa com cor da casa Azul.",
-      "A casa com hobby Pintura fica a exatamente 3 posição(ões) da casa com bebida favorita Suco."
+      "A casa da advogada fica à esquerda da casa com bebida favorita leite.",
+      "A casa da advogada fica a exatamente 2 posição(ões) da casa com gato.",
+      "A professora também tem hobby música.",
+      "A casa verde é vizinha imediata da casa com hobby música.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa com hobby leitura.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa do médico.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com cachorro.",
+      "A pessoa com hobby leitura fica a exatamente 4 posição(ões) da casa azul.",
+      "A pessoa com hobby pintura fica à esquerda da casa do médico.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa com coelho.",
+      "Quem mora na casa amarela também tem bebida favorita água.",
+      "A pessoa com hobby música é vizinha imediata da casa do dentista.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa vermelha.",
+      "A casa com peixe fica a exatamente 4 posição(ões) da casa azul.",
+      "A pessoa com hobby pintura fica a exatamente 3 posição(ões) da casa com bebida favorita suco."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -6962,22 +6962,22 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com cor da casa Branca.",
-      "A pessoa com cor da casa Verde também tem profissão Médico.",
-      "A pessoa com flor preferida Margarida também tem profissão Dentista.",
-      "A casa com profissão Dentista fica à esquerda da casa com cor da casa Azul.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com profissão Dentista.",
-      "A casa com flor preferida Orquídea fica à esquerda da casa com profissão Professora.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com flor preferida Tulipa.",
-      "A casa com flor preferida Girassol fica a exatamente 4 posição(ões) da casa com cor da casa Branca.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com hobby Leitura fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com profissão Dentista fica à esquerda da casa com hobby Música.",
-      "A casa com bebida favorita Café fica à esquerda da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com profissão Engenheiro.",
-      "A casa com bebida favorita Água fica à esquerda da casa com flor preferida Tulipa.",
-      "A casa com flor preferida Orquídea é vizinha imediata da casa com hobby Culinária.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com flor preferida Margarida."
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa branca.",
+      "Quem mora na casa verde é médico.",
+      "A pessoa com flor preferida margarida também é dentista.",
+      "A casa do dentista fica à esquerda da casa azul.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa do dentista.",
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa da professora.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa com flor preferida tulipa.",
+      "A pessoa cuja flor preferida é girassol fica a exatamente 4 posição(ões) da casa branca.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com hobby leitura fica à esquerda da casa com bebida favorita chá.",
+      "A casa do dentista fica à esquerda da casa com hobby música.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa vermelha.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa do engenheiro.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa com flor preferida tulipa.",
+      "A pessoa cuja flor preferida é orquídea é vizinha imediata da casa com hobby culinária.",
+      "A casa vermelha é vizinha imediata da casa com flor preferida margarida."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -7086,24 +7086,24 @@
       }
     ],
     "pistas": [
-      "A pessoa com profissão Médico também tem esporte favorito Tênis.",
-      "A casa com esporte favorito Futebol é vizinha imediata da casa com meio de transporte Moto.",
-      "A casa com esporte favorito Vôlei fica a exatamente 3 posição(ões) da casa com meio de transporte Metrô.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com cor da casa Branca fica a exatamente 3 posição(ões) da casa com animal de estimação Cachorro.",
-      "A pessoa com profissão Engenheiro também tem cor da casa Azul.",
-      "A casa com profissão Advogada é vizinha imediata da casa com esporte favorito Tênis.",
-      "A casa com esporte favorito Natação fica a exatamente 4 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com cor da casa Azul é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com esporte favorito Basquete fica a exatamente 2 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com animal de estimação Papagaio é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com meio de transporte Carro fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com profissão Dentista é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com profissão Engenheiro fica a exatamente 4 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com esporte favorito Vôlei fica à esquerda da casa com meio de transporte Ônibus.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 2 posição(ões) da casa com profissão Advogada.",
-      "A casa com animal de estimação Coelho é vizinha imediata da casa com meio de transporte Bicicleta.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Branca."
+      "O médico também tem esporte favorito tênis.",
+      "A pessoa com esporte favorito futebol é vizinha imediata da casa com meio de transporte moto.",
+      "A pessoa com esporte favorito vôlei fica a exatamente 3 posição(ões) da casa com meio de transporte metrô.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com cachorro.",
+      "A casa branca fica a exatamente 3 posição(ões) da casa com cachorro.",
+      "O engenheiro também tem azul.",
+      "A casa da advogada é vizinha imediata da casa com esporte favorito tênis.",
+      "A pessoa com esporte favorito natação fica a exatamente 4 posição(ões) da casa amarela.",
+      "A casa azul é vizinha imediata da casa com coelho.",
+      "A pessoa com esporte favorito basquete fica a exatamente 2 posição(ões) da casa amarela.",
+      "A casa com papagaio é vizinha imediata da casa verde.",
+      "A pessoa com meio de transporte carro fica a exatamente 2 posição(ões) da casa verde.",
+      "A casa do dentista é vizinha imediata da casa com papagaio.",
+      "A casa do engenheiro fica a exatamente 4 posição(ões) da casa amarela.",
+      "A pessoa com esporte favorito vôlei fica à esquerda da casa com meio de transporte ônibus.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 2 posição(ões) da casa da advogada.",
+      "A casa com coelho é vizinha imediata da casa com meio de transporte bicicleta.",
+      "A casa com peixe é vizinha imediata da casa branca."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -7212,22 +7212,22 @@
       }
     ],
     "pistas": [
-      "A casa com flor preferida Girassol é vizinha imediata da casa com hobby Música.",
-      "A casa com flor preferida Girassol fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com meio de transporte Bicicleta.",
-      "A casa com meio de transporte Ônibus é vizinha imediata da casa com flor preferida Tulipa.",
-      "A casa com cor da casa Verde fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com meio de transporte Bicicleta.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com hobby Culinária.",
-      "A casa com flor preferida Girassol fica à esquerda da casa com cor da casa Azul.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com flor preferida Orquídea.",
-      "A casa com cor da casa Azul fica à esquerda da casa com hobby Leitura.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com meio de transporte Carro.",
-      "A casa com cor da casa Verde fica à esquerda da casa com flor preferida Tulipa.",
-      "A casa com meio de transporte Moto fica a exatamente 2 posição(ões) da casa com flor preferida Rosa.",
-      "A casa com flor preferida Tulipa é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com cor da casa Vermelha."
+      "A pessoa cuja flor preferida é girassol é vizinha imediata da casa com hobby música.",
+      "A pessoa cuja flor preferida é girassol fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa com meio de transporte bicicleta.",
+      "A pessoa com meio de transporte ônibus é vizinha imediata da casa com flor preferida tulipa.",
+      "A casa verde fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A casa vermelha é vizinha imediata da casa com meio de transporte bicicleta.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com hobby culinária.",
+      "A pessoa cuja flor preferida é girassol fica à esquerda da casa azul.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com flor preferida orquídea.",
+      "A casa azul fica à esquerda da casa com hobby leitura.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com meio de transporte carro.",
+      "A casa verde fica à esquerda da casa com flor preferida tulipa.",
+      "A pessoa com meio de transporte moto fica a exatamente 2 posição(ões) da casa com flor preferida rosa.",
+      "A pessoa cuja flor preferida é tulipa é vizinha imediata da casa branca.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa vermelha."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -7336,22 +7336,22 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com hobby Jardinagem.",
-      "A casa com hobby Música é vizinha imediata da casa com nacionalidade Brasileira.",
-      "A pessoa com cor da casa Verde também tem animal de estimação Peixe.",
-      "A casa com bebida favorita Água fica a exatamente 2 posição(ões) da casa com nacionalidade Italiana.",
-      "A pessoa com cor da casa Amarela também tem nacionalidade Argentina.",
-      "A casa com bebida favorita Chá fica a exatamente 4 posição(ões) da casa com nacionalidade Brasileira.",
-      "A casa com nacionalidade Argentina fica à esquerda da casa com cor da casa Vermelha.",
-      "A casa com hobby Culinária é vizinha imediata da casa com nacionalidade Italiana.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com bebida favorita Suco.",
-      "A pessoa com cor da casa Vermelha também tem animal de estimação Papagaio.",
-      "A casa com cor da casa Azul fica à esquerda da casa com nacionalidade Francesa.",
-      "A casa com hobby Leitura é vizinha imediata da casa com nacionalidade Italiana.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com nacionalidade Portuguesa.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com hobby Leitura.",
-      "A casa com cor da casa Azul fica à esquerda da casa com nacionalidade Brasileira.",
-      "A pessoa com animal de estimação Coelho também tem bebida favorita Café."
+      "A casa com peixe é vizinha imediata da casa com hobby jardinagem.",
+      "A pessoa com hobby música é vizinha imediata da casa com nacionalidade brasileira.",
+      "Quem mora na casa verde também tem um peixe.",
+      "A pessoa cuja bebida favorita é água fica a exatamente 2 posição(ões) da casa com nacionalidade italiana.",
+      "Quem mora na casa amarela também tem nacionalidade argentina.",
+      "A pessoa cuja bebida favorita é chá fica a exatamente 4 posição(ões) da casa com nacionalidade brasileira.",
+      "A pessoa com nacionalidade argentina fica à esquerda da casa vermelha.",
+      "A pessoa com hobby culinária é vizinha imediata da casa com nacionalidade italiana.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa com bebida favorita suco.",
+      "Quem mora na casa vermelha também tem um papagaio.",
+      "A casa azul fica à esquerda da casa com nacionalidade francesa.",
+      "A pessoa com hobby leitura é vizinha imediata da casa com nacionalidade italiana.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa com nacionalidade portuguesa.",
+      "A casa vermelha fica à esquerda da casa com hobby leitura.",
+      "A casa azul fica à esquerda da casa com nacionalidade brasileira.",
+      "A pessoa com coelho também tem bebida favorita café."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -7460,22 +7460,22 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Jardinagem fica a exatamente 2 posição(ões) da casa com animal de estimação Peixe.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com hobby Culinária.",
-      "A casa com bebida favorita Água fica à esquerda da casa com profissão Professora.",
-      "A casa com profissão Professora é vizinha imediata da casa com hobby Leitura.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com animal de estimação Peixe.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com hobby Pintura.",
-      "A pessoa com animal de estimação Papagaio também tem hobby Pintura.",
-      "A casa com cor da casa Azul fica à esquerda da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com profissão Dentista.",
-      "A casa com hobby Culinária fica a exatamente 2 posição(ões) da casa com profissão Médico.",
-      "A pessoa com cor da casa Branca também tem profissão Médico.",
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com cor da casa Amarela fica à esquerda da casa com profissão Dentista.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com cor da casa Verde fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com bebida favorita Leite."
+      "A pessoa com hobby jardinagem fica a exatamente 2 posição(ões) da casa com peixe.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa com hobby culinária.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa da professora.",
+      "A casa da professora é vizinha imediata da casa com hobby leitura.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa com peixe.",
+      "A casa com gato é vizinha imediata da casa com hobby pintura.",
+      "A pessoa com papagaio também tem hobby pintura.",
+      "A casa azul fica à esquerda da casa com gato.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa do dentista.",
+      "A pessoa com hobby culinária fica a exatamente 2 posição(ões) da casa do médico.",
+      "Quem mora na casa branca é médico.",
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A casa amarela fica à esquerda da casa do dentista.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com coelho.",
+      "A casa verde fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa com bebida favorita leite."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -7584,24 +7584,24 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Café é vizinha imediata da casa com hobby Pintura.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com cor da casa Amarela.",
-      "A casa com profissão Professora fica à esquerda da casa com cor da casa Azul.",
-      "A casa com animal de estimação Papagaio fica a exatamente 2 posição(ões) da casa com cor da casa Branca.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com animal de estimação Peixe.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com profissão Professora é vizinha imediata da casa com hobby Pintura.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com hobby Leitura.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com profissão Engenheiro.",
-      "A casa com profissão Médico fica à esquerda da casa com cor da casa Branca.",
-      "A casa com profissão Advogada fica a exatamente 3 posição(ões) da casa com bebida favorita Água.",
-      "A casa com animal de estimação Coelho é vizinha imediata da casa com hobby Pintura.",
-      "A casa com cor da casa Verde fica à esquerda da casa com profissão Dentista.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com animal de estimação Coelho.",
-      "A pessoa na posição 4 tem animal de estimação: Gato.",
-      "A casa com hobby Culinária fica a exatamente 2 posição(ões) da casa com cor da casa Azul.",
-      "A pessoa com cor da casa Branca também tem animal de estimação Peixe."
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com hobby pintura.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa com gato.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa amarela.",
+      "A casa da professora fica à esquerda da casa azul.",
+      "A casa com papagaio fica a exatamente 2 posição(ões) da casa branca.",
+      "A casa verde é vizinha imediata da casa com peixe.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa branca.",
+      "A casa da professora é vizinha imediata da casa com hobby pintura.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa com hobby leitura.",
+      "A casa com gato fica à esquerda da casa do engenheiro.",
+      "A casa do médico fica à esquerda da casa branca.",
+      "A casa da advogada fica a exatamente 3 posição(ões) da casa com bebida favorita água.",
+      "A casa com coelho é vizinha imediata da casa com hobby pintura.",
+      "A casa verde fica à esquerda da casa do dentista.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa com coelho.",
+      "A pessoa na posição 4 tem um gato.",
+      "A pessoa com hobby culinária fica a exatamente 2 posição(ões) da casa azul.",
+      "Quem mora na casa branca também tem um peixe."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -7710,22 +7710,22 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Culinária é vizinha imediata da casa com meio de transporte Bicicleta.",
-      "A casa com hobby Leitura é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com profissão Dentista fica à esquerda da casa com hobby Culinária.",
-      "A pessoa na posição 2 tem profissão: Engenheiro.",
-      "A casa com hobby Leitura fica a exatamente 2 posição(ões) da casa com meio de transporte Ônibus.",
-      "A casa com meio de transporte Bicicleta fica a exatamente 2 posição(ões) da casa com animal de estimação Gato.",
-      "A casa com animal de estimação Coelho fica a exatamente 4 posição(ões) da casa com profissão Professora.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com cor da casa Branca.",
-      "A casa com meio de transporte Metrô fica a exatamente 3 posição(ões) da casa com hobby Pintura.",
-      "A casa com hobby Música é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com hobby Leitura fica a exatamente 3 posição(ões) da casa com animal de estimação Peixe.",
-      "A casa com hobby Culinária fica à esquerda da casa com animal de estimação Gato.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com cor da casa Verde.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com profissão Advogada.",
-      "A casa com meio de transporte Carro é vizinha imediata da casa com cor da casa Amarela.",
-      "A pessoa com profissão Professora também tem cor da casa Amarela."
+      "A pessoa com hobby culinária é vizinha imediata da casa com meio de transporte bicicleta.",
+      "A pessoa com hobby leitura é vizinha imediata da casa azul.",
+      "A casa do dentista fica à esquerda da casa com hobby culinária.",
+      "A pessoa na posição 2 é engenheiro.",
+      "A pessoa com hobby leitura fica a exatamente 2 posição(ões) da casa com meio de transporte ônibus.",
+      "A pessoa com meio de transporte bicicleta fica a exatamente 2 posição(ões) da casa com gato.",
+      "A casa com coelho fica a exatamente 4 posição(ões) da casa da professora.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa branca.",
+      "A pessoa com meio de transporte metrô fica a exatamente 3 posição(ões) da casa com hobby pintura.",
+      "A pessoa com hobby música é vizinha imediata da casa com papagaio.",
+      "A pessoa com hobby leitura fica a exatamente 3 posição(ões) da casa com peixe.",
+      "A pessoa com hobby culinária fica à esquerda da casa com gato.",
+      "A casa com cachorro fica à esquerda da casa verde.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa da advogada.",
+      "A pessoa com meio de transporte carro é vizinha imediata da casa amarela.",
+      "A professora também tem amarela."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -7834,23 +7834,23 @@
       }
     ],
     "pistas": [
-      "A casa com bebida favorita Leite fica a exatamente 2 posição(ões) da casa com cor da casa Branca.",
-      "A pessoa na posição 5 tem animal de estimação: Cachorro.",
-      "A casa com esporte favorito Vôlei é vizinha imediata da casa com bebida favorita Suco.",
-      "A primeira casa tem animal de estimação: Peixe.",
-      "A pessoa com esporte favorito Natação também tem profissão Médico.",
-      "A casa com animal de estimação Coelho fica a exatamente 3 posição(ões) da casa com cor da casa Branca.",
-      "A casa com animal de estimação Peixe fica a exatamente 3 posição(ões) da casa com profissão Engenheiro.",
-      "A casa com esporte favorito Natação é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com bebida favorita Chá.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com profissão Professora é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com profissão Dentista fica a exatamente 3 posição(ões) da casa com esporte favorito Vôlei.",
-      "A pessoa com cor da casa Branca também tem esporte favorito Futebol.",
-      "A casa com esporte favorito Natação fica à esquerda da casa com bebida favorita Chá.",
-      "A casa com esporte favorito Basquete fica a exatamente 2 posição(ões) da casa com cor da casa Branca.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com cor da casa Azul fica à esquerda da casa com bebida favorita Água."
+      "A pessoa cuja bebida favorita é leite fica a exatamente 2 posição(ões) da casa branca.",
+      "A pessoa na posição 5 tem um cachorro.",
+      "A pessoa com esporte favorito vôlei é vizinha imediata da casa com bebida favorita suco.",
+      "A primeira casa tem um peixe.",
+      "A pessoa com esporte favorito natação também é médico.",
+      "A casa com coelho fica a exatamente 3 posição(ões) da casa branca.",
+      "A casa com peixe fica a exatamente 3 posição(ões) da casa do engenheiro.",
+      "A pessoa com esporte favorito natação é vizinha imediata da casa com bebida favorita leite.",
+      "A casa vermelha é vizinha imediata da casa com bebida favorita chá.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A casa da professora é vizinha imediata da casa com coelho.",
+      "A casa do dentista fica a exatamente 3 posição(ões) da casa com esporte favorito vôlei.",
+      "Quem mora na casa branca também tem esporte favorito futebol.",
+      "A pessoa com esporte favorito natação fica à esquerda da casa com bebida favorita chá.",
+      "A pessoa com esporte favorito basquete fica a exatamente 2 posição(ões) da casa branca.",
+      "A casa com gato é vizinha imediata da casa vermelha.",
+      "A casa azul fica à esquerda da casa com bebida favorita água."
     ],
     "num_pistas": 17,
     "solucao": [
@@ -7959,22 +7959,22 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Engenheiro fica a exatamente 3 posição(ões) da casa com animal de estimação Cachorro.",
-      "A casa com comida favorita Macarrão fica a exatamente 3 posição(ões) da casa com cor da casa Amarela.",
-      "A pessoa com hobby Música também tem animal de estimação Papagaio.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com comida favorita Pizza.",
-      "A casa com comida favorita Sushi é vizinha imediata da casa com profissão Médico.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com cor da casa Branca.",
-      "A pessoa na posição 3 tem hobby: Leitura.",
-      "A casa com cor da casa Azul fica à esquerda da casa com animal de estimação Gato.",
-      "A pessoa com profissão Professora também tem hobby Jardinagem.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com profissão Médico.",
-      "A casa com profissão Médico é vizinha imediata da casa com hobby Pintura.",
-      "A casa com hobby Pintura é vizinha imediata da casa com cor da casa Vermelha.",
-      "A pessoa com profissão Médico também tem animal de estimação Coelho.",
-      "A pessoa com profissão Professora também tem comida favorita Churrasco.",
-      "A casa com comida favorita Macarrão fica à esquerda da casa com profissão Médico.",
-      "A casa com profissão Advogada fica à esquerda da casa com comida favorita Sushi."
+      "A casa do engenheiro fica a exatamente 3 posição(ões) da casa com cachorro.",
+      "A pessoa cuja comida favorita é macarrão fica a exatamente 3 posição(ões) da casa amarela.",
+      "A pessoa com hobby música também tem um papagaio.",
+      "A casa com peixe é vizinha imediata da casa com comida favorita pizza.",
+      "A pessoa cuja comida favorita é sushi é vizinha imediata da casa do médico.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa branca.",
+      "O hobby da pessoa na posição 3 é leitura.",
+      "A casa azul fica à esquerda da casa com gato.",
+      "A professora também tem hobby jardinagem.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa do médico.",
+      "A casa do médico é vizinha imediata da casa com hobby pintura.",
+      "A pessoa com hobby pintura é vizinha imediata da casa vermelha.",
+      "O médico também tem um coelho.",
+      "A professora também tem comida favorita churrasco.",
+      "A pessoa cuja comida favorita é macarrão fica à esquerda da casa do médico.",
+      "A casa da advogada fica à esquerda da casa com comida favorita sushi."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -8083,23 +8083,23 @@
       }
     ],
     "pistas": [
-      "A casa com cor da casa Azul é vizinha imediata da casa com bebida favorita Água.",
-      "A casa com animal de estimação Cachorro fica à esquerda da casa com cor da casa Vermelha.",
-      "A casa com profissão Médico fica à esquerda da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com animal de estimação Coelho.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com cor da casa Vermelha.",
-      "A pessoa com hobby Jardinagem também tem bebida favorita Suco.",
-      "A casa com profissão Engenheiro fica a exatamente 4 posição(ões) da casa com cor da casa Azul.",
-      "A casa com hobby Pintura fica a exatamente 2 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com hobby Leitura é vizinha imediata da casa com cor da casa Verde.",
-      "A pessoa na posição 1 tem animal de estimação: Peixe.",
-      "A casa com hobby Culinária fica à esquerda da casa com profissão Dentista.",
-      "A pessoa na posição 4 tem animal de estimação: Papagaio.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A casa com bebida favorita Chá é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com cor da casa Branca fica a exatamente 2 posição(ões) da casa com profissão Dentista.",
-      "A casa com profissão Advogada é vizinha imediata da casa com cor da casa Branca.",
-      "A pessoa com animal de estimação Cachorro também tem bebida favorita Chá."
+      "A casa azul é vizinha imediata da casa com bebida favorita água.",
+      "A casa com cachorro fica à esquerda da casa vermelha.",
+      "A casa do médico fica à esquerda da casa com gato.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa com coelho.",
+      "A casa do engenheiro fica à esquerda da casa vermelha.",
+      "A pessoa com hobby jardinagem também tem bebida favorita suco.",
+      "A casa do engenheiro fica a exatamente 4 posição(ões) da casa azul.",
+      "A pessoa com hobby pintura fica a exatamente 2 posição(ões) da casa amarela.",
+      "A pessoa com hobby leitura é vizinha imediata da casa verde.",
+      "A pessoa na posição 1 tem um peixe.",
+      "A pessoa com hobby culinária fica à esquerda da casa do dentista.",
+      "A pessoa na posição 4 tem um papagaio.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa cuja bebida favorita é chá é vizinha imediata da casa verde.",
+      "A casa branca fica a exatamente 2 posição(ões) da casa do dentista.",
+      "A casa da advogada é vizinha imediata da casa branca.",
+      "A pessoa com cachorro também tem bebida favorita chá."
     ],
     "num_pistas": 17,
     "solucao": [
@@ -8208,22 +8208,22 @@
       }
     ],
     "pistas": [
-      "A casa com hobby Culinária fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com hobby Música.",
-      "A casa com profissão Dentista fica à esquerda da casa com hobby Culinária.",
-      "A casa com cor da casa Amarela fica a exatamente 4 posição(ões) da casa com hobby Jardinagem.",
-      "A casa com profissão Advogada é vizinha imediata da casa com bebida favorita Chá.",
-      "A pessoa com bebida favorita Água também tem profissão Advogada.",
-      "A casa com flor preferida Girassol fica à esquerda da casa com hobby Leitura.",
-      "A casa com cor da casa Amarela fica a exatamente 4 posição(ões) da casa com bebida favorita Leite.",
-      "A casa com hobby Pintura fica a exatamente 4 posição(ões) da casa com flor preferida Rosa.",
-      "A casa com profissão Médico é vizinha imediata da casa com flor preferida Orquídea.",
-      "A casa com hobby Música é vizinha imediata da casa com flor preferida Orquídea.",
-      "A pessoa com flor preferida Margarida também tem cor da casa Amarela.",
-      "A casa com hobby Leitura é vizinha imediata da casa com profissão Advogada.",
-      "A pessoa com bebida favorita Chá também tem flor preferida Margarida.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com flor preferida Tulipa fica à esquerda da casa com cor da casa Azul."
+      "A pessoa com hobby culinária fica a exatamente 2 posição(ões) da casa verde.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com hobby música.",
+      "A casa do dentista fica à esquerda da casa com hobby culinária.",
+      "A casa amarela fica a exatamente 4 posição(ões) da casa com hobby jardinagem.",
+      "A casa da advogada é vizinha imediata da casa com bebida favorita chá.",
+      "A pessoa com bebida favorita água também é advogada.",
+      "A pessoa cuja flor preferida é girassol fica à esquerda da casa com hobby leitura.",
+      "A casa amarela fica a exatamente 4 posição(ões) da casa com bebida favorita leite.",
+      "A pessoa com hobby pintura fica a exatamente 4 posição(ões) da casa com flor preferida rosa.",
+      "A casa do médico é vizinha imediata da casa com flor preferida orquídea.",
+      "A pessoa com hobby música é vizinha imediata da casa com flor preferida orquídea.",
+      "A pessoa com flor preferida margarida também tem amarela.",
+      "A pessoa com hobby leitura é vizinha imediata da casa da advogada.",
+      "A pessoa com bebida favorita chá também tem flor preferida margarida.",
+      "A casa do engenheiro é vizinha imediata da casa branca.",
+      "A pessoa cuja flor preferida é tulipa fica à esquerda da casa azul."
     ],
     "num_pistas": 16,
     "solucao": [
@@ -8332,20 +8332,20 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Ônibus fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com meio de transporte Moto é vizinha imediata da casa com cor da casa Amarela.",
-      "A pessoa na posição 4 tem profissão: Advogada.",
-      "A casa com esporte favorito Vôlei fica a exatamente 4 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com esporte favorito Futebol fica à esquerda da casa com cor da casa Branca.",
-      "A casa com meio de transporte Carro é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com cor da casa Verde é vizinha imediata da casa com animal de estimação Cachorro.",
-      "A pessoa com profissão Dentista também tem meio de transporte Bicicleta.",
-      "A casa com cor da casa Azul fica a exatamente 3 posição(ões) da casa com animal de estimação Coelho.",
-      "A casa com animal de estimação Peixe fica a exatamente 3 posição(ões) da casa com esporte favorito Basquete.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Vermelha.",
-      "A casa com esporte favorito Tênis fica à esquerda da casa com animal de estimação Papagaio.",
-      "A casa com animal de estimação Peixe fica a exatamente 4 posição(ões) da casa com profissão Médico.",
-      "A pessoa com profissão Engenheiro também tem cor da casa Branca."
+      "A pessoa com meio de transporte ônibus fica à esquerda da casa amarela.",
+      "A pessoa com meio de transporte moto é vizinha imediata da casa amarela.",
+      "A pessoa na posição 4 é advogada.",
+      "A pessoa com esporte favorito vôlei fica a exatamente 4 posição(ões) da casa amarela.",
+      "A pessoa com esporte favorito futebol fica à esquerda da casa branca.",
+      "A pessoa com meio de transporte carro é vizinha imediata da casa azul.",
+      "A casa verde é vizinha imediata da casa com cachorro.",
+      "O dentista também tem meio de transporte bicicleta.",
+      "A casa azul fica a exatamente 3 posição(ões) da casa com coelho.",
+      "A casa com peixe fica a exatamente 3 posição(ões) da casa com esporte favorito basquete.",
+      "A casa com peixe é vizinha imediata da casa vermelha.",
+      "A pessoa com esporte favorito tênis fica à esquerda da casa com papagaio.",
+      "A casa com peixe fica a exatamente 4 posição(ões) da casa do médico.",
+      "O engenheiro também tem branca."
     ],
     "num_pistas": 14,
     "solucao": [
@@ -8454,23 +8454,23 @@
       }
     ],
     "pistas": [
-      "A casa com meio de transporte Metrô é vizinha imediata da casa com hobby Leitura.",
-      "A casa com flor preferida Girassol fica a exatamente 2 posição(ões) da casa com hobby Música.",
-      "A casa com bebida favorita Leite fica à esquerda da casa com hobby Culinária.",
-      "A casa com bebida favorita Leite é vizinha imediata da casa com hobby Jardinagem.",
-      "A casa com cor da casa Verde fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com bebida favorita Leite fica a exatamente 3 posição(ões) da casa com hobby Música.",
-      "A casa com meio de transporte Carro fica à esquerda da casa com flor preferida Orquídea.",
-      "A casa com hobby Culinária é vizinha imediata da casa com meio de transporte Ônibus.",
-      "A casa com cor da casa Branca fica a exatamente 2 posição(ões) da casa com bebida favorita Suco.",
-      "A pessoa com flor preferida Orquídea também tem bebida favorita Água.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com meio de transporte Metrô fica à esquerda da casa com bebida favorita Café.",
-      "A pessoa com flor preferida Margarida também tem meio de transporte Bicicleta.",
-      "A casa com flor preferida Rosa é vizinha imediata da casa com hobby Pintura.",
-      "A casa com flor preferida Orquídea fica à esquerda da casa com cor da casa Amarela.",
-      "A casa com bebida favorita Leite fica a exatamente 4 posição(ões) da casa com cor da casa Vermelha.",
-      "A casa com hobby Pintura é vizinha imediata da casa com meio de transporte Metrô."
+      "A pessoa com meio de transporte metrô é vizinha imediata da casa com hobby leitura.",
+      "A pessoa cuja flor preferida é girassol fica a exatamente 2 posição(ões) da casa com hobby música.",
+      "A pessoa cuja bebida favorita é leite fica à esquerda da casa com hobby culinária.",
+      "A pessoa cuja bebida favorita é leite é vizinha imediata da casa com hobby jardinagem.",
+      "A casa verde fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 3 posição(ões) da casa com hobby música.",
+      "A pessoa com meio de transporte carro fica à esquerda da casa com flor preferida orquídea.",
+      "A pessoa com hobby culinária é vizinha imediata da casa com meio de transporte ônibus.",
+      "A casa branca fica a exatamente 2 posição(ões) da casa com bebida favorita suco.",
+      "A pessoa com flor preferida orquídea também tem bebida favorita água.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa branca.",
+      "A pessoa com meio de transporte metrô fica à esquerda da casa com bebida favorita café.",
+      "A pessoa com flor preferida margarida também tem meio de transporte bicicleta.",
+      "A pessoa cuja flor preferida é rosa é vizinha imediata da casa com hobby pintura.",
+      "A pessoa cuja flor preferida é orquídea fica à esquerda da casa amarela.",
+      "A pessoa cuja bebida favorita é leite fica a exatamente 4 posição(ões) da casa vermelha.",
+      "A pessoa com hobby pintura é vizinha imediata da casa com meio de transporte metrô."
     ],
     "num_pistas": 17,
     "solucao": [
@@ -8572,23 +8572,23 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Coelho é vizinha imediata da casa com profissão Médico.",
-      "A casa com cor da casa Amarela fica a exatamente 2 posição(ões) da casa com profissão Advogada.",
-      "A casa com profissão Engenheiro fica a exatamente 2 posição(ões) da casa com animal de estimação Peixe.",
-      "A casa com cor da casa Vermelha é vizinha imediata da casa com animal de estimação Peixe.",
-      "A casa com cor da casa Azul fica a exatamente 3 posição(ões) da casa com animal de estimação Gato.",
-      "A casa com bebida favorita Suco fica a exatamente 3 posição(ões) da casa com animal de estimação Cachorro.",
-      "A casa com profissão Professora fica a exatamente 4 posição(ões) da casa com animal de estimação Peixe.",
-      "A pessoa com cor da casa Verde também tem bebida favorita Suco.",
-      "A casa com bebida favorita Leite fica à esquerda da casa com cor da casa Branca.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com cor da casa Laranja.",
-      "A casa com animal de estimação Hamster é vizinha imediata da casa com cor da casa Laranja.",
-      "A pessoa com animal de estimação Hamster também tem bebida favorita Água.",
-      "A casa com cor da casa Azul fica a exatamente 2 posição(ões) da casa com animal de estimação Hamster.",
-      "A casa com animal de estimação Hamster fica a exatamente 2 posição(ões) da casa com bebida favorita Leite.",
-      "A casa com profissão Arquiteto fica a exatamente 3 posição(ões) da casa com cor da casa Laranja.",
-      "A casa com animal de estimação Hamster fica à esquerda da casa com profissão Advogada.",
-      "A pessoa com cor da casa Branca também tem bebida favorita Café."
+      "A casa com coelho é vizinha imediata da casa do médico.",
+      "A casa amarela fica a exatamente 2 posição(ões) da casa da advogada.",
+      "A casa do engenheiro fica a exatamente 2 posição(ões) da casa com peixe.",
+      "A casa vermelha é vizinha imediata da casa com peixe.",
+      "A casa azul fica a exatamente 3 posição(ões) da casa com gato.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 3 posição(ões) da casa com cachorro.",
+      "A casa da professora fica a exatamente 4 posição(ões) da casa com peixe.",
+      "Quem mora na casa verde também tem bebida favorita suco.",
+      "A pessoa cuja bebida favorita é leite fica à esquerda da casa branca.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa laranja.",
+      "A casa com hamster é vizinha imediata da casa laranja.",
+      "A pessoa com hamster também tem bebida favorita água.",
+      "A casa azul fica a exatamente 2 posição(ões) da casa com hamster.",
+      "A casa com hamster fica a exatamente 2 posição(ões) da casa com bebida favorita leite.",
+      "A casa do arquiteto fica a exatamente 3 posição(ões) da casa laranja.",
+      "A casa com hamster fica à esquerda da casa da advogada.",
+      "Quem mora na casa branca também tem bebida favorita café."
     ],
     "num_pistas": 17,
     "solucao": [
@@ -8692,23 +8692,23 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Peixe fica a exatamente 3 posição(ões) da casa com hobby Pintura.",
-      "A pessoa com bebida favorita Suco também tem animal de estimação Peixe.",
-      "A casa com bebida favorita Água fica à esquerda da casa com hobby Pintura.",
-      "A casa com animal de estimação Peixe fica a exatamente 3 posição(ões) da casa com cor da casa Amarela.",
-      "A casa com animal de estimação Hamster fica à esquerda da casa com hobby Pintura.",
-      "A casa com hobby Música fica a exatamente 2 posição(ões) da casa com bebida favorita Leite.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com hobby Culinária.",
-      "A pessoa na posição 1 tem animal de estimação: Papagaio.",
-      "A casa com bebida favorita Café é vizinha imediata da casa com hobby Jardinagem.",
-      "A casa com bebida favorita Suco fica à esquerda da casa com hobby Fotografia.",
-      "A primeira casa tem cor da casa: Azul.",
-      "A casa com hobby Culinária fica a exatamente 3 posição(ões) da casa com bebida favorita Leite.",
-      "A casa com cor da casa Vermelha fica à esquerda da casa com hobby Culinária.",
-      "A casa com bebida favorita Chá fica à esquerda da casa com hobby Culinária.",
-      "A pessoa com cor da casa Laranja também tem animal de estimação Cachorro.",
-      "A casa com bebida favorita Água é vizinha imediata da casa com cor da casa Branca.",
-      "A casa com cor da casa Azul fica a exatamente 2 posição(ões) da casa com animal de estimação Coelho."
+      "A casa com peixe fica a exatamente 3 posição(ões) da casa com hobby pintura.",
+      "A pessoa com bebida favorita suco também tem um peixe.",
+      "A pessoa cuja bebida favorita é água fica à esquerda da casa com hobby pintura.",
+      "A casa com peixe fica a exatamente 3 posição(ões) da casa amarela.",
+      "A casa com hamster fica à esquerda da casa com hobby pintura.",
+      "A pessoa com hobby música fica a exatamente 2 posição(ões) da casa com bebida favorita leite.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa com hobby culinária.",
+      "A pessoa na posição 1 tem um papagaio.",
+      "A pessoa cuja bebida favorita é café é vizinha imediata da casa com hobby jardinagem.",
+      "A pessoa cuja bebida favorita é suco fica à esquerda da casa com hobby fotografia.",
+      "A primeira casa é azul.",
+      "A pessoa com hobby culinária fica a exatamente 3 posição(ões) da casa com bebida favorita leite.",
+      "A casa vermelha fica à esquerda da casa com hobby culinária.",
+      "A pessoa cuja bebida favorita é chá fica à esquerda da casa com hobby culinária.",
+      "Quem mora na casa laranja também tem um cachorro.",
+      "A pessoa cuja bebida favorita é água é vizinha imediata da casa branca.",
+      "A casa azul fica a exatamente 2 posição(ões) da casa com coelho."
     ],
     "num_pistas": 17,
     "solucao": [
@@ -8812,24 +8812,24 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Advogada fica à esquerda da casa com cor da casa Laranja.",
-      "A casa com profissão Médico é vizinha imediata da casa com cor da casa Verde.",
-      "A pessoa na posição 6 tem hobby: Música.",
-      "A casa com meio de transporte Táxi é vizinha imediata da casa com profissão Professora.",
-      "A casa com meio de transporte Bicicleta fica à esquerda da casa com cor da casa Azul.",
-      "A casa com hobby Pintura é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com cor da casa Branca fica à esquerda da casa com profissão Médico.",
-      "A casa com meio de transporte Carro fica à esquerda da casa com profissão Dentista.",
-      "A casa com profissão Arquiteto fica a exatamente 4 posição(ões) da casa com meio de transporte Ônibus.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com profissão Engenheiro.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com meio de transporte Moto.",
-      "A casa com cor da casa Branca fica a exatamente 2 posição(ões) da casa com meio de transporte Metrô.",
-      "A pessoa com hobby Leitura também tem cor da casa Azul.",
-      "A casa com profissão Advogada é vizinha imediata da casa com cor da casa Vermelha.",
-      "A pessoa com meio de transporte Metrô também tem hobby Jardinagem.",
-      "A casa com meio de transporte Táxi é vizinha imediata da casa com cor da casa Vermelha.",
-      "A pessoa com meio de transporte Táxi também tem hobby Música.",
-      "A casa com meio de transporte Táxi é vizinha imediata da casa com hobby Culinária."
+      "A casa da advogada fica à esquerda da casa laranja.",
+      "A casa do médico é vizinha imediata da casa verde.",
+      "O hobby da pessoa na posição 6 é música.",
+      "A pessoa com meio de transporte táxi é vizinha imediata da casa da professora.",
+      "A pessoa com meio de transporte bicicleta fica à esquerda da casa azul.",
+      "A pessoa com hobby pintura é vizinha imediata da casa azul.",
+      "A casa branca fica à esquerda da casa do médico.",
+      "A pessoa com meio de transporte carro fica à esquerda da casa do dentista.",
+      "A casa do arquiteto fica a exatamente 4 posição(ões) da casa com meio de transporte ônibus.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa do engenheiro.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com meio de transporte moto.",
+      "A casa branca fica a exatamente 2 posição(ões) da casa com meio de transporte metrô.",
+      "A pessoa com hobby leitura também tem azul.",
+      "A casa da advogada é vizinha imediata da casa vermelha.",
+      "A pessoa com meio de transporte metrô também tem hobby jardinagem.",
+      "A pessoa com meio de transporte táxi é vizinha imediata da casa vermelha.",
+      "A pessoa com meio de transporte táxi também tem hobby música.",
+      "A pessoa com meio de transporte táxi é vizinha imediata da casa com hobby culinária."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -8933,24 +8933,24 @@
       }
     ],
     "pistas": [
-      "A casa com animal de estimação Cachorro fica a exatamente 3 posição(ões) da casa com esporte favorito Vôlei.",
-      "A casa com cor da casa Laranja fica à esquerda da casa com esporte favorito Natação.",
-      "A casa com cor da casa Branca fica à esquerda da casa com animal de estimação Peixe.",
-      "A casa com bebida favorita Suco fica a exatamente 2 posição(ões) da casa com esporte favorito Corrida.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com cor da casa Azul.",
-      "A casa com bebida favorita Refrigerante fica à esquerda da casa com esporte favorito Corrida.",
-      "A casa com cor da casa Branca fica a exatamente 2 posição(ões) da casa com bebida favorita Chá.",
-      "A casa com esporte favorito Tênis fica a exatamente 2 posição(ões) da casa com cor da casa Verde.",
-      "A casa com bebida favorita Suco é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com bebida favorita Leite.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com cor da casa Verde.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com cor da casa Vermelha.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com bebida favorita Refrigerante.",
-      "A casa com esporte favorito Tênis é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A pessoa com esporte favorito Vôlei também tem bebida favorita Suco.",
-      "A casa com esporte favorito Basquete fica à esquerda da casa com bebida favorita Café.",
-      "A casa com bebida favorita Café fica à esquerda da casa com cor da casa Amarela.",
-      "A pessoa com cor da casa Amarela também tem animal de estimação Hamster."
+      "A casa com cachorro fica a exatamente 3 posição(ões) da casa com esporte favorito vôlei.",
+      "A casa laranja fica à esquerda da casa com esporte favorito natação.",
+      "A casa branca fica à esquerda da casa com peixe.",
+      "A pessoa cuja bebida favorita é suco fica a exatamente 2 posição(ões) da casa com esporte favorito corrida.",
+      "A casa com peixe é vizinha imediata da casa azul.",
+      "A pessoa cuja bebida favorita é refrigerante fica à esquerda da casa com esporte favorito corrida.",
+      "A casa branca fica a exatamente 2 posição(ões) da casa com bebida favorita chá.",
+      "A pessoa com esporte favorito tênis fica a exatamente 2 posição(ões) da casa verde.",
+      "A pessoa cuja bebida favorita é suco é vizinha imediata da casa com gato.",
+      "A casa com peixe é vizinha imediata da casa com bebida favorita leite.",
+      "A casa com gato fica à esquerda da casa verde.",
+      "A casa com gato fica à esquerda da casa vermelha.",
+      "A casa com gato fica à esquerda da casa com bebida favorita refrigerante.",
+      "A pessoa com esporte favorito tênis é vizinha imediata da casa com papagaio.",
+      "A pessoa com esporte favorito vôlei também tem bebida favorita suco.",
+      "A pessoa com esporte favorito basquete fica à esquerda da casa com bebida favorita café.",
+      "A pessoa cuja bebida favorita é café fica à esquerda da casa amarela.",
+      "Quem mora na casa amarela também tem um hamster."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -9054,24 +9054,24 @@
       }
     ],
     "pistas": [
-      "A pessoa com profissão Engenheiro também tem animal de estimação Coelho.",
-      "A casa com hobby Fotografia fica a exatamente 3 posição(ões) da casa com comida favorita Macarrão.",
-      "A casa com hobby Fotografia fica a exatamente 2 posição(ões) da casa com animal de estimação Papagaio.",
-      "A casa com animal de estimação Hamster fica à esquerda da casa com comida favorita Macarrão.",
-      "A casa com animal de estimação Peixe é vizinha imediata da casa com hobby Música.",
-      "A casa com hobby Fotografia fica a exatamente 2 posição(ões) da casa com profissão Arquiteto.",
-      "A casa com profissão Engenheiro fica à esquerda da casa com animal de estimação Cachorro.",
-      "A casa com hobby Fotografia fica a exatamente 4 posição(ões) da casa com profissão Professora.",
-      "A casa com profissão Médico fica a exatamente 2 posição(ões) da casa com comida favorita Pizza.",
-      "A pessoa com profissão Professora também tem hobby Pintura.",
-      "A casa com comida favorita Churrasco fica a exatamente 3 posição(ões) da casa com profissão Dentista.",
-      "A casa com comida favorita Churrasco é vizinha imediata da casa com animal de estimação Gato.",
-      "A casa com hobby Fotografia é vizinha imediata da casa com comida favorita Salada.",
-      "A pessoa na posição 3 tem comida favorita: Pizza.",
-      "A casa com animal de estimação Coelho fica a exatamente 2 posição(ões) da casa com hobby Culinária.",
-      "A casa com hobby Jardinagem fica à esquerda da casa com animal de estimação Hamster.",
-      "A casa com hobby Fotografia fica a exatamente 4 posição(ões) da casa com comida favorita Sushi.",
-      "A casa com profissão Arquiteto fica à esquerda da casa com hobby Música."
+      "O engenheiro também tem um coelho.",
+      "A pessoa com hobby fotografia fica a exatamente 3 posição(ões) da casa com comida favorita macarrão.",
+      "A pessoa com hobby fotografia fica a exatamente 2 posição(ões) da casa com papagaio.",
+      "A casa com hamster fica à esquerda da casa com comida favorita macarrão.",
+      "A casa com peixe é vizinha imediata da casa com hobby música.",
+      "A pessoa com hobby fotografia fica a exatamente 2 posição(ões) da casa do arquiteto.",
+      "A casa do engenheiro fica à esquerda da casa com cachorro.",
+      "A pessoa com hobby fotografia fica a exatamente 4 posição(ões) da casa da professora.",
+      "A casa do médico fica a exatamente 2 posição(ões) da casa com comida favorita pizza.",
+      "A professora também tem hobby pintura.",
+      "A pessoa cuja comida favorita é churrasco fica a exatamente 3 posição(ões) da casa do dentista.",
+      "A pessoa cuja comida favorita é churrasco é vizinha imediata da casa com gato.",
+      "A pessoa com hobby fotografia é vizinha imediata da casa com comida favorita salada.",
+      "A comida favorita da pessoa na posição 3 é pizza.",
+      "A casa com coelho fica a exatamente 2 posição(ões) da casa com hobby culinária.",
+      "A pessoa com hobby jardinagem fica à esquerda da casa com hamster.",
+      "A pessoa com hobby fotografia fica a exatamente 4 posição(ões) da casa com comida favorita sushi.",
+      "A casa do arquiteto fica à esquerda da casa com hobby música."
     ],
     "num_pistas": 18,
     "solucao": [
@@ -9175,22 +9175,22 @@
       }
     ],
     "pistas": [
-      "A casa com profissão Médico fica a exatamente 3 posição(ões) da casa com cor da casa Laranja.",
-      "A casa com cor da casa Amarela fica a exatamente 3 posição(ões) da casa com hobby Culinária.",
-      "A casa com hobby Jardinagem é vizinha imediata da casa com cor da casa Verde.",
-      "A casa com animal de estimação Gato fica à esquerda da casa com cor da casa Verde.",
-      "A casa com hobby Música fica à esquerda da casa com profissão Professora.",
-      "A casa com cor da casa Branca fica à esquerda da casa com hobby Fotografia.",
-      "A casa com animal de estimação Gato é vizinha imediata da casa com profissão Dentista.",
-      "A casa com profissão Advogada fica à esquerda da casa com hobby Culinária.",
-      "A pessoa com cor da casa Azul também tem profissão Médico.",
-      "A casa com animal de estimação Hamster fica à esquerda da casa com cor da casa Amarela.",
-      "A primeira casa tem animal de estimação: Peixe.",
-      "A casa com hobby Fotografia fica a exatamente 3 posição(ões) da casa com profissão Dentista.",
-      "A pessoa na posição 3 tem animal de estimação: Cachorro.",
-      "A casa com profissão Engenheiro é vizinha imediata da casa com animal de estimação Papagaio.",
-      "A casa com hobby Leitura fica a exatamente 3 posição(ões) da casa com cor da casa Verde.",
-      "A casa com cor da casa Amarela é vizinha imediata da casa com profissão Advogada."
+      "A casa do médico fica a exatamente 3 posição(ões) da casa laranja.",
+      "A casa amarela fica a exatamente 3 posição(ões) da casa com hobby culinária.",
+      "A pessoa com hobby jardinagem é vizinha imediata da casa verde.",
+      "A casa com gato fica à esquerda da casa verde.",
+      "A pessoa com hobby música fica à esquerda da casa da professora.",
+      "A casa branca fica à esquerda da casa com hobby fotografia.",
+      "A casa com gato é vizinha imediata da casa do dentista.",
+      "A casa da advogada fica à esquerda da casa com hobby culinária.",
+      "Quem mora na casa azul é médico.",
+      "A casa com hamster fica à esquerda da casa amarela.",
+      "A primeira casa tem um peixe.",
+      "A pessoa com hobby fotografia fica a exatamente 3 posição(ões) da casa do dentista.",
+      "A pessoa na posição 3 tem um cachorro.",
+      "A casa do engenheiro é vizinha imediata da casa com papagaio.",
+      "A pessoa com hobby leitura fica a exatamente 3 posição(ões) da casa verde.",
+      "A casa amarela é vizinha imediata da casa da advogada."
     ],
     "num_pistas": 16,
     "solucao": [

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import PuzzleGame from '@/components/puzzle/PuzzleGame'
 import ProximoPuzzle from '@/components/puzzle/ProximoPuzzle'
+import FeedbackButtons from '@/components/FeedbackButtons'
 
 export async function generateStaticParams() {
   return allPuzzles.map(p => ({ id: p.id }))
@@ -35,7 +36,8 @@ export default async function PuzzlePage({ params }: { params: Promise<{ id: str
 
       <PuzzleGame puzzle={puzzle} />
 
-      <div className="flex justify-center pt-2">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+        <FeedbackButtons id={puzzle.id} tipo="puzzle" />
         <ProximoPuzzle currentId={puzzle.id} />
       </div>
     </div>

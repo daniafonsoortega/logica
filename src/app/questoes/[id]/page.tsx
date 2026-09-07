@@ -4,6 +4,7 @@ import Link from 'next/link'
 import QuestaoGame from '@/components/questao/QuestaoGame'
 import ProximaQuestao from '@/components/questao/ProximaQuestao'
 import FeedbackButtons from '@/components/FeedbackButtons'
+import DailyLimitGuard from '@/components/DailyLimitGuard'
 
 export async function generateStaticParams() {
   return allQuestoes.map(q => ({ id: q.id }))
@@ -23,18 +24,16 @@ export default async function QuestaoPage({ params }: { params: Promise<{ id: st
             <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${NIVEL_COLORS[questao.nivel]}`}>
               {NIVEL_LABELS[questao.nivel]}
             </span>
-            <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">
-              {questao.banca}
-            </span>
+            <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">{questao.banca}</span>
           </div>
           <h1 className="text-xl font-bold text-gray-900">{questao.orgao} · {questao.ano}</h1>
         </div>
-        <Link href="/" className="text-sm text-purple-600 hover:underline whitespace-nowrap">
-          ← Início
-        </Link>
+        <Link href="/" className="text-sm text-purple-600 hover:underline whitespace-nowrap">← Início</Link>
       </div>
 
-      <QuestaoGame questao={questao} />
+      <DailyLimitGuard>
+        <QuestaoGame questao={questao} />
+      </DailyLimitGuard>
 
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
         <FeedbackButtons id={questao.id} tipo="questao" />

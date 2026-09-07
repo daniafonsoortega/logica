@@ -1,5 +1,6 @@
 import { getPuzzleById, allPuzzles, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import PuzzleGame from '@/components/puzzle/PuzzleGame'
 
 export async function generateStaticParams() {
@@ -26,9 +27,9 @@ export default async function PuzzlePage({ params }: { params: Promise<{ id: str
             {puzzle.num_posicoes} posições · {puzzle.atributos.length} atributos · {puzzle.num_pistas} pistas
           </p>
         </div>
-        <a href="/puzzles" className="text-sm text-blue-600 hover:underline whitespace-nowrap">
+        <Link href="/puzzles" className="text-sm text-blue-600 hover:underline whitespace-nowrap">
           ← Todos os puzzles
-        </a>
+        </Link>
       </div>
       <PuzzleGame puzzle={puzzle} />
     </div>

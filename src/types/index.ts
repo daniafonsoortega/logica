@@ -23,6 +23,7 @@ export interface Puzzle {
   pistas: string[]
   num_pistas: number
   solucao: SolucaoPosicao[]
+  dicas?: string[]   // opcional — se ausente, gera automaticamente
 }
 
 // Questão de Concurso (CQ)
@@ -46,6 +47,7 @@ export interface Questao {
   alternativas: Alternativas
   gabarito: string
   explicacao: string
+  dicas?: string[]   // opcional — se ausente, gera automaticamente
 }
 
 // Estado do jogo — puzzle

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,16 +13,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-gray-50">
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-            <a href="/" className="font-bold text-xl text-blue-700 tracking-tight">
+            <Link href="/" className="font-bold text-xl text-blue-700 tracking-tight">
               🧠 LogicaMente
-            </a>
+            </Link>
             <div className="flex gap-6 text-sm font-medium">
-              <a href="/puzzles" className="text-gray-600 hover:text-blue-700 transition-colors">
+              <Link href="/puzzles" className="text-gray-600 hover:text-blue-700 transition-colors">
                 Puzzles Lógicos
-              </a>
-              <a href="/questoes" className="text-gray-600 hover:text-blue-700 transition-colors">
+              </Link>
+              <Link href="/questoes" className="text-gray-600 hover:text-blue-700 transition-colors">
                 Questões de Concurso
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

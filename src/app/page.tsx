@@ -3,20 +3,18 @@ import { allPuzzles, allQuestoes, NIVEL_LABELS } from '@/lib/data'
 
 export default function Home() {
   const puzzleStats = {
-    total: allPuzzles.length,
-    facil: allPuzzles.filter(p => p.nivel === 'facil').length,
-    medio: allPuzzles.filter(p => p.nivel === 'medio').length,
+    facil:   allPuzzles.filter(p => p.nivel === 'facil').length,
+    medio:   allPuzzles.filter(p => p.nivel === 'medio').length,
     dificil: allPuzzles.filter(p => p.nivel === 'dificil').length,
-    expert: allPuzzles.filter(p => p.nivel === 'expert').length,
+    expert:  allPuzzles.filter(p => p.nivel === 'expert').length,
   }
   const questaoStats = {
-    total: allQuestoes.length,
+    total:  allQuestoes.length,
     bancas: [...new Set(allQuestoes.map(q => q.banca))].length,
   }
 
   return (
     <div className="space-y-12">
-      {/* Hero */}
       <section className="text-center py-16 space-y-4">
         <h1 className="text-5xl font-black text-gray-900 tracking-tight">
           Treine seu <span className="text-blue-600">raciocínio lógico</span>
@@ -26,29 +24,21 @@ export default function Home() {
           Progressão por nível, explicações detalhadas.
         </p>
         <div className="flex gap-4 justify-center pt-4">
-          <Link
-            href="/puzzles"
-            className="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-lg"
-          >
+          <Link href="/puzzles" className="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-lg">
             Jogar Puzzles
           </Link>
-          <Link
-            href="/questoes"
-            className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors text-lg"
-          >
+          <Link href="/questoes" className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors text-lg">
             Questões de Concurso
           </Link>
         </div>
       </section>
 
-      {/* Cards dos modos */}
       <section className="grid md:grid-cols-2 gap-8">
-        {/* Puzzles */}
         <div className="bg-white rounded-2xl border border-gray-200 p-8 space-y-4 hover:shadow-md transition-shadow">
           <div className="text-4xl">🔍</div>
           <h2 className="text-2xl font-bold text-gray-900">Puzzles Lógicos</h2>
           <p className="text-gray-500">
-            Resolva sequências dedutivas estilo "Einstein Puzzle". Você recebe pistas e precisa
+            Resolva sequências dedutivas estilo Einstein Puzzle. Você recebe pistas e precisa
             descobrir a combinação exata de atributos para cada posição. Treina raciocínio por
             eliminação e lógica relacional.
           </p>
@@ -56,24 +46,17 @@ export default function Home() {
             {(['facil','medio','dificil','expert'] as const).map(n => (
               <div key={n} className={`rounded-lg p-2 text-center text-xs font-semibold nivel-${n}`}>
                 <div className="text-lg font-black">
-                  {n === 'facil' ? puzzleStats.facil :
-                   n === 'medio' ? puzzleStats.medio :
-                   n === 'dificil' ? puzzleStats.dificil :
-                   puzzleStats.expert}
+                  {puzzleStats[n]}
                 </div>
                 <div>{NIVEL_LABELS[n]}</div>
               </div>
             ))}
           </div>
-          <Link
-            href="/puzzles"
-            className="block text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
-          >
+          <Link href="/puzzles" className="block text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
             Começar →
           </Link>
         </div>
 
-        {/* Questões */}
         <div className="bg-white rounded-2xl border border-gray-200 p-8 space-y-4 hover:shadow-md transition-shadow">
           <div className="text-4xl">📝</div>
           <h2 className="text-2xl font-bold text-gray-900">Questões de Concurso</h2>
@@ -90,21 +73,16 @@ export default function Home() {
               <span>Bancas representadas</span>
               <span className="font-bold text-gray-900">{questaoStats.bancas}</span>
             </div>
-            <div className="flex justify-between">
-              <span>CESPE · FCC · FGV · VUNESP · IBFC...</span>
-              <span></span>
+            <div className="flex justify-between text-xs text-gray-400">
+              <span>CESPE · FCC · FGV · VUNESP · IBFC e mais</span>
             </div>
           </div>
-          <Link
-            href="/questoes"
-            className="block text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors"
-          >
+          <Link href="/questoes" className="block text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors">
             Começar →
           </Link>
         </div>
       </section>
 
-      {/* Como funciona */}
       <section className="bg-blue-50 rounded-2xl p-8 space-y-6">
         <h2 className="text-2xl font-bold text-center text-gray-900">Como funciona</h2>
         <div className="grid md:grid-cols-3 gap-6">

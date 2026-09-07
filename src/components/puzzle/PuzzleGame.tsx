@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import type { Puzzle, GridState } from '@/types'
+import { recordResult } from '@/lib/stats'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb } from 'lucide-react'
 
 interface Props { puzzle: Puzzle }
@@ -9,28 +10,24 @@ type GameStatus = 'jogando' | 'correto' | 'incorreto'
 
 function gerarDicas(puzzle: Puzzle): string[] {
   if (puzzle.dicas && puzzle.dicas.length > 0) return puzzle.dicas
-
   const pistasDiretas = puzzle.pistas.filter(p =>
     /posição|posicao|primeiro|último|segundo|terceiro|quarto|quinto|1º|2º|3º|4º|5º/i.test(p)
   )
   const pistasRelacionais = puzzle.pistas.filter(p =>
     /ao lado|vizinho|imediatamente|próximo|antes|depois|seguinte|adjacente/i.test(p)
   )
-
   const dica1 = pistasDiretas.length > 0
-    ? `Comece por esta pista: "${pistasDiretas[0].length > 90 ? pistasDiretas[0].slice(0, 90) + '…' : pistasDiretas[0]}" — ela fixa um elemento em uma posição específica, o que limita bastante as demais possibilidades.`
-    : `Identifique as pistas mais diretas — aquelas que colocam um elemento em uma posição exata. Elas são o ponto de partida ideal.`
-
+    ? `Comece por esta pista: "${pistasDiretas[0].length > 90 ? pistasDiretas[0].slice(0, 90) + '…' : pistasDiretas[0]}" — ela fixa um elemento em uma posição exata.`
+    : `Identifique as pistas mais diretas — aquelas que colocam um elemento em uma posição específica. São o melhor ponto de partida.`
   const dica2 = pistasRelacionais.length > 0
-    ? `Há ${pistasRelacionais.length} pista${pistasRelacionais.length > 1 ? 's' : ''} de posição relativa (ao lado, antes, depois…). Use-as para criar cadeias: se você sabe onde está A, descobre onde está B.`
-    : `Use eliminação progressiva: para cada posição, descarte os valores que já aparecem confirmados em outras posições. O que sobrar é a resposta.`
-
-  const dica3 = `Tente preencher o atributo "${puzzle.atributos[0].nome}" completamente antes de passar para os outros. Ter uma coluna inteira resolvida cria um ponto de apoio sólido para deduzir o restante.`
-
+    ? `Há ${pistasRelacionais.length} pista${pistasRelacionais.length > 1 ? 's' : ''} de posição relativa (ao lado, antes, depois…). Use-as em cadeia: saber onde está A revela onde está B.`
+    : `Eliminação progressiva: para cada posição, descarte os valores já confirmados em outras. O que sobrar é a resposta.`
+  const dica3 = `Tente preencher o atributo "${puzzle.atributos[0].nome}" por completo antes de avançar. Uma coluna inteira resolvida cria um ponto de apoio para as demais.`
   return [dica1, dica2, dica3]
 }
 
 export default function PuzzleGame({ puzzle }: Props) {
+  const startTime = useRef(Date.now())
   const [grid, setGrid] = useState<GridState>(() => {
     const g: GridState = {}
     for (let p = 1; p <= puzzle.num_posicoes; p++) {
@@ -39,9 +36,10 @@ export default function PuzzleGame({ puzzle }: Props) {
     }
     return g
   })
-  const [status, setStatus] = useState<GameStatus>('jogando')
+  const [status, setStatus]           = useState<GameStatus>('jogando')
   const [pistasVisiveis, setPistasVisiveis] = useState(false)
-  const [dicaAtual, setDicaAtual] = useState(0)
+  const [dicaAtual, setDicaAtual]     = useState(0)
+  const [reportado, setReportado]     = useState(false)
 
   const dicas = gerarDicas(puzzle)
 
@@ -61,12 +59,24 @@ export default function PuzzleGame({ puzzle }: Props) {
         if (grid[pos]?.[attr.chave] !== (sol[attr.chave] as string)) erros++
       }
     }
-    setStatus(erros === 0 ? 'correto' : 'incorreto')
+    const correto = erros === 0
+    setStatus(correto ? 'correto' : 'incorreto')
+    if (correto && !reportado) {
+      setReportado(true)
+      recordResult({
+        id: puzzle.id, tipo: 'puzzle', resolvido: true,
+        dicasUsadas: dicaAtual, semDicas: dicaAtual === 0,
+        tempoSegundos: Math.round((Date.now() - startTime.current) / 1000),
+        primeiraVez: true,
+        dataISO: new Date().toISOString(),
+      })
+    }
   }
 
   const reiniciar = () => {
     setStatus('jogando')
     setDicaAtual(0)
+    startTime.current = Date.now()
     const g: GridState = {}
     for (let p = 1; p <= puzzle.num_posicoes; p++) {
       g[p] = {}
@@ -76,7 +86,7 @@ export default function PuzzleGame({ puzzle }: Props) {
   }
 
   const totalCelulas = puzzle.num_posicoes * puzzle.atributos.length
-  const preenchidas = Object.values(grid).reduce((acc, pos) =>
+  const preenchidas  = Object.values(grid).reduce((acc, pos) =>
     acc + Object.values(pos).filter(v => v !== null).length, 0)
   const progresso = Math.round((preenchidas / totalCelulas) * 100)
 
@@ -103,9 +113,7 @@ export default function PuzzleGame({ puzzle }: Props) {
           </div>
         )}
         {!pistasVisiveis && (
-          <p className="px-6 pb-4 border-t border-gray-100 text-xs text-gray-400 pt-3">
-            Clique para ver as pistas
-          </p>
+          <p className="px-6 pb-4 border-t border-gray-100 text-xs text-gray-400 pt-3">Clique para ver as pistas</p>
         )}
       </div>
 
@@ -116,9 +124,7 @@ export default function PuzzleGame({ puzzle }: Props) {
             <tr className="border-b border-gray-100">
               <th className="text-left px-4 py-3 text-gray-500 font-medium w-24">Posição</th>
               {puzzle.atributos.map(attr => (
-                <th key={attr.chave} className="text-left px-4 py-3 text-gray-700 font-semibold">
-                  {attr.nome}
-                </th>
+                <th key={attr.chave} className="text-left px-4 py-3 text-gray-700 font-semibold">{attr.nome}</th>
               ))}
             </tr>
           </thead>
@@ -126,16 +132,14 @@ export default function PuzzleGame({ puzzle }: Props) {
             {Array.from({ length: puzzle.num_posicoes }, (_, i) => i + 1).map(pos => (
               <tr key={pos} className="border-b border-gray-50 hover:bg-gray-50/50">
                 <td className="px-4 py-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mx-auto font-bold text-sm">
-                    {pos}
-                  </div>
+                  <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mx-auto font-bold text-sm">{pos}</div>
                 </td>
                 {puzzle.atributos.map(attr => (
                   <td key={attr.chave} className="px-3 py-2">
                     <div className="flex flex-wrap gap-1.5">
                       {attr.valores.map(val => {
-                        const selecionado = grid[pos]?.[attr.chave] === val
-                        const usadoEmOutra = Object.entries(grid).some(
+                        const selecionado   = grid[pos]?.[attr.chave] === val
+                        const usadoEmOutra  = Object.entries(grid).some(
                           ([p, atribs]) => Number(p) !== pos && atribs[attr.chave] === val
                         )
                         return (
@@ -143,11 +147,9 @@ export default function PuzzleGame({ puzzle }: Props) {
                             onClick={() => handleSelect(pos, attr.chave, val)}
                             disabled={status !== 'jogando' || (usadoEmOutra && !selecionado)}
                             className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-all ${
-                              selecionado
-                                ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
-                                : usadoEmOutra
-                                ? 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed line-through'
-                                : 'bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:text-blue-700'
+                              selecionado        ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
+                              : usadoEmOutra     ? 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed line-through'
+                              :                   'bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:text-blue-700'
                             }`}>
                             {val}
                           </button>
@@ -182,14 +184,12 @@ export default function PuzzleGame({ puzzle }: Props) {
         </div>
       </div>
 
-      {/* Dicas — só durante o jogo */}
+      {/* Dicas */}
       {status === 'jogando' && (
         <div className="border border-amber-200 bg-amber-50 rounded-2xl p-4 space-y-3">
           <div className="flex items-center gap-2 text-amber-700 font-semibold text-sm">
-            <Lightbulb size={16} className="text-amber-500 shrink-0" />
-            Dicas
+            <Lightbulb size={16} className="text-amber-500 shrink-0" />Dicas
           </div>
-
           {dicaAtual > 0 && (
             <div className="space-y-2">
               {dicas.slice(0, dicaAtual).map((dica, i) => (
@@ -200,12 +200,9 @@ export default function PuzzleGame({ puzzle }: Props) {
               ))}
             </div>
           )}
-
           {dicaAtual < dicas.length ? (
-            <button
-              onClick={() => setDicaAtual(d => d + 1)}
-              className="text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors flex items-center gap-1"
-            >
+            <button onClick={() => setDicaAtual(d => d + 1)}
+              className="text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors">
               {dicaAtual === 0 ? '💡 Pedir uma dica' : 'Mais uma dica →'}
             </button>
           ) : (
@@ -214,21 +211,21 @@ export default function PuzzleGame({ puzzle }: Props) {
         </div>
       )}
 
-      {/* Resultado correto */}
+      {/* Correto */}
       {status === 'correto' && (
         <div className="bg-green-50 border border-green-200 rounded-2xl p-6 text-center space-y-2">
           <CheckCircle size={40} className="text-green-500 mx-auto" />
           <h2 className="text-xl font-black text-green-800">Parabéns! Correto! 🎉</h2>
-          <p className="text-green-700 text-sm">Você resolveu o puzzle com sucesso.</p>
-          <div className="flex gap-3 justify-center pt-2">
-            <button onClick={reiniciar} className="px-4 py-2 bg-white border border-green-300 rounded-xl text-green-700 text-sm font-medium hover:bg-green-50 transition-colors">
-              Jogar novamente
-            </button>
-          </div>
+          <p className="text-green-700 text-sm">
+            {dicaAtual === 0 ? 'Resolvido sem dicas — +50 pts bônus!' : `Resolvido com ${dicaAtual} dica${dicaAtual > 1 ? 's' : ''}.`}
+          </p>
+          <button onClick={reiniciar} className="px-4 py-2 bg-white border border-green-300 rounded-xl text-green-700 text-sm font-medium hover:bg-green-50 transition-colors">
+            Jogar novamente
+          </button>
         </div>
       )}
 
-      {/* Resultado incorreto */}
+      {/* Incorreto */}
       {status === 'incorreto' && (
         <div className="bg-red-50 border border-red-200 rounded-2xl p-5 space-y-3">
           <div className="flex items-center gap-2">

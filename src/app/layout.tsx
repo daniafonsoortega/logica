@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import ReportarProblema from '@/components/ReportarProblema'
 import DailyCounter from '@/components/DailyCounter'
+import AuthButton from '@/components/AuthButton'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -25,14 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/ranking" className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
               </div>
               <DailyCounter />
+              <AuthButton />
             </div>
           </div>
         </nav>
-
-        <main className="max-w-6xl mx-auto px-4 py-8">
-          {children}
-        </main>
-
+        <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
         <footer className="border-t border-gray-200 mt-16 py-6">
           <div className="max-w-6xl mx-auto px-4 flex items-center justify-between text-sm text-gray-400">
             <span>LogicaMente · Treine sua mente todos os dias</span>

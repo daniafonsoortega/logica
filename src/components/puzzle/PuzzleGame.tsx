@@ -1,12 +1,34 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import Link from 'next/link'
 import type { Puzzle, GridState } from '@/types'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb } from 'lucide-react'
 
 interface Props { puzzle: Puzzle }
 type GameStatus = 'jogando' | 'correto' | 'incorreto'
+
+function gerarDicas(puzzle: Puzzle): string[] {
+  if (puzzle.dicas && puzzle.dicas.length > 0) return puzzle.dicas
+
+  const pistasDiretas = puzzle.pistas.filter(p =>
+    /posição|posicao|primeiro|último|segundo|terceiro|quarto|quinto|1º|2º|3º|4º|5º/i.test(p)
+  )
+  const pistasRelacionais = puzzle.pistas.filter(p =>
+    /ao lado|vizinho|imediatamente|próximo|antes|depois|seguinte|adjacente/i.test(p)
+  )
+
+  const dica1 = pistasDiretas.length > 0
+    ? `Comece por esta pista: "${pistasDiretas[0].length > 90 ? pistasDiretas[0].slice(0, 90) + '…' : pistasDiretas[0]}" — ela fixa um elemento em uma posição específica, o que limita bastante as demais possibilidades.`
+    : `Identifique as pistas mais diretas — aquelas que colocam um elemento em uma posição exata. Elas são o ponto de partida ideal.`
+
+  const dica2 = pistasRelacionais.length > 0
+    ? `Há ${pistasRelacionais.length} pista${pistasRelacionais.length > 1 ? 's' : ''} de posição relativa (ao lado, antes, depois…). Use-as para criar cadeias: se você sabe onde está A, descobre onde está B.`
+    : `Use eliminação progressiva: para cada posição, descarte os valores que já aparecem confirmados em outras posições. O que sobrar é a resposta.`
+
+  const dica3 = `Tente preencher o atributo "${puzzle.atributos[0].nome}" completamente antes de passar para os outros. Ter uma coluna inteira resolvida cria um ponto de apoio sólido para deduzir o restante.`
+
+  return [dica1, dica2, dica3]
+}
 
 export default function PuzzleGame({ puzzle }: Props) {
   const [grid, setGrid] = useState<GridState>(() => {
@@ -19,6 +41,9 @@ export default function PuzzleGame({ puzzle }: Props) {
   })
   const [status, setStatus] = useState<GameStatus>('jogando')
   const [pistasVisiveis, setPistasVisiveis] = useState(false)
+  const [dicaAtual, setDicaAtual] = useState(0)
+
+  const dicas = gerarDicas(puzzle)
 
   const handleSelect = useCallback((posicao: number, atributo: string, valor: string) => {
     if (status !== 'jogando') return
@@ -41,6 +66,7 @@ export default function PuzzleGame({ puzzle }: Props) {
 
   const reiniciar = () => {
     setStatus('jogando')
+    setDicaAtual(0)
     const g: GridState = {}
     for (let p = 1; p <= puzzle.num_posicoes; p++) {
       g[p] = {}
@@ -56,6 +82,7 @@ export default function PuzzleGame({ puzzle }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Pistas */}
       <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
         <button onClick={() => setPistasVisiveis(!pistasVisiveis)}
           className="w-full flex items-center justify-between px-6 py-4 hover:bg-gray-50 transition-colors">
@@ -82,6 +109,7 @@ export default function PuzzleGame({ puzzle }: Props) {
         )}
       </div>
 
+      {/* Grade */}
       <div className="bg-white rounded-2xl border border-gray-200 overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -134,6 +162,7 @@ export default function PuzzleGame({ puzzle }: Props) {
         </table>
       </div>
 
+      {/* Progresso + Verificar */}
       <div className="space-y-3">
         <div className="flex items-center gap-3">
           <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -153,6 +182,39 @@ export default function PuzzleGame({ puzzle }: Props) {
         </div>
       </div>
 
+      {/* Dicas — só durante o jogo */}
+      {status === 'jogando' && (
+        <div className="border border-amber-200 bg-amber-50 rounded-2xl p-4 space-y-3">
+          <div className="flex items-center gap-2 text-amber-700 font-semibold text-sm">
+            <Lightbulb size={16} className="text-amber-500 shrink-0" />
+            Dicas
+          </div>
+
+          {dicaAtual > 0 && (
+            <div className="space-y-2">
+              {dicas.slice(0, dicaAtual).map((dica, i) => (
+                <div key={i} className="flex gap-2 text-sm text-amber-900">
+                  <span className="font-bold shrink-0 text-amber-500">{i + 1}.</span>
+                  <span>{dica}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {dicaAtual < dicas.length ? (
+            <button
+              onClick={() => setDicaAtual(d => d + 1)}
+              className="text-sm font-semibold text-amber-700 hover:text-amber-900 transition-colors flex items-center gap-1"
+            >
+              {dicaAtual === 0 ? '💡 Pedir uma dica' : 'Mais uma dica →'}
+            </button>
+          ) : (
+            <p className="text-xs text-amber-600 italic">Todas as dicas foram reveladas.</p>
+          )}
+        </div>
+      )}
+
+      {/* Resultado correto */}
       {status === 'correto' && (
         <div className="bg-green-50 border border-green-200 rounded-2xl p-6 text-center space-y-2">
           <CheckCircle size={40} className="text-green-500 mx-auto" />
@@ -162,13 +224,11 @@ export default function PuzzleGame({ puzzle }: Props) {
             <button onClick={reiniciar} className="px-4 py-2 bg-white border border-green-300 rounded-xl text-green-700 text-sm font-medium hover:bg-green-50 transition-colors">
               Jogar novamente
             </button>
-            <Link href="/puzzles" className="px-4 py-2 bg-green-600 text-white rounded-xl text-sm font-medium hover:bg-green-700 transition-colors">
-              Próximo puzzle →
-            </Link>
           </div>
         </div>
       )}
 
+      {/* Resultado incorreto */}
       {status === 'incorreto' && (
         <div className="bg-red-50 border border-red-200 rounded-2xl p-5 space-y-3">
           <div className="flex items-center gap-2">

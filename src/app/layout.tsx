@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/puzzles" className="text-gray-600 hover:text-blue-700 transition-colors">Puzzles</Link>
                 <Link href="/questoes" className="text-gray-600 hover:text-blue-700 transition-colors">Questões</Link>
                 <Link href="/ranking" className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
+                <Link href="/premium" className="text-yellow-600 hover:text-yellow-700 font-semibold transition-colors">⚡ Premium</Link>
               </div>
               <DailyCounter />
               <AuthButton />

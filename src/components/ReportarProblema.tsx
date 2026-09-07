@@ -26,7 +26,7 @@ export default function ReportarProblema() {
     const assunto   = `[LogicaMente] ${tipoLabel}`
     const corpo     = `Tipo: ${tipoLabel}\n\n${descricao}`
     window.open(
-      `mailto:mensagemparadani@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`
+      `mailto:app.usemia@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`
     )
     fechar()
   }

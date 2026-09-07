@@ -4,6 +4,7 @@ import Link from 'next/link'
 import PuzzleGame from '@/components/puzzle/PuzzleGame'
 import ProximoPuzzle from '@/components/puzzle/ProximoPuzzle'
 import FeedbackButtons from '@/components/FeedbackButtons'
+import DailyLimitGuard from '@/components/DailyLimitGuard'
 
 export async function generateStaticParams() {
   return allPuzzles.map(p => ({ id: p.id }))
@@ -29,12 +30,12 @@ export default async function PuzzlePage({ params }: { params: Promise<{ id: str
             {puzzle.num_posicoes} posições · {puzzle.atributos.length} atributos · {puzzle.num_pistas} pistas
           </p>
         </div>
-        <Link href="/" className="text-sm text-blue-600 hover:underline whitespace-nowrap">
-          ← Início
-        </Link>
+        <Link href="/" className="text-sm text-blue-600 hover:underline whitespace-nowrap">← Início</Link>
       </div>
 
-      <PuzzleGame puzzle={puzzle} />
+      <DailyLimitGuard>
+        <PuzzleGame puzzle={puzzle} />
+      </DailyLimitGuard>
 
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
         <FeedbackButtons id={puzzle.id} tipo="puzzle" />

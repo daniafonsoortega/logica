@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { X, Zap, Infinity as InfinityIcon, BarChart2, Users } from 'lucide-react'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '@/lib/supabase-browser'
 
 interface Props {
   onClose?: () => void

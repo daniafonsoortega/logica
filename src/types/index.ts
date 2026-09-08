@@ -63,8 +63,9 @@ export interface PuzzleSequencia {
 // ── Puzzle Tipo 4: Quem Mentiu? ───────────────────────────────────
 export interface PersonagemMentiu {
   nome: string
-  emoji: string
-  declaracoes: string[]
+  emoji?: string
+  declaracoes?: string[]
+  declaracao?: string
 }
 export interface PuzzleMentiu {
   id: string
@@ -72,8 +73,10 @@ export interface PuzzleMentiu {
   nivel: Nivel
   tema: string
   intro: string
+  fatos?: string[]
   personagens: PersonagemMentiu[]
   mentiroso: string
+  resposta?: string
   explicacao: string
 }
 

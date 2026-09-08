@@ -4,12 +4,6 @@ import { useSearchParams } from 'next/navigation'
 import { Suspense, useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase-browser'
 
-declare global {
-  interface Window {
-    google?: { accounts: { id: { initialize: (c: object) => void; renderButton: (el: HTMLElement, c: object) => void } } }
-  }
-}
-
 const GOOGLE_CLIENT_ID = '887732260186-gu2be5a0lu98sdh8iblpp716q00rptuk.apps.googleusercontent.com'
 
 function AuthErrorContent() {

@@ -7,7 +7,7 @@ import { recordResult } from '@/lib/stats'
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
   recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
-import { CheckCircle, XCircle, RotateCcw, GripVertical } from 'lucide-react'
+import { CheckCircle, XCircle, RotateCcw, GripVertical, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 const MSGS_ACERTO = ["Ordem perfeita! Raciocínio impecável! 🏆","Sequência correta! Você é incrível! ⚡","Cronologia certeira! Muito bem! 🎯","Encaixou tudo no lugar! 🧩","Mente organizada — sequência perfeita! 🌟"]
 const MSGS_ERRO   = ["A ordem ainda não está certa... tente de novo! 🔍","Algum elemento está fora do lugar! 💡","Releia as pistas de ordem! 🤔","Quase — mas não exatamente! Mais uma vez! 💪"]
@@ -21,7 +21,15 @@ export default function SequenciaGame({ puzzle }: Props) {
   const [ordem, setOrdem] = useState<string[]>([...puzzle.itens])
   const [status, setStatus] = useState<Status>('jogando')
   const [msg, setMsg]       = useState('')
-  const [pistasVis, setPistas] = useState(false)
+  const [pistasVis, setPistas]   = useState(false)
+  const [dicasAbertas, setDicasAbertas] = useState(false)
+  const [dicasVistas, setDicasVistas]   = useState(0)
+
+  const DICAS = [
+    "Procure pistas de ordem relativa ('X antes de Y', 'Z logo depois de W') — elas constroem a sequência passo a passo.",
+    "Comece pelos extremos: qual item foi definitivamente o primeiro ou o último? Isso ancora o resto da cadeia.",
+    "Se uma pista liga dois itens ('A e B estão juntos'), posicione-os lado a lado e veja onde o par encaixa.",
+  ]
   const [arrastando, setArrastando] = useState<number | null>(null)
 
   function mover(from: number, to: number) {
@@ -37,11 +45,11 @@ export default function SequenciaGame({ puzzle }: Props) {
     if (correto) {
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVis)
+      salvar(puzzle.id, true, pistasVis || dicasVistas > 0)
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))
-      salvar(puzzle.id, false, pistasVis)
+      salvar(puzzle.id, false, pistasVis || dicasVistas > 0)
     }
   }
 

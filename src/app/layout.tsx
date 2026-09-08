@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import Link from 'next/link'
 import ReportarProblema from '@/components/ReportarProblema'
 import DailyCounter from '@/components/DailyCounter'
@@ -15,11 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head>
-        <Script
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1036537609242573"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className="min-h-screen bg-gray-50">

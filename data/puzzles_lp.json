@@ -14654,2669 +14654,2598 @@
     "id": "LP-209",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 2)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "tema": "Maratona Urbana",
+    "intro": "Cinco corredores cruzaram a linha de chegada em momentos diferentes.",
     "itens": [
-      "Lewis",
-      "Max",
-      "Lando",
-      "Fernando",
-      "Charles"
+      "Alice",
+      "Bruno",
+      "Clara",
+      "Diego",
+      "Eva"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Diego ocorreu imediatamente antes de Eva.",
+      "Clara ocorreu imediatamente antes de Diego.",
+      "Eva foi o último.",
+      "Alice ocorreu imediatamente antes de Bruno."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Alice",
+      "Bruno",
+      "Clara",
+      "Diego",
+      "Eva"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Alice em 1º, Bruno em 2º, Clara em 3º, Diego em 4º, Eva em 5º."
   },
   {
     "id": "LP-210",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 2)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "tema": "Embarque no Avião",
+    "intro": "Cinco passageiros embarcaram em momentos distintos.",
     "itens": [
-      "Elena",
-      "Bruno",
-      "Ana",
-      "Diego",
-      "Carla"
+      "Passageiro A",
+      "Passageiro B",
+      "Passageiro C",
+      "Passageiro D",
+      "Passageiro E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Passageiro C ocorreu imediatamente antes de Passageiro B.",
+      "Passageiro D ocorreu imediatamente antes de Passageiro E.",
+      "Passageiro B ocorreu imediatamente antes de Passageiro D.",
+      "Passageiro A ocorreu imediatamente antes de Passageiro C."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Passageiro A",
+      "Passageiro C",
+      "Passageiro B",
+      "Passageiro D",
+      "Passageiro E"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Passageiro A em 1º, Passageiro C em 2º, Passageiro B em 3º, Passageiro D em 4º, Passageiro E em 5º."
   },
   {
     "id": "LP-211",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 2)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "facil",
+    "tema": "Prova de Natação",
+    "intro": "Cinco nadadores terminaram a prova em momentos diferentes.",
     "itens": [
-      "Estrela",
-      "Boreal",
-      "Atlas-1",
-      "Delta-X",
-      "Cygnus"
+      "Ana",
+      "Carlos",
+      "Diana",
+      "Eduardo",
+      "Fátima"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Diana ocorreu imediatamente antes de Fátima.",
+      "Carlos ocorreu imediatamente antes de Eduardo.",
+      "Ana foi o primeiro.",
+      "Ana ocorreu imediatamente antes de Diana."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Ana",
+      "Diana",
+      "Fátima",
+      "Carlos",
+      "Eduardo"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Ana em 1º, Diana em 2º, Fátima em 3º, Carlos em 4º, Eduardo em 5º."
   },
   {
     "id": "LP-212",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 2)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "facil",
+    "tema": "Fila do Supermercado",
+    "intro": "Cinco clientes chegaram ao supermercado em momentos distintos.",
     "itens": [
-      "A Última Porta",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Sombra"
+      "Gabi",
+      "Hugo",
+      "Íris",
+      "João",
+      "Karen"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Karen foi o último.",
+      "Hugo ocorreu imediatamente antes de Gabi.",
+      "Gabi ocorreu imediatamente antes de Íris.",
+      "Íris ocorreu imediatamente antes de João."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Hugo",
+      "Gabi",
+      "Íris",
+      "João",
+      "Karen"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Hugo em 1º, Gabi em 2º, Íris em 3º, João em 4º, Karen em 5º."
   },
   {
     "id": "LP-213",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 2)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "facil",
+    "tema": "Chegada ao Escritório",
+    "intro": "Cinco funcionários chegaram em horários diferentes.",
     "itens": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção C",
-      "Erupção D",
-      "Erupção E"
+      "Laura",
+      "Marco",
+      "Nina",
+      "Oscar",
+      "Paula"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Oscar ocorreu imediatamente antes de Paula.",
+      "Marco foi o primeiro.",
+      "Marco ocorreu imediatamente antes de Nina.",
+      "Paula foi o último."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Marco",
+      "Nina",
+      "Laura",
+      "Oscar",
+      "Paula"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Marco em 1º, Nina em 2º, Laura em 3º, Oscar em 4º, Paula em 5º."
   },
   {
     "id": "LP-214",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 2)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "facil",
+    "tema": "Competição de Xadrez",
+    "intro": "Cinco jogadores terminaram suas partidas em momentos diferentes.",
     "itens": [
-      "Moeda",
-      "Cerâmica",
-      "Mural",
-      "Ânfora",
-      "Esqueleto"
+      "Rafael",
+      "Sara",
+      "Tomás",
+      "Uma",
+      "Vasco"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Vasco foi o último.",
+      "Uma ocorreu imediatamente antes de Rafael.",
+      "Tomás ocorreu imediatamente antes de Vasco.",
+      "Rafael ocorreu imediatamente antes de Tomás."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Sara",
+      "Uma",
+      "Rafael",
+      "Tomás",
+      "Vasco"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Sara em 1º, Uma em 2º, Rafael em 3º, Tomás em 4º, Vasco em 5º."
   },
   {
     "id": "LP-215",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 2)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "facil",
+    "tema": "Corrida de Ciclismo",
+    "intro": "Cinco ciclistas cruzaram a linha de chegada em momentos diferentes.",
     "itens": [
-      "Vitor",
-      "Sofia",
-      "Tiago",
-      "Ursula",
-      "Rafael"
+      "Beatriz",
+      "Caio",
+      "Débora",
+      "Flávio",
+      "Gisele"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Caio ocorreu imediatamente antes de Flávio.",
+      "Gisele foi o último.",
+      "Débora foi o primeiro.",
+      "Débora ocorreu imediatamente antes de Beatriz."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Débora",
+      "Beatriz",
+      "Caio",
+      "Flávio",
+      "Gisele"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Débora em 1º, Beatriz em 2º, Caio em 3º, Flávio em 4º, Gisele em 5º."
   },
   {
     "id": "LP-216",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 2)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "facil",
+    "tema": "Entrega de Encomendas",
+    "intro": "Cinco encomendas chegaram em momentos distintos.",
     "itens": [
-      "Câmara do Rei",
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Grande Galeria",
-      "Câmara da Rainha"
+      "Pacote A",
+      "Pacote B",
+      "Pacote C",
+      "Pacote D",
+      "Pacote E"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Pacote B ocorreu imediatamente antes de Pacote D.",
+      "Pacote C ocorreu imediatamente antes de Pacote E.",
+      "Pacote E ocorreu imediatamente antes de Pacote A.",
+      "Pacote C foi o primeiro."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Pacote C",
+      "Pacote E",
+      "Pacote A",
+      "Pacote B",
+      "Pacote D"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Pacote C em 1º, Pacote E em 2º, Pacote A em 3º, Pacote B em 4º, Pacote D em 5º."
   },
   {
     "id": "LP-217",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 3)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "tema": "Concurso de Culinária",
+    "intro": "Cinco chefs apresentaram seus pratos em momentos diferentes.",
     "itens": [
-      "Lando",
-      "Charles",
-      "Max",
-      "Fernando",
-      "Lewis"
+      "Chef Ana",
+      "Chef Bruno",
+      "Chef Carla",
+      "Chef Davi",
+      "Chef Ester"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Chef Ester ocorreu imediatamente antes de Chef Bruno.",
+      "Chef Bruno ocorreu imediatamente antes de Chef Carla.",
+      "Chef Ana ocorreu imediatamente antes de Chef Ester.",
+      "Chef Davi ocorreu imediatamente antes de Chef Ana."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Chef Davi",
+      "Chef Ana",
+      "Chef Ester",
+      "Chef Bruno",
+      "Chef Carla"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Chef Davi em 1º, Chef Ana em 2º, Chef Ester em 3º, Chef Bruno em 4º, Chef Carla em 5º."
   },
   {
     "id": "LP-218",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 3)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "tema": "Torneio de Tênis",
+    "intro": "Cinco tenistas terminaram suas partidas em momentos diferentes.",
     "itens": [
-      "Diego",
-      "Elena",
-      "Carla",
-      "Bruno",
-      "Ana"
+      "Henrique",
+      "Isabel",
+      "Jorge",
+      "Laís",
+      "Murilo"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Murilo ocorreu imediatamente antes de Henrique.",
+      "Murilo foi o primeiro.",
+      "Jorge ocorreu imediatamente antes de Isabel.",
+      "Isabel ocorreu imediatamente antes de Laís."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Murilo",
+      "Henrique",
+      "Jorge",
+      "Isabel",
+      "Laís"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Murilo em 1º, Henrique em 2º, Jorge em 3º, Isabel em 4º, Laís em 5º."
   },
   {
     "id": "LP-219",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 3)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "facil",
+    "tema": "Pódio de Ginástica",
+    "intro": "Cinco ginastas receberam suas notas em momentos distintos.",
     "itens": [
-      "Estrela",
-      "Delta-X",
-      "Boreal",
-      "Atlas-1",
-      "Cygnus"
+      "Nadia",
+      "Olga",
+      "Pedro",
+      "Quirina",
+      "Renata"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Nadia ocorreu imediatamente antes de Olga.",
+      "Pedro ocorreu imediatamente antes de Renata.",
+      "Olga ocorreu imediatamente antes de Quirina.",
+      "Renata foi o último."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Nadia",
+      "Olga",
+      "Quirina",
+      "Pedro",
+      "Renata"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Nadia em 1º, Olga em 2º, Quirina em 3º, Pedro em 4º, Renata em 5º."
   },
   {
     "id": "LP-220",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 3)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "facil",
+    "tema": "Fila do Cinema",
+    "intro": "Cinco pessoas chegaram ao cinema em horários diferentes.",
     "itens": [
-      "A Última Porta",
-      "O Labirinto",
-      "Memórias do Vento",
-      "A Sombra",
-      "Código Vermelho"
+      "Silvio",
+      "Tatiana",
+      "Ugo",
+      "Vera",
+      "Wilson"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Tatiana ocorreu imediatamente antes de Wilson.",
+      "Ugo foi o último.",
+      "Silvio ocorreu imediatamente antes de Vera.",
+      "Wilson ocorreu imediatamente antes de Ugo."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Silvio",
+      "Vera",
+      "Tatiana",
+      "Wilson",
+      "Ugo"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Silvio em 1º, Vera em 2º, Tatiana em 3º, Wilson em 4º, Ugo em 5º."
   },
   {
     "id": "LP-221",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 3)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "facil",
+    "tema": "Provas do Vestibular",
+    "intro": "Cinco candidatos entregaram suas provas em momentos distintos.",
     "itens": [
-      "Erupção A",
-      "Erupção E",
-      "Erupção C",
-      "Erupção B",
-      "Erupção D"
+      "Alana",
+      "Beto",
+      "Cássia",
+      "Dirceu",
+      "Elisa"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Beto foi o primeiro.",
+      "Alana ocorreu imediatamente antes de Dirceu.",
+      "Dirceu ocorreu imediatamente antes de Cássia.",
+      "Elisa foi o último."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Beto",
+      "Alana",
+      "Dirceu",
+      "Cássia",
+      "Elisa"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Beto em 1º, Alana em 2º, Dirceu em 3º, Cássia em 4º, Elisa em 5º."
   },
   {
     "id": "LP-222",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 3)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "facil",
+    "tema": "Corrida de Cavalos",
+    "intro": "Cinco cavalos cruzaram a meta em momentos diferentes.",
     "itens": [
-      "Ânfora",
-      "Cerâmica",
-      "Esqueleto",
-      "Mural",
-      "Moeda"
+      "Trovão",
+      "Relâmpago",
+      "Vento",
+      "Tempestade",
+      "Aurora"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Vento foi o primeiro.",
+      "Vento ocorreu imediatamente antes de Relâmpago.",
+      "Trovão ocorreu imediatamente antes de Tempestade.",
+      "Tempestade ocorreu imediatamente antes de Aurora."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Vento",
+      "Relâmpago",
+      "Trovão",
+      "Tempestade",
+      "Aurora"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Vento em 1º, Relâmpago em 2º, Trovão em 3º, Tempestade em 4º, Aurora em 5º."
   },
   {
     "id": "LP-223",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 3)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "facil",
+    "tema": "Lançamento de Foguetes Modelo",
+    "intro": "Cinco foguetes foram lançados em momentos distintos.",
     "itens": [
-      "Sofia",
-      "Tiago",
-      "Rafael",
-      "Vitor",
-      "Ursula"
+      "Foguete Alfa",
+      "Foguete Beta",
+      "Foguete Gama",
+      "Foguete Delta",
+      "Foguete Épsilon"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Foguete Gama ocorreu imediatamente antes de Foguete Épsilon.",
+      "Foguete Delta ocorreu imediatamente antes de Foguete Beta.",
+      "Foguete Alfa ocorreu imediatamente antes de Foguete Gama.",
+      "Foguete Épsilon foi o último."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Foguete Delta",
+      "Foguete Beta",
+      "Foguete Alfa",
+      "Foguete Gama",
+      "Foguete Épsilon"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Foguete Delta em 1º, Foguete Beta em 2º, Foguete Alfa em 3º, Foguete Gama em 4º, Foguete Épsilon em 5º."
   },
   {
     "id": "LP-224",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 3)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "facil",
+    "tema": "Provas de Atletismo",
+    "intro": "Cinco atletas cruzaram a linha em momentos distintos.",
     "itens": [
-      "Corredor Ascendente",
-      "Grande Galeria",
-      "Câmara do Rei",
-      "Câmara Subterrânea",
-      "Câmara da Rainha"
+      "Felix",
+      "Greta",
+      "Hans",
+      "Irene",
+      "Jasper"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Irene foi o último.",
+      "Hans ocorreu imediatamente antes de Felix.",
+      "Greta ocorreu imediatamente antes de Irene.",
+      "Jasper ocorreu imediatamente antes de Hans."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Jasper",
+      "Hans",
+      "Felix",
+      "Greta",
+      "Irene"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Jasper em 1º, Hans em 2º, Felix em 3º, Greta em 4º, Irene em 5º."
   },
   {
     "id": "LP-225",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 4)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "tema": "Carros na Estrada",
+    "intro": "Cinco carros passaram pelo radar em momentos diferentes.",
     "itens": [
-      "Lewis",
-      "Max",
-      "Fernando",
-      "Lando",
-      "Charles"
+      "Carro Azul",
+      "Carro Verde",
+      "Carro Vermelho",
+      "Carro Branco",
+      "Carro Preto"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Carro Verde foi o primeiro.",
+      "Carro Azul ocorreu imediatamente antes de Carro Branco.",
+      "Carro Preto ocorreu imediatamente antes de Carro Vermelho.",
+      "Carro Branco foi o último."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Carro Verde",
+      "Carro Preto",
+      "Carro Vermelho",
+      "Carro Azul",
+      "Carro Branco"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Carro Verde em 1º, Carro Preto em 2º, Carro Vermelho em 3º, Carro Azul em 4º, Carro Branco em 5º."
   },
   {
     "id": "LP-226",
     "tipo": "sequencia",
     "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 4)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "tema": "Colheita na Fazenda",
+    "intro": "Cinco trabalhadores terminaram a colheita em momentos diferentes.",
     "itens": [
-      "Bruno",
-      "Carla",
-      "Ana",
-      "Elena",
-      "Diego"
+      "Joaquim",
+      "Lúcia",
+      "Marcos",
+      "Natali",
+      "Otávio"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Marcos foi o último.",
+      "Lúcia ocorreu imediatamente antes de Joaquim.",
+      "Otávio ocorreu imediatamente antes de Lúcia.",
+      "Natali ocorreu imediatamente antes de Otávio."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Natali",
+      "Otávio",
+      "Lúcia",
+      "Joaquim",
+      "Marcos"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Natali em 1º, Otávio em 2º, Lúcia em 3º, Joaquim em 4º, Marcos em 5º."
   },
   {
     "id": "LP-227",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 4)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "facil",
+    "tema": "Chegada dos Trens",
+    "intro": "Cinco trens chegaram à estação em momentos distintos.",
     "itens": [
-      "Delta-X",
-      "Boreal",
-      "Cygnus",
-      "Atlas-1",
-      "Estrela"
+      "Trem 101",
+      "Trem 202",
+      "Trem 303",
+      "Trem 404",
+      "Trem 505"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Trem 303 foi o primeiro.",
+      "Trem 303 ocorreu imediatamente antes de Trem 404.",
+      "Trem 101 ocorreu imediatamente antes de Trem 202.",
+      "Trem 202 foi o último."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Trem 303",
+      "Trem 404",
+      "Trem 505",
+      "Trem 101",
+      "Trem 202"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Trem 303 em 1º, Trem 404 em 2º, Trem 505 em 3º, Trem 101 em 4º, Trem 202 em 5º."
   },
   {
     "id": "LP-228",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 4)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "facil",
+    "tema": "Corrida de Barcos",
+    "intro": "Cinco barcos cruzaram a chegada em momentos diferentes.",
     "itens": [
-      "Memórias do Vento",
-      "Código Vermelho",
-      "O Labirinto",
-      "A Última Porta",
-      "A Sombra"
+      "Barco Sol",
+      "Barco Lua",
+      "Barco Estrela",
+      "Barco Mar",
+      "Barco Vento"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Barco Sol foi o último.",
+      "Barco Lua ocorreu imediatamente antes de Barco Sol.",
+      "Barco Vento ocorreu imediatamente antes de Barco Mar.",
+      "Barco Mar ocorreu imediatamente antes de Barco Estrela."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Barco Vento",
+      "Barco Mar",
+      "Barco Estrela",
+      "Barco Lua",
+      "Barco Sol"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Barco Vento em 1º, Barco Mar em 2º, Barco Estrela em 3º, Barco Lua em 4º, Barco Sol em 5º."
   },
   {
     "id": "LP-229",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 4)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "facil",
+    "tema": "Apresentação de Danças",
+    "intro": "Cinco grupos de dança se apresentaram em momentos distintos.",
     "itens": [
-      "Erupção C",
-      "Erupção B",
-      "Erupção A",
-      "Erupção D",
-      "Erupção E"
+      "Grupo A",
+      "Grupo B",
+      "Grupo C",
+      "Grupo D",
+      "Grupo E"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Grupo B ocorreu imediatamente antes de Grupo C.",
+      "Grupo C ocorreu imediatamente antes de Grupo D.",
+      "Grupo D foi o último.",
+      "Grupo A foi o primeiro."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Grupo A",
+      "Grupo E",
+      "Grupo B",
+      "Grupo C",
+      "Grupo D"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Grupo A em 1º, Grupo E em 2º, Grupo B em 3º, Grupo C em 4º, Grupo D em 5º."
   },
   {
     "id": "LP-230",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 4)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "facil",
+    "tema": "Sorteio de Prêmios",
+    "intro": "Cinco prêmios foram sorteados em momentos diferentes.",
     "itens": [
-      "Mural",
-      "Cerâmica",
-      "Moeda",
-      "Esqueleto",
-      "Ânfora"
+      "Prêmio 1",
+      "Prêmio 2",
+      "Prêmio 3",
+      "Prêmio 4",
+      "Prêmio 5"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Prêmio 2 ocorreu imediatamente antes de Prêmio 4.",
+      "Prêmio 1 ocorreu imediatamente antes de Prêmio 3.",
+      "Prêmio 2 foi o primeiro.",
+      "Prêmio 4 ocorreu imediatamente antes de Prêmio 5."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Prêmio 2",
+      "Prêmio 4",
+      "Prêmio 5",
+      "Prêmio 1",
+      "Prêmio 3"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Prêmio 2 em 1º, Prêmio 4 em 2º, Prêmio 5 em 3º, Prêmio 1 em 4º, Prêmio 3 em 5º."
   },
   {
     "id": "LP-231",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 4)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "facil",
+    "tema": "Provas de Judô",
+    "intro": "Cinco judocas terminaram seus combates em momentos distintos.",
     "itens": [
-      "Vitor",
-      "Ursula",
-      "Sofia",
-      "Tiago",
-      "Rafael"
+      "Judoca A",
+      "Judoca B",
+      "Judoca C",
+      "Judoca D",
+      "Judoca E"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Judoca A ocorreu imediatamente antes de Judoca E.",
+      "Judoca B foi o último.",
+      "Judoca C ocorreu imediatamente antes de Judoca A.",
+      "Judoca E ocorreu imediatamente antes de Judoca D."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Judoca C",
+      "Judoca A",
+      "Judoca E",
+      "Judoca D",
+      "Judoca B"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Judoca C em 1º, Judoca A em 2º, Judoca E em 3º, Judoca D em 4º, Judoca B em 5º."
   },
   {
     "id": "LP-232",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 4)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "facil",
+    "tema": "Acendimento das Tochas",
+    "intro": "Cinco tochas foram acesas em momentos distintos na cerimônia.",
     "itens": [
-      "Grande Galeria",
-      "Corredor Ascendente",
-      "Câmara Subterrânea",
-      "Câmara da Rainha",
-      "Câmara do Rei"
+      "Tocha Norte",
+      "Tocha Sul",
+      "Tocha Leste",
+      "Tocha Oeste",
+      "Tocha Central"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Tocha Norte ocorreu imediatamente antes de Tocha Central.",
+      "Tocha Central ocorreu imediatamente antes de Tocha Sul.",
+      "Tocha Leste ocorreu imediatamente antes de Tocha Norte.",
+      "Tocha Sul foi o último."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Tocha Oeste",
+      "Tocha Leste",
+      "Tocha Norte",
+      "Tocha Central",
+      "Tocha Sul"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Tocha Oeste em 1º, Tocha Leste em 2º, Tocha Norte em 3º, Tocha Central em 4º, Tocha Sul em 5º."
   },
   {
     "id": "LP-233",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 5)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "medio",
+    "tema": "Expedição Antártica",
+    "intro": "Cinco equipes científicas chegaram à base antártica em momentos diferentes.",
     "itens": [
-      "Lando",
-      "Lewis",
-      "Fernando",
-      "Charles",
-      "Max"
+      "Equipe Alfa",
+      "Equipe Beta",
+      "Equipe Gama",
+      "Equipe Delta",
+      "Equipe Ômega"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Equipe Gama foi o último.",
+      "Equipe Alfa foi o primeiro.",
+      "Equipe Beta ocorreu imediatamente antes de Equipe Gama.",
+      "Equipe Delta ocorreu imediatamente antes de Equipe Ômega."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Equipe Alfa",
+      "Equipe Delta",
+      "Equipe Ômega",
+      "Equipe Beta",
+      "Equipe Gama"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Equipe Alfa em 1º, Equipe Delta em 2º, Equipe Ômega em 3º, Equipe Beta em 4º, Equipe Gama em 5º."
   },
   {
     "id": "LP-234",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 5)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "medio",
+    "tema": "Publicação de Artigos",
+    "intro": "Cinco pesquisadores tiveram seus artigos publicados em momentos distintos.",
     "itens": [
-      "Diego",
-      "Bruno",
-      "Carla",
-      "Elena",
-      "Ana"
+      "Dr. Alves",
+      "Dra. Borges",
+      "Dr. Costa",
+      "Dra. Dias",
+      "Dr. Évora"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Dr. Évora foi o último.",
+      "Dr. Alves ocorreu imediatamente antes de Dra. Borges.",
+      "Dr. Alves foi o primeiro.",
+      "Dra. Borges ocorreu imediatamente antes de Dr. Costa."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Dr. Alves",
+      "Dra. Borges",
+      "Dr. Costa",
+      "Dra. Dias",
+      "Dr. Évora"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Dr. Alves em 1º, Dra. Borges em 2º, Dr. Costa em 3º, Dra. Dias em 4º, Dr. Évora em 5º."
   },
   {
     "id": "LP-235",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 5)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "tema": "Inauguração de Museus",
+    "intro": "Cinco museus foram inaugurados em momentos diferentes.",
     "itens": [
-      "Delta-X",
-      "Boreal",
-      "Atlas-1",
-      "Cygnus",
-      "Estrela"
+      "Museu Arte",
+      "Museu Ciências",
+      "Museu Histórico",
+      "Museu Natural",
+      "Museu Tecnológico"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Museu Arte foi o primeiro.",
+      "Museu Natural ocorreu imediatamente antes de Museu Tecnológico.",
+      "Museu Ciências ocorreu imediatamente antes de Museu Natural.",
+      "Museu Arte ocorreu imediatamente antes de Museu Histórico."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Museu Arte",
+      "Museu Histórico",
+      "Museu Ciências",
+      "Museu Natural",
+      "Museu Tecnológico"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Museu Arte em 1º, Museu Histórico em 2º, Museu Ciências em 3º, Museu Natural em 4º, Museu Tecnológico em 5º."
   },
   {
     "id": "LP-236",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 5)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "tema": "Missões Espaciais",
+    "intro": "Cinco missões espaciais partiram em momentos distintos.",
     "itens": [
-      "A Última Porta",
-      "O Labirinto",
-      "A Sombra",
-      "Memórias do Vento",
-      "Código Vermelho"
+      "Missão Ártemis",
+      "Missão Castor",
+      "Missão Pólux",
+      "Missão Sírius",
+      "Missão Vega"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Missão Ártemis foi o primeiro.",
+      "Missão Pólux ocorreu imediatamente antes de Missão Vega.",
+      "Missão Castor ocorreu imediatamente antes de Missão Sírius.",
+      "Missão Ártemis ocorreu imediatamente antes de Missão Pólux."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Missão Ártemis",
+      "Missão Pólux",
+      "Missão Vega",
+      "Missão Castor",
+      "Missão Sírius"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Missão Ártemis em 1º, Missão Pólux em 2º, Missão Vega em 3º, Missão Castor em 4º, Missão Sírius em 5º."
   },
   {
     "id": "LP-237",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 5)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "medio",
+    "tema": "Construção de Pontes",
+    "intro": "Cinco pontes foram concluídas em momentos diferentes.",
     "itens": [
-      "Erupção B",
-      "Erupção D",
-      "Erupção C",
-      "Erupção A",
-      "Erupção E"
+      "Ponte Norte",
+      "Ponte Sul",
+      "Ponte Leste",
+      "Ponte Oeste",
+      "Ponte Central"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Ponte Sul foi o primeiro.",
+      "Ponte Leste ocorreu imediatamente antes de Ponte Oeste.",
+      "Ponte Norte ocorreu imediatamente antes de Ponte Leste.",
+      "Ponte Oeste ocorreu imediatamente antes de Ponte Central."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Ponte Sul",
+      "Ponte Norte",
+      "Ponte Leste",
+      "Ponte Oeste",
+      "Ponte Central"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Ponte Sul em 1º, Ponte Norte em 2º, Ponte Leste em 3º, Ponte Oeste em 4º, Ponte Central em 5º."
   },
   {
     "id": "LP-238",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 5)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "medio",
+    "tema": "Formatura de Turmas",
+    "intro": "Cinco turmas realizaram sua cerimônia em momentos distintos.",
     "itens": [
-      "Esqueleto",
-      "Ânfora",
-      "Moeda",
-      "Cerâmica",
-      "Mural"
+      "Turma Engenharia",
+      "Turma Medicina",
+      "Turma Direito",
+      "Turma Arquitetura",
+      "Turma Física"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Turma Medicina ocorreu imediatamente antes de Turma Direito.",
+      "Turma Física foi o último.",
+      "Turma Engenharia ocorreu imediatamente antes de Turma Arquitetura.",
+      "Turma Arquitetura ocorreu imediatamente antes de Turma Física."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Turma Medicina",
+      "Turma Direito",
+      "Turma Engenharia",
+      "Turma Arquitetura",
+      "Turma Física"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Turma Medicina em 1º, Turma Direito em 2º, Turma Engenharia em 3º, Turma Arquitetura em 4º, Turma Física em 5º."
   },
   {
     "id": "LP-239",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 5)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "medio",
+    "tema": "Récitas de Teatro",
+    "intro": "Cinco peças estrearam em momentos diferentes naquela temporada.",
     "itens": [
-      "Vitor",
-      "Rafael",
-      "Tiago",
-      "Ursula",
-      "Sofia"
+      "Hamlet",
+      "Romeu e Julieta",
+      "Macbeth",
+      "Otelo",
+      "A Tempestade"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Macbeth ocorreu imediatamente antes de A Tempestade.",
+      "Romeu e Julieta ocorreu imediatamente antes de Otelo.",
+      "Romeu e Julieta foi o primeiro.",
+      "Otelo ocorreu imediatamente antes de Hamlet."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Romeu e Julieta",
+      "Otelo",
+      "Hamlet",
+      "Macbeth",
+      "A Tempestade"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Romeu e Julieta em 1º, Otelo em 2º, Hamlet em 3º, Macbeth em 4º, A Tempestade em 5º."
   },
   {
     "id": "LP-240",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 5)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "medio",
+    "tema": "Travessia de Montanhas",
+    "intro": "Cinco alpinistas completaram a travessia em momentos distintos.",
     "itens": [
-      "Câmara do Rei",
-      "Câmara da Rainha",
-      "Corredor Ascendente",
-      "Câmara Subterrânea",
-      "Grande Galeria"
+      "Alpinista A",
+      "Alpinista B",
+      "Alpinista C",
+      "Alpinista D",
+      "Alpinista E"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Alpinista C ocorreu imediatamente antes de Alpinista A.",
+      "Alpinista D ocorreu imediatamente antes de Alpinista E.",
+      "Alpinista E foi o último.",
+      "Alpinista B ocorreu imediatamente antes de Alpinista D."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Alpinista C",
+      "Alpinista A",
+      "Alpinista B",
+      "Alpinista D",
+      "Alpinista E"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Alpinista C em 1º, Alpinista A em 2º, Alpinista B em 3º, Alpinista D em 4º, Alpinista E em 5º."
   },
   {
     "id": "LP-241",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 6)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "medio",
+    "tema": "Colheita de Grãos",
+    "intro": "Cinco fazendeiros terminaram a colheita em momentos distintos.",
     "itens": [
-      "Max",
-      "Lando",
-      "Lewis",
-      "Fernando",
-      "Charles"
+      "Fazenda Boa Vista",
+      "Fazenda Campo Verde",
+      "Fazenda Rio Claro",
+      "Fazenda Serra Alta",
+      "Fazenda Vale Fundo"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Fazenda Boa Vista ocorreu imediatamente antes de Fazenda Campo Verde.",
+      "Fazenda Vale Fundo ocorreu imediatamente antes de Fazenda Boa Vista.",
+      "Fazenda Rio Claro foi o primeiro.",
+      "Fazenda Rio Claro ocorreu imediatamente antes de Fazenda Vale Fundo."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Fazenda Rio Claro",
+      "Fazenda Vale Fundo",
+      "Fazenda Boa Vista",
+      "Fazenda Campo Verde",
+      "Fazenda Serra Alta"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Fazenda Rio Claro em 1º, Fazenda Vale Fundo em 2º, Fazenda Boa Vista em 3º, Fazenda Campo Verde em 4º, Fazenda Serra Alta em 5º."
   },
   {
     "id": "LP-242",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 6)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "medio",
+    "tema": "Lançamento de Álbuns",
+    "intro": "Cinco bandas lançaram seus álbuns em momentos diferentes.",
     "itens": [
-      "Bruno",
-      "Ana",
-      "Diego",
-      "Carla",
-      "Elena"
+      "Banda Azul",
+      "Banda Coral",
+      "Banda Elétrica",
+      "Banda Prata",
+      "Banda Solar"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Banda Prata foi o primeiro.",
+      "Banda Coral ocorreu imediatamente antes de Banda Elétrica.",
+      "Banda Elétrica foi o último.",
+      "Banda Solar ocorreu imediatamente antes de Banda Coral."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Banda Prata",
+      "Banda Azul",
+      "Banda Solar",
+      "Banda Coral",
+      "Banda Elétrica"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Banda Prata em 1º, Banda Azul em 2º, Banda Solar em 3º, Banda Coral em 4º, Banda Elétrica em 5º."
   },
   {
     "id": "LP-243",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 6)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "tema": "Exploração Oceânica",
+    "intro": "Cinco submarinos iniciaram a exploração em momentos distintos.",
     "itens": [
-      "Delta-X",
-      "Boreal",
-      "Estrela",
-      "Atlas-1",
-      "Cygnus"
+      "Submarino Alfa",
+      "Submarino Beta",
+      "Submarino Gama",
+      "Submarino Delta",
+      "Submarino Ômega"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Submarino Delta foi o último.",
+      "Submarino Gama ocorreu imediatamente antes de Submarino Beta.",
+      "Submarino Beta ocorreu imediatamente antes de Submarino Delta.",
+      "Submarino Ômega ocorreu imediatamente antes de Submarino Alfa."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Submarino Ômega",
+      "Submarino Alfa",
+      "Submarino Gama",
+      "Submarino Beta",
+      "Submarino Delta"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Submarino Ômega em 1º, Submarino Alfa em 2º, Submarino Gama em 3º, Submarino Beta em 4º, Submarino Delta em 5º."
   },
   {
     "id": "LP-244",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 6)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "tema": "Festival de Jazz",
+    "intro": "Cinco músicos se apresentaram no festival em momentos diferentes.",
     "itens": [
-      "Código Vermelho",
-      "A Última Porta",
-      "A Sombra",
-      "Memórias do Vento",
-      "O Labirinto"
+      "Miles",
+      "Coltrane",
+      "Davis",
+      "Parker",
+      "Monk"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Miles ocorreu imediatamente antes de Coltrane.",
+      "Coltrane ocorreu imediatamente antes de Parker.",
+      "Miles foi o primeiro.",
+      "Parker ocorreu imediatamente antes de Davis."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Miles",
+      "Coltrane",
+      "Parker",
+      "Davis",
+      "Monk"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Miles em 1º, Coltrane em 2º, Parker em 3º, Davis em 4º, Monk em 5º."
   },
   {
     "id": "LP-245",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 6)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "medio",
+    "tema": "Campeonato de Robótica",
+    "intro": "Cinco robôs completaram o percurso em momentos distintos.",
     "itens": [
-      "Erupção C",
-      "Erupção D",
-      "Erupção A",
-      "Erupção B",
-      "Erupção E"
+      "Robô Alfa",
+      "Robô Beta",
+      "Robô Gama",
+      "Robô Delta",
+      "Robô Ômega"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Robô Beta ocorreu imediatamente antes de Robô Ômega.",
+      "Robô Delta ocorreu imediatamente antes de Robô Beta.",
+      "Robô Alfa foi o primeiro.",
+      "Robô Ômega ocorreu imediatamente antes de Robô Gama."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Robô Alfa",
+      "Robô Delta",
+      "Robô Beta",
+      "Robô Ômega",
+      "Robô Gama"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Robô Alfa em 1º, Robô Delta em 2º, Robô Beta em 3º, Robô Ômega em 4º, Robô Gama em 5º."
   },
   {
     "id": "LP-246",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 6)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "medio",
+    "tema": "Reforma de Edifícios",
+    "intro": "Cinco edifícios históricos foram reformados em momentos distintos.",
     "itens": [
-      "Moeda",
-      "Mural",
-      "Ânfora",
-      "Cerâmica",
-      "Esqueleto"
+      "Palácio Real",
+      "Torre do Relógio",
+      "Catedral Central",
+      "Mercado Velho",
+      "Biblioteca Municipal"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Palácio Real ocorreu imediatamente antes de Mercado Velho.",
+      "Torre do Relógio ocorreu imediatamente antes de Palácio Real.",
+      "Mercado Velho ocorreu imediatamente antes de Catedral Central.",
+      "Biblioteca Municipal foi o último."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Torre do Relógio",
+      "Palácio Real",
+      "Mercado Velho",
+      "Catedral Central",
+      "Biblioteca Municipal"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Torre do Relógio em 1º, Palácio Real em 2º, Mercado Velho em 3º, Catedral Central em 4º, Biblioteca Municipal em 5º."
   },
   {
     "id": "LP-247",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 6)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "medio",
+    "tema": "Competição de Drones",
+    "intro": "Cinco drones completaram o trajeto em momentos diferentes.",
     "itens": [
-      "Ursula",
-      "Tiago",
-      "Rafael",
-      "Vitor",
-      "Sofia"
+      "Drone Azul",
+      "Drone Verde",
+      "Drone Vermelho",
+      "Drone Amarelo",
+      "Drone Branco"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Drone Amarelo ocorreu imediatamente antes de Drone Branco.",
+      "Drone Vermelho foi o primeiro.",
+      "Drone Vermelho ocorreu imediatamente antes de Drone Verde.",
+      "Drone Branco foi o último."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Drone Vermelho",
+      "Drone Verde",
+      "Drone Azul",
+      "Drone Amarelo",
+      "Drone Branco"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Drone Vermelho em 1º, Drone Verde em 2º, Drone Azul em 3º, Drone Amarelo em 4º, Drone Branco em 5º."
   },
   {
     "id": "LP-248",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 6)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "medio",
+    "tema": "Distribuição de Vacinas",
+    "intro": "Cinco centros de saúde receberam vacinas em momentos distintos.",
     "itens": [
-      "Corredor Ascendente",
-      "Câmara Subterrânea",
-      "Câmara do Rei",
-      "Câmara da Rainha",
-      "Grande Galeria"
+      "Centro Norte",
+      "Centro Sul",
+      "Centro Leste",
+      "Centro Oeste",
+      "Centro Central"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Centro Oeste foi o primeiro.",
+      "Centro Oeste ocorreu imediatamente antes de Centro Sul.",
+      "Centro Sul ocorreu imediatamente antes de Centro Norte.",
+      "Centro Leste ocorreu imediatamente antes de Centro Central."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Centro Oeste",
+      "Centro Sul",
+      "Centro Norte",
+      "Centro Leste",
+      "Centro Central"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Centro Oeste em 1º, Centro Sul em 2º, Centro Norte em 3º, Centro Leste em 4º, Centro Central em 5º."
   },
   {
     "id": "LP-249",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 7)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "medio",
+    "tema": "Olimpíadas Escolares",
+    "intro": "Cinco escolas concluíram suas provas em momentos distintos.",
     "itens": [
-      "Max",
-      "Lando",
-      "Fernando",
-      "Charles",
-      "Lewis"
+      "Escola Alfa",
+      "Escola Beta",
+      "Escola Gama",
+      "Escola Delta",
+      "Escola Ômega"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Escola Ômega ocorreu imediatamente antes de Escola Gama.",
+      "Escola Alfa ocorreu imediatamente antes de Escola Beta.",
+      "Escola Ômega foi o primeiro.",
+      "Escola Gama ocorreu imediatamente antes de Escola Alfa."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Escola Ômega",
+      "Escola Gama",
+      "Escola Alfa",
+      "Escola Beta",
+      "Escola Delta"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Escola Ômega em 1º, Escola Gama em 2º, Escola Alfa em 3º, Escola Beta em 4º, Escola Delta em 5º."
   },
   {
     "id": "LP-250",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 7)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "medio",
+    "tema": "Lançamento de Satélites Meteorológicos",
+    "intro": "Cinco satélites foram lançados em momentos distintos.",
     "itens": [
-      "Ana",
-      "Carla",
-      "Diego",
-      "Bruno",
-      "Elena"
+      "Satélite Chuva",
+      "Satélite Vento",
+      "Satélite Neve",
+      "Satélite Sol",
+      "Satélite Nuvem"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Satélite Chuva ocorreu imediatamente antes de Satélite Sol.",
+      "Satélite Vento foi o primeiro.",
+      "Satélite Vento ocorreu imediatamente antes de Satélite Nuvem.",
+      "Satélite Neve ocorreu imediatamente antes de Satélite Chuva."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Satélite Vento",
+      "Satélite Nuvem",
+      "Satélite Neve",
+      "Satélite Chuva",
+      "Satélite Sol"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Satélite Vento em 1º, Satélite Nuvem em 2º, Satélite Neve em 3º, Satélite Chuva em 4º, Satélite Sol em 5º."
   },
   {
     "id": "LP-251",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 7)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "tema": "Abertura de Restaurantes",
+    "intro": "Cinco restaurantes abriram suas portas em momentos diferentes.",
     "itens": [
-      "Estrela",
-      "Cygnus",
-      "Boreal",
-      "Atlas-1",
-      "Delta-X"
+      "Restaurante Alfa",
+      "Restaurante Beta",
+      "Restaurante Gama",
+      "Restaurante Delta",
+      "Restaurante Ômega"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Restaurante Delta foi o primeiro.",
+      "Restaurante Delta ocorreu imediatamente antes de Restaurante Ômega.",
+      "Restaurante Ômega ocorreu imediatamente antes de Restaurante Beta.",
+      "Restaurante Beta ocorreu imediatamente antes de Restaurante Alfa."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Restaurante Delta",
+      "Restaurante Ômega",
+      "Restaurante Beta",
+      "Restaurante Alfa",
+      "Restaurante Gama"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Restaurante Delta em 1º, Restaurante Ômega em 2º, Restaurante Beta em 3º, Restaurante Alfa em 4º, Restaurante Gama em 5º."
   },
   {
     "id": "LP-252",
     "tipo": "sequencia",
     "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 7)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "tema": "Chegada de Navios ao Porto",
+    "intro": "Cinco navios atracaram no porto em momentos distintos.",
     "itens": [
-      "O Labirinto",
-      "A Última Porta",
-      "A Sombra",
-      "Código Vermelho",
-      "Memórias do Vento"
+      "Navio Aurora",
+      "Navio Bóreas",
+      "Navio Ceres",
+      "Navio Dafne",
+      "Navio Éolo"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Navio Ceres foi o primeiro.",
+      "Navio Ceres ocorreu imediatamente antes de Navio Dafne.",
+      "Navio Dafne ocorreu imediatamente antes de Navio Éolo.",
+      "Navio Aurora ocorreu imediatamente antes de Navio Bóreas."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Navio Ceres",
+      "Navio Dafne",
+      "Navio Éolo",
+      "Navio Aurora",
+      "Navio Bóreas"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Navio Ceres em 1º, Navio Dafne em 2º, Navio Éolo em 3º, Navio Aurora em 4º, Navio Bóreas em 5º."
   },
   {
     "id": "LP-253",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 7)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "medio",
+    "tema": "Estreias de Filmes",
+    "intro": "Cinco filmes estrearam no cinema em momentos diferentes.",
     "itens": [
-      "Erupção D",
-      "Erupção B",
-      "Erupção C",
-      "Erupção A",
-      "Erupção E"
+      "Filme A",
+      "Filme B",
+      "Filme C",
+      "Filme D",
+      "Filme E"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Filme B ocorreu imediatamente antes de Filme A.",
+      "Filme E foi o primeiro.",
+      "Filme E ocorreu imediatamente antes de Filme D.",
+      "Filme D ocorreu imediatamente antes de Filme C."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Filme E",
+      "Filme D",
+      "Filme C",
+      "Filme B",
+      "Filme A"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Filme E em 1º, Filme D em 2º, Filme C em 3º, Filme B em 4º, Filme A em 5º."
   },
   {
     "id": "LP-254",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 7)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "medio",
+    "tema": "Entrega de Diplomas",
+    "intro": "Cinco alunos receberam seus diplomas em momentos distintos.",
     "itens": [
-      "Moeda",
-      "Cerâmica",
-      "Mural",
-      "Ânfora",
-      "Esqueleto"
+      "Aluno Alfa",
+      "Aluno Beta",
+      "Aluno Gama",
+      "Aluno Delta",
+      "Aluno Épsilon"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Aluno Épsilon ocorreu imediatamente antes de Aluno Beta.",
+      "Aluno Beta ocorreu imediatamente antes de Aluno Gama.",
+      "Aluno Delta foi o último.",
+      "Aluno Alfa foi o primeiro."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Aluno Alfa",
+      "Aluno Épsilon",
+      "Aluno Beta",
+      "Aluno Gama",
+      "Aluno Delta"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Aluno Alfa em 1º, Aluno Épsilon em 2º, Aluno Beta em 3º, Aluno Gama em 4º, Aluno Delta em 5º."
   },
   {
     "id": "LP-255",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 7)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "medio",
+    "tema": "Plantio de Árvores",
+    "intro": "Cinco grupos plantaram árvores em momentos distintos naquela floresta.",
     "itens": [
-      "Rafael",
-      "Vitor",
-      "Sofia",
-      "Ursula",
-      "Tiago"
+      "Grupo Verde",
+      "Grupo Azul",
+      "Grupo Amarelo",
+      "Grupo Branco",
+      "Grupo Preto"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Grupo Azul foi o primeiro.",
+      "Grupo Amarelo foi o último.",
+      "Grupo Azul ocorreu imediatamente antes de Grupo Branco.",
+      "Grupo Verde ocorreu imediatamente antes de Grupo Amarelo."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Grupo Azul",
+      "Grupo Branco",
+      "Grupo Preto",
+      "Grupo Verde",
+      "Grupo Amarelo"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Grupo Azul em 1º, Grupo Branco em 2º, Grupo Preto em 3º, Grupo Verde em 4º, Grupo Amarelo em 5º."
   },
   {
     "id": "LP-256",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 7)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "medio",
+    "tema": "Instalação de Torres de Energia",
+    "intro": "Cinco torres de energia foram instaladas em momentos distintos.",
     "itens": [
-      "Câmara Subterrânea",
-      "Câmara da Rainha",
-      "Câmara do Rei",
-      "Corredor Ascendente",
-      "Grande Galeria"
+      "Torre Norte",
+      "Torre Sul",
+      "Torre Leste",
+      "Torre Oeste",
+      "Torre Central"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Torre Leste ocorreu imediatamente antes de Torre Norte.",
+      "Torre Sul foi o último.",
+      "Torre Oeste ocorreu imediatamente antes de Torre Sul.",
+      "Torre Leste foi o primeiro."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Torre Leste",
+      "Torre Norte",
+      "Torre Central",
+      "Torre Oeste",
+      "Torre Sul"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Torre Leste em 1º, Torre Norte em 2º, Torre Central em 3º, Torre Oeste em 4º, Torre Sul em 5º."
   },
   {
     "id": "LP-257",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 8)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "dificil",
+    "tema": "Colapso de Estrelas",
+    "intro": "Cinco estrelas entraram em colapso em momentos distintos. Descubra a sequência.",
     "itens": [
-      "Lando",
-      "Fernando",
-      "Lewis",
-      "Max",
-      "Charles"
+      "Estrela Alfa",
+      "Estrela Beta",
+      "Estrela Gama",
+      "Estrela Delta",
+      "Estrela Épsilon"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Estrela Beta não foi o primeiro.",
+      "Estrela Épsilon ficou entre Estrela Gama e Estrela Beta.",
+      "Estrela Alfa ficou entre Estrela Gama e Estrela Épsilon.",
+      "Estrela Gama ficou entre Estrela Delta e Estrela Alfa."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Estrela Delta",
+      "Estrela Gama",
+      "Estrela Alfa",
+      "Estrela Épsilon",
+      "Estrela Beta"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Estrela Delta em 1º, Estrela Gama em 2º, Estrela Alfa em 3º, Estrela Épsilon em 4º, Estrela Beta em 5º."
   },
   {
     "id": "LP-258",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 8)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "dificil",
+    "tema": "Extinção de Espécies",
+    "intro": "Cinco espécies foram extintas em épocas diferentes. Descubra a sequência.",
     "itens": [
-      "Elena",
-      "Carla",
-      "Bruno",
-      "Diego",
-      "Ana"
+      "Espécie A",
+      "Espécie B",
+      "Espécie C",
+      "Espécie D",
+      "Espécie E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Espécie D ocorreu antes de Espécie E.",
+      "Espécie B ficou entre Espécie D e Espécie C.",
+      "Espécie D ficou entre Espécie A e Espécie C.",
+      "Espécie E ocorreu antes de Espécie B."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Espécie A",
+      "Espécie D",
+      "Espécie E",
+      "Espécie B",
+      "Espécie C"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Espécie A em 1º, Espécie D em 2º, Espécie E em 3º, Espécie B em 4º, Espécie C em 5º."
   },
   {
     "id": "LP-259",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 8)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "dificil",
+    "tema": "Deriva Continental",
+    "intro": "Cinco eventos de deriva continental ocorreram em épocas geológicas distintas.",
     "itens": [
-      "Cygnus",
-      "Atlas-1",
-      "Estrela",
-      "Delta-X",
-      "Boreal"
+      "Evento Alfa",
+      "Evento Beta",
+      "Evento Gama",
+      "Evento Delta",
+      "Evento Ômega"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Evento Beta ocorreu antes de Evento Delta.",
+      "Evento Alfa ocorreu antes de Evento Beta.",
+      "Evento Gama ficou entre Evento Beta e Evento Delta.",
+      "Evento Delta ocorreu antes de Evento Ômega."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Evento Alfa",
+      "Evento Beta",
+      "Evento Gama",
+      "Evento Delta",
+      "Evento Ômega"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Evento Alfa em 1º, Evento Beta em 2º, Evento Gama em 3º, Evento Delta em 4º, Evento Ômega em 5º."
   },
   {
     "id": "LP-260",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 8)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "dificil",
+    "tema": "Fundação de Cidades Medievais",
+    "intro": "Cinco cidades medievais foram fundadas em momentos distintos.",
     "itens": [
-      "Código Vermelho",
-      "A Última Porta",
-      "O Labirinto",
-      "A Sombra",
-      "Memórias do Vento"
+      "Vila Norte",
+      "Vila Sul",
+      "Vila Leste",
+      "Vila Oeste",
+      "Vila Central"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Vila Sul ficou entre Vila Leste e Vila Oeste.",
+      "Vila Norte ocorreu antes de Vila Leste.",
+      "Vila Leste ocorreu antes de Vila Oeste.",
+      "Vila Oeste ficou entre Vila Norte e Vila Central."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Vila Norte",
+      "Vila Leste",
+      "Vila Sul",
+      "Vila Oeste",
+      "Vila Central"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Vila Norte em 1º, Vila Leste em 2º, Vila Sul em 3º, Vila Oeste em 4º, Vila Central em 5º."
   },
   {
     "id": "LP-261",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 8)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "tema": "Invasões Bárbaras",
+    "intro": "Cinco tribos invadiram o território em momentos distintos.",
     "itens": [
-      "Erupção C",
-      "Erupção B",
-      "Erupção E",
-      "Erupção D",
-      "Erupção A"
+      "Tribo Alfa",
+      "Tribo Beta",
+      "Tribo Gama",
+      "Tribo Delta",
+      "Tribo Épsilon"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Tribo Beta ficou entre Tribo Gama e Tribo Delta.",
+      "Tribo Épsilon ficou entre Tribo Gama e Tribo Beta.",
+      "Tribo Alfa ocorreu antes de Tribo Épsilon.",
+      "Tribo Gama ficou entre Tribo Alfa e Tribo Beta."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Tribo Alfa",
+      "Tribo Gama",
+      "Tribo Épsilon",
+      "Tribo Beta",
+      "Tribo Delta"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Tribo Alfa em 1º, Tribo Gama em 2º, Tribo Épsilon em 3º, Tribo Beta em 4º, Tribo Delta em 5º."
   },
   {
     "id": "LP-262",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 8)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "tema": "Impactos de Meteoros",
+    "intro": "Cinco meteoros impactaram a Terra em épocas distintas.",
     "itens": [
-      "Cerâmica",
-      "Mural",
-      "Moeda",
-      "Ânfora",
-      "Esqueleto"
+      "Meteoro A",
+      "Meteoro B",
+      "Meteoro C",
+      "Meteoro D",
+      "Meteoro E"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Meteoro C ficou entre Meteoro A e Meteoro D.",
+      "Meteoro A não foi o último.",
+      "Meteoro B ocorreu antes de Meteoro A.",
+      "Meteoro D ficou entre Meteoro A e Meteoro E."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Meteoro B",
+      "Meteoro A",
+      "Meteoro C",
+      "Meteoro D",
+      "Meteoro E"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Meteoro B em 1º, Meteoro A em 2º, Meteoro C em 3º, Meteoro D em 4º, Meteoro E em 5º."
   },
   {
     "id": "LP-263",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 8)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "dificil",
+    "tema": "Formação de Montanhas",
+    "intro": "Cinco cadeias montanhosas foram formadas em épocas distintas.",
     "itens": [
-      "Rafael",
-      "Tiago",
-      "Vitor",
-      "Ursula",
-      "Sofia"
+      "Cadeia Alfa",
+      "Cadeia Beta",
+      "Cadeia Gama",
+      "Cadeia Delta",
+      "Cadeia Épsilon"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Cadeia Delta não foi o primeiro.",
+      "Cadeia Alfa ficou entre Cadeia Gama e Cadeia Delta.",
+      "Cadeia Alfa ficou entre Cadeia Beta e Cadeia Delta.",
+      "Cadeia Delta ocorreu antes de Cadeia Épsilon.",
+      "Cadeia Gama não foi o primeiro."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Cadeia Beta",
+      "Cadeia Gama",
+      "Cadeia Alfa",
+      "Cadeia Delta",
+      "Cadeia Épsilon"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Cadeia Beta em 1º, Cadeia Gama em 2º, Cadeia Alfa em 3º, Cadeia Delta em 4º, Cadeia Épsilon em 5º."
   },
   {
     "id": "LP-264",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 8)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "dificil",
+    "tema": "Descobertas de Exoplanetas",
+    "intro": "Cinco planetas extrasolares foram descobertos em momentos distintos.",
     "itens": [
-      "Câmara Subterrânea",
-      "Câmara da Rainha",
-      "Câmara do Rei",
-      "Grande Galeria",
-      "Corredor Ascendente"
+      "Planeta Alfa",
+      "Planeta Beta",
+      "Planeta Gama",
+      "Planeta Delta",
+      "Planeta Épsilon"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Planeta Delta ficou entre Planeta Beta e Planeta Alfa.",
+      "Planeta Alfa ficou entre Planeta Delta e Planeta Gama.",
+      "Planeta Beta ocorreu antes de Planeta Alfa.",
+      "Planeta Gama ocorreu antes de Planeta Épsilon."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Planeta Beta",
+      "Planeta Delta",
+      "Planeta Alfa",
+      "Planeta Gama",
+      "Planeta Épsilon"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Planeta Beta em 1º, Planeta Delta em 2º, Planeta Alfa em 3º, Planeta Gama em 4º, Planeta Épsilon em 5º."
   },
   {
     "id": "LP-265",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 9)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "dificil",
+    "tema": "Revoluções Políticas",
+    "intro": "Cinco revoluções políticas ocorreram em momentos distintos naquela região.",
     "itens": [
-      "Fernando",
-      "Lewis",
-      "Max",
-      "Charles",
-      "Lando"
+      "Revolução A",
+      "Revolução B",
+      "Revolução C",
+      "Revolução D",
+      "Revolução E"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Revolução B ficou entre Revolução C e Revolução E.",
+      "Revolução D ficou entre Revolução B e Revolução E.",
+      "Revolução E não foi o primeiro.",
+      "Revolução A ficou entre Revolução C e Revolução B."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Revolução C",
+      "Revolução A",
+      "Revolução B",
+      "Revolução D",
+      "Revolução E"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Revolução C em 1º, Revolução A em 2º, Revolução B em 3º, Revolução D em 4º, Revolução E em 5º."
   },
   {
     "id": "LP-266",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 9)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "dificil",
+    "tema": "Epidemias Históricas",
+    "intro": "Cinco epidemias ocorreram em períodos distintos da história.",
     "itens": [
-      "Carla",
-      "Elena",
-      "Diego",
-      "Ana",
-      "Bruno"
+      "Epidemia A",
+      "Epidemia B",
+      "Epidemia C",
+      "Epidemia D",
+      "Epidemia E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Epidemia A ficou entre Epidemia E e Epidemia B.",
+      "Epidemia E ocorreu antes de Epidemia B.",
+      "Epidemia E ficou entre Epidemia C e Epidemia A.",
+      "Epidemia B ficou entre Epidemia A e Epidemia D."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Epidemia C",
+      "Epidemia E",
+      "Epidemia A",
+      "Epidemia B",
+      "Epidemia D"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Epidemia C em 1º, Epidemia E em 2º, Epidemia A em 3º, Epidemia B em 4º, Epidemia D em 5º."
   },
   {
     "id": "LP-267",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 9)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "dificil",
+    "tema": "Erupções Solares",
+    "intro": "Cinco erupções solares massivas ocorreram em momentos distintos.",
     "itens": [
-      "Cygnus",
-      "Atlas-1",
-      "Estrela",
-      "Boreal",
-      "Delta-X"
+      "Erupção Solar I",
+      "Erupção Solar II",
+      "Erupção Solar III",
+      "Erupção Solar IV",
+      "Erupção Solar V"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Erupção Solar V ficou entre Erupção Solar I e Erupção Solar III.",
+      "Erupção Solar II ficou entre Erupção Solar IV e Erupção Solar III.",
+      "Erupção Solar I ficou entre Erupção Solar IV e Erupção Solar III.",
+      "Erupção Solar V ocorreu antes de Erupção Solar III.",
+      "Erupção Solar V ocorreu antes de Erupção Solar II."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Erupção Solar IV",
+      "Erupção Solar I",
+      "Erupção Solar V",
+      "Erupção Solar II",
+      "Erupção Solar III"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Erupção Solar IV em 1º, Erupção Solar I em 2º, Erupção Solar V em 3º, Erupção Solar II em 4º, Erupção Solar III em 5º."
   },
   {
     "id": "LP-268",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 9)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "dificil",
+    "tema": "Glaciações Históricas",
+    "intro": "Cinco períodos glaciais ocorreram em épocas distintas.",
     "itens": [
-      "A Sombra",
-      "Memórias do Vento",
-      "A Última Porta",
-      "O Labirinto",
-      "Código Vermelho"
+      "Glaciação A",
+      "Glaciação B",
+      "Glaciação C",
+      "Glaciação D",
+      "Glaciação E"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Glaciação A ocorreu antes de Glaciação B.",
+      "Glaciação A ficou entre Glaciação E e Glaciação C.",
+      "Glaciação C ficou entre Glaciação A e Glaciação B.",
+      "Glaciação B ocorreu antes de Glaciação D."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Glaciação E",
+      "Glaciação A",
+      "Glaciação C",
+      "Glaciação B",
+      "Glaciação D"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Glaciação E em 1º, Glaciação A em 2º, Glaciação C em 3º, Glaciação B em 4º, Glaciação D em 5º."
   },
   {
     "id": "LP-269",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 9)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "tema": "Migração de Povos Antigos",
+    "intro": "Cinco povos antigos migraram para a região em épocas distintas.",
     "itens": [
-      "Erupção D",
-      "Erupção C",
-      "Erupção E",
-      "Erupção A",
-      "Erupção B"
+      "Povo Alfa",
+      "Povo Beta",
+      "Povo Gama",
+      "Povo Delta",
+      "Povo Épsilon"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Povo Delta ocorreu antes de Povo Gama.",
+      "Povo Beta ficou entre Povo Alfa e Povo Delta.",
+      "Povo Delta ficou entre Povo Alfa e Povo Épsilon.",
+      "Povo Alfa não foi o último.",
+      "Povo Gama ficou entre Povo Beta e Povo Épsilon."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Povo Alfa",
+      "Povo Beta",
+      "Povo Delta",
+      "Povo Gama",
+      "Povo Épsilon"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Povo Alfa em 1º, Povo Beta em 2º, Povo Delta em 3º, Povo Gama em 4º, Povo Épsilon em 5º."
   },
   {
     "id": "LP-270",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 9)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "tema": "Criação de Sistemas de Escrita",
+    "intro": "Cinco sistemas de escrita foram criados em momentos distintos.",
     "itens": [
-      "Cerâmica",
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Mural"
+      "Escrita A",
+      "Escrita B",
+      "Escrita C",
+      "Escrita D",
+      "Escrita E"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Escrita B ficou entre Escrita D e Escrita C.",
+      "Escrita B ocorreu antes de Escrita E.",
+      "Escrita D ocorreu antes de Escrita E.",
+      "Escrita E ficou entre Escrita A e Escrita C.",
+      "Escrita A ocorreu antes de Escrita D."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Escrita A",
+      "Escrita D",
+      "Escrita B",
+      "Escrita E",
+      "Escrita C"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Escrita A em 1º, Escrita D em 2º, Escrita B em 3º, Escrita E em 4º, Escrita C em 5º."
   },
   {
     "id": "LP-271",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 9)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "nivel": "dificil",
+    "tema": "Colapso de Civilizações Antigas",
+    "intro": "Cinco civilizações antigas colapsaram em momentos distintos.",
     "itens": [
-      "Ursula",
-      "Tiago",
-      "Vitor",
-      "Rafael",
-      "Sofia"
+      "Civilização Alfa",
+      "Civilização Beta",
+      "Civilização Gama",
+      "Civilização Delta",
+      "Civilização Épsilon"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Civilização Gama ficou entre Civilização Alfa e Civilização Épsilon.",
+      "Civilização Delta ocorreu antes de Civilização Gama.",
+      "Civilização Delta não foi o primeiro.",
+      "Civilização Delta ocorreu antes de Civilização Épsilon.",
+      "Civilização Alfa ficou entre Civilização Beta e Civilização Delta."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Civilização Beta",
+      "Civilização Alfa",
+      "Civilização Delta",
+      "Civilização Gama",
+      "Civilização Épsilon"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Civilização Beta em 1º, Civilização Alfa em 2º, Civilização Delta em 3º, Civilização Gama em 4º, Civilização Épsilon em 5º."
   },
   {
     "id": "LP-272",
     "tipo": "sequencia",
-    "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 9)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "nivel": "dificil",
+    "tema": "Terremotos Submarinos",
+    "intro": "Cinco terremotos submarinos ocorreram em momentos distintos.",
     "itens": [
-      "Câmara do Rei",
-      "Grande Galeria",
-      "Corredor Ascendente",
-      "Câmara Subterrânea",
-      "Câmara da Rainha"
+      "Terremoto A",
+      "Terremoto B",
+      "Terremoto C",
+      "Terremoto D",
+      "Terremoto E"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Terremoto B ficou entre Terremoto C e Terremoto D.",
+      "Terremoto D não foi o último.",
+      "Terremoto A ocorreu antes de Terremoto D.",
+      "Terremoto A ficou entre Terremoto B e Terremoto D."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Terremoto C",
+      "Terremoto B",
+      "Terremoto A",
+      "Terremoto D",
+      "Terremoto E"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Terremoto C em 1º, Terremoto B em 2º, Terremoto A em 3º, Terremoto D em 4º, Terremoto E em 5º."
   },
   {
     "id": "LP-273",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 10)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "dificil",
+    "tema": "Crises Financeiras Globais",
+    "intro": "Cinco crises financeiras ocorreram em épocas distintas.",
     "itens": [
-      "Charles",
-      "Fernando",
-      "Max",
-      "Lando",
-      "Lewis"
+      "Crise A",
+      "Crise B",
+      "Crise C",
+      "Crise D",
+      "Crise E"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Crise B ocorreu antes de Crise E.",
+      "Crise C ficou entre Crise A e Crise E.",
+      "Crise A ficou entre Crise B e Crise E.",
+      "Crise D ocorreu antes de Crise B."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Crise D",
+      "Crise B",
+      "Crise A",
+      "Crise C",
+      "Crise E"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Crise D em 1º, Crise B em 2º, Crise A em 3º, Crise C em 4º, Crise E em 5º."
   },
   {
     "id": "LP-274",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 10)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "dificil",
+    "tema": "Descoberta de Continentes",
+    "intro": "Cinco continentes foram descobertos por exploradores em épocas distintas.",
     "itens": [
-      "Carla",
-      "Diego",
-      "Elena",
-      "Ana",
-      "Bruno"
+      "Terra A",
+      "Terra B",
+      "Terra C",
+      "Terra D",
+      "Terra E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Terra A ocorreu antes de Terra B.",
+      "Terra A ficou entre Terra C e Terra B.",
+      "Terra E ocorreu antes de Terra C.",
+      "Terra B ocorreu antes de Terra D."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Terra E",
+      "Terra C",
+      "Terra A",
+      "Terra B",
+      "Terra D"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Terra E em 1º, Terra C em 2º, Terra A em 3º, Terra B em 4º, Terra D em 5º."
   },
   {
     "id": "LP-275",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 10)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "dificil",
+    "tema": "Fissões Tectônicas",
+    "intro": "Cinco grandes fissões tectônicas ocorreram em épocas geológicas distintas.",
     "itens": [
-      "Atlas-1",
-      "Cygnus",
-      "Delta-X",
-      "Boreal",
-      "Estrela"
+      "Fissão A",
+      "Fissão B",
+      "Fissão C",
+      "Fissão D",
+      "Fissão E"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Fissão E não foi o primeiro.",
+      "Fissão C ocorreu antes de Fissão D.",
+      "Fissão E ocorreu antes de Fissão C.",
+      "Fissão A ficou entre Fissão C e Fissão D."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Fissão B",
+      "Fissão E",
+      "Fissão C",
+      "Fissão A",
+      "Fissão D"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Fissão B em 1º, Fissão E em 2º, Fissão C em 3º, Fissão A em 4º, Fissão D em 5º."
   },
   {
     "id": "LP-276",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 10)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "dificil",
+    "tema": "Erupções de Supervolcões",
+    "intro": "Cinco supervolcões entraram em erupção em épocas distintas.",
     "itens": [
-      "Memórias do Vento",
-      "A Sombra",
-      "A Última Porta",
-      "O Labirinto",
-      "Código Vermelho"
+      "Superv. Alfa",
+      "Superv. Beta",
+      "Superv. Gama",
+      "Superv. Delta",
+      "Superv. Épsilon"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Superv. Beta ficou entre Superv. Épsilon e Superv. Alfa.",
+      "Superv. Beta ocorreu antes de Superv. Gama.",
+      "Superv. Alfa ficou entre Superv. Beta e Superv. Gama.",
+      "Superv. Épsilon não foi o primeiro."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Superv. Delta",
+      "Superv. Épsilon",
+      "Superv. Beta",
+      "Superv. Alfa",
+      "Superv. Gama"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Superv. Delta em 1º, Superv. Épsilon em 2º, Superv. Beta em 3º, Superv. Alfa em 4º, Superv. Gama em 5º."
   },
   {
     "id": "LP-277",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 10)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "tema": "Transições Climáticas",
+    "intro": "Cinco transições climáticas maiores ocorreram em épocas distintas.",
     "itens": [
-      "Erupção E",
-      "Erupção B",
-      "Erupção C",
-      "Erupção D",
-      "Erupção A"
+      "Transição A",
+      "Transição B",
+      "Transição C",
+      "Transição D",
+      "Transição E"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Transição A ocorreu antes de Transição B.",
+      "Transição C ocorreu antes de Transição D.",
+      "Transição E ocorreu antes de Transição A.",
+      "Transição E ficou entre Transição D e Transição B."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Transição C",
+      "Transição D",
+      "Transição E",
+      "Transição A",
+      "Transição B"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Transição C em 1º, Transição D em 2º, Transição E em 3º, Transição A em 4º, Transição B em 5º."
   },
   {
     "id": "LP-278",
     "tipo": "sequencia",
     "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 10)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "tema": "Colapso de Ecossistemas",
+    "intro": "Cinco ecossistemas colapsaram em momentos distintos.",
     "itens": [
-      "Cerâmica",
-      "Mural",
-      "Esqueleto",
-      "Ânfora",
-      "Moeda"
+      "Ecossistema A",
+      "Ecossistema B",
+      "Ecossistema C",
+      "Ecossistema D",
+      "Ecossistema E"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Ecossistema B não foi o último.",
+      "Ecossistema E ocorreu antes de Ecossistema A.",
+      "Ecossistema D ocorreu antes de Ecossistema C.",
+      "Ecossistema C ficou entre Ecossistema D e Ecossistema B.",
+      "Ecossistema D não foi o primeiro."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Ecossistema E",
+      "Ecossistema D",
+      "Ecossistema C",
+      "Ecossistema B",
+      "Ecossistema A"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Ecossistema E em 1º, Ecossistema D em 2º, Ecossistema C em 3º, Ecossistema B em 4º, Ecossistema A em 5º."
   },
   {
     "id": "LP-279",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 10)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "tema": "Descoberta de Elementos Químicos",
+    "intro": "Cinco elementos químicos foram descobertos em momentos distintos. Descubra a sequência exata.",
     "itens": [
-      "Sofia",
-      "Tiago",
-      "Rafael",
-      "Vitor",
-      "Ursula"
+      "Elemento A",
+      "Elemento B",
+      "Elemento C",
+      "Elemento D",
+      "Elemento E"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Elemento A ocorreu antes de Elemento C.",
+      "Elemento C não foi o último.",
+      "Elemento B ficou entre Elemento E e Elemento C.",
+      "Elemento E ocorreu antes de Elemento B.",
+      "Elemento E não foi o primeiro."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Elemento A",
+      "Elemento E",
+      "Elemento B",
+      "Elemento C",
+      "Elemento D"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Elemento A em 1º, Elemento E em 2º, Elemento B em 3º, Elemento C em 4º, Elemento D em 5º."
   },
   {
     "id": "LP-280",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 10)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "tema": "Construção de Catedrais Góticas",
+    "intro": "Cinco catedrais foram construídas em séculos distintos. Descubra a sequência exata.",
     "itens": [
-      "Câmara do Rei",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara Subterrânea",
-      "Corredor Ascendente"
+      "Catedral Norte",
+      "Catedral Sul",
+      "Catedral Leste",
+      "Catedral Oeste",
+      "Catedral Central"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Catedral Oeste ocorreu antes de Catedral Central.",
+      "Catedral Sul ocorreu antes de Catedral Oeste.",
+      "Catedral Norte não foi o último.",
+      "Catedral Central ocorreu antes de Catedral Norte."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Catedral Sul",
+      "Catedral Oeste",
+      "Catedral Central",
+      "Catedral Norte",
+      "Catedral Leste"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Catedral Sul em 1º, Catedral Oeste em 2º, Catedral Central em 3º, Catedral Norte em 4º, Catedral Leste em 5º."
   },
   {
     "id": "LP-281",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 11)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "expert",
+    "tema": "Colapso de Impérios",
+    "intro": "Cinco grandes impérios colapsaram em épocas distintas. Descubra a sequência exata.",
     "itens": [
-      "Fernando",
-      "Max",
-      "Lewis",
-      "Charles",
-      "Lando"
+      "Império Alfa",
+      "Império Beta",
+      "Império Gama",
+      "Império Delta",
+      "Império Ômega"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Império Delta ficou entre Império Alfa e Império Beta.",
+      "Império Alfa ocorreu antes de Império Beta.",
+      "Império Alfa ficou entre Império Gama e Império Delta.",
+      "Império Ômega ficou entre Império Alfa e Império Delta."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Império Gama",
+      "Império Alfa",
+      "Império Ômega",
+      "Império Delta",
+      "Império Beta"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Império Gama em 1º, Império Alfa em 2º, Império Ômega em 3º, Império Delta em 4º, Império Beta em 5º."
   },
   {
     "id": "LP-282",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 11)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "expert",
+    "tema": "Invenções Científicas",
+    "intro": "Cinco invenções foram realizadas em momentos distintos. Descubra a sequência exata.",
     "itens": [
-      "Diego",
-      "Carla",
-      "Ana",
-      "Elena",
-      "Bruno"
+      "Invenção A",
+      "Invenção B",
+      "Invenção C",
+      "Invenção D",
+      "Invenção E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Invenção E ficou entre Invenção C e Invenção B.",
+      "Invenção C não foi o primeiro.",
+      "Invenção C ocorreu antes de Invenção A.",
+      "Invenção A ocorreu antes de Invenção E."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Invenção D",
+      "Invenção C",
+      "Invenção A",
+      "Invenção E",
+      "Invenção B"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Invenção D em 1º, Invenção C em 2º, Invenção A em 3º, Invenção E em 4º, Invenção B em 5º."
   },
   {
     "id": "LP-283",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 11)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "expert",
+    "tema": "Terraformação Planetária",
+    "intro": "Cinco etapas da terraformação foram concluídas em momentos distintos. Descubra a sequência.",
     "itens": [
-      "Delta-X",
-      "Cygnus",
-      "Estrela",
-      "Boreal",
-      "Atlas-1"
+      "Etapa Alfa",
+      "Etapa Beta",
+      "Etapa Gama",
+      "Etapa Delta",
+      "Etapa Ômega"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Etapa Ômega ficou entre Etapa Delta e Etapa Beta.",
+      "Etapa Delta ocorreu antes de Etapa Ômega.",
+      "Etapa Beta ocorreu antes de Etapa Gama.",
+      "Etapa Delta não foi o primeiro."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Etapa Alfa",
+      "Etapa Delta",
+      "Etapa Ômega",
+      "Etapa Beta",
+      "Etapa Gama"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Etapa Alfa em 1º, Etapa Delta em 2º, Etapa Ômega em 3º, Etapa Beta em 4º, Etapa Gama em 5º."
   },
   {
     "id": "LP-284",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 11)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "expert",
+    "tema": "Grandes Batalhas Históricas",
+    "intro": "Cinco batalhas decisivas ocorreram em momentos distintos. Descubra a sequência exata.",
     "itens": [
-      "Memórias do Vento",
-      "O Labirinto",
-      "A Última Porta",
-      "A Sombra",
-      "Código Vermelho"
+      "Batalha Alfa",
+      "Batalha Beta",
+      "Batalha Gama",
+      "Batalha Delta",
+      "Batalha Ômega"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Batalha Gama ficou entre Batalha Beta e Batalha Ômega.",
+      "Batalha Delta ficou entre Batalha Beta e Batalha Ômega.",
+      "Batalha Alfa ocorreu antes de Batalha Delta.",
+      "Batalha Beta ficou entre Batalha Alfa e Batalha Gama.",
+      "Batalha Gama ocorreu antes de Batalha Delta."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Batalha Alfa",
+      "Batalha Beta",
+      "Batalha Gama",
+      "Batalha Delta",
+      "Batalha Ômega"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Batalha Alfa em 1º, Batalha Beta em 2º, Batalha Gama em 3º, Batalha Delta em 4º, Batalha Ômega em 5º."
   },
   {
     "id": "LP-285",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 11)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "expert",
+    "tema": "Missões a Marte",
+    "intro": "Cinco missões a Marte partiram em momentos distintos. Descubra a sequência exata.",
     "itens": [
-      "Erupção B",
-      "Erupção E",
-      "Erupção D",
-      "Erupção A",
-      "Erupção C"
+      "Missão Alfa",
+      "Missão Beta",
+      "Missão Gama",
+      "Missão Delta",
+      "Missão Épsilon"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Missão Gama ficou entre Missão Alfa e Missão Beta.",
+      "Missão Delta ficou entre Missão Beta e Missão Épsilon.",
+      "Missão Beta não foi o último.",
+      "Missão Alfa ocorreu antes de Missão Delta.",
+      "Missão Beta não foi o primeiro."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Missão Alfa",
+      "Missão Gama",
+      "Missão Beta",
+      "Missão Delta",
+      "Missão Épsilon"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Missão Alfa em 1º, Missão Gama em 2º, Missão Beta em 3º, Missão Delta em 4º, Missão Épsilon em 5º."
   },
   {
     "id": "LP-286",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 11)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "expert",
+    "tema": "Transmissão de Conhecimento Ancestral",
+    "intro": "Cinco mestres transmitiram seu conhecimento em momentos distintos. Descubra a sequência.",
     "itens": [
-      "Mural",
-      "Moeda",
-      "Ânfora",
-      "Esqueleto",
-      "Cerâmica"
+      "Mestre Alfa",
+      "Mestre Beta",
+      "Mestre Gama",
+      "Mestre Delta",
+      "Mestre Épsilon"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Mestre Gama ficou entre Mestre Alfa e Mestre Delta.",
+      "Mestre Gama ocorreu antes de Mestre Épsilon.",
+      "Mestre Beta não foi o último.",
+      "Mestre Alfa ocorreu antes de Mestre Épsilon.",
+      "Mestre Épsilon ficou entre Mestre Alfa e Mestre Beta."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Mestre Alfa",
+      "Mestre Gama",
+      "Mestre Épsilon",
+      "Mestre Beta",
+      "Mestre Delta"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Mestre Alfa em 1º, Mestre Gama em 2º, Mestre Épsilon em 3º, Mestre Beta em 4º, Mestre Delta em 5º."
   },
   {
     "id": "LP-287",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 11)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "tema": "Marcos da Fusão Nuclear",
+    "intro": "Cinco marcos no desenvolvimento da fusão foram alcançados em momentos distintos.",
     "itens": [
-      "Vitor",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Rafael"
+      "Marco A",
+      "Marco B",
+      "Marco C",
+      "Marco D",
+      "Marco E"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Marco A ficou entre Marco B e Marco C.",
+      "Marco C ocorreu antes de Marco D.",
+      "Marco C ficou entre Marco A e Marco D.",
+      "Marco D não foi o último."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Marco B",
+      "Marco A",
+      "Marco C",
+      "Marco D",
+      "Marco E"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Marco B em 1º, Marco A em 2º, Marco C em 3º, Marco D em 4º, Marco E em 5º."
   },
   {
     "id": "LP-288",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 11)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "tema": "Expedições ao Polo Norte",
+    "intro": "Cinco expedições ao Polo Norte foram concluídas em momentos distintos.",
     "itens": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Grande Galeria",
-      "Câmara do Rei",
-      "Câmara da Rainha"
+      "Expedição Alfa",
+      "Expedição Beta",
+      "Expedição Gama",
+      "Expedição Delta",
+      "Expedição Épsilon"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Expedição Alfa ficou entre Expedição Gama e Expedição Delta.",
+      "Expedição Delta ficou entre Expedição Alfa e Expedição Épsilon.",
+      "Expedição Beta ocorreu antes de Expedição Alfa.",
+      "Expedição Alfa ficou entre Expedição Beta e Expedição Épsilon.",
+      "Expedição Beta ocorreu antes de Expedição Gama."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Expedição Beta",
+      "Expedição Gama",
+      "Expedição Alfa",
+      "Expedição Delta",
+      "Expedição Épsilon"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Expedição Beta em 1º, Expedição Gama em 2º, Expedição Alfa em 3º, Expedição Delta em 4º, Expedição Épsilon em 5º."
   },
   {
     "id": "LP-289",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 12)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "expert",
+    "tema": "Evolução de Sistemas Operacionais",
+    "intro": "Cinco sistemas operacionais foram lançados em momentos distintos.",
     "itens": [
-      "Charles",
-      "Lando",
-      "Lewis",
-      "Fernando",
-      "Max"
+      "Sistema Alfa",
+      "Sistema Beta",
+      "Sistema Gama",
+      "Sistema Delta",
+      "Sistema Épsilon"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Sistema Gama ocorreu antes de Sistema Épsilon.",
+      "Sistema Alfa ocorreu antes de Sistema Gama.",
+      "Sistema Delta ficou entre Sistema Beta e Sistema Gama.",
+      "Sistema Alfa ficou entre Sistema Delta e Sistema Épsilon."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Sistema Beta",
+      "Sistema Delta",
+      "Sistema Alfa",
+      "Sistema Gama",
+      "Sistema Épsilon"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Sistema Beta em 1º, Sistema Delta em 2º, Sistema Alfa em 3º, Sistema Gama em 4º, Sistema Épsilon em 5º."
   },
   {
     "id": "LP-290",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 12)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "expert",
+    "tema": "Descoberta de Vírus Antigos",
+    "intro": "Cinco vírus antigos foram descobertos em momentos distintos.",
     "itens": [
-      "Carla",
-      "Ana",
-      "Elena",
-      "Diego",
-      "Bruno"
+      "Vírus A",
+      "Vírus B",
+      "Vírus C",
+      "Vírus D",
+      "Vírus E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Vírus A ocorreu antes de Vírus B.",
+      "Vírus C ocorreu antes de Vírus B.",
+      "Vírus B ficou entre Vírus A e Vírus D.",
+      "Vírus D não foi o último.",
+      "Vírus A não foi o primeiro."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Vírus C",
+      "Vírus A",
+      "Vírus B",
+      "Vírus D",
+      "Vírus E"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Vírus C em 1º, Vírus A em 2º, Vírus B em 3º, Vírus D em 4º, Vírus E em 5º."
   },
   {
     "id": "LP-291",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 12)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "expert",
+    "tema": "Construção de Aceleradores de Partículas",
+    "intro": "Cinco aceleradores foram concluídos em momentos distintos.",
     "itens": [
-      "Cygnus",
-      "Estrela",
-      "Boreal",
-      "Atlas-1",
-      "Delta-X"
+      "Acelerador Alfa",
+      "Acelerador Beta",
+      "Acelerador Gama",
+      "Acelerador Delta",
+      "Acelerador Épsilon"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Acelerador Alfa ocorreu antes de Acelerador Delta.",
+      "Acelerador Beta não foi o primeiro.",
+      "Acelerador Beta não foi o último.",
+      "Acelerador Alfa ficou entre Acelerador Gama e Acelerador Beta.",
+      "Acelerador Épsilon não foi o primeiro.",
+      "Acelerador Alfa ficou entre Acelerador Épsilon e Acelerador Delta."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Acelerador Gama",
+      "Acelerador Épsilon",
+      "Acelerador Alfa",
+      "Acelerador Beta",
+      "Acelerador Delta"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Acelerador Gama em 1º, Acelerador Épsilon em 2º, Acelerador Alfa em 3º, Acelerador Beta em 4º, Acelerador Delta em 5º."
   },
   {
     "id": "LP-292",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 12)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "expert",
+    "tema": "Ativação de Reatores Nucleares",
+    "intro": "Cinco reatores nucleares foram ativados em momentos distintos.",
     "itens": [
-      "A Última Porta",
-      "A Sombra",
-      "Código Vermelho",
-      "O Labirinto",
-      "Memórias do Vento"
+      "Reator Alfa",
+      "Reator Beta",
+      "Reator Gama",
+      "Reator Delta",
+      "Reator Épsilon"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "Reator Beta ocorreu antes de Reator Gama.",
+      "Reator Épsilon ficou entre Reator Alfa e Reator Beta.",
+      "Reator Delta ocorreu antes de Reator Épsilon.",
+      "Reator Alfa ficou entre Reator Delta e Reator Beta."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "Reator Delta",
+      "Reator Alfa",
+      "Reator Épsilon",
+      "Reator Beta",
+      "Reator Gama"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "Reator Delta em 1º, Reator Alfa em 2º, Reator Épsilon em 3º, Reator Beta em 4º, Reator Gama em 5º."
   },
   {
     "id": "LP-293",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Erupções Vulcânicas (Caso 12)",
-    "intro": "Um geólogo estudou cinco erupções de um vulcão registradas em diferentes séculos. Os documentos históricos foram fragmentados. Ordene as erupções cronologicamente.",
+    "nivel": "expert",
+    "tema": "Decodificação de Mensagens Cifradas",
+    "intro": "Cinco mensagens cifradas foram decodificadas em momentos distintos.",
     "itens": [
-      "Erupção D",
-      "Erupção C",
-      "Erupção E",
-      "Erupção A",
-      "Erupção B"
+      "Mensagem A",
+      "Mensagem B",
+      "Mensagem C",
+      "Mensagem D",
+      "Mensagem E"
     ],
     "pistas": [
-      "A Erupção B ocorreu depois da A.",
-      "A Erupção D foi a mais recente.",
-      "A Erupção C ocorreu imediatamente antes da D.",
-      "A Erupção A foi a mais antiga.",
-      "A Erupção E ocorreu entre B e C."
+      "Mensagem A ficou entre Mensagem E e Mensagem C.",
+      "Mensagem B ocorreu antes de Mensagem D.",
+      "Mensagem C ficou entre Mensagem A e Mensagem B.",
+      "Mensagem B não foi o primeiro."
     ],
     "solucao": [
-      "Erupção A",
-      "Erupção B",
-      "Erupção E",
-      "Erupção C",
-      "Erupção D"
+      "Mensagem E",
+      "Mensagem A",
+      "Mensagem C",
+      "Mensagem B",
+      "Mensagem D"
     ],
-    "explicacao": "A (1ª/mais antiga), B (2ª), E (3ª, entre B e C), C (4ª), D (5ª/mais recente)."
+    "explicacao": "Mensagem E em 1º, Mensagem A em 2º, Mensagem C em 3º, Mensagem B em 4º, Mensagem D em 5º."
   },
   {
     "id": "LP-294",
     "tipo": "sequencia",
-    "nivel": "dificil",
-    "tema": "Descobertas Arqueológicas (Caso 12)",
-    "intro": "Uma expedição arqueológica fez cinco grandes descobertas em camadas de escavação diferentes. Descubra a ordem em que foram encontradas, da mais profunda (mais antiga) à mais recente.",
+    "nivel": "expert",
+    "tema": "Lançamento de Telescópios Espaciais",
+    "intro": "Cinco telescópios foram lançados em momentos distintos.",
     "itens": [
-      "Cerâmica",
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Mural"
+      "Telescópio Alfa",
+      "Telescópio Beta",
+      "Telescópio Gama",
+      "Telescópio Delta",
+      "Telescópio Épsilon"
     ],
     "pistas": [
-      "A Moeda foi encontrada antes da Cerâmica.",
-      "O Esqueleto foi a descoberta mais profunda.",
-      "A Ânfora foi encontrada imediatamente após a Moeda.",
-      "O Mural foi a última descoberta.",
-      "A Cerâmica foi encontrada antes do Mural."
+      "Telescópio Gama não foi o primeiro.",
+      "Telescópio Delta ficou entre Telescópio Alfa e Telescópio Gama.",
+      "Telescópio Beta ocorreu antes de Telescópio Épsilon.",
+      "Telescópio Beta não foi o primeiro.",
+      "Telescópio Gama não foi o último.",
+      "Telescópio Delta ficou entre Telescópio Beta e Telescópio Gama."
     ],
     "solucao": [
-      "Esqueleto",
-      "Moeda",
-      "Ânfora",
-      "Cerâmica",
-      "Mural"
+      "Telescópio Alfa",
+      "Telescópio Beta",
+      "Telescópio Delta",
+      "Telescópio Gama",
+      "Telescópio Épsilon"
     ],
-    "explicacao": "Esqueleto (1º/mais antigo), Moeda (2º), Ânfora (3º), Cerâmica (4º), Mural (5º/mais recente)."
+    "explicacao": "Telescópio Alfa em 1º, Telescópio Beta em 2º, Telescópio Delta em 3º, Telescópio Gama em 4º, Telescópio Épsilon em 5º."
   },
   {
     "id": "LP-295",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Chegada ao Acampamento (Caso 12)",
-    "intro": "Seis exploradores chegaram ao acampamento base em momentos diferentes durante a expedição. Com base nos relatos, ordene a chegada do primeiro ao último.",
+    "tema": "Composição de Sinfonias",
+    "intro": "Cinco sinfonias foram compostas em momentos distintos.",
     "itens": [
-      "Ursula",
-      "Sofia",
-      "Rafael",
-      "Vitor",
-      "Tiago"
+      "Sinfonia A",
+      "Sinfonia B",
+      "Sinfonia C",
+      "Sinfonia D",
+      "Sinfonia E"
     ],
     "pistas": [
-      "Rafael chegou antes de Sofia.",
-      "Vitor foi o último a chegar.",
-      "Tiago chegou imediatamente após Sofia.",
-      "Ursula chegou antes de Tiago.",
-      "Sofia chegou antes de Ursula."
+      "Sinfonia E não foi o último.",
+      "Sinfonia B ficou entre Sinfonia D e Sinfonia C.",
+      "Sinfonia C não foi o primeiro.",
+      "Sinfonia B ficou entre Sinfonia D e Sinfonia E.",
+      "Sinfonia E não foi o primeiro.",
+      "Sinfonia D ficou entre Sinfonia A e Sinfonia C."
     ],
     "solucao": [
-      "Rafael",
-      "Sofia",
-      "Ursula",
-      "Tiago",
-      "Vitor"
+      "Sinfonia A",
+      "Sinfonia D",
+      "Sinfonia B",
+      "Sinfonia E",
+      "Sinfonia C"
     ],
-    "explicacao": "Rafael (1º), Sofia (2ª), Ursula (3ª), Tiago (4º, imediatamente após Sofia implica reordenação), Vitor (5º)."
+    "explicacao": "Sinfonia A em 1º, Sinfonia D em 2º, Sinfonia B em 3º, Sinfonia E em 4º, Sinfonia C em 5º."
   },
   {
     "id": "LP-296",
     "tipo": "sequencia",
     "nivel": "expert",
-    "tema": "Construção das Pirâmides (Caso 12)",
-    "intro": "Cinco câmaras internas de uma pirâmide foram construídas em sequência. Arqueólogos encontraram inscrições que revelam a ordem de construção.",
+    "tema": "Escavação de Túneis",
+    "intro": "Cinco túneis foram escavados em momentos distintos em uma grande obra.",
     "itens": [
-      "Câmara da Rainha",
-      "Câmara Subterrânea",
-      "Grande Galeria",
-      "Corredor Ascendente",
-      "Câmara do Rei"
+      "Túnel Alfa",
+      "Túnel Beta",
+      "Túnel Gama",
+      "Túnel Delta",
+      "Túnel Épsilon"
     ],
     "pistas": [
-      "A Câmara Subterrânea foi construída primeiro.",
-      "A Grande Galeria foi construída depois do Corredor Ascendente.",
-      "A Câmara do Rei foi construída por último.",
-      "O Corredor Ascendente foi construído antes da Câmara da Rainha.",
-      "A Câmara da Rainha foi construída imediatamente antes da Grande Galeria."
+      "Túnel Alfa não foi o primeiro.",
+      "Túnel Gama ficou entre Túnel Beta e Túnel Épsilon.",
+      "Túnel Alfa ocorreu antes de Túnel Gama.",
+      "Túnel Épsilon não foi o primeiro.",
+      "Túnel Delta ficou entre Túnel Alfa e Túnel Gama."
     ],
     "solucao": [
-      "Câmara Subterrânea",
-      "Corredor Ascendente",
-      "Câmara da Rainha",
-      "Grande Galeria",
-      "Câmara do Rei"
+      "Túnel Beta",
+      "Túnel Alfa",
+      "Túnel Delta",
+      "Túnel Gama",
+      "Túnel Épsilon"
     ],
-    "explicacao": "Subterrânea (1ª), Corredor Ascendente (2º), Câmara da Rainha (3ª), Grande Galeria (4ª), Câmara do Rei (5ª)."
+    "explicacao": "Túnel Beta em 1º, Túnel Alfa em 2º, Túnel Delta em 3º, Túnel Gama em 4º, Túnel Épsilon em 5º."
   },
   {
     "id": "LP-297",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Corrida de Fórmula 1 (Caso 13)",
-    "intro": "Cinco pilotos cruzaram a linha de chegada em momentos diferentes. Com base nos depoimentos da equipe e nos dados do telemetro, descubra a ordem exata de chegada.",
+    "nivel": "expert",
+    "tema": "Fusão de Galáxias",
+    "intro": "Cinco fusões galácticas ocorreram em épocas distintas.",
     "itens": [
-      "Max",
-      "Lewis",
-      "Fernando",
-      "Charles",
-      "Lando"
+      "Fusão A",
+      "Fusão B",
+      "Fusão C",
+      "Fusão D",
+      "Fusão E"
     ],
     "pistas": [
-      "Lewis chegou antes de Fernando.",
-      "Max não foi o primeiro nem o último.",
-      "Charles chegou imediatamente após Max.",
-      "Lando foi o último a cruzar.",
-      "Fernando chegou logo depois de Lewis."
+      "Fusão B ocorreu antes de Fusão A.",
+      "Fusão A ficou entre Fusão C e Fusão D.",
+      "Fusão A ficou entre Fusão B e Fusão D.",
+      "Fusão D não foi o último.",
+      "Fusão B não foi o primeiro."
     ],
     "solucao": [
-      "Lewis",
-      "Fernando",
-      "Max",
-      "Charles",
-      "Lando"
+      "Fusão C",
+      "Fusão B",
+      "Fusão A",
+      "Fusão D",
+      "Fusão E"
     ],
-    "explicacao": "Lewis foi 1º, Fernando 2º, Max 3º, Charles 4º (logo após Max) e Lando 5º (último)."
+    "explicacao": "Fusão C em 1º, Fusão B em 2º, Fusão A em 3º, Fusão D em 4º, Fusão E em 5º."
   },
   {
     "id": "LP-298",
     "tipo": "sequencia",
-    "nivel": "facil",
-    "tema": "Entrevistas de Emprego (Caso 13)",
-    "intro": "Cinco candidatos foram entrevistados ao longo do dia para uma vaga de engenheiro. Com base nos relatos do recrutador, descubra a ordem das entrevistas.",
+    "nivel": "expert",
+    "tema": "Decifração de Idiomas Mortos",
+    "intro": "Cinco idiomas antigos foram decifrados em momentos distintos.",
     "itens": [
-      "Carla",
-      "Elena",
-      "Ana",
-      "Diego",
-      "Bruno"
+      "Idioma A",
+      "Idioma B",
+      "Idioma C",
+      "Idioma D",
+      "Idioma E"
     ],
     "pistas": [
-      "Ana foi entrevistada antes de Bruno.",
-      "Elena não foi a primeira nem a segunda.",
-      "Carla foi entrevistada imediatamente antes de Diego.",
-      "Bruno não foi o último.",
-      "Diego foi o quarto a ser entrevistado."
+      "Idioma A ficou entre Idioma B e Idioma E.",
+      "Idioma C ficou entre Idioma A e Idioma E.",
+      "Idioma A ficou entre Idioma D e Idioma C.",
+      "Idioma B não foi o primeiro.",
+      "Idioma E não foi o primeiro."
     ],
     "solucao": [
-      "Ana",
-      "Bruno",
-      "Carla",
-      "Diego",
-      "Elena"
+      "Idioma D",
+      "Idioma B",
+      "Idioma A",
+      "Idioma C",
+      "Idioma E"
     ],
-    "explicacao": "Ana 1ª, Bruno 2º, Carla 3ª (antes de Diego), Diego 4º, Elena 5ª."
+    "explicacao": "Idioma D em 1º, Idioma B em 2º, Idioma A em 3º, Idioma C em 4º, Idioma E em 5º."
   },
   {
     "id": "LP-299",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Lançamento de Satélites (Caso 13)",
-    "intro": "Cinco satélites foram lançados em missões consecutivas ao longo do ano. Registros da agência espacial foram parcialmente apagados. Reordene os lançamentos.",
+    "nivel": "expert",
+    "tema": "Supernovas Históricas",
+    "intro": "Cinco supernovas foram observadas em épocas distintas pela humanidade.",
     "itens": [
-      "Estrela",
-      "Cygnus",
-      "Atlas-1",
-      "Delta-X",
-      "Boreal"
+      "Supernova A",
+      "Supernova B",
+      "Supernova C",
+      "Supernova D",
+      "Supernova E"
     ],
     "pistas": [
-      "Boreal foi lançado antes de Cygnus.",
-      "Atlas-1 foi o primeiro lançamento.",
-      "Delta-X foi lançado imediatamente após Cygnus.",
-      "Estrela não foi o último lançamento.",
-      "Cygnus foi lançado antes de Delta-X e depois de Boreal."
+      "Supernova C ficou entre Supernova E e Supernova A.",
+      "Supernova E ocorreu antes de Supernova A.",
+      "Supernova A ocorreu antes de Supernova B.",
+      "Supernova B não foi o último."
     ],
     "solucao": [
-      "Atlas-1",
-      "Boreal",
-      "Cygnus",
-      "Delta-X",
-      "Estrela"
+      "Supernova E",
+      "Supernova C",
+      "Supernova A",
+      "Supernova B",
+      "Supernova D"
     ],
-    "explicacao": "Atlas-1 (1º), Boreal (2º), Cygnus (3º), Delta-X (4º, logo após Cygnus), Estrela (5º)."
+    "explicacao": "Supernova E em 1º, Supernova C em 2º, Supernova A em 3º, Supernova B em 4º, Supernova D em 5º."
   },
   {
     "id": "LP-300",
     "tipo": "sequencia",
-    "nivel": "medio",
-    "tema": "Publicação de Livros (Caso 13)",
-    "intro": "Uma editora lançou cinco livros de um mesmo autor ao longo de sua carreira. Os registros de datas foram perdidos. Com base nas entrevistas do autor, descubra a ordem de publicação.",
+    "nivel": "expert",
+    "tema": "Ativação de Inteligências Artificiais",
+    "intro": "Cinco sistemas de IA foram ativados em momentos distintos.",
     "itens": [
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta",
-      "A Sombra",
-      "O Labirinto"
+      "IA Alfa",
+      "IA Beta",
+      "IA Gama",
+      "IA Delta",
+      "IA Épsilon"
     ],
     "pistas": [
-      "'A Sombra' foi publicado antes de 'O Labirinto'.",
-      "'Código Vermelho' não foi o primeiro nem o último.",
-      "'Memórias do Vento' foi publicado imediatamente após 'O Labirinto'.",
-      "'A Última Porta' foi o quinto livro.",
-      "'O Labirinto' foi o segundo livro."
+      "IA Épsilon não foi o primeiro.",
+      "IA Alfa ficou entre IA Gama e IA Delta.",
+      "IA Épsilon ocorreu antes de IA Delta.",
+      "IA Gama ficou entre IA Épsilon e IA Delta."
     ],
     "solucao": [
-      "A Sombra",
-      "O Labirinto",
-      "Memórias do Vento",
-      "Código Vermelho",
-      "A Última Porta"
+      "IA Beta",
+      "IA Épsilon",
+      "IA Gama",
+      "IA Alfa",
+      "IA Delta"
     ],
-    "explicacao": "'A Sombra' (1º), 'O Labirinto' (2º), 'Memórias do Vento' (3º), 'Código Vermelho' (4º), 'A Última Porta' (5º)."
+    "explicacao": "IA Beta em 1º, IA Épsilon em 2º, IA Gama em 3º, IA Alfa em 4º, IA Delta em 5º."
   },
   {
     "id": "LP-301",
@@ -21186,13 +21115,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 2.",
-      "O segundo dígito é 3.",
-      "O terceiro é a soma do primeiro e do segundo.",
-      "O quarto é a soma do segundo e do terceiro."
+      "O terceiro dígito é a soma do primeiro e do segundo.",
+      "O quarto dígito é a soma do segundo e do terceiro.",
+      "A soma total dos quatro dígitos é 18.",
+      "O primeiro dígito é menor que o segundo."
     ],
     "solucao": "2358",
-    "explicacao": "d1=2, d2=3, d3=5, d4=8. Sequência de Fibonacci! Código: 2358."
+    "explicacao": "d3=d1+d2, d4=d2+d3. Soma=3×d1+4×d2=18 com d1<d2 → única solução: d1=2, d2=3. d3=5, d4=8. Código: 2358."
   },
   {
     "id": "LP-399",
@@ -21303,13 +21232,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 5.",
-      "A soma dos dois internos é 11.",
-      "O terceiro é 3 mais que o segundo.",
-      "O quarto dígito é 3."
+      "A soma dos dois dígitos internos (2º e 3º) é 11.",
+      "O terceiro dígito é 3 a mais que o segundo.",
+      "O quarto dígito é um a menos que o segundo.",
+      "A soma do primeiro e do quarto dígito é 8."
     ],
     "solucao": "5473",
-    "explicacao": "d2+d3=11, d3-d2=3 → d2=4, d3=7. d1=5, d4=3. Código: 5473."
+    "explicacao": "d2+d3=11 e d3=d2+3 → d2=4, d3=7. d4=d2-1=3. d1=8-d4=5. Código: 5473."
   },
   {
     "id": "LP-406",
@@ -21373,13 +21302,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 7.",
-      "O segundo dígito é 3.",
-      "O terceiro é 2 mais que o segundo.",
-      "O quarto é 3 mais que o terceiro."
+      "O terceiro dígito é 2 a mais que o segundo.",
+      "O quarto dígito é 3 a mais que o terceiro.",
+      "O primeiro dígito é a soma do segundo e do terceiro menos 1.",
+      "A soma total dos quatro dígitos é 23."
     ],
     "solucao": "7358",
-    "explicacao": "d1=7, d2=3, d3=5, d4=8. Código: 7358."
+    "explicacao": "d3=d2+2, d4=d2+5, d1=2d2+1. Soma=5d2+8=23 → d2=3. d1=7, d3=5, d4=8. Código: 7358."
   },
   {
     "id": "LP-410",
@@ -21390,13 +21319,14 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 4.",
-      "O segundo dígito é 9.",
-      "A soma do primeiro e do terceiro é 5.",
-      "A soma do terceiro e do quarto é 4."
+      "A soma do primeiro e do terceiro dígito é 5.",
+      "A soma do terceiro e do quarto dígito é 4.",
+      "O segundo dígito é o maior de todos.",
+      "A soma total dos quatro dígitos é 17.",
+      "O quarto dígito é ímpar."
     ],
     "solucao": "4913",
-    "explicacao": "d1=4, d2=9, d1+d3=5→d3=1, d3+d4=4→d4=3. 4913 = 17³. Código: 4913."
+    "explicacao": "d1+d3=5, d3+d4=4. d2 é máx: d2=13-d1. d4 ímpar. Tentativas: d1=4→d3=1,d4=3(ímpar✓),d2=9(máx✓). Código: 4913."
   },
   {
     "id": "LP-411",
@@ -21458,13 +21388,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 8.",
-      "O segundo dígito é 1.",
-      "A soma do segundo e do quarto é 3.",
-      "A soma do terceiro e do quarto é 11."
+      "A soma do segundo e do quarto dígito é 3.",
+      "A soma do terceiro e do quarto dígito é 11.",
+      "O terceiro dígito é o maior de todos.",
+      "A soma total dos quatro dígitos é 20."
     ],
     "solucao": "8192",
-    "explicacao": "d2=1, d2+d4=3→d4=2, d3+d4=11→d3=9. 8192 = 2¹³. Código: 8192."
+    "explicacao": "d4=3-d2, d3=11-d4=8+d2. d3 é máx → d3>d1 e d3>d2. Soma: d1+d2+11=20 → d1=9-d2. d3>d1: 8+d2>9-d2 → d2>0.5 → d2≥1. d4≥0: d2≤3. Único válido: d2=1, d1=8, d3=9, d4=2. Código: 8192."
   },
   {
     "id": "LP-415",
@@ -21647,14 +21577,14 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 1.",
-      "O segundo dígito é 5.",
-      "O terceiro dígito é 8.",
+      "O segundo dígito é quatro unidades maior que o primeiro.",
+      "O terceiro dígito é três unidades maior que o segundo.",
       "O quarto dígito é o dobro do segundo menos 6.",
-      "A soma total é 18."
+      "O primeiro dígito é ímpar e menor que 3.",
+      "A soma total dos dígitos é 18."
     ],
     "solucao": "1584",
-    "explicacao": "d1=1, d2=5, d3=8, d4=2×5-6=4. Soma=18 ✓. Código: 1584."
+    "explicacao": "d1 ímpar e <3 → d1=1. d2=d1+4=5. d3=d2+3=8. d4=2×5-6=4. Soma=18 ✓. Código: 1584."
   },
   {
     "id": "LP-426",
@@ -21717,14 +21647,14 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 6.",
       "O segundo dígito é zero.",
-      "O terceiro dígito é 2.",
-      "A soma do terceiro e do quarto é 9.",
-      "O quarto é ímpar e maior que o terceiro."
+      "O terceiro dígito é igual ao segundo mais 2.",
+      "O quarto dígito é ímpar e maior que o terceiro.",
+      "A soma do terceiro e do quarto dígito é 9.",
+      "O primeiro dígito é a soma do terceiro e do quarto menos 3."
     ],
     "solucao": "6027",
-    "explicacao": "d3=2, d4=7 (2+7=9). Código: 6027."
+    "explicacao": "d2=0. d3=d2+2=2. d3+d4=9 e d4>d3 e ímpar → d4=7. d1=9-3=6. Código: 6027."
   },
   {
     "id": "LP-430",
@@ -21784,14 +21714,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 3.",
-      "O segundo dígito é 8.",
-      "O produto do terceiro e do quarto é 4.",
-      "O terceiro é maior que o quarto.",
-      "A soma do primeiro e do terceiro é igual ao quarto mais 6."
+      "O produto do terceiro e do quarto dígito é 4.",
+      "O terceiro dígito é maior que o quarto.",
+      "A soma do primeiro e do terceiro é igual ao quarto mais 6.",
+      "A soma total dos quatro dígitos é 16."
     ],
     "solucao": "3841",
-    "explicacao": "c×d=4, c>d: (4,1) ou (2,2). (4,1): 3+4=1+6=7 ✓. Código: 3841."
+    "explicacao": "d3×d4=4 e d3>d4 → d3=4, d4=1. d1+4=1+6=7 → d1=3. Soma=3+d2+4+1=16 → d2=8. Código: 3841."
   },
   {
     "id": "LP-434",
@@ -21917,13 +21846,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 5.",
-      "O segundo dígito é 1.",
+      "O terceiro dígito é o dobro do primeiro menos 2.",
+      "O segundo dígito é igual ao quarto menos 5.",
       "A soma do primeiro e do terceiro é 13.",
       "A soma do segundo e do quarto é 7."
     ],
     "solucao": "5186",
-    "explicacao": "d1=5, d2=1, d3=8, d4=6. Código: 5186."
+    "explicacao": "d3=2d1-2 e d1+d3=13 → d1+(2d1-2)=13 → d1=5. d3=8. d2=d4-5 e d2+d4=7 → 2d4=12 → d4=6. d2=1. Código: 5186."
   },
   {
     "id": "LP-442",
@@ -22070,13 +21999,13 @@
     "num_digitos": 4,
     "tipo_codigo": "numerico",
     "pistas": [
-      "O primeiro dígito é 6.",
-      "O segundo dígito é 8.",
-      "A soma do primeiro e do terceiro é 11.",
-      "A soma do segundo e do quarto é 17."
+      "O segundo dígito é igual ao primeiro mais 2.",
+      "A soma do primeiro e do terceiro dígito é 11.",
+      "A soma do segundo e do quarto dígito é 17.",
+      "O quarto dígito é o maior de todos."
     ],
     "solucao": "6859",
-    "explicacao": "d1=6, d3=5, d2=8, d4=9. 6859 = 19³. Código: 6859."
+    "explicacao": "d2=d1+2. d2+d4=17 → d4=15-d1. d4 é máx e d4≤9 → d1≥6. d4>d2=d1+2 → d1≤6. Logo d1=6, d2=8, d3=5, d4=9. Código: 6859."
   },
   {
     "id": "LP-451",

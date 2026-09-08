@@ -47,7 +47,7 @@ export default function Home() {
               <RandomButton
                 key={key}
                 modo="puzzle"
-                nivel={key}
+                nivel={key as any}
                 className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-600 hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 active:scale-95 transition-all shadow-sm"
               >
                 {emoji} {label}
@@ -85,7 +85,7 @@ export default function Home() {
                 <RandomButton
                   key={key}
                   modo="puzzle"
-                  nivel={key}
+                  nivel={key as any}
                   className="flex-1 text-center text-xs py-1.5 rounded-lg border border-gray-200 bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 active:scale-95 transition-all font-medium"
                 >
                   {emoji} {label}
@@ -119,7 +119,7 @@ export default function Home() {
                 <RandomButton
                   key={key}
                   modo="questao"
-                  nivel={key}
+                  nivel={key as any}
                   className="flex-1 text-center text-xs py-1.5 rounded-lg border border-gray-200 bg-gray-50 text-gray-500 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 active:scale-95 transition-all font-medium"
                 >
                   {emoji} {label}

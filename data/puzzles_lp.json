@@ -19360,11 +19360,11 @@
       "Dra. Marta pediu para buscar um documento ao arquivo e ficou sozinha no escritório por 5 minutos."
     ],
     "solucao": {
-      "culpado": "Dra. Marta",
+      "culpado": "Sócia Dra. Marta",
       "metodo": "Adicionou veneno à garrafa de água durante a reunião",
       "local": "Escritório do CEO"
     },
-    "explicacao": "Dra. Marta ficou sozinha no escritório por 5 minutos (oportunidade), tem formação em química (meios), e tinha disputa com o CEO (motivo). Gonçalo nunca foi ao frigorífico (câmera) e Pedro colocou a garrafa de manhã — sem motivo aparente."
+    "explicacao": "Sócia Dra. Marta ficou sozinha no escritório por 5 minutos (oportunidade), tem formação em química (meios), e tinha disputa com o CEO (motivo). Gonçalo nunca foi ao frigorífico (câmera) e Pedro colocou a garrafa de manhã — sem motivo aparente."
   },
   {
     "id": "LP-116",
@@ -20493,11 +20493,11 @@
       "Teófilo nunca tinha tirado mais de 10 valores antes nesta disciplina."
     ],
     "solucao": {
-      "culpado": "Teófilo",
+      "culpado": "Aluno Teófilo",
       "metodo": "Copiou as respostas de um colega olhando para a folha",
       "local": "Sala de exame"
     },
-    "explicacao": "Teófilo copiou de Maurício (à sua direita) — os erros idênticos incluindo o mesmo erro incomum provam a cópia. O professor viu-o a olhar para a direita repetidamente, e Teófilo nunca tinha passado de 10 valores. Suzana não tem semelhança nas respostas."
+    "explicacao": "Aluno Teófilo copiou de Maurício (à sua direita) — os erros idênticos incluindo o mesmo erro incomum provam a cópia. O professor viu-o a olhar para a direita repetidamente, e Aluno Teófilo nunca tinha passado de 10 valores. Suzana não tem semelhança nas respostas."
   },
   {
     "id": "LP-140",
@@ -20540,11 +20540,11 @@
       "Gertrudes é idosa e tem mobilidade reduzida — dificilmente estaria no parque."
     ],
     "solucao": {
-      "culpado": "Zélia",
+      "culpado": "Explicadora Zélia",
       "metodo": "Convenceu a criança a ir à sua casa com promessa de guloseimas",
       "local": "Parque infantil"
     },
-    "explicacao": "Zélia foi vista nas câmeras a falar com a criança (contradiz o seu alibi), a criança descreveu uma senhora de cabelos ruivos (Zélia), e disse que foi convidada com biscoitos. A criança foi encontrada em casa de Gertrudes, mas Zélia convenceu-a a ir — possivelmente encaminhando-a para Gertrudes ou sendo mal identificada a casa. Nestor tem alibi e Gertrudes tem mobilidade reduzida."
+    "explicacao": "Explicadora Zélia foi vista nas câmeras a falar com a criança (contradiz o seu alibi), a criança descreveu uma senhora de cabelos ruivos (Explicadora Zélia), e disse que foi convidada com biscoitos. A criança foi encontrada em casa de Gertrudes, mas Zélia convenceu-a a ir — possivelmente encaminhando-a para Gertrudes ou sendo mal identificada a casa. Nestor tem alibi e Gertrudes tem mobilidade reduzida."
   },
   {
     "id": "LP-141",
@@ -20822,11 +20822,11 @@
       "Orlanda tem historial de dois outros concursos onde os juízes foram depois investigados por suspeita de suborno."
     ],
     "solucao": {
-      "culpado": "Orlanda",
+      "culpado": "Vencedora Orlanda",
       "metodo": "Pagou ao juiz para que votasse a seu favor",
       "local": "Restaurante próximo"
     },
-    "explicacao": "Orlanda jantou com Amâncio (registo), o marido dela transferiu 3 000 euros dias depois (pagamento pelo voto), e o historial de investigações em outros concursos aponta para um padrão. A plataforma está íntegra (sem manipulação técnica), então foi suborno direto."
+    "explicacao": "Vencedora Orlanda jantou com Amâncio (registo), o marido dela transferiu 3 000 euros dias depois (pagamento pelo voto), e o historial de investigações em outros concursos aponta para um padrão. A plataforma está íntegra (sem manipulação técnica), então foi suborno direto."
   },
   {
     "id": "LP-147",
@@ -21306,19 +21306,19 @@
     "intro": "Um funcionário faltou ao trabalho alegando doença durante duas semanas, mas foi visto a trabalhar num negócio próprio. O patrão quer provar a fraude. Três colegas foram questionados.",
     "personagens": [
       {
-        "nome": "Colega Querubim",
+        "nome": "Funcionário Armindo",
         "emoji": "🤒",
-        "alibi": "Diz que o colega realmente parecia doente quando falou com ele por telemóvel."
+        "alibi": "Está de baixa médica há duas semanas — afirma que tem gripe severa e não consegue sair da cama."
       },
       {
-        "nome": "Colega Mariana",
-        "emoji": "👩‍💼",
-        "alibi": "Diz que recebeu uma mensagem do colega dizendo estar acamado."
+        "nome": "Colega Querubim",
+        "emoji": "📞",
+        "alibi": "Falou com Armindo ao telefone — confirma que ele parecia cansado."
       },
       {
         "nome": "Supervisor Humberto",
         "emoji": "📋",
-        "alibi": "Diz que aceitou os atestados médicos apresentados sem questionar."
+        "alibi": "Aceitou os atestados médicos apresentados sem questionar."
       }
     ],
     "metodos": [
@@ -21332,18 +21332,18 @@
       "Empresa do patrão"
     ],
     "pistas": [
-      "O funcionário foi fotografado a trabalhar no seu restaurante às 11h numa terça-feira de 'doença'.",
-      "Os atestados foram passados pelo mesmo médico que é sócio do cônjuge do funcionário.",
-      "Querubim falou ao telefone — não pode confirmar doença real apenas pela voz.",
-      "Humberto aceitou os atestados porque o médico é reconhecido — mas não verificou a relação familiar.",
-      "O funcionário fez compras de stock para o restaurante durante o período de doença — cartão bancário regista."
+      "Armindo foi fotografado a trabalhar no seu restaurante às 11h numa terça-feira em que estava 'de baixa'.",
+      "Os atestados de Armindo foram passados pelo mesmo médico que é sócio do cônjuge dele — conflito de interesses claro.",
+      "Querubim falou com Armindo por telefone — a voz cansada não prova doença real.",
+      "Humberto aceitou os atestados sem verificar a relação familiar entre Armindo e o médico.",
+      "O cartão bancário de Armindo regista compras de stock para o restaurante durante o período de 'doença'."
     ],
     "solucao": {
-      "culpado": "Funcionário (via atestados do médico parceiro)",
+      "culpado": "Funcionário Armindo",
       "metodo": "Usou atestados médicos falsos para justificar as faltas",
       "local": "Consultório médico"
     },
-    "explicacao": "O funcionário foi fotografado a trabalhar (prova direta), os atestados foram passados por médico sócio do cônjuge (conflito de interesses), e o cartão regista compras de stock durante a 'doença'. Os colegas não podem confirmar doença real — apenas receberam mensagens."
+    "explicacao": "Armindo foi fotografado a trabalhar no seu restaurante a uma terça-feira de 'doença', os atestados foram passados por médico sócio do cônjuge (conflito de interesses), e o cartão bancário regista compras de stock para o restaurante durante a 'doença'. Querubim apenas falou ao telefone (não pode confirmar doença real) e Humberto aceitou os atestados de boa-fé."
   },
   {
     "id": "LP-158",
@@ -21668,11 +21668,11 @@
       "A DocuCert tem 47 denúncias similares noutros países — empresa especializada em documentos falsos."
     ],
     "solucao": {
-      "culpado": "Ezequiel",
+      "culpado": "Candidato Ezequiel",
       "metodo": "Encomendou diploma falso a empresa fraudulenta",
       "local": "Empresa DocuCert"
     },
-    "explicacao": "Ezequiel sabia que pagou 2 000 euros por 'equivalência' em 72h — impossível legalmente — e mesmo assim submeteu o diploma para emprego. A DocuCert é claramente fraudulenta (47 denúncias) e Ezequiel é o utilizador final que cometeu a fraude ao submetê-lo. Onésimo facilitou mas o ato criminoso é de Ezequiel."
+    "explicacao": "Candidato Ezequiel sabia que pagou 2 000 euros por 'equivalência' em 72h — impossível legalmente — e mesmo assim submeteu o diploma para emprego. A DocuCert é claramente fraudulenta (47 denúncias) e Ezequiel é o utilizador final que cometeu a fraude ao submetê-lo. Onésimo facilitou mas o ato criminoso é de Candidato Ezequiel."
   },
   {
     "id": "LP-165",

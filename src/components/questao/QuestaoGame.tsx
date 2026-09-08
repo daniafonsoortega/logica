@@ -5,6 +5,30 @@ import type { Questao } from '@/types'
 import { recordResult } from '@/lib/stats'
 import { CheckCircle, XCircle, ChevronRight, RotateCcw, BookOpen, Lightbulb } from 'lucide-react'
 
+
+const MSGS_ACERTO = [
+    "Sua mente está afiada! 🔥",
+    "Ninguém consegue te parar! 💪",
+    "Raciocínio impecável! 🧠",
+    "Você é imbatível! ⚡",
+    "Gênio em ação! 🎯",
+    "Essa foi perfeita! ✨",
+    "Continue assim — você está voando! 🚀",
+    "Lógica pura! Impressionante! 🏆",
+    "Mente brilhante! Assim se faz! 🌟",
+    "Passou fácil! Isso é talento! 🎊"
+  ]
+const MSGS_ERRO   = [
+    "Não é bem isso — tente de novo! 🤔",
+    "Essa passou raspando, quase lá! 💡",
+    "Está quente, quente... revise as pistas! 🔍",
+    "Os grandes pensadores erram antes de acertar. Vai de novo! 💪",
+    "Perto, mas não chegou — mais uma tentativa! 🎯",
+    "Errando que se aprende! Tente de novo! 🧩",
+    "Quase lá! Releia com calma! 🕵️",
+    "Sua lógica está acordando — mais uma vez! ⚡"
+  ]
+function sortear(arr: string[]) { return arr[Math.floor(Math.random() * arr.length)] }
 interface Props { questao: Questao }
 type EstadoQuestao = 'respondendo' | 'errou' | 'acertou'
 
@@ -25,6 +49,8 @@ export default function QuestaoGame({ questao }: Props) {
   const [mostrarExplicacao, setMostrarExplicacao] = useState(false)
   const [dicaAtual, setDicaAtual]     = useState(0)
   const [reportado, setReportado]     = useState(false)
+  const [msgAcerto, setMsgAcerto]     = useState('')
+  const [msgErro, setMsgErro]         = useState('')
 
   const alternativas = Object.entries(questao.alternativas) as [string, string][]
   const dicas = gerarDicas(questao)
@@ -33,6 +59,8 @@ export default function QuestaoGame({ questao }: Props) {
     if (!selecionada) return
     const acertou = selecionada === questao.gabarito
     setEstado(acertou ? 'acertou' : 'errou')
+    if (acertou) setMsgAcerto(sortear(MSGS_ACERTO))
+    else         setMsgErro(sortear(MSGS_ERRO))
     if (acertou) setMostrarExplicacao(true)
     if (acertou && !reportado) {
       setReportado(true)
@@ -128,7 +156,8 @@ export default function QuestaoGame({ questao }: Props) {
             <XCircle size={22} className="text-red-500" />
             <h2 className="font-bold text-red-800">Resposta incorreta</h2>
           </div>
-          <p className="text-red-700 text-sm">A alternativa escolhida não está correta.</p>
+          <p className="text-red-700 text-sm font-semibold">{msgErro}</p>
+          <p className="text-red-600 text-xs">A alternativa escolhida não está correta.</p>
           <div className="flex gap-3">
             <button onClick={reiniciar}
               className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-red-300 rounded-xl text-red-700 text-sm font-semibold hover:bg-red-50 transition-colors">
@@ -148,6 +177,7 @@ export default function QuestaoGame({ questao }: Props) {
           <CheckCircle size={22} className="text-green-600 shrink-0" />
           <div>
             <p className="font-bold text-green-800">Correto! 🎉</p>
+            <p className="text-green-600 text-sm font-semibold">{msgAcerto}</p>
             <p className="text-green-700 text-sm">
               Gabarito: <strong>{questao.gabarito}</strong>
               {dicaAtual === 0 && ' · Sem dicas — +50 pts bônus!'}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import Link from 'next/link'
 import ReportarProblema from '@/components/ReportarProblema'
 import DailyCounter from '@/components/DailyCounter'
@@ -13,6 +14,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1036537609242573"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-screen bg-gray-50">
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -21,17 +30,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex gap-6 text-sm font-medium">
-                <Link href="/puzzles"  className="text-gray-600 hover:text-blue-700 transition-colors">Puzzles</Link>
+                <Link href="/puzzles" className="text-gray-600 hover:text-blue-700 transition-colors">Puzzles</Link>
                 <Link href="/questoes" className="text-gray-600 hover:text-blue-700 transition-colors">Questões</Link>
-                <Link href="/ranking"  className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
-                <Link href="/premium"  className="text-yellow-600 hover:text-yellow-700 font-semibold transition-colors">⚡ Premium</Link>
+                <Link href="/ranking" className="text-gray-600 hover:text-blue-700 transition-colors">Ranking</Link>
               </div>
               <DailyCounter />
               <AuthButton />
             </div>
           </div>
         </nav>
-        <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
+
+        <main className="max-w-6xl mx-auto px-4 py-8">
+          {children}
+        </main>
+
         <footer className="border-t border-gray-200 mt-16 py-6">
           <div className="max-w-6xl mx-auto px-4 flex items-center justify-between text-sm text-gray-400">
             <span>LogicaMente · Treine sua mente todos os dias</span>

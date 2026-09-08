@@ -18713,5 +18713,290 @@
     "explicacao": "Combinações que somam 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)=6. Total=36. P=6/36=1/6.",
     "area": "Raciocínio Lógico",
     "tipo": "multipla_escolha"
+  },
+  {
+    "id": "CQ-986",
+    "nivel": "facil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "TRF",
+    "ano": "2023",
+    "enunciado": "Se todos os aprovados estudaram muito, e Pedro estudou muito, então Pedro foi aprovado.",
+    "alternativas": {
+      "A": "Verdadeiro",
+      "B": "Falso",
+      "C": "Indeterminado",
+      "D": "Depende do contexto",
+      "E": "Nenhuma das anteriores"
+    },
+    "gabarito": "B",
+    "explicacao": "Isso é uma falácia da afirmação do consequente. Do fato de que todo aprovado estudou muito, não se conclui que quem estudou muito foi aprovado.",
+    "area": "logica_proposicional",
+    "tipo": "argumento"
+  },
+  {
+    "id": "CQ-987",
+    "nivel": "medio",
+    "banca": "FCC",
+    "orgao": "MPE-SP",
+    "ano": "2022",
+    "enunciado": "Em um conjunto de 8 pessoas, quantas comissões de 3 membros podem ser formadas?",
+    "alternativas": {
+      "A": "24",
+      "B": "56",
+      "C": "168",
+      "D": "336",
+      "E": "512"
+    },
+    "gabarito": "B",
+    "explicacao": "C(8,3) = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 56.",
+    "area": "combinatoria",
+    "tipo": "combinacoes"
+  },
+  {
+    "id": "CQ-988",
+    "nivel": "dificil",
+    "banca": "FGV",
+    "orgao": "OAB",
+    "ano": "2023",
+    "enunciado": "Considere: P1: Nenhum político é honesto. P2: Alguns líderes são políticos. A conclusão válida é:",
+    "alternativas": {
+      "A": "Alguns líderes não são honestos",
+      "B": "Nenhum líder é honesto",
+      "C": "Todos os líderes são desonestos",
+      "D": "Alguns líderes são honestos",
+      "E": "Nenhuma conclusão pode ser tirada"
+    },
+    "gabarito": "A",
+    "explicacao": "De P2: alguns líderes são políticos. De P1: políticos não são honestos. Logo, esses líderes (que são políticos) não são honestos.",
+    "area": "logica_predicados",
+    "tipo": "silogismo"
+  },
+  {
+    "id": "CQ-989",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "PREF-SP",
+    "ano": "2022",
+    "enunciado": "Uma torneira enche um tanque em 4 horas. Outra enche o mesmo tanque em 6 horas. Juntas, em quanto tempo enchem o tanque?",
+    "alternativas": {
+      "A": "1h 12min",
+      "B": "1h 30min",
+      "C": "2h",
+      "D": "2h 24min",
+      "E": "3h"
+    },
+    "gabarito": "D",
+    "explicacao": "Vazão conjunta = 1/4 + 1/6 = 5/12 por hora. Tempo = 12/5 = 2,4 horas = 2h 24min.",
+    "area": "matematica",
+    "tipo": "taxa_trabalho"
+  },
+  {
+    "id": "CQ-990",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "PC-MG",
+    "ano": "2022",
+    "enunciado": "Em uma fila de 10 pessoas, Ana está na 4ª posição e Bruno está na 7ª. Quantas pessoas estão entre eles?",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "gabarito": "B",
+    "explicacao": "Entre a 4ª e a 7ª posição estão a 5ª e a 6ª: 2 pessoas.",
+    "area": "raciocinio_logico",
+    "tipo": "posicao_fila"
+  },
+  {
+    "id": "CQ-991",
+    "nivel": "expert",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "AGU",
+    "ano": "2023",
+    "enunciado": "Seja α: '∀x(P(x) → Q(x))'. A negação de α é logicamente equivalente a:",
+    "alternativas": {
+      "A": "∀x(P(x) ∧ Q(x))",
+      "B": "∃x(P(x) ∧ ¬Q(x))",
+      "C": "∀x(¬P(x) ∨ Q(x))",
+      "D": "∃x(¬P(x) → Q(x))",
+      "E": "∀x(P(x) ∧ ¬Q(x))"
+    },
+    "gabarito": "B",
+    "explicacao": "¬∀x(P(x)→Q(x)) ≡ ∃x¬(P(x)→Q(x)) ≡ ∃x(P(x)∧¬Q(x)).",
+    "area": "logica_predicados",
+    "tipo": "quantificadores"
+  },
+  {
+    "id": "CQ-992",
+    "nivel": "facil",
+    "banca": "FEPESE",
+    "orgao": "SEFAZ-SC",
+    "ano": "2022",
+    "enunciado": "Uma mercadoria custa R$200 e sofre desconto de 15%. Qual é o preço final?",
+    "alternativas": {
+      "A": "R$155,00",
+      "B": "R$160,00",
+      "C": "R$165,00",
+      "D": "R$170,00",
+      "E": "R$175,00"
+    },
+    "gabarito": "D",
+    "explicacao": "15% de 200 = 30. 200 − 30 = R$170,00.",
+    "area": "matematica",
+    "tipo": "porcentagem"
+  },
+  {
+    "id": "CQ-993",
+    "nivel": "medio",
+    "banca": "IADES",
+    "orgao": "CFM",
+    "ano": "2023",
+    "enunciado": "João é mais alto que Pedro. Pedro é mais alto que Carlos. Maria é mais alta que João. Quem é o mais alto do grupo?",
+    "alternativas": {
+      "A": "João",
+      "B": "Pedro",
+      "C": "Carlos",
+      "D": "Maria",
+      "E": "Não é possível determinar"
+    },
+    "gabarito": "D",
+    "explicacao": "A ordem é: Maria > João > Pedro > Carlos. Maria é a mais alta.",
+    "area": "raciocinio_logico",
+    "tipo": "ordenacao"
+  },
+  {
+    "id": "CQ-994",
+    "nivel": "dificil",
+    "banca": "QUADRIX",
+    "orgao": "CFO",
+    "ano": "2023",
+    "enunciado": "Um capital de R$5.000 aplicado a juros compostos de 2% ao mês durante 3 meses resulta em montante de:",
+    "alternativas": {
+      "A": "R$5.300,00",
+      "B": "R$5.306,04",
+      "C": "R$5.302,00",
+      "D": "R$5.310,12",
+      "E": "R$5.295,00"
+    },
+    "gabarito": "B",
+    "explicacao": "M = 5000 × (1,02)³ = 5000 × 1,061208 = R$5.306,04.",
+    "area": "matematica",
+    "tipo": "juros_compostos"
+  },
+  {
+    "id": "CQ-995",
+    "nivel": "facil",
+    "banca": "FCC",
+    "orgao": "TRT-2",
+    "ano": "2022",
+    "enunciado": "Qual é o próximo número na série: 2, 5, 10, 17, 26, ___?",
+    "alternativas": {
+      "A": "35",
+      "B": "36",
+      "C": "37",
+      "D": "38",
+      "E": "39"
+    },
+    "gabarito": "C",
+    "explicacao": "As diferenças são 3, 5, 7, 9, 11. Próximo: 26 + 11 = 37.",
+    "area": "raciocinio_logico",
+    "tipo": "series_numericas"
+  },
+  {
+    "id": "CQ-996",
+    "nivel": "medio",
+    "banca": "FGV",
+    "orgao": "TCE-RJ",
+    "ano": "2023",
+    "enunciado": "Em um grupo de 30 alunos, 18 estudam Matemática, 14 estudam Português e 8 estudam ambas. Quantos não estudam nenhuma das duas?",
+    "alternativas": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    },
+    "gabarito": "C",
+    "explicacao": "Ao menos uma = 18 + 14 − 8 = 24. Nenhuma = 30 − 24 = 6.",
+    "area": "matematica",
+    "tipo": "conjuntos"
+  },
+  {
+    "id": "CQ-997",
+    "nivel": "facil",
+    "banca": "VUNESP",
+    "orgao": "TJSP",
+    "ano": "2022",
+    "enunciado": "Ana tem o dobro da idade de Bruno. Daqui a 5 anos, Ana terá 35 anos. Qual é a idade atual de Bruno?",
+    "alternativas": {
+      "A": "10",
+      "B": "12",
+      "C": "15",
+      "D": "17",
+      "E": "20"
+    },
+    "gabarito": "C",
+    "explicacao": "Ana tem 35 − 5 = 30 anos hoje. Bruno = 30/2 = 15 anos.",
+    "area": "matematica",
+    "tipo": "algebra"
+  },
+  {
+    "id": "CQ-998",
+    "nivel": "dificil",
+    "banca": "CESPE/CEBRASPE",
+    "orgao": "PF",
+    "ano": "2023",
+    "enunciado": "Todo investigador é persistente. Nenhum persistente desiste facilmente. Marcos é investigador. Logo:",
+    "alternativas": {
+      "A": "Marcos pode desistir facilmente",
+      "B": "Marcos não desiste facilmente",
+      "C": "Marcos é persistente apenas se quiser",
+      "D": "Não há como concluir sobre Marcos",
+      "E": "Marcos desiste às vezes"
+    },
+    "gabarito": "B",
+    "explicacao": "Marcos é investigador → persistente (P1). Persistente → não desiste facilmente (P2). Logo: Marcos não desiste facilmente.",
+    "area": "logica_proposicional",
+    "tipo": "silogismo"
+  },
+  {
+    "id": "CQ-999",
+    "nivel": "medio",
+    "banca": "IBFC",
+    "orgao": "EBSERH",
+    "ano": "2023",
+    "enunciado": "Quantos números de 3 algarismos distintos podem ser formados com os dígitos 1, 2, 3, 4, 5?",
+    "alternativas": {
+      "A": "20",
+      "B": "30",
+      "C": "60",
+      "D": "120",
+      "E": "125"
+    },
+    "gabarito": "C",
+    "explicacao": "Arranjo A(5,3) = 5×4×3 = 60.",
+    "area": "combinatoria",
+    "tipo": "arranjos"
+  },
+  {
+    "id": "CQ-1000",
+    "nivel": "expert",
+    "banca": "FGV",
+    "orgao": "MPF",
+    "ano": "2024",
+    "enunciado": "Argumento: 'Se a economia cresce, o desemprego cai. O desemprego não caiu. Logo, a economia não cresceu.' Este argumento é:",
+    "alternativas": {
+      "A": "Inválido – falácia da negação do antecedente",
+      "B": "Válido – modus ponens",
+      "C": "Válido – modus tollens",
+      "D": "Inválido – falácia da afirmação do consequente",
+      "E": "Inválido – petição de princípio"
+    },
+    "gabarito": "C",
+    "explicacao": "Forma p→q, ¬q ∴ ¬p — modus tollens. Argumento dedutivamente válido.",
+    "area": "logica_proposicional",
+    "tipo": "argumento"
   }
 ]

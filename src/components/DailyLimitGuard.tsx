@@ -1,27 +1,33 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { canPlay, incrementCount } from '@/lib/freemium'
-import PaywallModal from './PaywallModal'
+// Guarda que exibe anúncio progressivo (não bloqueia).
+// Primeiros 5 desafios: sem anúncio.
+// 6–15: anúncio a cada 2.  16+: todo desafio.
+// Premium: nunca vê anúncio.
 
-interface Props {
-  children: React.ReactNode
-}
+import { useEffect, useState } from 'react'
+import { incrementLifetimeCount, incrementCount, shouldShowAd, isPremium } from '@/lib/freemium'
+import AdInterstitial from './AdInterstitial'
+
+interface Props { children: React.ReactNode }
+
+type Phase = 'loading' | 'ad' | 'play'
 
 export default function DailyLimitGuard({ children }: Props) {
-  // null = ainda hidratando | true = pode jogar | false = bloqueado
-  const [allowed, setAllowed] = useState<boolean | null>(null)
+  const [phase, setPhase] = useState<Phase>('loading')
 
   useEffect(() => {
-    if (canPlay()) {
+    if (isPremium()) {
       incrementCount()
-      setAllowed(true)
-    } else {
-      setAllowed(false)
+      setPhase('play')
+      return
     }
+    const total = incrementLifetimeCount()
+    incrementCount()
+    setPhase(shouldShowAd(total) ? 'ad' : 'play')
   }, [])
 
-  if (allowed === null) {
+  if (phase === 'loading') {
     return (
       <div className="flex items-center justify-center min-h-64">
         <p className="text-gray-400 animate-pulse text-sm">Carregando…</p>
@@ -29,12 +35,8 @@ export default function DailyLimitGuard({ children }: Props) {
     )
   }
 
-  if (!allowed) {
-    return (
-      <div className="flex items-center justify-center min-h-64">
-        <PaywallModal reason="daily_limit" />
-      </div>
-    )
+  if (phase === 'ad') {
+    return <AdInterstitial onContinue={() => setPhase('play')} />
   }
 
   return <>{children}</>

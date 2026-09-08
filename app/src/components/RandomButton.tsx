@@ -1,42 +1,45 @@
 'use client'
-// Botão que sorteia um puzzle/questão e navega direto, sem tela intermediária
-// Suporta filtro por tipo de puzzle e/ou por nível de dificuldade
 
 import { useRouter } from 'next/navigation'
-import { allPuzzles, allQuestoes } from '@/lib/data'
-import type { TipoPuzzle } from '@/types'
+import { useState } from 'react'
+
+type Modo  = 'puzzle' | 'questao'
+type Nivel = 'facil' | 'medio' | 'dificil' | 'expert'
+type Tipo  = 'grade' | 'detetive' | 'sequencia' | 'mentiu' | 'codigo' | 'cifra'
 
 interface Props {
-  modo: 'puzzle' | 'questao'
-  tipo?: TipoPuzzle        // filtra por tipo de puzzle
-  nivel?: string           // filtra por nível: 'facil' | 'medio' | 'dificil' | 'expert'
+  modo: Modo
+  nivel?: Nivel
+  tipo?: Tipo
   className?: string
   children: React.ReactNode
 }
 
-export default function RandomButton({ modo, tipo, nivel, className, children }: Props) {
+export default function RandomButton({ modo, nivel, tipo, className, children }: Props) {
   const router = useRouter()
+  const [loading, setLoading] = useState(false)
 
-  function sortear() {
-    if (modo === 'questao') {
-      const pool = nivel
-        ? allQuestoes.filter(q => q.nivel === nivel)
-        : allQuestoes
-      const q = pool[Math.floor(Math.random() * pool.length)]
-      if (q) router.push(`/questoes/${q.id}`)
-    } else {
-      let pool = tipo
-        ? allPuzzles.filter(p => (p.tipo ?? 'grade') === tipo)
-        : allPuzzles
-      if (nivel) pool = pool.filter(p => p.nivel === nivel)
-      const p = pool[Math.floor(Math.random() * pool.length)]
-      if (p) router.push(`/puzzles/${p.id}`)
+  async function handleClick() {
+    if (loading) return
+    setLoading(true)
+    try {
+      const params = new URLSearchParams({ modo })
+      if (nivel) params.set('nivel', nivel)
+      if (tipo)  params.set('tipo',  tipo)
+      const res  = await fetch(`/api/random?${params}`)
+      const data = await res.json()
+      if (data.id) {
+        router.push(modo === 'puzzle' ? `/puzzles/${data.id}` : `/questoes/${data.id}`)
+      }
+    } finally {
+      setLoading(false)
     }
   }
 
   return (
-    <button onClick={sortear} className={className}>
-      {children}
+    <button onClick={handleClick} disabled={loading} className={className}
+      style={loading ? { opacity: 0.7 } : undefined}>
+      {loading ? '⏳' : children}
     </button>
   )
 }

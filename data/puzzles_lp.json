@@ -22159,9 +22159,9 @@
       "□": "A"
     },
     "pistas": [
-      "◆ é consoante e vem após o 'N' no alfabeto",
-      "○ é a vogal mais comum do português",
-      "★ é uma consoante que aparece no início de palavras"
+      "◆ é consoante e vem imediatamente antes do 'E' no alfabeto",
+      "○ é consoante e é a letra que inicia a frase",
+      "◇ é consoante raramente usada no português"
     ]
   },
   {
@@ -22238,8 +22238,8 @@
     },
     "pistas": [
       "♦ é vogal e não é 'A'",
-      "✦ é consoante fricativa (som de 'S', 'F' ou 'V')",
-      "⬡ é a última consoante antes de uma vogal na frase"
+      "✦ é a primeira letra do alfabeto",
+      "◉ é consoante lateral líquida"
     ]
   },
   {
@@ -22366,9 +22366,9 @@
       "△": "I"
     },
     "pistas": [
-      "△ é a vogal 'E'",
-      "○ é a consoante 'T'",
-      "◈ forma a sílaba final de uma palavra de 3 letras"
+      "● é consoante nasal",
+      "⊗ é vogal e aparece 1 vez na frase",
+      "⬟ é consoante fricativa"
     ]
   },
   {
@@ -22491,9 +22491,9 @@
       "⬡": "E"
     },
     "pistas": [
-      "○ é a vogal 'A'",
-      "△ é consoante e aparece 3 vezes",
-      "□ é a letra que vem após 'H' no alfabeto"
+      "○ é a vogal 'O'",
+      "◆ é a 8ª letra do alfabeto",
+      "▲ é vogal e aparece 1 vez na frase"
     ]
   },
   {
@@ -22664,8 +22664,8 @@
     },
     "revelados": {},
     "pistas": [
-      "◆ é a vogal 'E'",
-      "○ é consoante labial"
+      "◆ é consoante e vem imediatamente antes do 'E' no alfabeto",
+      "✦ é vogal e aparece 1 vez na frase"
     ]
   },
   {
@@ -23076,8 +23076,8 @@
     },
     "revelados": {},
     "pistas": [
-      "◆ é a vogal 'A'",
-      "▲ é consoante"
+      "◆ é consoante lateral e aparece 1 vez na frase",
+      "▲ é vogal e aparece 1 vez na frase"
     ]
   },
   {
@@ -23189,8 +23189,8 @@
     },
     "revelados": {},
     "pistas": [
-      "◆ é a vogal 'O' (aparece 4x)",
-      "△ é consoante"
+      "◆ é consoante e aparece 3 vezes na frase",
+      "⬘ é consoante nasal e aparece apenas 1 vez"
     ]
   },
   {
@@ -23505,8 +23505,8 @@
     },
     "revelados": {},
     "pistas": [
-      "○ é a vogal 'I'",
-      "△ é consoante fricativa"
+      "○ é consoante lateral e aparece 1 vez na frase",
+      "⊕ é vogal e é a mais frequente da frase"
     ]
   },
   {

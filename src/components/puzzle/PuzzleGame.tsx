@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useRef, useEffect } from 'react'
-import type { Puzzle, GridState } from '@/types'
+import type { PuzzleGrade as Puzzle, GridState } from '@/types'
 import { recordResult } from '@/lib/stats'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb } from 'lucide-react'
 

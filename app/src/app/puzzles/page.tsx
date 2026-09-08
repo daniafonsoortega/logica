@@ -44,7 +44,7 @@ export default function PuzzlesPage() {
             <RandomButton
               key={key}
               modo="puzzle"
-              nivel={key}
+              nivel={key as any}
               className={`flex flex-col items-center gap-1 py-4 px-3 rounded-2xl border-2 font-semibold transition-all active:scale-95 ${bg}`}
             >
               <span className="text-2xl">{emoji}</span>

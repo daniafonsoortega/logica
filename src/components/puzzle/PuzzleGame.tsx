@@ -5,6 +5,30 @@ import type { Puzzle, GridState } from '@/types'
 import { recordResult } from '@/lib/stats'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb } from 'lucide-react'
 
+
+const MSGS_ACERTO = [
+    "Sua mente está afiada! 🔥",
+    "Ninguém consegue te parar! 💪",
+    "Raciocínio impecável! 🧠",
+    "Você é imbatível! ⚡",
+    "Gênio em ação! 🎯",
+    "Essa foi perfeita! ✨",
+    "Continue assim — você está voando! 🚀",
+    "Lógica pura! Impressionante! 🏆",
+    "Mente brilhante! Assim se faz! 🌟",
+    "Passou fácil! Isso é talento! 🎊"
+  ]
+const MSGS_ERRO   = [
+    "Não é bem isso — tente de novo! 🤔",
+    "Essa passou raspando, quase lá! 💡",
+    "Está quente, quente... revise as pistas! 🔍",
+    "Os grandes pensadores erram antes de acertar. Vai de novo! 💪",
+    "Perto, mas não chegou — mais uma tentativa! 🎯",
+    "Errando que se aprende! Tente de novo! 🧩",
+    "Quase lá! Releia com calma! 🕵️",
+    "Sua lógica está acordando — mais uma vez! ⚡"
+  ]
+function sortear(arr: string[]) { return arr[Math.floor(Math.random() * arr.length)] }
 interface Props { puzzle: Puzzle }
 type GameStatus = 'jogando' | 'correto' | 'incorreto'
 
@@ -40,6 +64,8 @@ export default function PuzzleGame({ puzzle }: Props) {
   const [pistasVisiveis, setPistasVisiveis] = useState(false)
   const [dicaAtual, setDicaAtual]     = useState(0)
   const [reportado, setReportado]     = useState(false)
+  const [msgAcerto, setMsgAcerto]     = useState('')
+  const [msgErro, setMsgErro]         = useState('')
 
   const dicas = gerarDicas(puzzle)
 
@@ -61,6 +87,8 @@ export default function PuzzleGame({ puzzle }: Props) {
     }
     const correto = erros === 0
     setStatus(correto ? 'correto' : 'incorreto')
+    if (correto) setMsgAcerto(sortear(MSGS_ACERTO))
+    else         setMsgErro(sortear(MSGS_ERRO))
     if (correto && !reportado) {
       setReportado(true)
       recordResult({
@@ -216,6 +244,7 @@ export default function PuzzleGame({ puzzle }: Props) {
         <div className="bg-green-50 border border-green-200 rounded-2xl p-6 text-center space-y-2">
           <CheckCircle size={40} className="text-green-500 mx-auto" />
           <h2 className="text-xl font-black text-green-800">Parabéns! Correto! 🎉</h2>
+          <p className="text-green-600 text-base font-semibold">{msgAcerto}</p>
           <p className="text-green-700 text-sm">
             {dicaAtual === 0 ? 'Resolvido sem dicas — +50 pts bônus!' : `Resolvido com ${dicaAtual} dica${dicaAtual > 1 ? 's' : ''}.`}
           </p>
@@ -232,7 +261,8 @@ export default function PuzzleGame({ puzzle }: Props) {
             <XCircle size={22} className="text-red-500" />
             <h2 className="font-bold text-red-800">Ainda não está certo</h2>
           </div>
-          <p className="text-red-700 text-sm">Revise as pistas e tente novamente.</p>
+          <p className="text-red-700 text-sm font-semibold">{msgErro}</p>
+          <p className="text-red-600 text-xs">Revise as pistas e tente novamente.</p>
           <button onClick={() => setStatus('jogando')}
             className="px-4 py-2 bg-white border border-red-300 rounded-xl text-red-700 text-sm font-medium hover:bg-red-50 transition-colors">
             Continuar tentando

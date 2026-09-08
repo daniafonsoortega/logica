@@ -7,7 +7,7 @@ import { recordResult } from '@/lib/stats'
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
   recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
-import { CheckCircle, XCircle, Search, RotateCcw } from 'lucide-react'
+import { CheckCircle, XCircle, Search, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 const MSGS_ACERTO = ["Caso encerrado! Detetive brilhante! 🔍","Você chegou lá! Ninguém escapa de você! 🕵️","Caso solucionado com maestria! 🏆","Instinto certeiro! Grande detetive! ⚡","A lógica venceu! Caso fechado! 🎯"]
 const MSGS_ERRO   = ["Hmm… revise as pistas com calma! 🔍","Esse suspeito tem um bom alibi... tente outro! 🤔","Quase lá! Algum detalhe escapou... 💡","Releia os testemunhos — há uma contradição! 🧐","Nem sempre o óbvio é o culpado! 🕵️"]
@@ -24,6 +24,14 @@ export default function DetetiiveGame({ puzzle }: Props) {
   const [status, setStatus]         = useState<Status>('jogando')
   const [msg, setMsg]               = useState('')
   const [pistasVisiveis, setPistas] = useState(false)
+  const [dicasAbertas, setDicasAbertas] = useState(false)
+  const [dicasVistas, setDicasVistas]   = useState(0)
+
+  const DICAS = [
+    "Foque nos alibis — qual deles é impossível de confirmar ou contradiz diretamente outra pista?",
+    "Leia cada pista e pergunte: isso elimina um suspeito, um método ou um local? Trabalhe por eliminação.",
+    "Se ainda estiver preso, tente identificar o local primeiro — costuma ser o mais fácil de deduzir pelas pistas.",
+  ]
 
   const ativos = puzzle.personagens.filter(p => !eliminados.has(p.nome))
 
@@ -43,11 +51,11 @@ export default function DetetiiveGame({ puzzle }: Props) {
     if (culpadoSel === culpado && metodoSel === metodo && localSel === local) {
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVisiveis)
+      salvar(puzzle.id, true, pistasVisiveis || dicasVistas > 0)
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))
-      salvar(puzzle.id, false, pistasVisiveis)
+      salvar(puzzle.id, false, pistasVisiveis || dicasVistas > 0)
     }
   }
 

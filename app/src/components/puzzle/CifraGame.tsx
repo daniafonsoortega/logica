@@ -4,24 +4,24 @@
 // Cada letra da frase foi substituída por um símbolo único.
 // Pistas revelam algumas substituições. O usuário preenche o restante.
 
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import type { PuzzleCifra } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 import { CheckCircle, XCircle, RotateCcw, Eye } from 'lucide-react'
 
 const MSGS_ACERTO = ["Cifra decifrada! Mente brilhante! 🔤","Código quebrado com maestria! 🏆","Deduziu cada símbolo! Incrível! ⚡","A mensagem oculta revelada! 🌟","Instinto linguístico perfeito! 🎯"]
 const MSGS_ERRO   = ["Algum símbolo ainda está errado... 🤔","Revise as pistas — há padrões escondidos! 🔍","Quase! Um ou mais símbolos precisam de ajuste 💡","Releia as dicas sobre vogais e frequências! 🧐"]
 const rand = (a: string[]) => a[Math.floor(Math.random() * a.length)]
 
-function salvar(id: string, acertou: boolean, dica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: dica ? 1 : 0, tempoSegundos: 0, semDicas: !dica, primeiraVez: true, dataISO: new Date().toISOString() })
-}
 
 interface Props { puzzle: PuzzleCifra }
 type Status = 'jogando' | 'correto' | 'incorreto'
 
 export default function CifraGame({ puzzle }: Props) {
+  const [novasBadges, setNovasBadges] = React.useState<Badge[]>([])
   const startTime = Date.now()
   // mapa de respostas: símbolo → letra digitada
   const simbolosUnicos = [...new Set(Object.values(puzzle.mapa_cifrado))]
@@ -53,9 +53,9 @@ export default function CifraGame({ puzzle }: Props) {
     const t = Math.round((Date.now() - startTime) / 1000)
     setTempo(t)
     if (correto) {
-      setStatus('correto'); setMsg(rand(MSGS_ACERTO)); salvar(puzzle.id, true, pistasVis)
+      setStatus('correto'); setMsg(rand(MSGS_ACERTO)); setNovasBadges(recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: true, dicasUsadas: pistasVis ? 1 : 0, tempoSegundos: tempo, semDicas: !pistasVis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'cifra' }))
     } else {
-      setStatus('incorreto'); setMsg(rand(MSGS_ERRO)); salvar(puzzle.id, false, pistasVis)
+      setStatus('incorreto'); setMsg(rand(MSGS_ERRO)); recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: false, dicasUsadas: pistasVis ? 1 : 0, tempoSegundos: 0, semDicas: !pistasVis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'cifra' })
     }
   }
 
@@ -184,6 +184,7 @@ export default function CifraGame({ puzzle }: Props) {
           {completo ? 'Decifrar mensagem →' : 'Preencha todos os símbolos'}
         </button>
       )}
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

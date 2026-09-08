@@ -1,14 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import type { PuzzleMentiu } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 
-function salvar(id: string, acertou: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: 0, tempoSegundos: 0, semDicas: true, primeiraVez: true, dataISO: new Date().toISOString() })
-}
 import { CheckCircle, XCircle, RotateCcw } from 'lucide-react'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 
 const MSGS_ACERTO = ["Detectou a mentira! Perspicácia incrível! 🕵️","A lógica não falha — você achou! 🎯","Olho clínico! Detetive nato! 🏆","Cada contradição revelada! Excelente! ⚡","Ninguém te engana! 🌟"]
 const MSGS_ERRO   = ["Esse não é o mentiroso... releia as declarações! 🤔","Alguma afirmação não bate — procure a contradição! 🔍","Perto, mas não é esse... tente de novo! 💡","Revise quem contradiz os fatos conhecidos! 🧐"]
@@ -17,6 +16,7 @@ const rand = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)]
 interface Props { puzzle: PuzzleMentiu }
 
 export default function MentiuGame({ puzzle }: Props) {
+  const [novasBadges, setNovasBadges] = React.useState<Badge[]>([])
   const startTime = Date.now()
   const [selecionado, setSelecionado] = useState<string | null>(null)
   const [tempo, setTempo] = useState(0)
@@ -31,7 +31,7 @@ export default function MentiuGame({ puzzle }: Props) {
     setAcertou(ok)
     setRespondeu(true)
     setMsg(rand(ok ? MSGS_ACERTO : MSGS_ERRO))
-    salvar(puzzle.id, ok)
+    if (ok) setNovasBadges(recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: ok, dicasUsadas: 0, tempoSegundos: tempo, semDicas: true, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'mentiu' }))
   }
 
   function reiniciar() {
@@ -123,6 +123,7 @@ export default function MentiuGame({ puzzle }: Props) {
           {selecionado ? `${selecionado} está mentindo →` : 'Selecione o mentiroso'}
         </button>
       )}
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

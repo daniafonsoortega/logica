@@ -2,9 +2,11 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import type { PuzzleGrade as Puzzle, GridState } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 
 const MSGS_ACERTO = [
   "Sua mente está afiada! 🔥",
@@ -86,6 +88,7 @@ export default function PuzzleGame({ puzzle }: Props) {
   const [msgAcerto, setMsgAcerto]         = useState('')
   const [msgErro, setMsgErro]             = useState('')
   const [tempo, setTempo]                 = useState(0)
+  const [novasBadges, setNovasBadges]     = useState<Badge[]>([])
 
   const dicas = gerarDicas(puzzle)
 
@@ -113,13 +116,14 @@ export default function PuzzleGame({ puzzle }: Props) {
     else         setMsgErro(sortear(MSGS_ERRO))
     if (correto && !reportado) {
       setReportado(true)
-      recordResult({
+      setNovasBadges(recordAndBadge({
         id: puzzle.id, tipo: 'puzzle', resolvido: true,
         dicasUsadas: dicaAtual, semDicas: dicaAtual === 0,
         tempoSegundos: t,
         primeiraVez: true,
         dataISO: new Date().toISOString(),
-      })
+        nivel: puzzle.nivel, tipoPuzzle: 'grade',
+      }))
     }
   }
 
@@ -366,6 +370,7 @@ export default function PuzzleGame({ puzzle }: Props) {
         </div>
       )}
 
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

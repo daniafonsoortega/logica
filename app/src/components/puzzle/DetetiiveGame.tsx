@@ -1,14 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import type { PuzzleDetetive } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 
-function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
-}
 import { CheckCircle, XCircle, Search, RotateCcw } from 'lucide-react'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 
 const MSGS_ACERTO = ["Caso encerrado! Detetive brilhante! 🔍","Você chegou lá! Ninguém escapa de você! 🕵️","Caso solucionado com maestria! 🏆","Instinto certeiro! Grande detetive! ⚡","A lógica venceu! Caso fechado! 🎯"]
 const MSGS_ERRO   = ["Hmm… revise as pistas com calma! 🔍","Esse suspeito tem um bom alibi... tente outro! 🤔","Quase lá! Algum detalhe escapou... 💡","Releia os testemunhos — há uma contradição! 🧐","Nem sempre o óbvio é o culpado! 🕵️"]
@@ -18,6 +17,7 @@ interface Props { puzzle: PuzzleDetetive }
 type Status = 'jogando' | 'correto' | 'incorreto'
 
 export default function DetetiiveGame({ puzzle }: Props) {
+  const [novasBadges, setNovasBadges] = React.useState<Badge[]>([])
   const startTime = Date.now()
   const [eliminados, setEliminados] = useState<Set<string>>(new Set())
   const [tempo, setTempo] = useState(0)
@@ -47,11 +47,11 @@ export default function DetetiiveGame({ puzzle }: Props) {
       setTempo(Math.round((Date.now() - startTime) / 1000))
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVisiveis)
+      setNovasBadges(recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: true, dicasUsadas: pistasVisiveis ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime) / 1000), semDicas: !pistasVisiveis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'detetive' }))
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))
-      salvar(puzzle.id, false, pistasVisiveis)
+      recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: false, dicasUsadas: pistasVisiveis ? 1 : 0, tempoSegundos: 0, semDicas: !pistasVisiveis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'detetive' })
     }
   }
 
@@ -190,6 +190,7 @@ export default function DetetiiveGame({ puzzle }: Props) {
           {pronto ? 'Revelar o culpado →' : 'Selecione culpado, método e local'}
         </button>
       )}
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

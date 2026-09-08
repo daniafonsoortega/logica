@@ -1,14 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import type { PuzzleSequencia } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 
-function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
-}
 import { CheckCircle, XCircle, RotateCcw, GripVertical } from 'lucide-react'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 
 const MSGS_ACERTO = ["Ordem perfeita! Raciocínio impecável! 🏆","Sequência correta! Você é incrível! ⚡","Cronologia certeira! Muito bem! 🎯","Encaixou tudo no lugar! 🧩","Mente organizada — sequência perfeita! 🌟"]
 const MSGS_ERRO   = ["A ordem ainda não está certa... tente de novo! 🔍","Algum elemento está fora do lugar! 💡","Releia as pistas de ordem! 🤔","Quase — mas não exatamente! Mais uma vez! 💪"]
@@ -18,6 +17,7 @@ interface Props { puzzle: PuzzleSequencia }
 type Status = 'jogando' | 'correto' | 'incorreto'
 
 export default function SequenciaGame({ puzzle }: Props) {
+  const [novasBadges, setNovasBadges] = React.useState<Badge[]>([])
   // ordem atual: array de itens na ordem que o usuário definiu
   const startTime = Date.now()
   const [ordem, setOrdem] = useState<string[]>([...puzzle.itens])
@@ -41,11 +41,11 @@ export default function SequenciaGame({ puzzle }: Props) {
       setTempo(Math.round((Date.now() - startTime) / 1000))
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVis)
+      setNovasBadges(recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: true, dicasUsadas: pistasVis ? 1 : 0, tempoSegundos: tempo, semDicas: !pistasVis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'sequencia' }))
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))
-      salvar(puzzle.id, false, pistasVis)
+      recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: false, dicasUsadas: pistasVis ? 1 : 0, tempoSegundos: 0, semDicas: !pistasVis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'sequencia' })
     }
   }
 
@@ -153,6 +153,7 @@ export default function SequenciaGame({ puzzle }: Props) {
           Verificar ordem →
         </button>
       )}
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

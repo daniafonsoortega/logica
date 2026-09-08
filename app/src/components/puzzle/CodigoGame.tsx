@@ -1,14 +1,13 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import type { PuzzleCodigo } from '@/types'
-import { recordResult } from '@/lib/stats'
+import { recordAndBadge } from '@/lib/record'
+import type { Badge } from '@/lib/badges'
 
-function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
-}
 import { CheckCircle, XCircle, RotateCcw, Lock } from 'lucide-react'
 import ShareResult from '@/components/ShareResult'
+import BadgeNotification from '@/components/BadgeNotification'
 
 const MSGS_ACERTO = ["Código decifrado! Mente privilegiada! 🔓","Acesso concedido! Lógica impecável! ⚡","Decifrou em cheio! Incrível! 🎯","O código não resistiu! Excelente! 🏆","Raciocínio afiado — código quebrado! 🌟"]
 const MSGS_ERRO   = ["Código incorreto... revise as pistas! 🔐","Combinação errada — tente de novo! 🤔","Algum dígito escapou... releia! 💡","Quase! Reveja as restrições! 🧐"]
@@ -17,6 +16,7 @@ const rand = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)]
 interface Props { puzzle: PuzzleCodigo }
 
 export default function CodigoGame({ puzzle }: Props) {
+  const [novasBadges, setNovasBadges] = React.useState<Badge[]>([])
   const startTime = Date.now()
   const [digits, setDigits] = useState<string[]>(Array(puzzle.num_digitos).fill(''))
   const [tempo, setTempo] = useState(0)
@@ -46,7 +46,7 @@ export default function CodigoGame({ puzzle }: Props) {
       setTempo(Math.round((Date.now() - startTime) / 1000))
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVis)
+      setNovasBadges(recordAndBadge({ id: puzzle.id, tipo: 'puzzle', resolvido: true, dicasUsadas: pistasVis ? 1 : 0, tempoSegundos: tempo, semDicas: !pistasVis, primeiraVez: true, dataISO: new Date().toISOString(), nivel: puzzle.nivel, tipoPuzzle: 'codigo' }))
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))
@@ -151,6 +151,7 @@ export default function CodigoGame({ puzzle }: Props) {
           {completo ? '[ DECIFRAR CÓDIGO ]' : '[ PREENCHA TODOS OS DÍGITOS ]'}
         </button>
       )}
+      <BadgeNotification badges={novasBadges} onDone={() => setNovasBadges([])} />
     </div>
   )
 }

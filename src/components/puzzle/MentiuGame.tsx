@@ -13,11 +13,10 @@ const MSGS_ACERTO = ["Detectou a mentira! Perspicácia incrível! 🕵️","A l�
 const MSGS_ERRO   = ["Esse não é o mentiroso... releia as declarações! 🤔","Alguma afirmação não bate — procure a contradição! 🔍","Perto, mas não é esse... tente de novo! 💡","Revise quem contradiz a si mesmo nas declarações! 🧐"]
 const rand = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)]
 
-// Generic hints that work for any Mentiu puzzle
 const DICAS_MENTIU = [
-  "O mentiroso faz afirmações que se contradizem entre si — sem precisar de informações externas. Procure quem diz duas coisas impossíveis ao mesmo tempo.",
-  "Compare as declarações de cada personagem entre si. Procure afirmações sobre tempo, local ou ações que não possam ser verdadeiras simultaneamente.",
-  "Um dos personagens menciona dois horários ou situações incompatíveis nas suas próprias declarações. Leia com atenção — a contradição está ali.",
+  "Leia os fatos verificados com atenção. O mentiroso contradiz pelo menos um deles diretamente na sua declaração.",
+  "Compare cada declaração com os fatos listados. Uma afirmação falsa precisa de contradizer uma evidência concreta.",
+  "Procure a declaração que é impossível face aos fatos — essa é a mentira. As outras podem ser verdade ou irrelevantes.",
 ]
 
 interface Props { puzzle: PuzzleMentiu }
@@ -33,9 +32,11 @@ export default function MentiuGame({ puzzle }: Props) {
   const [dicasAbertas, setDicasAbertas] = useState(false)
   const [dicasVistas, setDicasVistas]   = useState(0)
 
+  const mentiroso = puzzle.mentiroso || puzzle.resposta || ''
+
   function responder() {
     if (!selecionado) return
-    const ok = selecionado === puzzle.mentiroso
+    const ok = selecionado === mentiroso
     const t = Math.round((Date.now() - startTime) / 1000)
     setTempo(t)
     setAcertou(ok)
@@ -59,6 +60,13 @@ export default function MentiuGame({ puzzle }: Props) {
     if (i + 1 > dicasVistas) setDicasVistas(i + 1)
   }
 
+  // Support both old (declaracoes array) and new (declaracao string) formats
+  function getDeclaracoes(p: { declaracao?: string; declaracoes?: string[] }): string[] {
+    if (p.declaracao) return [p.declaracao]
+    if (p.declaracoes) return p.declaracoes
+    return []
+  }
+
   return (
     <div className="space-y-6">
       {/* Intro */}
@@ -66,8 +74,23 @@ export default function MentiuGame({ puzzle }: Props) {
         <span className="font-bold">🎭 Situação: </span>{puzzle.intro}
       </div>
 
+      {/* Fatos verificáveis */}
+      {puzzle.fatos && puzzle.fatos.length > 0 && (
+        <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3">
+          <p className="text-sm font-bold text-blue-800 mb-2">📋 O que se sabe (factos verificados):</p>
+          <ul className="space-y-1">
+            {puzzle.fatos.map((fato, i) => (
+              <li key={i} className="flex gap-2 text-sm text-blue-900">
+                <span className="text-blue-400 shrink-0">•</span>
+                <span>{fato}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <p className="text-sm text-gray-600 text-center font-medium">
-        Uma pessoa está <span className="text-red-600 font-bold">mentindo em todas</span> as suas declarações. Qual é?
+        Uma pessoa está <span className="text-red-600 font-bold">mentindo</span> — a sua declaração contradiz os factos. Qual é?
       </p>
 
       {/* Resultado */}
@@ -79,7 +102,7 @@ export default function MentiuGame({ puzzle }: Props) {
           <p className="font-bold text-lg">{msg}</p>
           <ShareResult tipo="mentiu" tema={puzzle.tema} acertou={acertou} tempoSegundos={tempo} semDicas={dicasVistas === 0} nivel={puzzle.nivel} />
           <div className="text-sm bg-white rounded-xl p-3 border border-gray-100">
-            <p><strong>O mentiroso era:</strong> {puzzle.mentiroso}</p>
+            <p><strong>O mentiroso era:</strong> {mentiroso}</p>
             <p className="mt-1 text-gray-600 text-xs">{puzzle.explicacao}</p>
           </div>
           {!acertou && (
@@ -95,7 +118,8 @@ export default function MentiuGame({ puzzle }: Props) {
         {puzzle.personagens.map(p => {
           const sel = selecionado === p.nome
           const errou = respondeu && sel && !acertou
-          const correto = respondeu && p.nome === puzzle.mentiroso
+          const correto = respondeu && p.nome === mentiroso
+          const declaracoes = getDeclaracoes(p)
           return (
             <div
               key={p.nome}
@@ -109,7 +133,7 @@ export default function MentiuGame({ puzzle }: Props) {
               }`}
             >
               <div className="flex items-center gap-3">
-                <span className="text-3xl">{p.emoji}</span>
+                {p.emoji && <span className="text-3xl">{p.emoji}</span>}
                 <div>
                   <p className="font-bold text-gray-900">{p.nome}</p>
                   {sel && !respondeu && <p className="text-xs text-blue-600 font-medium">Selecionado</p>}
@@ -122,7 +146,7 @@ export default function MentiuGame({ puzzle }: Props) {
                 )}
               </div>
               <div className="space-y-1 pl-1">
-                {p.declaracoes.map((d, i) => (
+                {declaracoes.map((d, i) => (
                   <p key={i} className={`text-sm leading-snug ${
                     correto ? 'text-red-700 line-through' : 'text-gray-700'
                   }`}>

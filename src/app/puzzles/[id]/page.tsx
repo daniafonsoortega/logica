@@ -1,46 +1,47 @@
-import { getPuzzleById, allPuzzles, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import PuzzleGame from '@/components/puzzle/PuzzleGame'
+import { allPuzzles, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
+import PuzzleRouter from '@/components/puzzle/PuzzleRouter'
 import ProximoPuzzle from '@/components/puzzle/ProximoPuzzle'
-import FeedbackButtons from '@/components/FeedbackButtons'
 import DailyLimitGuard from '@/components/DailyLimitGuard'
+import { notFound } from 'next/navigation'
 
-export async function generateStaticParams() {
+// Mapeamento de ícones por tipo
+const TIPO_LABELS: Record<string, string> = {
+  grade: '🔍 Einstein Grid',
+  detetive: '🕵️ Detetive',
+  sequencia: '📅 Sequência',
+  mentiu: '🎭 Quem Mentiu?',
+  codigo: '🔐 Código Secreto',
+}
+
+export function generateStaticParams() {
   return allPuzzles.map(p => ({ id: p.id }))
 }
 
 export default async function PuzzlePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const puzzle = getPuzzleById(id)
+  const puzzle = allPuzzles.find(p => p.id === id)
   if (!puzzle) notFound()
 
+  const tipo  = puzzle.tipo ?? 'grade'
+  const nivel = puzzle.nivel
+
   return (
-    <div className="space-y-6 max-w-4xl mx-auto">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-gray-400 font-mono text-sm">{puzzle.id}</span>
-            <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${NIVEL_COLORS[puzzle.nivel]}`}>
-              {NIVEL_LABELS[puzzle.nivel]}
-            </span>
-          </div>
+    <div className="max-w-2xl mx-auto space-y-6">
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div className="space-y-0.5">
+          <p className="text-xs text-gray-400 font-medium">{TIPO_LABELS[tipo] ?? tipo} · {puzzle.id}</p>
           <h1 className="text-2xl font-black text-gray-900">{puzzle.tema}</h1>
-          <p className="text-gray-500 text-sm mt-1">
-            {puzzle.num_posicoes} posições · {puzzle.atributos.length} atributos · {puzzle.num_pistas} pistas
-          </p>
         </div>
-        <Link href="/" className="text-sm text-blue-600 hover:underline whitespace-nowrap">← Início</Link>
+        <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${NIVEL_COLORS[nivel]}`}>
+          {NIVEL_LABELS[nivel]}
+        </span>
       </div>
 
       <DailyLimitGuard>
-        <PuzzleGame puzzle={puzzle} />
+        <PuzzleRouter puzzle={puzzle} />
       </DailyLimitGuard>
 
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
-        <FeedbackButtons id={puzzle.id} tipo="puzzle" />
-        <ProximoPuzzle currentId={puzzle.id} />
-      </div>
+      <ProximoPuzzle currentId={puzzle.id} />
     </div>
   )
 }

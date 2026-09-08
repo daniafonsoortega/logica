@@ -14,19 +14,28 @@ export async function GET(req: NextRequest) {
   if (!code) return NextResponse.json({ valid: false, error: 'Código em falta' })
 
   const { data: coupon, error } = await supabaseAdmin
-    .schema('logicamente').from('coupons').select('*').eq('code', code).single()
+    .from('coupons').select('*').eq('code', code).single()
 
   if (error || !coupon) return NextResponse.json({ valid: false, error: 'Cupom inválido' })
-  if (!coupon.active)   return NextResponse.json({ valid: false, error: 'Cupom inativo' })
+
+  // Support both column name conventions (migration may or may not have run)
+  const isActive     = coupon.active !== undefined ? coupon.active : true // default active if column missing
+  const discountPct  = coupon.discount_percent ?? coupon.discount_pct ?? 0
+  const usesCount    = coupon.uses_count ?? coupon.uses ?? 0
+  const appliesToPlano = coupon.applies_to_plano ?? null
+  const affiliateName  = coupon.affiliate_name ?? null
+
+  if (!isActive)
+    return NextResponse.json({ valid: false, error: 'Cupom inativo' })
   if (coupon.expires_at && new Date(coupon.expires_at) < new Date())
     return NextResponse.json({ valid: false, error: 'Cupom expirado' })
-  if (coupon.max_uses !== null && coupon.uses_count >= coupon.max_uses)
+  if (coupon.max_uses !== null && usesCount >= coupon.max_uses)
     return NextResponse.json({ valid: false, error: 'Cupom esgotado' })
-  if (coupon.applies_to_plano && coupon.applies_to_plano !== plano)
-    return NextResponse.json({ valid: false, error: `Cupom válido só para o plano ${coupon.applies_to_plano}` })
+  if (appliesToPlano && appliesToPlano !== plano)
+    return NextResponse.json({ valid: false, error: `Cupom válido só para o plano ${appliesToPlano}` })
 
   const original    = PRECOS[plano] ?? 1290
-  const pct         = coupon.discount_percent ?? 0
+  const pct         = discountPct
   const discountBrl = Math.round(original * pct / 100)
   const finalBrl    = Math.max(0, original - discountBrl)
 
@@ -36,7 +45,7 @@ export async function GET(req: NextRequest) {
     discount_percent: pct,
     discount_brl:     discountBrl,
     final_brl:        finalBrl,
-    affiliate_name:   coupon.affiliate_name ?? null,
+    affiliate_name:   affiliateName,
     message:          coupon.type === 'free_access'
       ? 'Acesso gratuito! 🎉'
       : `${pct}% de desconto — R$${(original/100).toFixed(2).replace('.',',')} → R$${(finalBrl/100).toFixed(2).replace('.',',')}`,

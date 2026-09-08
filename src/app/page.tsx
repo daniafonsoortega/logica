@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import HomeGreeting from '@/components/HomeGreeting'
 
 export default function Home() {
   return (
     <div className="space-y-12">
       <section className="text-center py-16 space-y-4">
+        <HomeGreeting />
         <h1 className="text-5xl font-black text-gray-900 tracking-tight">
           Treine seu <span className="text-blue-600">raciocínio lógico</span>
         </h1>

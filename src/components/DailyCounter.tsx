@@ -1,39 +1,30 @@
 'use client'
 
+// Contador de desafios de hoje — mostrado no nav para usuários free.
+// Com o modelo de anúncios não há mais limite hard, então só mostra
+// um ícone de chama com quantos desafios fizeram hoje (motivacional).
+
 import { useEffect, useState } from 'react'
-import { getRemainingToday, isPremium, FREE_DAILY_LIMIT } from '@/lib/freemium'
-import PaywallModal from './PaywallModal'
+import { getTodayCount, isPremium } from '@/lib/freemium'
 
 export default function DailyCounter() {
-  const [remaining, setRemaining] = useState<number | null>(null)
-  const [premium, setPremium]     = useState(false)
-  const [showPaywall, setShowPaywall] = useState(false)
+  const [count,   setCount]   = useState<number | null>(null)
+  const [premium, setPremium] = useState(false)
 
   useEffect(() => {
     setPremium(isPremium())
-    setRemaining(getRemainingToday())
+    setCount(getTodayCount())
   }, [])
 
-  if (remaining === null || premium) return null
+  // Premium não precisa ver contador
+  if (premium || count === null || count === 0) return null
 
   return (
-    <>
-      <button
-        onClick={() => remaining === 0 && setShowPaywall(true)}
-        className={`flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full border transition-all ${
-          remaining === 0
-            ? 'border-red-300 bg-red-50 text-red-700 cursor-pointer hover:bg-red-100'
-            : remaining <= 2
-            ? 'border-yellow-300 bg-yellow-50 text-yellow-700'
-            : 'border-gray-200 bg-gray-50 text-gray-500'
-        }`}
-        title={remaining === 0 ? 'Limite diário atingido — clique para ver Premium' : `${remaining} de ${FREE_DAILY_LIMIT} desafios restantes hoje`}
-      >
-        <span>{remaining === 0 ? '🔒' : '🎯'}</span>
-        <span>{remaining === 0 ? 'Limite atingido' : `${remaining}/${FREE_DAILY_LIMIT} hoje`}</span>
-      </button>
-
-      {showPaywall && <PaywallModal reason="daily_limit" onClose={() => setShowPaywall(false)} />}
-    </>
+    <span
+      className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full border border-orange-200 bg-orange-50 text-orange-600"
+      title={`${count} desafio${count !== 1 ? 's' : ''} hoje`}
+    >
+      🔥 {count}
+    </span>
   )
 }

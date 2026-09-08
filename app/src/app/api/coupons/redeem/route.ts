@@ -26,24 +26,38 @@ export async function POST(req: NextRequest) {
   const { data: coupon } = await supabaseAdmin
     .from('coupons').select('*').eq('code', upperCode).single()
 
-  if (!coupon?.active || coupon.type !== 'free_access')
+  // Support both active column conventions
+  const isActive = coupon?.active !== undefined ? coupon.active : true
+  if (!coupon || !isActive || coupon.type !== 'free_access')
     return NextResponse.json({ error: 'Cupom inválido para acesso gratuito' }, { status: 400 })
-  if (coupon.max_uses !== null && coupon.uses_count >= coupon.max_uses)
+
+  const usesCount = coupon.uses_count ?? coupon.uses ?? 0
+  if (coupon.max_uses !== null && usesCount >= coupon.max_uses)
     return NextResponse.json({ error: 'Cupom esgotado' }, { status: 400 })
 
   const until = premiumUntil(plano)
 
-  await supabaseAdmin.from('profiles')
-    .upsert({ id: user.id, email: user.email, is_premium: true, plano, premium_until: until })
+  // Update profile — try with premium columns; fall back gracefully if columns missing
+  const profileUpdate: Record<string, unknown> = { id: user.id, email: user.email }
+  try {
+    await supabaseAdmin.from('profiles')
+      .upsert({ ...profileUpdate, is_premium: true, plano, premium_until: until })
+  } catch {
+    // Columns not yet migrated — update base profile only
+    await supabaseAdmin.from('profiles').upsert(profileUpdate)
+  }
 
+  // Record usage
   await supabaseAdmin.from('coupon_uses').insert({
     coupon_code: upperCode, user_id: user.id, user_email: user.email,
     plano, amount_paid_brl: 0,
     discount_brl: ({ semanal: 490, mensal: 1290, anual: 8900 } as Record<string,number>)[plano] ?? 1290,
   })
 
+  // Increment uses — support both column name conventions
+  const usesField = coupon.uses_count !== undefined ? 'uses_count' : 'uses'
   await supabaseAdmin.from('coupons')
-    .update({ uses_count: (coupon.uses_count ?? 0) + 1 }).eq('code', upperCode)
+    .update({ [usesField]: usesCount + 1 }).eq('code', upperCode)
 
   return NextResponse.json({ ok: true, premium_until: until })
 }

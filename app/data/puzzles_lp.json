@@ -18514,9 +18514,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -18530,7 +18530,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-303",
@@ -18591,7 +18591,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -18615,7 +18615,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-305",
@@ -18647,8 +18647,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -18662,7 +18662,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-306",
@@ -18740,9 +18740,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -18756,7 +18756,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-308",
@@ -18817,7 +18817,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -18841,7 +18841,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-310",
@@ -18873,8 +18873,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -18888,7 +18888,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-311",
@@ -18966,9 +18966,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -18982,7 +18982,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-313",
@@ -19043,7 +19043,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -19067,7 +19067,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-315",
@@ -19099,8 +19099,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -19114,7 +19114,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-316",
@@ -19192,9 +19192,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -19208,7 +19208,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-318",
@@ -19269,7 +19269,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -19293,7 +19293,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-320",
@@ -19325,8 +19325,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -19340,7 +19340,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-321",
@@ -19418,9 +19418,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -19434,7 +19434,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-323",
@@ -19495,7 +19495,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -19519,7 +19519,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-325",
@@ -19551,8 +19551,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -19566,7 +19566,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-326",
@@ -19644,9 +19644,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -19660,7 +19660,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-328",
@@ -19721,7 +19721,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -19745,7 +19745,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-330",
@@ -19777,8 +19777,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -19792,7 +19792,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-331",
@@ -19870,9 +19870,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -19886,7 +19886,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-333",
@@ -19947,7 +19947,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -19971,7 +19971,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-335",
@@ -20003,8 +20003,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -20018,7 +20018,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-336",
@@ -20096,9 +20096,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -20112,7 +20112,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-338",
@@ -20173,7 +20173,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -20197,7 +20197,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-340",
@@ -20229,8 +20229,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -20244,7 +20244,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-341",
@@ -20322,9 +20322,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -20338,7 +20338,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-343",
@@ -20399,7 +20399,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -20423,7 +20423,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-345",
@@ -20455,8 +20455,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -20470,7 +20470,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-346",
@@ -20548,9 +20548,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -20564,7 +20564,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-348",
@@ -20625,7 +20625,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -20649,7 +20649,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-350",
@@ -20681,8 +20681,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -20696,7 +20696,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-351",
@@ -20774,9 +20774,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -20790,7 +20790,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-353",
@@ -20851,7 +20851,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -20875,7 +20875,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-355",
@@ -20907,8 +20907,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -20922,7 +20922,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-356",
@@ -21000,9 +21000,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -21016,7 +21016,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-358",
@@ -21077,7 +21077,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -21101,7 +21101,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-360",
@@ -21133,8 +21133,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -21148,7 +21148,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-361",
@@ -21226,9 +21226,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -21242,7 +21242,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-363",
@@ -21303,7 +21303,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -21327,7 +21327,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-365",
@@ -21359,8 +21359,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -21374,7 +21374,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-366",
@@ -21452,9 +21452,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -21468,7 +21468,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-368",
@@ -21529,7 +21529,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -21553,7 +21553,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-370",
@@ -21585,8 +21585,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -21600,7 +21600,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-371",
@@ -21678,9 +21678,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -21694,7 +21694,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-373",
@@ -21755,7 +21755,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -21779,7 +21779,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-375",
@@ -21811,8 +21811,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -21826,7 +21826,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-376",
@@ -21904,9 +21904,9 @@
         "nome": "Renato",
         "emoji": "👨",
         "declaracoes": [
-          "Saí para comprar refrigerante.",
+          "Saí às 12h para comprar refrigerante.",
           "Estava fora por pelo menos 40 minutos.",
-          "Voltei antes do almoço terminar."
+          "Voltei para casa às 12h20."
         ]
       },
       {
@@ -21920,7 +21920,7 @@
       }
     ],
     "mentiroso": "Renato",
-    "explicacao": "Renato disse que saiu por 40 minutos, mas o mercado fica a 2 minutos de carro — ele ficou longe por 8 minutos. Disse que voltou antes do almoço terminar, mas chegou após a sobremesa. Suas declarações são todas falsas."
+    "explicacao": "Renato disse que saiu às 12h e voltou às 12h20, mas também afirmou que estava fora por pelo menos 40 minutos. Vinte minutos contradizem quarenta — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-378",
@@ -21981,7 +21981,7 @@
         "emoji": "👨",
         "declaracoes": [
           "Cheguei em casa depois das 23h.",
-          "Não passei pela cozinha.",
+          "Passei pela cozinha às 22h para tomar água.",
           "Eu não sabia que tinha bolo."
         ]
       },
@@ -22005,7 +22005,7 @@
       }
     ],
     "mentiroso": "Papai",
-    "explicacao": "Papai disse que chegou depois das 23h, mas o registro do alarme mostra entrada às 21h45. Disse que não passou pela cozinha, mas pegada de sapato foi encontrada no chão. Disse que não sabia do bolo, mas ele mesmo tinha comprado o ingrediente especial."
+    "explicacao": "Papai disse que chegou em casa depois das 23h, mas também afirmou que passou pela cozinha às 22h. É impossível estar na cozinha a uma hora antes de chegar a casa — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-380",
@@ -22037,8 +22037,8 @@
         "emoji": "👩‍🔬",
         "declaracoes": [
           "Estava de home office nesse dia.",
-          "Minha internet caiu durante a tarde.",
-          "Enviei e-mail ao TI sobre o problema de conexão."
+          "Fui pessoalmente ao escritório buscar documentos impressos.",
+          "Não me desloquei de casa o dia todo."
         ]
       },
       {
@@ -22052,7 +22052,7 @@
       }
     ],
     "mentiroso": "Débora",
-    "explicacao": "Débora disse que estava de home office, mas foi vista no escritório por três colegas. Disse que a internet caiu, mas o log do servidor mostra acesso do seu usuário às 15h20. O e-mail ao TI foi enviado de dentro da rede corporativa, não de casa."
+    "explicacao": "Débora disse que estava de home office e não saiu de casa o dia todo, mas também afirmou que foi pessoalmente ao escritório buscar documentos. É impossível estar em casa o dia todo e ter ido ao escritório — as suas declarações se contradizem entre si. Todas as suas afirmações são falsas."
   },
   {
     "id": "LP-381",

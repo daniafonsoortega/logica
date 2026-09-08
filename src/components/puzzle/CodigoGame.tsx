@@ -7,7 +7,7 @@ import { recordResult } from '@/lib/stats'
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
   recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
-import { CheckCircle, XCircle, RotateCcw, Lock } from 'lucide-react'
+import { CheckCircle, XCircle, RotateCcw, Lock, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 const MSGS_ACERTO = ["Código decifrado! Mente privilegiada! 🔓","Acesso concedido! Lógica impecável! ⚡","Decifrou em cheio! Incrível! 🎯","O código não resistiu! Excelente! 🏆","Raciocínio afiado — código quebrado! 🌟"]
 const MSGS_ERRO   = ["Código incorreto... revise as pistas! 🔐","Combinação errada — tente de novo! 🤔","Algum dígito escapou... releia! 💡","Quase! Reveja as restrições! 🧐"]
@@ -20,7 +20,15 @@ export default function CodigoGame({ puzzle }: Props) {
   const [status, setStatus] = useState<'jogando'|'correto'|'incorreto'>('jogando')
   const [msg, setMsg]       = useState('')
   const [tentativas, setTentativas] = useState(0)
-  const [pistasVis, setPistas] = useState(false)
+  const [pistasVis, setPistas]   = useState(false)
+  const [dicasAbertas, setDicasAbertas] = useState(false)
+  const [dicasVistas, setDicasVistas]   = useState(0)
+
+  const DICAS = [
+    "Leia cada pista separadamente e tente fixar um dígito de cada vez — algumas restrições determinam um valor diretamente.",
+    "Pistas do tipo 'um certo, no lugar certo' vs 'um certo, no lugar errado' funcionam como no Wordle: use-as para cruzar e eliminar.",
+    "Anote o que já sabe: um dígito confirmado numa posição elimina opções das outras — trabalhe do mais certo para o mais incerto.",
+  ]
   const refs = useRef<(HTMLInputElement|null)[]>([])
 
   function handleDigit(i: number, val: string) {
@@ -42,7 +50,7 @@ export default function CodigoGame({ puzzle }: Props) {
     if (tentativa === puzzle.solucao) {
       setStatus('correto')
       setMsg(rand(MSGS_ACERTO))
-      salvar(puzzle.id, true, pistasVis)
+      salvar(puzzle.id, true, pistasVis || dicasVistas > 0)
     } else {
       setStatus('incorreto')
       setMsg(rand(MSGS_ERRO))

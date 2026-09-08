@@ -18934,7 +18934,7 @@
       "Senhor Alves fez a limpeza com produtos aprovados — recibo de compra confirma.",
       "Sara deu comida às 08h e os peixes estavam vivos — testemunhada por três moradores.",
       "Graça foi visto a passar pelo aquário às 02h por um morador insone.",
-      "Uma garrafa de lixívia foi encontrada no caixote perto do aquário — marca diferente da usada pelo Senhor Alves."
+      "A garrafa de lixívia encontrada no caixote é da mesma marca que Graça comprou dois dias antes na mercearia do bairro — o dono confirma a venda."
     ],
     "solucao": {
       "culpado": "Vizinho Graça",
@@ -19028,7 +19028,8 @@
       "A análise grafológica confirma que a assinatura é forjada, não digitalizada.",
       "O contabilista Ramos nunca vai a casa de Elisabete — só ao escritório dele.",
       "Paulo tinha dívidas de 8 000 euros conhecidas pela família.",
-      "O cheque era do livrete guardado numa gaveta que Paulo sabia onde estava."
+      "O cheque era do livrete guardado numa gaveta que Paulo sabia onde estava.",
+      "O Gerente Costa processou o cheque de boa-fé com documento de identidade apresentado — é vítima do esquema, não participante."
     ],
     "solucao": {
       "culpado": "Sobrinho Paulo",
@@ -19216,7 +19217,8 @@
       "A caixa da chave mestra não tem sinais de arrombamento.",
       "Lúcia nunca teve acesso nem pediu acesso à chave mestra.",
       "Pedro foi registado numa loja de cópias de chaves duas semanas atrás — o proprietário confirmou.",
-      "Os apartamentos assaltados pertencem a moradores que Pedro conhecia das obras."
+      "Os apartamentos assaltados pertencem a moradores que Pedro conhecia das obras.",
+      "A caixa da chave mestra não foi forçada — confirma que Zelador Ferreira não perdeu o controlo da chave: ela foi duplicada antes de ser devolvida."
     ],
     "solucao": {
       "culpado": "Técnico de obras Pedro",
@@ -19498,7 +19500,8 @@
       "O telemóvel de Nuno tem histórico de acesso à conta de email do teatro às 19h10 — para onde foi enviada uma mensagem interna.",
       "Vera estava visível na sala de costura quando duas costureiras a viram até às 19h30.",
       "Gustavo foi visto no palco por pelo menos 8 membros do elenco entre 19h e 20h.",
-      "Uma caixa com o nome 'Vera' foi encontrada na saída dos fundos com o colar dentro."
+      "Uma caixa com o nome 'Vera' foi encontrada na saída dos fundos com o colar dentro.",
+      "A câmera da saída dos fundos mostra Nuno a deixar uma caixa às 19h30 — exatamente onde foi encontrada a caixa com o colar e o nome 'Vera'."
     ],
     "solucao": {
       "culpado": "Nuno",
@@ -19639,7 +19642,8 @@
       "Henrique admite ter feito acesso remoto, mas diz que foi para resolver um problema técnico — não para alterar notas.",
       "As notas alteradas são de alunos da turma de Prof. Carmo.",
       "Prof. Carmo foi fotografada num restaurante na cidade natal às 13h de sábado — confirmando o alibi.",
-      "Uma mensagem encontrada no telemóvel de Henrique mostra um aluno a oferecer dinheiro por 'ajuda nas notas'."
+      "Uma mensagem encontrada no telemóvel de Henrique mostra um aluno a oferecer dinheiro por 'ajuda nas notas'.",
+      "Inês foi vista em casa durante o fim de semana por dois vizinhos — o seu cartão de acesso à escola não regista qualquer entrada."
     ],
     "solucao": {
       "culpado": "Henrique",
@@ -19686,7 +19690,7 @@
       "Lurdes tem um irmão que trabalha num hipódromo — e o cavalo foi visto lá três dias depois.",
       "Domingos foi visto pela câmera de segurança da casa de hóspedes até às 23h e às 06h — sem saída noturna.",
       "Cássio não tem ligações conhecidas ao hipódromo ou ao mundo das apostas.",
-      "O portão da quinta foi aberto às 02h30 — o código usado é o mesmo da administração."
+      "O código da administração usado para abrir o portão às 02h30 foi atribuído exclusivamente a Lurdes — é ela a única administradora da quinta."
     ],
     "solucao": {
       "culpado": "Lurdes",
@@ -20020,7 +20024,8 @@
       "O promotor Elvino beneficiaria diretamente da licença — o terreno valeria 10x mais com a licença obtida.",
       "A arquiteta apresentou os seus ficheiros originais — sem as alterações fraudulentas — a uma versão anterior.",
       "O empreiteiro Costa recebeu os documentos por email do endereço de Elvino três dias antes da submissão.",
-      "Elvino tem histórico de dois processos anteriores por falsificação documental noutros municípios."
+      "Elvino tem histórico de dois processos anteriores por falsificação documental noutros municípios.",
+      "Perpétua apresentou os seus ficheiros originais sem alterações a peritos — e foi o Técnico Rui quem detetou a fraude, o que o exclui como suspeito."
     ],
     "solucao": {
       "culpado": "Promotor Elvino",
@@ -20208,7 +20213,8 @@
       "Análise grafológica confirma que as assinaturas são falsificadas.",
       "A escultura original de Crispim está documentada e localizada numa coleção privada noutro país.",
       "Simeão tem registo de vendas de peças com certificados similares anteriormente — em dois casos investigados.",
-      "A impressora usada para os certificados falsos foi identificada no armazém de Simeão."
+      "A impressora usada para os certificados falsos foi identificada no armazém de Simeão.",
+      "Prudência não tem equipamento de impressão compatível com os certificados falsos — é claramente a compradora enganada no esquema."
     ],
     "solucao": {
       "culpado": "Fornecedor Simeão",
@@ -20255,7 +20261,8 @@
       "Dinis fez a revisão dois dias antes — os travões estavam perfeitos no relatório de revisão.",
       "Amélia é a única beneficiária do seguro de vida de Rolando e herdeira dos seus 60% da empresa.",
       "Amélia esteve no parque de estacionamento por 45 minutos — muito mais do que o necessário para buscar documentos.",
-      "Uma ferramenta de mecânico com as impressões digitais de Amélia foi encontrada no porta-luvas do carro sabotado."
+      "Uma ferramenta de mecânico com as impressões digitais de Amélia foi encontrada no porta-luvas do carro sabotado.",
+      "O registo de acesso da garagem confirma que o Motorista Eusébio não entrou no parque de estacionamento da empresa nos três dias anteriores ao acidente."
     ],
     "solucao": {
       "culpado": "Sócia Amélia",
@@ -20347,7 +20354,7 @@
     "pistas": [
       "O papel do testamento tem marca d'água de um fabricante que só começou a produzir esse papel dois anos após a data no documento.",
       "Jacinto apareceu pela primeira vez após a morte do Dr. Albuquerque — sem qualquer contacto anterior documentado.",
-      "A notária Filomena recebeu uma transferência de 15 000 euros de uma conta anónima três dias antes de autenticar o documento.",
+      "A notária Filomena recebeu 15 000 euros de uma conta registada em nome de Jacinto dois dias antes de autenticar o documento.",
       "Rúben apresentou cartas e fotos do Dr. Albuquerque ao longo de 40 anos que o reconhecem como único herdeiro.",
       "A assinatura no testamento tem pequenas diferenças peritas identificaram como forjada."
     ],
@@ -20396,7 +20403,8 @@
       "Osvaldo tem a única conta com permissão de instalar software nos servidores.",
       "Osvaldo estava a processar um divórcio caro e necessitava de dinheiro urgente.",
       "A 'manutenção programada' de Osvaldo foi adicionada à agenda com apenas 2 horas de antecedência — incomum.",
-      "O endereço de criptomoeda do resgate foi traçado a uma carteira criada do mesmo dispositivo de Osvaldo."
+      "O endereço de criptomoeda do resgate foi traçado a uma carteira criada do mesmo dispositivo de Osvaldo.",
+      "O log de permissões confirma que Firmino nunca teve acesso ao módulo de servidores — a sua conta está limitada ao sistema de agendamento de consultas."
     ],
     "solucao": {
       "culpado": "TI Osvaldo",
@@ -20960,7 +20968,8 @@
       "O veneno encontrado é curarina — age em 30-60 minutos após ingestão e pode ser injetada ou ingerida.",
       "Custódia é enfermeira — sabe usar seringa e conhece a curarina.",
       "Adriano estava dormindo confirmado por outros passageiros do corredor que o viram com a máscara.",
-      "Custódia sentava ao lado da vítima — a seringa foi encontrada escondida no forro do seu livro."
+      "Custódia sentava ao lado da vítima — a seringa foi encontrada escondida no forro do seu livro.",
+      "O revisor Heliodoro passou 30 segundos no compartimento em cada visita — tempo insuficiente e sem privacidade para administrar veneno."
     ],
     "solucao": {
       "culpado": "Passageira Custódia",
@@ -21665,7 +21674,8 @@
       "O papel e o selo do diploma são idênticos aos diplomas reais — requer acesso a materiais específicos.",
       "Ezequiel pagou 2 000 euros à DocuCert — valor impossível para processo académico legítimo.",
       "Onésimo recebeu comissão de 200 euros da DocuCert por cada cliente enviado — confirmado por transferências.",
-      "A DocuCert tem 47 denúncias similares noutros países — empresa especializada em documentos falsos."
+      "A DocuCert tem 47 denúncias similares noutros países — empresa especializada em documentos falsos.",
+      "Ezequiel submeteu o diploma a um hospital sabendo que o processo foi feito em 72h por 2 000 euros — equivalência legítima custa 60+ vezes mais e demora meses."
     ],
     "solucao": {
       "culpado": "Candidato Ezequiel",
@@ -22182,7 +22192,8 @@
       "Evaristo fez manutenção às 18h — a câmera da marina mostra-o a sair às 20h03.",
       "Câmera do cais mostra uma figura com capa de chuva a entrar na marina às 23h45 — não identificada.",
       "Proémio tem uma disputa societária com o proprietário — quer dissolver a sociedade mas o barco é o principal ativo.",
-      "Proémio tem carta náutica e conhecimento técnico de embarcações — confirmado pelo seu historial desportivo."
+      "Proémio tem carta náutica e conhecimento técnico de embarcações — confirmado pelo seu historial desportivo.",
+      "Timão não tem crachá ou autorização de acesso à marina onde o barco estava atracado — o registo de entradas confirma que ele nunca entrou na marina naquela noite."
     ],
     "solucao": {
       "culpado": "Sócio Proémio",
@@ -22793,7 +22804,8 @@
       "A perícia subaquática encontrou a válvula de fundo aberta propositalmente.",
       "Libâneo fez a manutenção há um mês — relatório sem irregularidades — mas não sabe o que aconteceu depois.",
       "Custódio beneficia da indemnização do seguro — são co-segurados.",
-      "O barco tinha uma dívida de 95 000 euros — o seguro cobriria tudo e daria lucro."
+      "O barco tinha uma dívida de 95 000 euros — o seguro cobriria tudo e daria lucro.",
+      "Salomão é o único com conhecimento técnico da válvula de fundo — Custódio é sócio investidor que nunca navegou o barco, confirmado pelo registo de bordo."
     ],
     "solucao": {
       "culpado": "Pescador Salomão",
@@ -22840,7 +22852,8 @@
       "O estilo de escrita corresponde ao historial académico de Orsolina — analisado por perita.",
       "Salústio gere a plataforma que faz a mediação — mas legalmente é intermediário.",
       "Os quatro estudantes pagaram entre 8 000 e 15 000 euros pela 'consultoria' a Orsolina.",
-      "Emails entre Orsolina e os estudantes mostram entregas de 'rascunhos completos' — não orientação pontual."
+      "Emails entre Orsolina e os estudantes mostram entregas de 'rascunhos completos' — não orientação pontual.",
+      "A dissertação de Marciano foi analisada — o estilo difere completamente do de Orsolina e ele tem historial de publicações académicas anteriores que confirmam a sua autoria."
     ],
     "solucao": {
       "culpado": "Professora Orsolina",
@@ -22887,7 +22900,8 @@
       "Análise revela que o lacre foi recolocado com cola de alta temperatura — diferente da original.",
       "Celina tem acesso a equipamento de lacre a quente no armazém de triagem.",
       "Olegário recebeu o pacote já fechado e tem câmera no veículo — sem abertura durante a entrega.",
-      "Alípio supervisiona mas não manuseia pacotes diretamente."
+      "Alípio supervisiona mas não manuseia pacotes diretamente.",
+      "O registo de atividade do sistema mostra que Celina fez uma pausa de 22 minutos sem justificação durante o turno em que o pacote foi processado no armazém."
     ],
     "solucao": {
       "culpado": "Operadora Celina",
@@ -23075,7 +23089,8 @@
       "A alteração foi feita com as credenciais de Serapião — ele diz que foram roubadas.",
       "Delfina só tem permissão de leitura — confirmado pelo administrador do sistema.",
       "Serapião saiu de férias 2 dias antes da alteração — o telemóvel de serviço ficou no escritório.",
-      "Benedita Pinheiro era prima de Germano — relação familiar não declarada."
+      "Benedita Pinheiro era prima de Germano — relação familiar não declarada.",
+      "Germano ficou no escritório durante as férias de Serapião e tinha acesso direto à mesa onde o telemóvel de serviço com as credenciais ficou."
     ],
     "solucao": {
       "culpado": "Supervisor Germano",
@@ -23358,7 +23373,8 @@
       "Teodora serviu o café às 08h — muito cedo para a janela de 12h-13h.",
       "Anastácio reuniu entre as 12h15 e as 12h45 — durante a janela de envenenamento.",
       "Anastácio sabia que o diretor ia demiti-lo na semana seguinte — descoberto pelo email de RH.",
-      "A garrafa de água pessoal do diretor foi encontrada com resíduos da substância — Anastácio ficou sozinho no escritório enquanto o diretor foi à casa de banho durante a reunião."
+      "A garrafa de água pessoal do diretor foi encontrada com resíduos da substância — Anastácio ficou sozinho no escritório enquanto o diretor foi à casa de banho durante a reunião.",
+      "A conselheira Perpétua esteve no escritório menos de 3 minutos — a câmera de corredor confirma que a porta ficou aberta e ela nunca se aproximou da área da garrafa de água."
     ],
     "solucao": {
       "culpado": "Diretor Financeiro Anastácio",

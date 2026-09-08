@@ -13870,15 +13870,43 @@
   },
   {
     "id": "LP-191",
-    "titulo": "O Protótipo Desaparecido",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "O protótipo de um processador quântico foi roubado do laboratório da NovaTech durante a noite.",
-    "suspeitos": [
-      "Renata",
-      "Cláudio",
-      "Fábio",
-      "Ingrid"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "O Protótipo Desaparecido",
+    "intro": "O protótipo de um processador quântico foi roubado do laboratório da NovaTech durante a noite. O alarme foi desativado às 23h e o cofre de protótipos foi aberto às 23h14.",
+    "personagens": [
+      {
+        "nome": "Renata",
+        "emoji": "📷",
+        "alibi": "Foi filmada a sair do edifício às 22h, antes de o alarme ser desativado."
+      },
+      {
+        "nome": "Cláudio",
+        "emoji": "🔐",
+        "alibi": "Tem acesso autorizado ao cofre de protótipos e ao servidor de câmeras internas."
+      },
+      {
+        "nome": "Fábio",
+        "emoji": "🍽️",
+        "alibi": "Foi visto a jantar num restaurante até às 23h30, com recibo carimbado."
+      },
+      {
+        "nome": "Ingrid",
+        "emoji": "💻",
+        "alibi": "Cancelou a sua sessão de acesso remoto às 23h10, antes da abertura do cofre."
+      }
+    ],
+    "metodos": [
+      "Desativou o alarme, cortou as câmeras e abriu o cofre com a sua combinação",
+      "Entrou pela janela traseira e forçou o cofre",
+      "Usou acesso remoto para desativar o alarme e entrou com cópia de chave",
+      "Fingiu saída e reentrou pelo parque de estacionamento"
+    ],
+    "locais": [
+      "Laboratório de protótipos, cofre de segurança",
+      "Sala de servidores do edifício",
+      "Armazém de equipamentos do andar térreo",
+      "Corredor de acesso restrito, ala B"
     ],
     "pistas": [
       "Renata foi filmada a sair do edifício às 22h, mas o alarme foi desativado às 23h.",
@@ -13888,25 +13916,52 @@
       "O sistema de câmeras internas falhou das 23h00 às 23h30 — falha que requer acesso físico ao servidor.",
       "Apenas Cláudio e Ingrid conheciam a combinação do cofre e a localização do servidor de câmeras."
     ],
-    "culpado": "Cláudio",
-    "explicacao": "Renata saiu antes de o alarme ser desativado, descartada. Fábio tem alibi verificável até às 23h30. Ingrid cancelou o acesso remoto às 23h10, mas não estava fisicamente no edifício — o servidor requer presença física. Cláudio tinha acesso ao cofre e conhecia a localização do servidor. O registo confirma que Cláudio abriu o cofre às 23h14, dentro da janela do crime.",
     "solucao": {
       "culpado": "Cláudio",
       "metodo": "Desativou o alarme, cortou as câmeras e abriu o cofre com a sua combinação",
       "local": "Laboratório de protótipos, cofre de segurança"
-    }
+    },
+    "explicacao": "Renata saiu antes de o alarme ser desativado, descartada. Fábio tem alibi verificável até às 23h30. Ingrid cancelou o acesso remoto às 23h10, mas não estava fisicamente no edifício — o servidor requer presença física. Cláudio tinha acesso ao cofre e conhecia a localização do servidor. O registo confirma que Cláudio abriu o cofre às 23h14, dentro da janela do crime."
   },
   {
     "id": "LP-192",
-    "titulo": "A Brecha no Sistema",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "O sistema de segurança do banco Meridian foi sabotado, permitindo uma transferência não autorizada de 2 milhões de euros.",
-    "suspeitos": [
-      "Osvaldo",
-      "Patrícia",
-      "Hélio",
-      "Vanessa"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "A Brecha no Sistema",
+    "intro": "O sistema de segurança do banco Meridian foi sabotado, permitindo uma transferência não autorizada de 2 milhões de euros. Os logs apontam para uma alteração nas credenciais de administrador às 02h17.",
+    "personagens": [
+      {
+        "nome": "Osvaldo",
+        "emoji": "✈️",
+        "alibi": "Estava em auditoria externa noutro país no dia da sabotagem, com passagem aérea registada."
+      },
+      {
+        "nome": "Patrícia",
+        "emoji": "🔑",
+        "alibi": "É a única com credenciais de nível administrador no sistema de segurança."
+      },
+      {
+        "nome": "Hélio",
+        "emoji": "🖥️",
+        "alibi": "Reportou uma 'falha técnica estranha' dois dias antes da sabotagem."
+      },
+      {
+        "nome": "Vanessa",
+        "emoji": "💸",
+        "alibi": "Processou manualmente uma transferência de teste três horas antes da sabotagem."
+      }
+    ],
+    "metodos": [
+      "Usou as suas credenciais de administrador para alterar os parâmetros de validação às 02h17",
+      "Explorou a falha técnica reportada para injetar código malicioso",
+      "Criou uma transferência de teste que ativou uma rotina automatizada fraudulenta",
+      "Acedeu ao sistema remotamente com credenciais roubadas de outro funcionário"
+    ],
+    "locais": [
+      "Sistema central de segurança do banco Meridian",
+      "Terminal de administração do departamento de TI",
+      "Servidor de validação de transferências, sala de operações",
+      "Acesso remoto via VPN corporativa"
     ],
     "pistas": [
       "Osvaldo estava em auditoria externa noutro país no dia da sabotagem, com passagem aérea registada.",
@@ -13916,25 +13971,52 @@
       "Os logs mostram que as credenciais de Patrícia foram usadas às 02h17 para alterar parâmetros de validação.",
       "Hélio tem um irmão que trabalha num banco concorrente que beneficiou da transferência."
     ],
-    "culpado": "Patrícia",
-    "explicacao": "Osvaldo estava fora do país, descartado. Hélio reportou a falha e tem ligação suspeita, mas não tinha credenciais de administrador para executar a alteração. Vanessa fez uma transferência de teste, mas sem acesso aos parâmetros de validação. Patrícia é a única com credenciais de administrador. Os logs confirmam que as credenciais de Patrícia foram usadas às 02h17 para alterar os parâmetros, fazendo de Patrícia a responsável.",
     "solucao": {
       "culpado": "Patrícia",
       "metodo": "Usou as suas credenciais de administrador para alterar os parâmetros de validação às 02h17",
       "local": "Sistema central de segurança do banco Meridian"
-    }
+    },
+    "explicacao": "Osvaldo estava fora do país, descartado. Hélio reportou a falha e tem ligação suspeita, mas não tinha credenciais de administrador para executar a alteração. Vanessa fez uma transferência de teste, mas sem acesso aos parâmetros de validação. Patrícia é a única com credenciais de administrador. Os logs confirmam que as credenciais de Patrícia foram usadas às 02h17 para alterar os parâmetros, fazendo de Patrícia a responsável."
   },
   {
     "id": "LP-193",
-    "titulo": "A Lista VIP",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "A base de dados confidencial com contactos VIP de uma galeria de arte foi vendida a um concorrente.",
-    "suspeitos": [
-      "Tomás",
-      "Beatriz",
-      "Nuno",
-      "Cecília"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "A Lista VIP",
+    "intro": "A base de dados confidencial com contactos VIP de uma galeria de arte foi vendida a um concorrente. Os dados foram exportados fora de horas num formato específico do sistema interno.",
+    "personagens": [
+      {
+        "nome": "Tomás",
+        "emoji": "📢",
+        "alibi": "Trabalha em marketing e não tem acesso à base de dados de clientes VIP."
+      },
+      {
+        "nome": "Beatriz",
+        "emoji": "🖥️",
+        "alibi": "Acedeu à base de dados três vezes na semana do vazamento — mais do que o habitual."
+      },
+      {
+        "nome": "Nuno",
+        "emoji": "📦",
+        "alibi": "Pediu demissão dois dias antes do vazamento e recusou entrevista de saída."
+      },
+      {
+        "nome": "Cecília",
+        "emoji": "🏥",
+        "alibi": "Estava de licença médica documentada na semana do crime."
+      }
+    ],
+    "metodos": [
+      "Acedeu ao sistema fora de horas com o seu crachá e exportou a base de dados no formato interno",
+      "Enviou os dados por email corporativo para um endereço externo",
+      "Fez cópias físicas dos registos VIP durante horas de expediente",
+      "Usou acesso remoto para exportar a base de dados para um servidor externo"
+    ],
+    "locais": [
+      "Escritório da galeria, terminal de exportação de dados",
+      "Sala de reuniões, computador partilhado",
+      "Arquivo físico da galeria, pasta de clientes VIP",
+      "Acesso remoto via ligação VPN pessoal"
     ],
     "pistas": [
       "Tomás trabalha em marketing e não tem acesso à base de dados de clientes VIP.",
@@ -13944,25 +14026,52 @@
       "O concorrente recebeu os dados num formato específico que só o sistema interno da galeria exporta.",
       "Os logs de exportação mostram um acesso às 19h45 de uma segunda-feira, quando o escritório está fechado, com o crachá de Nuno."
     ],
-    "culpado": "Nuno",
-    "explicacao": "Tomás não tem acesso à base VIP, descartado. Cecília estava de licença médica, descartada. Beatriz acedeu frequentemente, mas o acesso foi às 19h45 com o crachá de Nuno. Nuno pediu demissão dois dias depois e recusou entrevista de saída — comportamento evasivo. O seu crachá foi usado para o acesso de exportação, confirmando a sua responsabilidade.",
     "solucao": {
       "culpado": "Nuno",
       "metodo": "Acedeu ao sistema fora de horas com o seu crachá e exportou a base de dados no formato interno",
       "local": "Escritório da galeria, terminal de exportação de dados"
-    }
+    },
+    "explicacao": "Tomás não tem acesso à base VIP, descartado. Cecília estava de licença médica, descartada. Beatriz acedeu frequentemente, mas o acesso foi às 19h45 com o crachá de Nuno. Nuno pediu demissão dois dias depois e recusou entrevista de saída — comportamento evasivo. O seu crachá foi usado para o acesso de exportação, confirmando a sua responsabilidade."
   },
   {
     "id": "LP-194",
-    "titulo": "O Lote Adulterado",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Um quadro falso foi substituído por um original num catálogo de leilão, e o comprador pagou 400 mil euros por uma réplica.",
-    "suspeitos": [
-      "Artur",
-      "Sílvia",
-      "Dário",
-      "Margarida"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "O Lote Adulterado",
+    "intro": "Um quadro falso foi substituído por um original num catálogo de leilão, e o comprador pagou 400 mil euros por uma réplica. A substituição ocorreu após a entrega e antes do leilão.",
+    "personagens": [
+      {
+        "nome": "Artur",
+        "emoji": "📜",
+        "alibi": "É o perito que autenticou o quadro — a sua assinatura aparece no certificado da peça."
+      },
+      {
+        "nome": "Sílvia",
+        "emoji": "🗝️",
+        "alibi": "É a curadora e a única com acesso ao armazém onde os quadros são guardados antes do leilão."
+      },
+      {
+        "nome": "Dário",
+        "emoji": "🚚",
+        "alibi": "Transportou e entregou o quadro lacrado, sem quebrar os selos de segurança."
+      },
+      {
+        "nome": "Margarida",
+        "emoji": "📋",
+        "alibi": "É assistente administrativa e não tem acesso ao armazém."
+      }
+    ],
+    "metodos": [
+      "Desligou a câmera e substituiu o quadro original pela réplica no armazém na véspera do leilão",
+      "Adulterou o certificado de autenticidade após a entrega do quadro",
+      "Trocou o quadro durante o transporte antes da entrega ao armazém",
+      "Falsificou a documentação e substituiu o quadro durante a montagem do leilão"
+    ],
+    "locais": [
+      "Armazém de obras de arte da casa de leilões",
+      "Sala de autenticação da galeria parceira",
+      "Veículo de transporte durante a entrega",
+      "Sala de exposição no dia do leilão"
     ],
     "pistas": [
       "Artur é o perito que autenticou o quadro — e a sua assinatura aparece no certificado do falso.",
@@ -13972,25 +14081,52 @@
       "O quadro falso foi pintado com tinta com composição química datada de 2019 — posterior ao original.",
       "A câmera do armazém foi desligada durante 40 minutos na noite anterior ao leilão."
     ],
-    "culpado": "Sílvia",
-    "explicacao": "Dário entregou o quadro com selos intactos — a substituição ocorreu depois. Margarida não tem acesso ao armazém. Artur assinou o certificado, mas a sua assinatura pode ter sido falsificada ou ele autenticou sem saber. Sílvia tem acesso exclusivo ao armazém. A câmera foi desligada precisamente durante a janela em que Sílvia teria efetuado a substituição, confirmando que foi Sílvia a autora do crime.",
     "solucao": {
       "culpado": "Sílvia",
       "metodo": "Desligou a câmera e substituiu o quadro original pela réplica no armazém na véspera do leilão",
       "local": "Armazém de obras de arte da casa de leilões"
-    }
+    },
+    "explicacao": "Dário entregou o quadro com selos intactos — a substituição ocorreu depois. Margarida não tem acesso ao armazém. Artur assinou o certificado, mas a sua assinatura pode ter sido falsificada ou ele autenticou sem saber. Sílvia tem acesso exclusivo ao armazém. A câmera foi desligada precisamente durante a janela em que Sílvia teria efetuado a substituição, confirmando que foi Sílvia a autora do crime."
   },
   {
     "id": "LP-195",
-    "titulo": "O Sinistro Fabricado",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Uma reclamação de seguro de 300 mil euros foi aprovada com base em danos que peritos independentes classificam como fabricados.",
-    "suspeitos": [
-      "Horácio",
-      "Lurdes",
-      "Estêvão",
-      "Filipa"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "O Sinistro Fabricado",
+    "intro": "Uma reclamação de seguro de 300 mil euros foi aprovada com base em danos que peritos independentes classificam como fabricados. Os danos exigem 48 horas de humidade — incompatível com a semana seca.",
+    "personagens": [
+      {
+        "nome": "Horácio",
+        "emoji": "🏠",
+        "alibi": "É o dono da propriedade e o beneficiário direto da apólice de seguro."
+      },
+      {
+        "nome": "Lurdes",
+        "emoji": "📊",
+        "alibi": "É a perita de sinistros que aprovou a reclamação sem visita técnica presencial."
+      },
+      {
+        "nome": "Estêvão",
+        "emoji": "🔨",
+        "alibi": "Empreiteiro que emitiu fatura pelos danos no mesmo dia em que foram reportados."
+      },
+      {
+        "nome": "Filipa",
+        "emoji": "🏡",
+        "alibi": "É vizinha e afirma não ter ouvido nem visto nada na noite do suposto sinistro."
+      }
+    ],
+    "metodos": [
+      "Fabricou os danos artificialmente e coordenou a aprovação irregular com a perita Lurdes",
+      "Inundou propositadamente a propriedade para criar danos reais e depois reclamou o seguro",
+      "Falsificou relatórios de peritagem com a cumplicidade do empreiteiro",
+      "Adulterou fotografias dos alegados danos para inflar o valor da reclamação"
+    ],
+    "locais": [
+      "Propriedade segurada de Horácio",
+      "Escritório da seguradora, departamento de sinistros",
+      "Empresa de empreitadas de Estêvão",
+      "Armazém de materiais adjacente à propriedade"
     ],
     "pistas": [
       "Horácio é o dono da propriedade e o beneficiário da apólice.",
@@ -14000,25 +14136,52 @@
       "Os danos apresentados requerem pelo menos 48 horas de humidade contínua — incompatível com o tempo seco da semana.",
       "Lurdes e Horácio foram fotografados juntos numa conferência três semanas antes da reclamação."
     ],
-    "culpado": "Horácio",
-    "explicacao": "Filipa não beneficia do sinistro e a sua inocência é neutra. Estêvão emitiu fatura suspeita, mas pode ter sido induzido a fazê-lo. Lurdes aprovou sem visita, comportamento irregular, mas é cúmplice possível, não a autora principal. Horácio é o beneficiário direto e orquestrou todo o esquema. Os danos físicos que Horácio apresentou são incompatíveis com o tempo seco, confirmando que Horácio os fabricou artificialmente.",
     "solucao": {
       "culpado": "Horácio",
       "metodo": "Fabricou os danos artificialmente e coordenou a aprovação irregular com a perita Lurdes",
       "local": "Propriedade segurada de Horácio"
-    }
+    },
+    "explicacao": "Filipa não beneficia do sinistro e a sua inocência é neutra. Estêvão emitiu fatura suspeita, mas pode ter sido induzido a fazê-lo. Lurdes aprovou sem visita, comportamento irregular, mas é cúmplice possível, não a autora principal. Horácio é o beneficiário direto e orquestrou todo o esquema. Os danos físicos que Horácio apresentou são incompatíveis com o tempo seco, confirmando que Horácio os fabricou artificialmente."
   },
   {
     "id": "LP-196",
-    "titulo": "A Prova Contaminada",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Resultados de análises forenses num processo criminal de alto perfil foram adulterados, levando à absolvição do réu.",
-    "suspeitos": [
-      "Reinaldo",
-      "Soraia",
-      "Álvaro",
-      "Ximena"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "A Prova Contaminada",
+    "intro": "Resultados de análises forenses num processo criminal de alto perfil foram adulterados, levando à absolvição do réu. Os metadados dos ficheiros mostram alterações entre as 23h e a 01h.",
+    "personagens": [
+      {
+        "nome": "Reinaldo",
+        "emoji": "⚖️",
+        "alibi": "É o advogado de defesa e não tem qualquer acesso ao laboratório forense."
+      },
+      {
+        "nome": "Soraia",
+        "emoji": "🔬",
+        "alibi": "É técnica de laboratório e manuseou as amostras durante a fase de análise final, em horário normal."
+      },
+      {
+        "nome": "Álvaro",
+        "emoji": "📁",
+        "alibi": "É o coordenador do laboratório e foi o último a rever os resultados antes da entrega ao tribunal."
+      },
+      {
+        "nome": "Ximena",
+        "emoji": "📝",
+        "alibi": "É secretária do tribunal e não tem qualquer ligação ao laboratório."
+      }
+    ],
+    "metodos": [
+      "Entrou no laboratório fora de horas e alterou os ficheiros de resultados forenses",
+      "Contaminou as amostras durante a fase de análise para invalidar os resultados",
+      "Substituiu os relatórios originais por versões alteradas antes da entrega ao tribunal",
+      "Usou acesso remoto para modificar os ficheiros no servidor do laboratório"
+    ],
+    "locais": [
+      "Laboratório forense, terminal de análise de resultados",
+      "Sala de amostras, bancada de análise química",
+      "Arquivo de processos do laboratório",
+      "Servidor de dados do departamento forense"
     ],
     "pistas": [
       "Reinaldo é o advogado de defesa e não tem acesso ao laboratório forense.",
@@ -14028,25 +14191,52 @@
       "Os relatórios mostram alterações nos metadados do ficheiro entre 23h e 01h — fora do horário normal do laboratório.",
       "O cartão de acesso de Álvaro registou entrada no laboratório às 23h32 nessa noite."
     ],
-    "culpado": "Álvaro",
-    "explicacao": "Reinaldo e Ximena não têm acesso ao laboratório. Soraia manuseou as amostras durante o dia, mas não estava no laboratório à noite. Álvaro é o coordenador, reviu os resultados finais, e o seu cartão de acesso confirma entrada às 23h32 — exatamente na janela das alterações nos metadados. Álvaro é assim o único que podia e esteve presente para alterar os ficheiros.",
     "solucao": {
       "culpado": "Álvaro",
       "metodo": "Entrou no laboratório fora de horas e alterou os ficheiros de resultados forenses",
       "local": "Laboratório forense, terminal de análise de resultados"
-    }
+    },
+    "explicacao": "Reinaldo e Ximena não têm acesso ao laboratório. Soraia manuseou as amostras durante o dia, mas não estava no laboratório à noite. Álvaro é o coordenador, reviu os resultados finais, e o seu cartão de acesso confirma entrada às 23h32 — exatamente na janela das alterações nos metadados. Álvaro é assim o único que podia e esteve presente para alterar os ficheiros."
   },
   {
     "id": "LP-197",
-    "titulo": "O Projeto Roubado",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "O projeto arquitetónico vencedor de um concurso internacional foi submetido por um estúdio rival usando a proposta original roubada.",
-    "suspeitos": [
-      "Leonor",
-      "Gaspar",
-      "Mafalda",
-      "Rodrigo"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "O Projeto Roubado",
+    "intro": "O projeto arquitetónico vencedor de um concurso internacional foi submetido por um estúdio rival usando a proposta original roubada. Os metadados do ficheiro rival têm o mesmo ID de documento do original.",
+    "personagens": [
+      {
+        "nome": "Leonor",
+        "emoji": "✏️",
+        "alibi": "É a arquiteta autora do projeto e foi quem denunciou o roubo."
+      },
+      {
+        "nome": "Gaspar",
+        "emoji": "📂",
+        "alibi": "É o gestor do concurso e teve acesso a todas as propostas antes da avaliação."
+      },
+      {
+        "nome": "Mafalda",
+        "emoji": "🖊️",
+        "alibi": "É estagiária no estúdio rival e recusou-se a comentar a origem do projeto."
+      },
+      {
+        "nome": "Rodrigo",
+        "emoji": "🏛️",
+        "alibi": "É avaliador do júri e não teria acesso às propostas antes da sua submissão."
+      }
+    ],
+    "metodos": [
+      "Copiou a proposta original de Leonor e partilhou-a com o estúdio rival durante o almoço",
+      "Acedeu ilegalmente ao sistema do concurso e descarregou as propostas concorrentes",
+      "Fotografou os documentos físicos durante uma visita ao estúdio de Leonor",
+      "Intercetou o email de submissão de Leonor e encaminhou os ficheiros ao rival"
+    ],
+    "locais": [
+      "Base de dados de propostas do concurso internacional",
+      "Sala de reuniões da organização do concurso",
+      "Escritório de Leonor, arquivo de projetos",
+      "Servidor de submissões online do concurso"
     ],
     "pistas": [
       "Leonor é a arquiteta autora do projeto e denunciou o roubo.",
@@ -14056,25 +14246,52 @@
       "Os metadados do ficheiro submetido pelo rival mostram o mesmo ID de documento do original de Leonor.",
       "Gaspar foi visto a almoçar com o diretor do estúdio rival duas semanas antes do prazo de submissão."
     ],
-    "culpado": "Gaspar",
-    "explicacao": "Leonor é a vítima. Rodrigo não acede às propostas antes da submissão. Mafalda pode ser cúmplice involuntária, mas não tinha acesso às propostas originais. Gaspar teve acesso a todas as propostas antes da avaliação, e o almoço com o rival duas semanas antes do prazo é evidência de acordo. Os metadados idênticos confirmam que a cópia partiu do ficheiro original que Gaspar acedeu.",
     "solucao": {
       "culpado": "Gaspar",
       "metodo": "Copiou a proposta original de Leonor e partilhou-a com o estúdio rival durante o almoço",
       "local": "Base de dados de propostas do concurso internacional"
-    }
+    },
+    "explicacao": "Leonor é a vítima. Rodrigo não acede às propostas antes da submissão. Mafalda pode ser cúmplice involuntária, mas não tinha acesso às propostas originais. Gaspar teve acesso a todas as propostas antes da avaliação, e o almoço com o rival duas semanas antes do prazo é evidência de acordo. Os metadados idênticos confirmam que a cópia partiu do ficheiro original que Gaspar acedeu."
   },
   {
     "id": "LP-198",
-    "titulo": "A Negociação Sabotada",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Uma proposta de aquisição de 50 milhões de euros falhou após informações confidenciais das negociações aparecerem na imprensa.",
-    "suspeitos": [
-      "Afonso",
-      "Daniela",
-      "Quirino",
-      "Helena"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "A Negociação Sabotada",
+    "intro": "Uma proposta de aquisição de 50 milhões de euros falhou após informações confidenciais das negociações aparecerem na imprensa. A fonte enviou documentos via email encriptado pedindo anonimato.",
+    "personagens": [
+      {
+        "nome": "Afonso",
+        "emoji": "👔",
+        "alibi": "É o CEO e liderou pessoalmente as negociações — a falha seria catastrófica para ele."
+      },
+      {
+        "nome": "Daniela",
+        "emoji": "📑",
+        "alibi": "É a diretora jurídica e redigiu os termos confidenciais do contrato."
+      },
+      {
+        "nome": "Quirino",
+        "emoji": "🤝",
+        "alibi": "É consultor externo contratado para a due diligence, com acordo de confidencialidade assinado."
+      },
+      {
+        "nome": "Helena",
+        "emoji": "📰",
+        "alibi": "É assessora de imprensa e foi a primeira a ver o artigo jornalístico, antes de ser publicado."
+      }
+    ],
+    "metodos": [
+      "Enviou documentos confidenciais à jornalista via email encriptado para proteger o seu contrato com a empresa-alvo",
+      "Filtrou informações durante uma reunião informal com a jornalista",
+      "Partilhou documentos com um concorrente que os entregou à imprensa",
+      "Deixou intencionalmente documentos confidenciais acessíveis a terceiros não autorizados"
+    ],
+    "locais": [
+      "Documentos de due diligence da proposta de aquisição",
+      "Sala de negociações, documentos físicos da mesa",
+      "Servidor de partilha de ficheiros da equipa jurídica",
+      "Emails corporativos da equipa de assessoria externa"
     ],
     "pistas": [
       "Afonso é o CEO e liderou as negociações — uma falha seria catastrófica para ele.",
@@ -14084,25 +14301,52 @@
       "A jornalista afirmou que a fonte pediu anonimato e enviou documentos via email encriptado.",
       "Quirino tinha um contrato ativo com a empresa-alvo da aquisição — conflito de interesses não declarado."
     ],
-    "culpado": "Quirino",
-    "explicacao": "Afonso não teria interesse em sabotar a própria operação. Helena soube do artigo depois, não antes da fuga. Daniela redigiu os documentos mas não tinha motivo aparente. Quirino tinha conflito de interesses não declarado com a empresa-alvo — motivo claro para sabotar. Como consultor externo com acesso total, Quirino enviou os documentos à jornalista para proteger o seu contrato.",
     "solucao": {
       "culpado": "Quirino",
       "metodo": "Enviou documentos confidenciais à jornalista via email encriptado para proteger o seu contrato com a empresa-alvo",
       "local": "Documentos de due diligence da proposta de aquisição"
-    }
+    },
+    "explicacao": "Afonso não teria interesse em sabotar a própria operação. Helena soube do artigo depois, não antes da fuga. Daniela redigiu os documentos mas não tinha motivo aparente. Quirino tinha conflito de interesses não declarado com a empresa-alvo — motivo claro para sabotar. Como consultor externo com acesso total, Quirino enviou os documentos à jornalista para proteger o seu contrato."
   },
   {
     "id": "LP-199",
-    "titulo": "Os Fundos Desviados",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Trezentos mil euros de um fundo de investigação universitária foram desviados para uma conta offshore durante 18 meses.",
-    "suspeitos": [
-      "Augusto",
-      "Natividade",
-      "Eurico",
-      "Simone"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "Os Fundos Desviados",
+    "intro": "Trezentos mil euros de um fundo de investigação universitária foram desviados para uma conta offshore durante 18 meses, em parcelas de 16.667 euros — abaixo de todos os limiares de aprovação.",
+    "personagens": [
+      {
+        "nome": "Augusto",
+        "emoji": "🎓",
+        "alibi": "É o investigador principal e tem autorização para requisições até 50 mil euros."
+      },
+      {
+        "nome": "Natividade",
+        "emoji": "💰",
+        "alibi": "É contabilista do departamento e processa todas as transferências acima de 10 mil euros."
+      },
+      {
+        "nome": "Eurico",
+        "emoji": "🏛️",
+        "alibi": "É o diretor da faculdade e assina aprovações finais acima de 100 mil euros."
+      },
+      {
+        "nome": "Simone",
+        "emoji": "🔍",
+        "alibi": "É auditora externa e foi quem detetou a irregularidade — mas só seis meses após o início."
+      }
+    ],
+    "metodos": [
+      "Criou transferências fracionadas abaixo dos limiares de supervisão ao longo de 18 meses",
+      "Falsificou faturas de fornecedores inexistentes para justificar as transferências",
+      "Usou credenciais de outro funcionário para autorizar as transferências fora de horas",
+      "Criou um projeto de investigação fictício para desviar o financiamento aprovado"
+    ],
+    "locais": [
+      "Sistema contabilístico do departamento universitário",
+      "Arquivo de faturas e justificações de despesa",
+      "Terminal de aprovação de transferências do departamento financeiro",
+      "Plataforma bancária da universidade"
     ],
     "pistas": [
       "Augusto é o investigador principal e tem autorização para requisições até 50 mil euros.",
@@ -14112,25 +14356,52 @@
       "As transferências foram feitas em parcelas de 16.667 euros — exatamente abaixo do limiar de aprovação de Eurico.",
       "Natividade fez férias luxuosas em destinos caros durante o período, com despesas incompatíveis com o salário."
     ],
-    "culpado": "Natividade",
-    "explicacao": "Eurico nunca foi envolvido — as parcelas foram calibradas para ficar abaixo do seu limiar. Augusto tem limite de 50 mil euros e não processaria as transferências. Simone é a auditora que detetou o problema. Natividade processa todas as transferências naquele intervalo e as suas despesas pessoais são incompatíveis com o salário. O enriquecimento ilícito de Natividade ao longo dos 18 meses confirma a sua culpa.",
     "solucao": {
       "culpado": "Natividade",
       "metodo": "Criou transferências fracionadas abaixo dos limiares de supervisão ao longo de 18 meses",
       "local": "Sistema contabilístico do departamento universitário"
-    }
+    },
+    "explicacao": "Eurico nunca foi envolvido — as parcelas foram calibradas para ficar abaixo do seu limiar. Augusto tem limite de 50 mil euros e não processaria as transferências. Simone é a auditora que detetou o problema. Natividade processa todas as transferências naquele intervalo e as suas despesas pessoais são incompatíveis com o salário. O enriquecimento ilícito de Natividade ao longo dos 18 meses confirma a sua culpa."
   },
   {
     "id": "LP-200",
-    "titulo": "O Caso Final",
-    "dificuldade": "expert",
-    "categoria": "detetive",
-    "crime": "Uma fraude sofisticada desviou 1,2 milhões de euros de um fundo de pensões através de múltiplas camadas de transações fictícias, ao longo de dois anos.",
-    "suspeitos": [
-      "Verónica",
-      "Leandro",
-      "Cristina",
-      "Bento"
+    "tipo": "detetive",
+    "nivel": "expert",
+    "tema": "O Caso Final",
+    "intro": "Uma fraude sofisticada desviou 1,2 milhões de euros de um fundo de pensões ao longo de dois anos. As transações fictícias apareciam nos relatórios internos mas não nos extratos enviados ao regulador — uma falha técnica no módulo de exportação.",
+    "personagens": [
+      {
+        "nome": "Verónica",
+        "emoji": "📊",
+        "alibi": "É gestora do fundo e aprovou todos os relatórios anuais sem sinalizar anomalias."
+      },
+      {
+        "nome": "Leandro",
+        "emoji": "🔎",
+        "alibi": "É o auditor interno e nunca escalou nenhum alerta durante os dois anos de fraude."
+      },
+      {
+        "nome": "Cristina",
+        "emoji": "💻",
+        "alibi": "É programadora e desenvolveu o módulo de relatórios do sistema, com acesso total ao código."
+      },
+      {
+        "nome": "Bento",
+        "emoji": "✍️",
+        "alibi": "É o diretor financeiro e assina todas as movimentações acima de 50 mil euros."
+      }
+    ],
+    "metodos": [
+      "Modificou o módulo de exportação para omitir transações fictícias dos extratos regulatórios, enquanto as mantinha visíveis nos relatórios internos",
+      "Criou contas de utilizador fantasma no sistema para aprovar transferências sem rastreabilidade",
+      "Falsificou a assinatura digital do diretor financeiro nas movimentações mais elevadas",
+      "Explorou uma vulnerabilidade no sistema de auditoria para apagar os registos de transações"
+    ],
+    "locais": [
+      "Sistema de gestão do fundo de pensões, módulo de exportação de relatórios",
+      "Servidor de base de dados financeiros, tabela de transações",
+      "Painel de administração do sistema de gestão financeira",
+      "Arquivo de relatórios regulatórios, pasta de envios ao supervisor"
     ],
     "pistas": [
       "Verónica é gestora do fundo e aprovou todos os relatórios anuais sem sinalizar anomalias.",
@@ -14140,13 +14411,12 @@
       "As transações fictícias apareciam nos relatórios internos mas não nos extratos enviados ao regulador — uma discrepância técnica no módulo de exportação.",
       "Cristina pediu transferência para outra empresa seis semanas após a fraude ser descoberta."
     ],
-    "culpado": "Cristina",
-    "explicacao": "Verónica aprovava relatórios mas não via as discrepâncias — que existiam por design no módulo. Leandro e Bento também só viam os relatórios filtrados. A chave está na discrepância técnica no módulo de exportação: apenas Cristina, como programadora do módulo, podia criar código que filtrasse seletivamente as transações fictícias. Cristina pediu transferência logo após a descoberta, comportamento que confirma a sua responsabilidade.",
     "solucao": {
       "culpado": "Cristina",
       "metodo": "Modificou o módulo de exportação para omitir transações fictícias dos extratos regulatórios, enquanto as mantinha visíveis nos relatórios internos",
       "local": "Sistema de gestão do fundo de pensões, módulo de exportação de relatórios"
-    }
+    },
+    "explicacao": "Verónica aprovava relatórios mas não via as discrepâncias — que existiam por design no módulo. Leandro e Bento também só viam os relatórios filtrados. A chave está na discrepância técnica no módulo de exportação: apenas Cristina, como programadora do módulo, podia criar código que filtrasse seletivamente as transações fictícias. Cristina pediu transferência logo após a descoberta, comportamento que confirma a sua responsabilidade."
   },
   {
     "id": "LP-201",

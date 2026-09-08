@@ -3,10 +3,10 @@
 import RandomButton from '@/components/RandomButton'
 
 const NIVEIS = [
-  { key: 'facil',   label: 'Fácil',   emoji: '🟢', desc: '131 puzzles', bg: 'bg-green-50  border-green-200  text-green-800  hover:bg-green-100' },
-  { key: 'medio',   label: 'Médio',   emoji: '🟡', desc: '161 puzzles', bg: 'bg-yellow-50 border-yellow-200 text-yellow-800 hover:bg-yellow-100' },
-  { key: 'dificil', label: 'Difícil', emoji: '🔴', desc: '136 puzzles', bg: 'bg-red-50    border-red-200    text-red-800    hover:bg-red-100'    },
-  { key: 'expert',  label: 'Expert',  emoji: '🟣', desc: '62 puzzles',  bg: 'bg-purple-50 border-purple-200 text-purple-800 hover:bg-purple-100' },
+  { key: 'facil',   label: 'Fácil',   emoji: '🟢', bg: 'bg-green-50  border-green-200  text-green-800  hover:bg-green-100' },
+  { key: 'medio',   label: 'Médio',   emoji: '🟡', bg: 'bg-yellow-50 border-yellow-200 text-yellow-800 hover:bg-yellow-100' },
+  { key: 'dificil', label: 'Difícil', emoji: '🔴', bg: 'bg-red-50    border-red-200    text-red-800    hover:bg-red-100'    },
+  { key: 'expert',  label: 'Expert',  emoji: '🟣',  bg: 'bg-purple-50 border-purple-200 text-purple-800 hover:bg-purple-100' },
 ]
 
 const TIPOS = [
@@ -40,7 +40,7 @@ export default function PuzzlesPage() {
       <div className="space-y-3">
         <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Por nível de dificuldade</h2>
         <div className="grid grid-cols-2 gap-3">
-          {NIVEIS.map(({ key, label, emoji, desc, bg }) => (
+          {NIVEIS.map(({ key, label, emoji, bg }) => (
             <RandomButton
               key={key}
               modo="puzzle"
@@ -49,7 +49,6 @@ export default function PuzzlesPage() {
             >
               <span className="text-2xl">{emoji}</span>
               <span className="text-base font-bold">{label}</span>
-              <span className="text-xs opacity-70">{desc}</span>
             </RandomButton>
           ))}
         </div>

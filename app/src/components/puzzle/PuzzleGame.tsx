@@ -335,6 +335,8 @@ export default function PuzzleGame({ puzzle }: Props) {
             acertou={true}
             tempoSegundos={tempo}
             semDicas={dicaAtual === 0}
+            dicasUsadas={dicaAtual}
+            puzzleId={puzzle.id}
             nivel={puzzle.nivel}
           />
           <button

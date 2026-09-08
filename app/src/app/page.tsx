@@ -1,6 +1,13 @@
 import RandomButton from '@/components/RandomButton'
 import HomeGreeting from '@/components/HomeGreeting'
 
+const NIVEIS = [
+  { key: 'facil',   label: 'Fácil',   emoji: '🟢' },
+  { key: 'medio',   label: 'Médio',   emoji: '🟡' },
+  { key: 'dificil', label: 'Difícil', emoji: '🔴' },
+  { key: 'expert',  label: 'Expert',  emoji: '🟣' },
+]
+
 export default function Home() {
   return (
     <div className="space-y-12">
@@ -31,6 +38,24 @@ export default function Home() {
             📝 Sortear Questão
           </RandomButton>
         </div>
+
+        {/* Seletor de nível — puzzles */}
+        <div className="space-y-1.5 pt-1">
+          <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Ou escolha o nível do puzzle:</p>
+          <div className="flex flex-wrap gap-2 justify-center">
+            {NIVEIS.map(({ key, label, emoji }) => (
+              <RandomButton
+                key={key}
+                modo="puzzle"
+                nivel={key}
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-600 hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 active:scale-95 transition-all shadow-sm"
+              >
+                {emoji} {label}
+              </RandomButton>
+            ))}
+          </div>
+        </div>
+
         <p className="text-sm text-gray-400">Sem menus, sem configuração — vai direto.</p>
       </section>
 
@@ -40,20 +65,34 @@ export default function Home() {
           <div className="text-4xl">🔍</div>
           <h2 className="text-2xl font-bold text-gray-900">Puzzles Lógicos</h2>
           <p className="text-gray-500">
-            Cinco tipos de desafio: grades de dedução, detetive, sequência temporal,
-            quem mentiu e códigos secretos. Cada um com narrativa própria.
+            Seis tipos de desafio: grades de dedução, detetive, sequência temporal,
+            quem mentiu, códigos secretos e cifras simbólicas.
           </p>
           <div className="flex flex-wrap gap-2 text-xs">
-            {['🔍 Einstein Grid','🕵️ Detetive','📅 Sequência','🎭 Quem Mentiu?','🔐 Código'].map(t => (
+            {['🔍 Grade','🕵️ Detetive','📅 Sequência','🎭 Quem Mentiu?','🔐 Código','🔤 Cifra'].map(t => (
               <span key={t} className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full font-medium">{t}</span>
             ))}
           </div>
-          <RandomButton
-            modo="puzzle"
-            className="block w-full text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Sortear puzzle →
-          </RandomButton>
+          <div className="space-y-2">
+            <RandomButton
+              modo="puzzle"
+              className="block w-full text-center bg-blue-600 text-white py-2.5 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+            >
+              🎲 Sortear aleatório →
+            </RandomButton>
+            <div className="flex gap-1.5">
+              {NIVEIS.map(({ key, label, emoji }) => (
+                <RandomButton
+                  key={key}
+                  modo="puzzle"
+                  nivel={key}
+                  className="flex-1 text-center text-xs py-1.5 rounded-lg border border-gray-200 bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 active:scale-95 transition-all font-medium"
+                >
+                  {emoji} {label}
+                </RandomButton>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="bg-white rounded-2xl border border-gray-200 p-8 space-y-4 hover:shadow-md transition-shadow">
@@ -68,12 +107,26 @@ export default function Home() {
               <span key={b} className="bg-purple-50 text-purple-700 px-2 py-1 rounded-full font-medium">{b}</span>
             ))}
           </div>
-          <RandomButton
-            modo="questao"
-            className="block w-full text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors"
-          >
-            Sortear questão →
-          </RandomButton>
+          <div className="space-y-2">
+            <RandomButton
+              modo="questao"
+              className="block w-full text-center bg-purple-600 text-white py-2.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors"
+            >
+              🎲 Sortear aleatório →
+            </RandomButton>
+            <div className="flex gap-1.5">
+              {NIVEIS.map(({ key, label, emoji }) => (
+                <RandomButton
+                  key={key}
+                  modo="questao"
+                  nivel={key}
+                  className="flex-1 text-center text-xs py-1.5 rounded-lg border border-gray-200 bg-gray-50 text-gray-500 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 active:scale-95 transition-all font-medium"
+                >
+                  {emoji} {label}
+                </RandomButton>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

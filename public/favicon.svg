@@ -1,11 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-  <circle cx="20" cy="20" r="20" fill="#2563EB"/>
-  <path d="M9 16 C9 11 13 8 17 9 C17 8 18 7 19.5 7 C21 7 22 8 22 9.5 C24 9.5 25.5 11 25.5 13 C27 13 28 14 28 15.5 C28 17 27 18 25.5 18.5 L25.5 24 C25.5 25.5 24 27 22.5 27 L17.5 27 C16 27 14.5 25.5 14.5 24 L14.5 18.5 C12.5 18 11 16.5 11 15 C10 15 9 15.5 9 16Z" fill="white" opacity="0.95"/>
-  <line x1="16" y1="18" x2="16" y2="24" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="20" y1="14" x2="20" y2="24" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="24" y1="18" x2="24" y2="24" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="14.5" y1="21" x2="25.5" y2="21" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round"/>
-  <circle cx="16" cy="18" r="1.3" fill="#2563EB"/>
-  <circle cx="20" cy="14" r="1.3" fill="#2563EB"/>
-  <circle cx="24" cy="18" r="1.3" fill="#2563EB"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <clipPath id="circle-clip">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a2e" />
+  <circle cx="100" cy="100" r="90" fill="url(#bg)" />
+  <circle cx="100" cy="100" r="90" fill="url(#shine)" />
+
+  <!-- Grid lines (logic/structure) subtle -->
+  <g clip-path="url(#circle-clip)" stroke="white" stroke-opacity="0.12" stroke-width="1">
+    <line x1="10" y1="67" x2="190" y2="67"/>
+    <line x1="10" y1="100" x2="190" y2="100"/>
+    <line x1="10" y1="133" x2="190" y2="133"/>
+    <line x1="67" y1="10" x2="67" y2="190"/>
+    <line x1="100" y1="10" x2="100" y2="190"/>
+    <line x1="133" y1="10" x2="133" y2="190"/>
+  </g>
+
+  <!-- Brain shape - left hemisphere -->
+  <path d="M 100 55 C 88 55, 72 58, 65 68 C 56 78, 54 90, 57 100 C 53 108, 52 118, 58 126 C 63 133, 72 136, 80 134 C 83 140, 90 145, 100 145 L 100 55 Z" fill="white" fill-opacity="0.92"/>
+
+  <!-- Brain shape - right hemisphere -->
+  <path d="M 100 55 C 112 55, 128 58, 135 68 C 144 78, 146 90, 143 100 C 147 108, 148 118, 142 126 C 137 133, 128 136, 120 134 C 117 140, 110 145, 100 145 L 100 55 Z" fill="white" fill-opacity="0.85"/>
+
+  <!-- Center divide -->
+  <line x1="100" y1="58" x2="100" y2="142" stroke="#3b82f6" stroke-width="2.5" stroke-opacity="0.6"/>
+
+  <!-- Brain folds left -->
+  <path d="M 80 72 C 72 78, 70 86, 74 92" stroke="#1d4ed8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 68 96 C 64 104, 65 114, 70 120" stroke="#1d4ed8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 82 108 C 78 116, 80 126, 84 130" stroke="#1d4ed8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+
+  <!-- Brain folds right -->
+  <path d="M 120 72 C 128 78, 130 86, 126 92" stroke="#6d28d9" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 132 96 C 136 104, 135 114, 130 120" stroke="#6d28d9" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 118 108 C 122 116, 120 126, 116 130" stroke="#6d28d9" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+
+  <!-- Logic nodes (circuit dots) -->
+  <circle cx="80" cy="92" r="3.5" fill="#1d4ed8" fill-opacity="0.8"/>
+  <circle cx="70" cy="120" r="3.5" fill="#1d4ed8" fill-opacity="0.8"/>
+  <circle cx="120" cy="92" r="3.5" fill="#6d28d9" fill-opacity="0.8"/>
+  <circle cx="130" cy="120" r="3.5" fill="#6d28d9" fill-opacity="0.8"/>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="white" stroke-opacity="0.2" stroke-width="1.5"/>
 </svg>

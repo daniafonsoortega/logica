@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { allPuzzles } from '@/lib/data'
 
-export const runtime     = 'edge'
+// Sem edge runtime — usa Node.js serverless para evitar limite de bundle com JSON grande
 export const size        = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -15,24 +15,24 @@ const TIPO_LABELS: Record<string, string> = {
 }
 
 const NIVEL_LABELS: Record<string, string> = {
-  facil:       '⭐ Fácil',
-  medio:       '⭐⭐ Médio',
-  dificil:     '⭐⭐⭐ Difícil',
-  especialista:'⭐⭐⭐⭐ Especialista',
+  facil:   '⭐ Fácil',
+  medio:   '⭐⭐ Médio',
+  dificil: '⭐⭐⭐ Difícil',
+  expert:  '⭐⭐⭐⭐ Expert',
 }
 
 const NIVEL_BG: Record<string, string> = {
-  facil:       '#dcfce7',
-  medio:       '#fef9c3',
-  dificil:     '#fee2e2',
-  especialista:'#f3e8ff',
+  facil:   '#dcfce7',
+  medio:   '#fef9c3',
+  dificil: '#fee2e2',
+  expert:  '#f3e8ff',
 }
 
 const NIVEL_TEXT: Record<string, string> = {
-  facil:       '#166534',
-  medio:       '#854d0e',
-  dificil:     '#991b1b',
-  especialista:'#6b21a8',
+  facil:   '#166534',
+  medio:   '#854d0e',
+  dificil: '#991b1b',
+  expert:  '#6b21a8',
 }
 
 export default async function Image({ params }: { params: { id: string } }) {
@@ -105,6 +105,7 @@ export default async function Image({ params }: { params: { id: string } }) {
           marginBottom: 20,
           letterSpacing: '0.04em',
           fontWeight: 500,
+          display: 'flex',
         }}>
           {TIPO_LABELS[tipo] ?? tipo}
         </div>
@@ -119,6 +120,7 @@ export default async function Image({ params }: { params: { id: string } }) {
           maxWidth: 900,
           marginBottom: 36,
           letterSpacing: '-0.02em',
+          display: 'flex',
         }}>
           {puzzle.tema}
         </div>
@@ -131,7 +133,6 @@ export default async function Image({ params }: { params: { id: string } }) {
           borderRadius: 999,
           fontSize: 20,
           fontWeight: 700,
-          letterSpacing: '0.01em',
           display: 'flex',
         }}>
           {NIVEL_LABELS[nivel] ?? nivel}

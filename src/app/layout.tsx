@@ -8,6 +8,7 @@ import ThemeToggle from '@/components/ThemeToggle'
 import CookieBanner from '@/components/CookieBanner'
 import RegisterSW from '@/components/RegisterSW'
 import PushSubscribe from '@/components/PushSubscribe'
+import MobileMenu from '@/components/MobileMenu'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -48,17 +49,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 LogicaMente
               </span>
             </Link>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
+              {/* Links desktop — ocultos em mobile */}
               <div className="hidden sm:flex gap-6 text-sm font-medium">
-                <Link href="/puzzles" className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Puzzles</Link>
+                <Link href="/puzzles"        className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Puzzles</Link>
                 <Link href="/desafio-diario" className="text-gray-600 dark:text-gray-300 hover:text-amber-600 transition-colors">🏆 Desafio</Link>
-                <Link href="/questoes" className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Questões</Link>
-                <Link href="/ranking" className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Ranking</Link>
+                <Link href="/questoes"       className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Questões</Link>
+                <Link href="/ranking"        className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Ranking</Link>
               </div>
               <DailyCounter />
               <ThemeToggle />
               <PushSubscribe />
               <AuthButton />
+              {/* Menu hambúrguer — só em mobile */}
+              <MobileMenu />
             </div>
           </div>
         </nav>
@@ -74,10 +78,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span>LogicaMente · Treine sua mente todos os dias</span>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="/sobre" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Sobre</Link>
-              <Link href="/termos" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Termos</Link>
+              <Link href="/sobre"       className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Sobre</Link>
+              <Link href="/termos"      className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Termos</Link>
               <Link href="/privacidade" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Privacidade</Link>
-              <Link href="/cookies" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Cookies</Link>
+              <Link href="/cookies"     className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Cookies</Link>
               <ReportarProblema />
             </div>
           </div>

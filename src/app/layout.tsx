@@ -10,6 +10,7 @@ import RegisterSW from '@/components/RegisterSW'
 import PushSubscribe from '@/components/PushSubscribe'
 import MobileMenu from '@/components/MobileMenu'
 import OnboardingModal from '@/components/OnboardingModal'
+import ReviewPrompt from '@/components/ReviewPrompt'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -92,6 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RegisterSW />
         {/* Onboarding — aparece apenas na primeira visita */}
         <OnboardingModal />
+        {/* Avaliação — aparece após o 5º puzzle resolvido */}
+        <ReviewPrompt />
       </body>
     </html>
   )

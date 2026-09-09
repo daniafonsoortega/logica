@@ -1,14 +1,25 @@
 import { NextResponse } from 'next/server'
+import { createClient } from '@supabase/supabase-js'
 
-// In production, persist subscriptions to a database (Supabase, etc.)
-// For now, log and return OK — replace with real storage
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!
+)
+
 export async function POST(req: Request) {
   try {
     const sub = await req.json()
-    console.log('[push] new subscription:', JSON.stringify(sub).slice(0, 80))
-    // TODO: save sub to Supabase table `push_subscriptions`
+    const { endpoint, keys } = sub
+    if (!endpoint || !keys?.p256dh || !keys?.auth) {
+      return NextResponse.json({ error: 'Invalid subscription' }, { status: 400 })
+    }
+    const { error } = await supabase
+      .from('push_subscriptions')
+      .upsert({ endpoint, p256dh: keys.p256dh, auth: keys.auth }, { onConflict: 'endpoint' })
+    if (error) throw error
     return NextResponse.json({ ok: true })
-  } catch {
-    return NextResponse.json({ ok: false }, { status: 400 })
+  } catch (e) {
+    console.error('[push/subscribe]', e)
+    return NextResponse.json({ error: 'Server error' }, { status: 500 })
   }
 }

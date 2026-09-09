@@ -9,6 +9,7 @@ import CookieBanner from '@/components/CookieBanner'
 import RegisterSW from '@/components/RegisterSW'
 import PushSubscribe from '@/components/PushSubscribe'
 import MobileMenu from '@/components/MobileMenu'
+import OnboardingModal from '@/components/OnboardingModal'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -89,6 +90,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <CookieBanner />
         <RegisterSW />
+        {/* Onboarding — aparece apenas na primeira visita */}
+        <OnboardingModal />
       </body>
     </html>
   )

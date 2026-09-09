@@ -5,8 +5,9 @@ import type { PuzzleCodigo } from '@/types'
 import { recordResult } from '@/lib/stats'
 
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
+import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, RotateCcw, Lock, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 const MSGS_ACERTO = ["Código decifrado! Mente privilegiada! 🔓","Acesso concedido! Lógica impecável! ⚡","Decifrou em cheio! Incrível! 🎯","O código não resistiu! Excelente! 🏆","Raciocínio afiado — código quebrado! 🌟"]
@@ -16,6 +17,7 @@ const rand = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)]
 interface Props { puzzle: PuzzleCodigo }
 
 export default function CodigoGame({ puzzle }: Props) {
+  const startTime = useRef(Date.now())
   const [digits, setDigits] = useState<string[]>(Array(puzzle.num_digitos).fill(''))
   const [status, setStatus] = useState<'jogando'|'correto'|'incorreto'>('jogando')
   const [msg, setMsg]       = useState('')

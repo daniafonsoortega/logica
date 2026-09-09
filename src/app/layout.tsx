@@ -6,6 +6,8 @@ import DailyCounter from '@/components/DailyCounter'
 import AuthButton from '@/components/AuthButton'
 import ThemeToggle from '@/components/ThemeToggle'
 import CookieBanner from '@/components/CookieBanner'
+import RegisterSW from '@/components/RegisterSW'
+import PushSubscribe from '@/components/PushSubscribe'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -55,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
               <DailyCounter />
               <ThemeToggle />
+              <PushSubscribe />
               <AuthButton />
             </div>
           </div>
@@ -81,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </footer>
 
         <CookieBanner />
+        <RegisterSW />
       </body>
     </html>
   )

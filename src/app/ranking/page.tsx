@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createClient } from '@/lib/supabase-browser'
 import { getStats, getTier, type GlobalStats } from '@/lib/stats'
 import { isPremium } from '@/lib/freemium'
+import BestTimesSection from '@/components/BestTimesSection'
 import { Trophy, Target, Zap, Flame, Lock, Users, BarChart2, Camera, Check, X } from 'lucide-react'
 import type { User } from '@supabase/supabase-js'
 
@@ -193,6 +194,8 @@ export default function RankingPage() {
         <h1 className="text-3xl font-black text-gray-900">Perfil &amp; Desempenho</h1>
         <p className="text-gray-500 mt-1">Acompanhe sua evolução e personalize seu perfil.</p>
       </div>
+
+      <BestTimesSection />
 
       {/* Perfil — para todos */}
       {user ? (

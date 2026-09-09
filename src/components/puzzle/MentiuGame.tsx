@@ -1,13 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import type { PuzzleMentiu } from '@/types'
 import { recordResult } from '@/lib/stats'
 import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
-function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
+function salvar(id: string, acertou: boolean, usouDica: boolean, tempoSegundos: number) {
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
 
 const MSGS_ACERTO = ["Detectou a mentira! Perspicácia incrível! 🕵️","A lógica não falha — você achou! 🎯","Olho clínico! Detetive nato! 🏆","Cada contradição revelada! Excelente! ⚡","Ninguém te engana! 🌟"]
@@ -39,7 +39,7 @@ export default function MentiuGame({ puzzle }: Props) {
     setAcertou(ok)
     setRespondeu(true)
     setMsg(rand(ok ? MSGS_ACERTO : MSGS_ERRO))
-    salvar(puzzle.id, ok, dicasVistas > 0)
+    salvar(puzzle.id, ok, dicasVistas > 0, Math.round((Date.now() - startTime.current) / 1000))
   }
 
   function reiniciar() {

@@ -13,25 +13,18 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 )
 
-export async function POST(req: Request) {
-  const auth = req.headers.get('authorization')
-  if (auth !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
+function checkAuth(req: Request): boolean {
+  return req.headers.get('authorization') === `Bearer ${process.env.CRON_SECRET}`
+}
 
-  const body = await req.json().catch(() => ({}))
-  const payload = JSON.stringify({
-    title: body.title ?? '🏆 Desafio Diário',
-    body:  body.body  ?? 'Novo puzzle disponível — teste o seu raciocínio hoje!',
-    url:   body.url   ?? '/desafio-diario',
-    icon:  '/logo.svg',
-  })
+async function sendToAll(title: string, body: string, url: string) {
+  const payload = JSON.stringify({ title, body, url, icon: '/logo.svg' })
 
   const { data: subs, error } = await supabase
     .from('push_subscriptions')
     .select('endpoint, p256dh, auth')
 
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  if (error) return { error: error.message }
 
   const results = await Promise.allSettled(
     (subs ?? []).map(s =>
@@ -42,7 +35,37 @@ export async function POST(req: Request) {
     )
   )
 
-  const sent     = results.filter(r => r.status === 'fulfilled').length
-  const failed   = results.filter(r => r.status === 'rejected').length
-  return NextResponse.json({ ok: true, sent, failed })
+  return {
+    sent:   results.filter(r => r.status === 'fulfilled').length,
+    failed: results.filter(r => r.status === 'rejected').length,
+  }
+}
+
+// POST — chamada manual com payload personalizado
+export async function POST(req: Request) {
+  if (!checkAuth(req)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+  const body = await req.json().catch(() => ({}))
+  const result = await sendToAll(
+    body.title ?? '🏆 Desafio Diário',
+    body.body  ?? 'Novo puzzle disponível — teste o seu raciocínio hoje!',
+    body.url   ?? '/desafio-diario',
+  )
+  if ('error' in result) return NextResponse.json({ error: result.error }, { status: 500 })
+  return NextResponse.json({ ok: true, ...result })
+}
+
+// GET — usado pelo cron do Vercel (sempre faz GET)
+export async function GET(req: Request) {
+  if (!checkAuth(req)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+  const result = await sendToAll(
+    '🏆 Desafio Diário',
+    'Novo puzzle disponível — teste o seu raciocínio hoje!',
+    '/desafio-diario',
+  )
+  if ('error' in result) return NextResponse.json({ error: result.error }, { status: 500 })
+  return NextResponse.json({ ok: true, ...result })
 }

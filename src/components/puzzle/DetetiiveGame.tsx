@@ -2,21 +2,19 @@
 
 
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 import type { PuzzleDetetive } from '@/types'
 
 import { recordResult } from '@/lib/stats'
+import GameTimer from '@/components/GameTimer'
 
 
 
-function salvar(id: string, acertou: boolean, usouDica: boolean) {
-
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
-
+function salvar(id: string, acertou: boolean, usouDica: boolean, tempoSegundos: number) {
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
 
-import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, Search, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 
@@ -98,7 +96,7 @@ export default function DetetiiveGame({ puzzle }: Props) {
 
       setMsg(rand(MSGS_ACERTO))
 
-      salvar(puzzle.id, true, pistasVisiveis || dicasVistas > 0)
+      salvar(puzzle.id, true, pistasVisiveis || dicasVistas > 0, Math.round((Date.now() - startTime.current) / 1000))
 
     } else {
 
@@ -106,7 +104,7 @@ export default function DetetiiveGame({ puzzle }: Props) {
 
       setMsg(rand(MSGS_ERRO))
 
-      salvar(puzzle.id, false, pistasVisiveis || dicasVistas > 0)
+      salvar(puzzle.id, false, pistasVisiveis || dicasVistas > 0, Math.round((Date.now() - startTime.current) / 1000))
 
     }
 

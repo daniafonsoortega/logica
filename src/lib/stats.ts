@@ -74,6 +74,11 @@ export function recordResult(result: GameResult): void {
   }
 
   localStorage.setItem(STATS_KEY, JSON.stringify(stats))
+
+  // Notifica componentes (ex: ReviewPrompt) sobre puzzle resolvido
+  if (result.resolvido && result.tipo === 'puzzle' && typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('lm_puzzle_solved', { detail: stats.totalPuzzles }))
+  }
 }
 
 export function getTier(pontuacao: number): { label: string; cor: string } {

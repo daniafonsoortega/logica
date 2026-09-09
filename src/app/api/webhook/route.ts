@@ -43,27 +43,52 @@ export async function POST(req: NextRequest) {
     if (!uid || !plano) return NextResponse.json({ ok: true })
 
     const until = premiumUntil(plano)
-    await supabaseAdmin.schema('logicamente').from('profiles')
-      .upsert({ id: uid, is_premium: true, plano, premium_until: until, stripe_customer_id: s.customer })
-    if (s.subscription)
-      await supabaseAdmin.schema('logicamente').from('subscriptions')
-        .upsert({ id: s.subscription, user_id: uid, plano, status: 'active', current_period_end: until })
 
+    // Atualizar profiles (schema public — sem .schema())
+    await supabaseAdmin.from('profiles').upsert({
+      id:                 uid,
+      is_premium:         true,
+      plano,
+      premium_until:      until,
+      stripe_customer_id: s.customer,
+    })
+
+    // Guardar subscription
+    if (s.subscription) {
+      await supabaseAdmin.from('subscriptions').upsert({
+        id:                 s.subscription,
+        user_id:            uid,
+        plano,
+        status:             'active',
+        current_period_end: until,
+      })
+    }
+
+    // Registar uso do cupão
     if (coupon_code) {
       const { data: coupon } = await supabaseAdmin
-        .schema('logicamente').from('coupons')
-        .select('discount_percent, uses_count').eq('code', coupon_code).single()
+        .from('coupons')
+        .select('discount_percent, uses_count')
+        .eq('code', coupon_code)
+        .single()
+
       if (coupon) {
         const original    = PRECOS[plano] ?? 1290
-        const discountBrl = coupon.discount_percent ? Math.round(original * coupon.discount_percent / 100) : 0
-        await supabaseAdmin.schema('logicamente').from('coupon_uses').insert({
-          coupon_code, user_id: uid, plano,
+        const discountBrl = coupon.discount_percent
+          ? Math.round(original * coupon.discount_percent / 100) : 0
+
+        await supabaseAdmin.from('coupon_uses').insert({
+          coupon_code,
+          user_id:          uid,
+          plano,
           stripe_session_id: s.id,
-          amount_paid_brl: s.amount_total ?? (original - discountBrl),
-          discount_brl: discountBrl,
+          amount_paid_brl:  s.amount_total ?? (original - discountBrl),
+          discount_brl:     discountBrl,
         })
-        await supabaseAdmin.schema('logicamente').from('coupons')
-          .update({ uses_count: (coupon.uses_count ?? 0) + 1 }).eq('code', coupon_code)
+        await supabaseAdmin
+          .from('coupons')
+          .update({ uses_count: (coupon.uses_count ?? 0) + 1 })
+          .eq('code', coupon_code)
       }
     }
   }
@@ -72,10 +97,14 @@ export async function POST(req: NextRequest) {
     const s   = event.data.object
     const uid = s.metadata?.user_id
     if (uid) {
-      await supabaseAdmin.schema('logicamente').from('profiles')
-        .update({ is_premium: false, plano: null, premium_until: null }).eq('id', uid)
-      await supabaseAdmin.schema('logicamente').from('subscriptions')
-        .update({ status: 'cancelled' }).eq('id', s.id)
+      await supabaseAdmin
+        .from('profiles')
+        .update({ is_premium: false, plano: null, premium_until: null })
+        .eq('id', uid)
+      await supabaseAdmin
+        .from('subscriptions')
+        .update({ status: 'cancelled' })
+        .eq('id', s.id)
     }
   }
 

@@ -43,7 +43,11 @@ export default async function PuzzlePage({ params }: { params: Promise<{ id: str
 
       {/* Ações após o puzzle */}
       <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
-        <ProximoPuzzle currentId={puzzle.id} />
+        <ProximoPuzzle
+          currentId={puzzle.id}
+          currentNivel={puzzle.nivel}
+          currentTipo={tipo}
+        />
         <ShareButton puzzleId={puzzle.id} puzzleTema={puzzle.tema} />
       </div>
     </div>

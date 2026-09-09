@@ -5,8 +5,9 @@ import type { PuzzleSequencia } from '@/types'
 import { recordResult } from '@/lib/stats'
 
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
+import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, RotateCcw, GripVertical, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 const MSGS_ACERTO = ["Ordem perfeita! Raciocínio impecável! 🏆","Sequência correta! Você é incrível! ⚡","Cronologia certeira! Muito bem! 🎯","Encaixou tudo no lugar! 🧩","Mente organizada — sequência perfeita! 🌟"]
@@ -18,6 +19,7 @@ type Status = 'jogando' | 'correto' | 'incorreto'
 
 export default function SequenciaGame({ puzzle }: Props) {
   // ordem atual: array de itens na ordem que o usuário definiu
+  const startTime = useRef(Date.now())
   const [ordem, setOrdem] = useState<string[]>([...puzzle.itens])
   const [status, setStatus] = useState<Status>('jogando')
   const [msg, setMsg]       = useState('')

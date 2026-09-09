@@ -22,21 +22,27 @@ const FEATURES = [
 function PremiumContent() {
   const params  = useSearchParams()
   const success = params.get('success')
-  const [loading, setLoading] = useState<string | null>(null)
-  const [coupon, setCoupon]   = useState('')
-  const [couponMsg, setCouponMsg] = useState('')
+  const [loading,    setLoading]    = useState<string | null>(null)
+  const [coupon,     setCoupon]     = useState('')
+  const [couponMsg,  setCouponMsg]  = useState('')
+  const [couponValid, setCouponValid] = useState(false)
+  const [appliedCoupon, setAppliedCoupon] = useState('')
 
   useEffect(() => {
-    if (success && typeof window !== 'undefined') localStorage.setItem('lm_premium', 'true')
+    if (success && typeof window !== 'undefined') {
+      localStorage.setItem('lm_premium', 'true')
+    }
   }, [success])
 
   if (success) {
     return (
       <div className="text-center py-16 space-y-6">
         <div className="text-6xl">🎉</div>
-        <h1 className="text-3xl font-black text-gray-900">Bem-vindo ao Premium!</h1>
+        <h1 className="text-3xl font-black text-gray-900 dark:text-white">Bem-vindo ao Premium!</h1>
         <p className="text-gray-500 max-w-sm mx-auto">Seu acesso ilimitado está ativo. Treine quantas vezes quiser.</p>
-        <Link href="/" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors">Começar agora →</Link>
+        <Link href="/" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors">
+          Começar agora →
+        </Link>
       </div>
     )
   }
@@ -53,10 +59,14 @@ function PremiumContent() {
         })
         return
       }
-      const res  = await fetch('/api/checkout', {
+      const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plano: planoId }),
+        // Fix: enviar cupão aplicado ao checkout
+        body: JSON.stringify({
+          plano: planoId,
+          coupon_code: couponValid ? appliedCoupon : undefined,
+        }),
       })
       const data = await res.json()
       if (data.url) window.location.href = data.url
@@ -67,6 +77,8 @@ function PremiumContent() {
 
   async function handleCoupon() {
     if (!coupon.trim()) return
+    setCouponMsg('')
+    setCouponValid(false)
     const res  = await fetch('/api/coupons/validate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -75,41 +87,44 @@ function PremiumContent() {
     const data = await res.json()
     if (data.valid) {
       setCouponMsg('✅ Cupom válido! ' + (data.description ?? ''))
+      setCouponValid(true)
+      setAppliedCoupon(coupon.trim().toUpperCase())
     } else {
       setCouponMsg('❌ Cupom inválido ou expirado.')
+      setCouponValid(false)
     }
   }
 
   return (
     <div className="max-w-2xl mx-auto py-12 space-y-10">
-      {/* Header */}
       <div className="text-center space-y-3">
         <div className="text-5xl">⚡</div>
-        <h1 className="text-4xl font-black text-gray-900">LogicaMente Premium</h1>
+        <h1 className="text-4xl font-black text-gray-900 dark:text-white">LogicaMente Premium</h1>
         <p className="text-gray-500 text-lg">Treine sem limites. Evolua mais rápido.</p>
       </div>
 
-      {/* Features */}
       <div className="grid grid-cols-2 gap-4">
         {FEATURES.map(({ icon: Icon, text }) => (
-          <div key={text} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 px-4 py-3 shadow-sm">
+          <div key={text} className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 px-4 py-3 shadow-sm">
             <Icon size={18} className="text-blue-600 shrink-0" />
-            <span className="text-sm text-gray-700">{text}</span>
+            <span className="text-sm text-gray-700 dark:text-gray-300">{text}</span>
           </div>
         ))}
       </div>
 
-      {/* Plans */}
+      {couponValid && (
+        <div className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-xl px-4 py-3 text-sm text-green-700 dark:text-green-300 font-medium">
+          🎁 Cupom <strong>{appliedCoupon}</strong> aplicado — desconto será reflectido no checkout
+        </div>
+      )}
+
       <div className="space-y-3">
         {PLANOS.map(plano => (
-          <button
-            key={plano.id}
-            onClick={() => handleCheckout(plano.id)}
-            disabled={loading === plano.id}
+          <button key={plano.id} onClick={() => handleCheckout(plano.id)} disabled={loading === plano.id}
             className={`w-full flex items-center justify-between px-5 py-4 rounded-xl border-2 transition-all text-left
               ${plano.destaque
                 ? 'border-blue-600 bg-blue-600 text-white shadow-lg shadow-blue-100 scale-[1.01]'
-                : 'border-gray-200 bg-white text-gray-900 hover:border-blue-400'
+                : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:border-blue-400'
               }`}
           >
             <div>
@@ -125,24 +140,19 @@ function PremiumContent() {
         ))}
       </div>
 
-      {/* Coupon */}
-      <div className="bg-gray-50 rounded-xl p-4 space-y-2">
-        <p className="text-sm font-medium text-gray-700">Tem um cupom de desconto?</p>
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 space-y-2">
+        <p className="text-sm font-medium text-gray-700 dark:text-gray-200">Tem um cupom de desconto?</p>
         <div className="flex gap-2">
-          <input
-            value={coupon}
-            onChange={e => setCoupon(e.target.value)}
-            placeholder="Digite o código"
-            className="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <button
-            onClick={handleCoupon}
-            className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors"
-          >
+          <input value={coupon} onChange={e => setCoupon(e.target.value.toUpperCase())}
+            onKeyDown={e => e.key === 'Enter' && handleCoupon()}
+            placeholder="Digite o código" maxLength={20}
+            className="flex-1 border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono uppercase" />
+          <button onClick={handleCoupon}
+            className="px-4 py-2 bg-gray-800 dark:bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors">
             Aplicar
           </button>
         </div>
-        {couponMsg && <p className="text-xs text-gray-600">{couponMsg}</p>}
+        {couponMsg && <p className="text-xs text-gray-600 dark:text-gray-400">{couponMsg}</p>}
       </div>
 
       <p className="text-center text-xs text-gray-400">

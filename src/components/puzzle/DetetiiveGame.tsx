@@ -12,10 +12,11 @@ import { recordResult } from '@/lib/stats'
 
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
 
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 
 }
 
+import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, Search, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 
@@ -36,6 +37,7 @@ type Status = 'jogando' | 'correto' | 'incorreto'
 
 export default function DetetiiveGame({ puzzle }: Props) {
 
+  const startTime = useRef(Date.now())
   const [eliminados, setEliminados] = useState<Set<string>>(new Set())
 
   const [culpadoSel, setCulpado]    = useState<string | null>(null)

@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { Zap, Infinity as InfinityIcon, BarChart2, Users } from 'lucide-react'
+import { Zap, Infinity as InfinityIcon, BarChart2, Users, Crown, Settings } from 'lucide-react'
 import { createClient } from '@/lib/supabase-browser'
 
 const PLANOS = [
@@ -19,21 +19,66 @@ const FEATURES = [
   { icon: Users,        text: 'Competir com amigos' },
 ]
 
+const PLANO_LABELS: Record<string, string> = {
+  semanal: 'Semanal',
+  mensal:  'Mensal',
+  anual:   'Anual',
+}
+
 function PremiumContent() {
   const params  = useSearchParams()
   const success = params.get('success')
-  const [loading,    setLoading]    = useState<string | null>(null)
-  const [coupon,     setCoupon]     = useState('')
-  const [couponMsg,  setCouponMsg]  = useState('')
-  const [couponValid, setCouponValid] = useState(false)
+
+  const [loading,       setLoading]       = useState<string | null>(null)
+  const [coupon,        setCoupon]        = useState('')
+  const [couponMsg,     setCouponMsg]     = useState('')
+  const [couponValid,   setCouponValid]   = useState(false)
   const [appliedCoupon, setAppliedCoupon] = useState('')
+  const [isPremium,     setIsPremium]     = useState(false)
+  const [plano,         setPlano]         = useState<string | null>(null)
+  const [premiumUntil,  setPremiumUntil]  = useState<string | null>(null)
+  const [checkingPlan,  setCheckingPlan]  = useState(true)
+  const [portalLoading, setPortalLoading] = useState(false)
+
+  const supabase = createClient()
 
   useEffect(() => {
     if (success && typeof window !== 'undefined') {
       localStorage.setItem('lm_premium', 'true')
     }
+    async function checkPlan() {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        const { data } = await supabase
+          .from('profiles')
+          .select('is_premium, plano, premium_until')
+          .eq('id', user.id)
+          .single()
+        if (data?.is_premium) {
+          setIsPremium(true)
+          setPlano(data.plano ?? null)
+          setPremiumUntil(data.premium_until
+            ? new Date(data.premium_until).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+            : null)
+        }
+      }
+      setCheckingPlan(false)
+    }
+    checkPlan()
   }, [success])
 
+  async function handlePortal() {
+    setPortalLoading(true)
+    try {
+      const res = await fetch('/api/stripe/portal', { method: 'POST' })
+      const data = await res.json()
+      if (data.url) window.location.href = data.url
+      else alert(data.error ?? 'Erro ao abrir portal. Tente novamente.')
+    } catch { alert('Erro de conexão. Tente novamente.') }
+    finally { setPortalLoading(false) }
+  }
+
+  // Tela de sucesso (logo após subscrever)
   if (success) {
     return (
       <div className="text-center py-16 space-y-6">
@@ -47,10 +92,83 @@ function PremiumContent() {
     )
   }
 
+  // A verificar plano...
+  if (checkingPlan) {
+    return (
+      <div className="flex items-center justify-center py-24">
+        <div className="w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    )
+  }
+
+  // Utilizador já é Premium — mostrar gestão da assinatura
+  if (isPremium) {
+    return (
+      <div className="max-w-lg mx-auto py-12 space-y-8">
+        <div className="text-center space-y-3">
+          <div className="text-6xl">👑</div>
+          <h1 className="text-3xl font-black text-gray-900 dark:text-white">Você é Premium!</h1>
+          <p className="text-gray-500">O seu acesso ilimitado está ativo.</p>
+        </div>
+
+        {/* Card do plano */}
+        <div className="bg-gradient-to-r from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20 border border-yellow-200 dark:border-yellow-700 rounded-2xl p-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="space-y-1">
+              <p className="text-xs font-semibold text-amber-600 uppercase tracking-wider">Plano ativo</p>
+              <p className="text-2xl font-black text-amber-700 dark:text-amber-400 flex items-center gap-2">
+                <Crown size={22} />
+                {plano ? PLANO_LABELS[plano] ?? plano : 'Premium'}
+              </p>
+              {premiumUntil && (
+                <p className="text-sm text-amber-600 dark:text-amber-500">
+                  Válido até {premiumUntil}
+                </p>
+              )}
+            </div>
+            <span className="bg-yellow-400 text-yellow-900 text-sm font-bold px-3 py-1.5 rounded-full">
+              ✓ Ativo
+            </span>
+          </div>
+        </div>
+
+        {/* Features ativas */}
+        <div className="grid grid-cols-2 gap-3">
+          {FEATURES.map(({ icon: Icon, text }) => (
+            <div key={text} className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 px-4 py-3 shadow-sm">
+              <Icon size={16} className="text-blue-600 shrink-0" />
+              <span className="text-xs text-gray-700 dark:text-gray-300">{text}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Gerir assinatura */}
+        <div className="space-y-3">
+          <button
+            onClick={handlePortal}
+            disabled={portalLoading}
+            className="w-full flex items-center justify-center gap-2 bg-gray-900 dark:bg-gray-700 text-white font-semibold py-3 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors disabled:opacity-50"
+          >
+            {portalLoading
+              ? <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+              : <><Settings size={16} /> Gerir assinatura</>
+            }
+          </button>
+          <p className="text-center text-xs text-gray-400">
+            Alterar plano · Cancelar · Histórico de faturas — tudo pelo portal Stripe
+          </p>
+          <Link href="/" className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium">
+            ← Voltar a treinar
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  // Utilizador free — mostrar planos
   async function handleCheckout(planoId: string) {
     setLoading(planoId)
     try {
-      const supabase = createClient()
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) {
         await supabase.auth.signInWithOAuth({
@@ -62,7 +180,6 @@ function PremiumContent() {
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        // Fix: enviar cupão aplicado ao checkout
         body: JSON.stringify({
           plano: planoId,
           coupon_code: couponValid ? appliedCoupon : undefined,
@@ -72,7 +189,7 @@ function PremiumContent() {
       if (data.url) window.location.href = data.url
       else alert('Erro ao iniciar checkout. Tente novamente.')
     } catch { alert('Erro de conexão. Tente novamente.') }
-    finally   { setLoading(null) }
+    finally { setLoading(null) }
   }
 
   async function handleCoupon() {
@@ -114,7 +231,7 @@ function PremiumContent() {
 
       {couponValid && (
         <div className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-xl px-4 py-3 text-sm text-green-700 dark:text-green-300 font-medium">
-          🎁 Cupom <strong>{appliedCoupon}</strong> aplicado — desconto será reflectido no checkout
+          🎁 Cupom <strong>{appliedCoupon}</strong> aplicado — desconto será refletido no checkout
         </div>
       )}
 

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { getQuestaoById, allQuestoes, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -9,6 +10,35 @@ import ShareButton from '@/components/ShareButton'
 
 export async function generateStaticParams() {
   return allQuestoes.map(q => ({ id: q.id }))
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Metadata> {
+  const { id } = await params
+  const q = getQuestaoById(id)
+  if (!q) return {}
+
+  const title = `${q.orgao} ${q.ano} (${q.banca}) — LogicaMente`
+  const desc  = `Questão de ${q.banca} · ${NIVEL_LABELS[q.nivel]} · Resolva e treine raciocínio lógico para concursos.`
+
+  return {
+    title,
+    description: desc,
+    openGraph: {
+      title,
+      description: desc,
+      url: `https://logica-mente.vercel.app/questoes/${id}`,
+      siteName: 'LogicaMente',
+      locale: 'pt_BR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: desc,
+    },
+  }
 }
 
 export default async function QuestaoPage({ params }: { params: Promise<{ id: string }> }) {

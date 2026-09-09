@@ -1,21 +1,39 @@
-// ── Modelo freemium baseado em anúncios progressivos ─────────────
-// Premium: sem anúncios, sem limite
-// Free: primeiros 5 desafios livres; depois anúncio crescente
-//
-// LÓGICA DE ANÚNCIO (por desafio completado, lifetime):
-//   1–5    → sem anúncio
-//   6–15   → anúncio a cada 2 desafios (6, 8, 10, 12, 14, ...)
-//   16+    → anúncio em todo desafio
+// Modelo freemium baseado em anúncios progressivos
 
-export const FREE_DAILY_LIMIT = 9999  // sem limite hard; mantido só pra não quebrar tipos
+export const FREE_DAILY_LIMIT = 9999
 
-// ── Premium ───────────────────────────────────────────────────────
+// isPremium: lê localStorage (rápido) — sincronizado pelo PremiumSync
 export function isPremium(): boolean {
   if (typeof window === 'undefined') return false
   return localStorage.getItem('lm_premium') === 'true'
 }
 
-// ── Lifetime count (total de desafios completados) ────────────────
+// Verificar premium no Supabase e sincronizar localStorage
+// Chamar uma vez no app load (ex: layout ou AuthButton)
+export async function syncPremiumStatus(supabase: any, userId: string): Promise<boolean> {
+  try {
+    const { data } = await supabase
+      .from('profiles')
+      .select('is_premium, premium_until')
+      .eq('id', userId)
+      .single()
+
+    if (!data) return false
+
+    const active = data.is_premium === true &&
+      (!data.premium_until || new Date(data.premium_until) > new Date())
+
+    if (active) {
+      localStorage.setItem('lm_premium', 'true')
+    } else {
+      localStorage.removeItem('lm_premium')
+    }
+    return active
+  } catch {
+    return isPremium() // fallback para localStorage
+  }
+}
+
 export function getLifetimeCount(): number {
   if (typeof window === 'undefined') return 0
   return parseInt(localStorage.getItem('lm_lifetime') ?? '0', 10)
@@ -28,7 +46,6 @@ export function incrementLifetimeCount(): number {
   return next
 }
 
-// ── Daily count (mantido para DailyCounter no nav) ────────────────
 function getTodayKey(): string {
   return new Date().toISOString().split('T')[0]
 }
@@ -56,15 +73,12 @@ export function incrementCount(): void {
   localStorage.setItem('lm_count', String(count + 1))
 }
 
-// ── Decide se exibe anúncio após o N-ésimo desafio ────────────────
-// completedCount = total APÓS esta conclusão (já incrementado)
 export function shouldShowAd(completedCount: number): boolean {
   if (isPremium()) return false
-  if (completedCount <= 5) return false           // grace period
-  if (completedCount <= 15) return completedCount % 2 === 0  // cada 2
-  return true                                      // todo desafio
+  if (completedCount <= 5) return false
+  if (completedCount <= 15) return completedCount % 2 === 0
+  return true
 }
 
-// Mantidos para compatibilidade com componentes existentes
 export function canPlay(): boolean { return true }
 export function getRemainingToday(): number { return 9999 }

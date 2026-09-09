@@ -22,8 +22,8 @@ const FEATURES = [
 ]
 
 const STATS = [
-  { value: '490+', label: 'Puzzles lógicos' },
-  { value: '1.000+', label: 'Questões de concurso' },
+  { value: 'Centenas', label: 'de puzzles lógicos' },
+  { value: 'Milhares', label: 'de questões de concurso' },
   { value: '6', label: 'Tipos de puzzle' },
   { value: '100%', label: 'Gratuito para começar' },
 ]
@@ -47,7 +47,7 @@ export default function Home() {
         </h1>
 
         <p className="text-xl text-gray-500 dark:text-gray-400 max-w-xl mx-auto leading-relaxed">
-          490+ puzzles dedutivos e 1.000+ questões reais de concurso. Grátis, sem anúncios no início, funciona offline.
+          Centenas de puzzles dedutivos e milhares de questões reais de concurso. Grátis, sem anúncios no início, funciona offline.
         </p>
 
         {/* CTAs */}
@@ -112,7 +112,7 @@ export default function Home() {
               📋 Para quem estuda concursos
             </div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-white leading-tight">
-              1.000 questões reais com explicação completa
+              Milhares de questões reais com explicação completa
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Quando errar, não recebe só o gabarito — vê o raciocínio passo a passo. Aprende a pensar, não a memorizar.
@@ -243,3 +243,4 @@ export default function Home() {
     </div>
   )
 }
+

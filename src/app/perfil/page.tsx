@@ -3,14 +3,16 @@
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase-browser'
 import type { User } from '@supabase/supabase-js'
-import { Save, LogOut, Trophy, Flame, CheckCircle2 } from 'lucide-react'
+import { Save, LogOut, Trophy, Flame, CheckCircle2, Zap, Crown } from 'lucide-react'
 import AchievementsBadges from '@/components/AchievementsBadges'
+import Link from 'next/link'
 
 type Profile = {
   nome?: string; idade?: number; cidade?: string; escolaridade?: string
   objetivo?: string; area_concurso?: string; nivel?: string; frequencia?: string
   notificacoes?: boolean; desafios_completos?: number; streak_atual?: number
   streak_max?: number; ultima_atividade?: string; created_at?: string
+  is_premium?: boolean; plano?: string; premium_until?: string
 }
 
 const ESCOLARIDADE_OPTS = ['Ensino Fundamental', 'Ensino Médio', 'Superior Incompleto', 'Superior Completo', 'Pós-graduação']
@@ -71,6 +73,10 @@ export default function PerfilPage() {
   const memberSince = profile.created_at
     ? new Date(profile.created_at).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })
     : ''
+  const isPremium   = profile.is_premium === true
+  const premiumUntil = profile.premium_until
+    ? new Date(profile.premium_until).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+    : null
 
   return (
     <div className="max-w-2xl mx-auto py-8 space-y-8">
@@ -82,7 +88,14 @@ export default function PerfilPage() {
           : <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-2xl font-black">{displayName.slice(0,2).toUpperCase()}</div>
         }
         <div className="flex-1 min-w-0">
-          <h1 className="text-2xl font-black truncate">{displayName}</h1>
+          <div className="flex items-center gap-2">
+            <h1 className="text-2xl font-black truncate">{displayName}</h1>
+            {isPremium && (
+              <span className="flex items-center gap-1 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full">
+                <Crown size={11} /> Premium
+              </span>
+            )}
+          </div>
           <p className="text-white/70 text-sm truncate">{user.email}</p>
           {memberSince && <p className="text-white/50 text-xs mt-0.5">Membro desde {memberSince}</p>}
         </div>
@@ -90,6 +103,52 @@ export default function PerfilPage() {
           <LogOut size={15} /> Sair
         </button>
       </div>
+
+      {/* Banner premium — só para free users */}
+      {!isPremium && (
+        <div className="relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-5 text-white">
+          <div className="absolute -right-4 -top-4 text-8xl opacity-10 select-none">⚡</div>
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="space-y-1">
+              <p className="font-black text-lg flex items-center gap-2">
+                <Zap size={18} /> Seja Premium
+              </p>
+              <p className="text-white/80 text-sm">Puzzles ilimitados · Sem anúncios · Estatísticas avançadas</p>
+              <p className="text-white/60 text-xs">A partir de R$4,90/semana</p>
+            </div>
+            <Link
+              href="/premium"
+              className="shrink-0 bg-white text-orange-600 font-bold px-5 py-2.5 rounded-xl hover:bg-orange-50 transition-colors text-sm"
+            >
+              Ver planos →
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Card premium ativo */}
+      {isPremium && (
+        <div className="bg-gradient-to-r from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20 border border-yellow-200 dark:border-yellow-700 rounded-2xl p-5">
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="space-y-1">
+              <p className="font-black text-amber-700 dark:text-amber-400 flex items-center gap-2">
+                <Crown size={16} /> Plano Premium Ativo
+              </p>
+              {profile.plano && (
+                <p className="text-amber-600 dark:text-amber-500 text-sm capitalize">
+                  Plano {profile.plano}
+                </p>
+              )}
+              {premiumUntil && (
+                <p className="text-amber-500 text-xs">Válido até {premiumUntil}</p>
+              )}
+            </div>
+            <span className="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1.5 rounded-full">
+              ✓ Ativo
+            </span>
+          </div>
+        </div>
+      )}
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-3">
@@ -136,7 +195,7 @@ export default function PerfilPage() {
           <div className="space-y-1">
             <label className="text-xs font-medium text-gray-500 uppercase tracking-wide">Escolaridade</label>
             <select value={profile.escolaridade ?? ''} onChange={e => field('escolaridade')(e.target.value)}
-              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700">
               <option value="">Selecionar...</option>
               {ESCOLARIDADE_OPTS.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
@@ -147,7 +206,7 @@ export default function PerfilPage() {
           <div className="space-y-1">
             <label className="text-xs font-medium text-gray-500 uppercase tracking-wide">Objetivo principal</label>
             <select value={profile.objetivo ?? ''} onChange={e => field('objetivo')(e.target.value)}
-              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700">
               <option value="">Selecionar...</option>
               {OBJETIVO_OPTS.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
@@ -156,7 +215,7 @@ export default function PerfilPage() {
             <div className="space-y-1">
               <label className="text-xs font-medium text-gray-500 uppercase tracking-wide">Área do concurso</label>
               <select value={profile.area_concurso ?? ''} onChange={e => field('area_concurso')(e.target.value)}
-                className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700">
                 <option value="">Selecionar...</option>
                 {AREA_OPTS.map(o => <option key={o} value={o}>{o}</option>)}
               </select>
@@ -182,7 +241,7 @@ export default function PerfilPage() {
           <div className="space-y-1">
             <label className="text-xs font-medium text-gray-500 uppercase tracking-wide">Frequência de treino</label>
             <select value={profile.frequencia ?? 'diaria'} onChange={e => field('frequencia')(e.target.value)}
-              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              className="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700">
               {FREQ_OPTS.map(o => <option key={o} value={o.toLowerCase().replace(/[×\s]+/g,'-')}>{o}</option>)}
             </select>
           </div>

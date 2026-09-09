@@ -82,3 +82,42 @@ export function getTier(pontuacao: number): { label: string; cor: string } {
   if (pontuacao >= 500)  return { label: 'Intermediário', cor: 'text-yellow-700 bg-yellow-100' }
   return                        { label: 'Iniciante',     cor: 'text-green-700  bg-green-100'  }
 }
+
+
+// ── Personal best times (per puzzle) ─────────────────────────────
+const BEST_KEY = 'lm_best_times'
+
+export function getBestTime(puzzleId: string): number | null {
+  if (typeof window === 'undefined') return null
+  const raw = localStorage.getItem(BEST_KEY)
+  if (!raw) return null
+  try { return (JSON.parse(raw) as Record<string, number>)[puzzleId] ?? null }
+  catch { return null }
+}
+
+export function updateBestTime(puzzleId: string, seconds: number): boolean {
+  // Returns true if this is a new personal best
+  if (typeof window === 'undefined') return false
+  const raw = localStorage.getItem(BEST_KEY)
+  let store: Record<string, number> = {}
+  try { if (raw) store = JSON.parse(raw) } catch {}
+  const prev = store[puzzleId]
+  if (prev === undefined || seconds < prev) {
+    store[puzzleId] = seconds
+    localStorage.setItem(BEST_KEY, JSON.stringify(store))
+    return true
+  }
+  return false
+}
+
+export function getAllBestTimes(): Array<{ id: string; seconds: number }> {
+  if (typeof window === 'undefined') return []
+  const raw = localStorage.getItem(BEST_KEY)
+  if (!raw) return []
+  try {
+    const store = JSON.parse(raw) as Record<string, number>
+    return Object.entries(store)
+      .map(([id, seconds]) => ({ id, seconds }))
+      .sort((a, b) => a.seconds - b.seconds)
+  } catch { return [] }
+}

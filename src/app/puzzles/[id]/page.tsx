@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { allPuzzles, NIVEL_LABELS, NIVEL_COLORS } from '@/lib/data'
 import PuzzleRouter from '@/components/puzzle/PuzzleRouter'
 import ProximoPuzzle from '@/components/puzzle/ProximoPuzzle'
@@ -6,15 +7,47 @@ import ShareButton from '@/components/ShareButton'
 import { notFound } from 'next/navigation'
 
 const TIPO_LABELS: Record<string, string> = {
-  grade:    '🔍 Einstein Grid',
-  detetive: '🕵️ Detetive',
-  sequencia:'📅 Sequência',
-  mentiu:   '🎭 Quem Mentiu?',
-  codigo:   '🔐 Código Secreto',
+  grade:     '🔍 Einstein Grid',
+  detetive:  '🕵️ Detetive',
+  sequencia: '📅 Sequência',
+  mentiu:    '🎭 Quem Mentiu?',
+  codigo:    '🔐 Código Secreto',
+  cifra:     '🔑 Cifra',
 }
 
 export function generateStaticParams() {
   return allPuzzles.map(p => ({ id: p.id }))
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Metadata> {
+  const { id } = await params
+  const puzzle = allPuzzles.find(p => p.id === id)
+  if (!puzzle) return {}
+
+  const tipo  = puzzle.tipo ?? 'grade'
+  const nivel = NIVEL_LABELS[puzzle.nivel] ?? puzzle.nivel
+  const title = `${puzzle.tema} — LogicaMente`
+  const desc  = `${TIPO_LABELS[tipo] ?? tipo} · Nível ${nivel}. Resolva este puzzle de lógica e treine seu raciocínio!`
+
+  return {
+    title,
+    description: desc,
+    openGraph: {
+      title,
+      description: desc,
+      url: `https://logica-mente.vercel.app/puzzles/${id}`,
+      siteName: 'LogicaMente',
+      locale: 'pt_BR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: desc,
+    },
+  }
 }
 
 export default async function PuzzlePage({ params }: { params: Promise<{ id: string }> }) {

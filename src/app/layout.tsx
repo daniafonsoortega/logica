@@ -11,6 +11,7 @@ import PushSubscribe from '@/components/PushSubscribe'
 import MobileMenu from '@/components/MobileMenu'
 import OnboardingModal from '@/components/OnboardingModal'
 import ReviewPrompt from '@/components/ReviewPrompt'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
@@ -43,6 +46,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors">
+        {gaId && <GoogleAnalytics gaId={gaId} />}
+
         <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 group">
@@ -52,7 +57,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </Link>
             <div className="flex items-center gap-3">
-              {/* Links desktop — ocultos em mobile */}
               <div className="hidden sm:flex gap-6 text-sm font-medium">
                 <Link href="/puzzles"        className="text-gray-600 dark:text-gray-300 hover:text-blue-700 transition-colors">Puzzles</Link>
                 <Link href="/desafio-diario" className="text-gray-600 dark:text-gray-300 hover:text-amber-600 transition-colors">🏆 Desafio</Link>
@@ -63,7 +67,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ThemeToggle />
               <PushSubscribe />
               <AuthButton />
-              {/* Menu hambúrguer — só em mobile */}
               <MobileMenu />
             </div>
           </div>
@@ -91,9 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <CookieBanner />
         <RegisterSW />
-        {/* Onboarding — aparece apenas na primeira visita */}
         <OnboardingModal />
-        {/* Avaliação — aparece após o 5º puzzle resolvido */}
         <ReviewPrompt />
       </body>
     </html>

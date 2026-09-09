@@ -1,0 +1,18 @@
+{
+  "name": "LogicaMente",
+  "short_name": "LogicaMente",
+  "description": "Treine raciocínio lógico com puzzles e questões de concurso",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

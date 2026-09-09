@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import type { PuzzleGrade as Puzzle, GridState } from '@/types'
 import { recordResult } from '@/lib/stats'
+import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb } from 'lucide-react'
 
 

@@ -3,10 +3,11 @@
 import { useState } from 'react'
 import type { PuzzleMentiu } from '@/types'
 import { recordResult } from '@/lib/stats'
+import GameTimer from '@/components/GameTimer'
 import { CheckCircle, XCircle, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react'
 
 function salvar(id: string, acertou: boolean, usouDica: boolean) {
-  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: 0, semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
+  recordResult({ id, tipo: 'puzzle', resolvido: acertou, dicasUsadas: usouDica ? 1 : 0, tempoSegundos: Math.round((Date.now() - startTime.current) / 1000), semDicas: !usouDica, primeiraVez: true, dataISO: new Date().toISOString() })
 }
 
 const MSGS_ACERTO = ["Detectou a mentira! Perspicácia incrível! 🕵️","A lógica não falha — você achou! 🎯","Olho clínico! Detetive nato! 🏆","Cada contradição revelada! Excelente! ⚡","Ninguém te engana! 🌟"]
@@ -22,6 +23,7 @@ const DICAS_MENTIU = [
 interface Props { puzzle: PuzzleMentiu }
 
 export default function MentiuGame({ puzzle }: Props) {
+  const startTime = useRef(Date.now())
   const [selecionado, setSelecionado] = useState<string | null>(null)
   const [respondeu, setRespondeu]     = useState(false)
   const [acertou, setAcertou]         = useState(false)
@@ -57,6 +59,7 @@ export default function MentiuGame({ puzzle }: Props) {
 
   return (
     <div className="space-y-6">
+      <GameTimer puzzleId={puzzle.id} isComplete={status === 'correto'} />
       {/* Situação */}
       <div className="bg-purple-50 border border-purple-200 rounded-xl px-4 py-3 text-sm text-purple-900 leading-relaxed">
         <span className="font-bold">🎭 Situação: </span>{puzzle.intro}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import ReportarProblema from '@/components/ReportarProblema'
 import DailyCounter from '@/components/DailyCounter'
 import AuthButton from '@/components/AuthButton'
@@ -8,12 +9,14 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'LogicaMente',
   description: 'Treine raciocínio lógico com puzzles e questões de concurso',
+  icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           async
@@ -24,8 +27,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-gray-50">
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-            <Link href="/" className="font-bold text-xl text-blue-700 tracking-tight">
-              🧠 LogicaMente
+            <Link href="/" className="flex items-center gap-2 group">
+              <Image
+                src="/logo.svg"
+                alt="LogicaMente"
+                width={28}
+                height={28}
+                className="rounded-full"
+                priority
+              />
+              <span className="font-bold text-xl text-blue-700 tracking-tight group-hover:text-blue-800 transition-colors">
+                LogicaMente
+              </span>
             </Link>
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex gap-6 text-sm font-medium">
@@ -46,7 +59,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="border-t border-gray-200 mt-16 py-6">
           <div className="max-w-6xl mx-auto px-4 flex items-center justify-between text-sm text-gray-400">
-            <span>LogicaMente · Treine sua mente todos os dias</span>
+            <div className="flex items-center gap-2">
+              <Image src="/logo.svg" alt="" width={16} height={16} className="opacity-60" />
+              <span>LogicaMente · Treine sua mente todos os dias</span>
+            </div>
             <ReportarProblema />
           </div>
         </footer>

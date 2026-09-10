@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade — LogicaMente',
+  title: 'Política de Privacidade — MalhaMente',
 }
 
 export default function PrivacidadePage() {

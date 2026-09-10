@@ -23,7 +23,7 @@ export default function ReportarProblema() {
 
   const enviar = () => {
     const tipoLabel = TIPOS.find(t => t.value === tipo)?.label ?? tipo
-    const assunto   = `[LogicaMente] ${tipoLabel}`
+    const assunto   = `[MalhaMente] ${tipoLabel}`
     const corpo     = `Tipo: ${tipoLabel}\n\n${descricao}`
     window.open(
       `mailto:app.usemia@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso — LogicaMente',
+  title: 'Termos de Uso — MalhaMente',
 }
 
 export default function TermosPage() {
@@ -12,12 +12,12 @@ export default function TermosPage() {
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold text-gray-800">1. Aceitação</h2>
-        <p>Ao aceder ao LogicaMente, você concorda com estes Termos de Uso. Se não concordar, por favor não utilize o serviço.</p>
+        <p>Ao aceder ao MalhaMente, você concorda com estes Termos de Uso. Se não concordar, por favor não utilize o serviço.</p>
       </section>
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold text-gray-800">2. Uso permitido</h2>
-        <p>O LogicaMente é uma plataforma de uso pessoal e educativo. É proibido:</p>
+        <p>O MalhaMente é uma plataforma de uso pessoal e educativo. É proibido:</p>
         <ul className="list-disc pl-5 space-y-1 text-sm">
           <li>Reproduzir ou distribuir o conteúdo dos puzzles sem autorização</li>
           <li>Usar scripts automatizados para aceder à plataforma</li>

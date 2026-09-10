@@ -19,19 +19,19 @@ function fmtTempo(s: number): string {
 export default function ShareButton({ puzzleId, puzzleTema, tempoSegundos, semDicas, className }: Props) {
   const [copied, setCopied] = useState(false)
 
-  const url  = `https://logica-mente.vercel.app/puzzles/${puzzleId}`
+  const url  = `https://malha-mente.vercel.app/puzzles/${puzzleId}`
   const time = tempoSegundos ? fmtTempo(tempoSegundos) : null
   const hint = semDicas ? ' sem dicas 🎯' : ''
 
   const text = time
     ? `Resolvi "${puzzleTema}"${hint} em ${time}! Consegues bater? 🧠\n${url}`
-    : `Resolvi "${puzzleTema}"${hint} no LogicaMente! Tenta tu 🧠\n${url}`
+    : `Resolvi "${puzzleTema}"${hint} no MalhaMente! Tenta tu 🧠\n${url}`
 
   async function share() {
     // Web Share API (mobile nativo)
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
-        await navigator.share({ title: 'LogicaMente', text, url })
+        await navigator.share({ title: 'MalhaMente', text, url })
         return
       } catch {
         // Cancelado pelo utilizador — não fazer nada

@@ -157,7 +157,7 @@ export default function AdminPage() {
           <div className="flex items-center gap-3">
             <span className="font-black text-lg text-blue-700">🧠 Admin</span>
             <span className="text-gray-300">|</span>
-            <span className="text-sm text-gray-500">LogicaMente</span>
+            <span className="text-sm text-gray-500">MalhaMente</span>
           </div>
           <div className="flex items-center gap-3">
             <button onClick={loadAll} className="p-1.5 text-gray-400 hover:text-gray-700 transition-colors" title="Atualizar">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Cookies — LogicaMente',
+  title: 'Política de Cookies — MalhaMente',
 }
 
 export default function CookiesPage() {
@@ -10,7 +10,7 @@ export default function CookiesPage() {
       <h1 className="text-3xl font-black text-gray-900">Política de Cookies</h1>
       <p className="text-sm text-gray-400">Última atualização: setembro de 2026</p>
 
-      <p>O LogicaMente usa cookies e armazenamento local para melhorar a sua experiência.</p>
+      <p>O MalhaMente usa cookies e armazenamento local para melhorar a sua experiência.</p>
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold text-gray-800">Cookies essenciais</h2>
@@ -56,7 +56,7 @@ export default function CookiesPage() {
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold text-gray-800">Como gerir cookies</h2>
-        <p>Pode limpar os dados do LogicaMente nas definições do seu browser. Note que isso irá repor o seu progresso e preferências.</p>
+        <p>Pode limpar os dados do MalhaMente nas definições do seu browser. Note que isso irá repor o seu progresso e preferências.</p>
       </section>
     </div>
   )

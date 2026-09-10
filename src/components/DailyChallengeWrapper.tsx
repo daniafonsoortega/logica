@@ -46,11 +46,11 @@ async function syncStreakToSupabase(): Promise<number> {
 
 async function shareStreak(streak: number) {
   const text = streak > 1
-    ? `🔥 ${streak} dias seguidos no LogicaMente! Vem treinar o raciocínio lógico 🧠\nhttps://logica-mente.vercel.app`
-    : `Completei o desafio de hoje no LogicaMente! 🧠\nhttps://logica-mente.vercel.app`
+    ? `🔥 ${streak} dias seguidos no MalhaMente! Vem treinar o raciocínio lógico 🧠\nhttps://malha-mente.vercel.app`
+    : `Completei o desafio de hoje no MalhaMente! 🧠\nhttps://malha-mente.vercel.app`
 
   if (typeof navigator !== 'undefined' && navigator.share) {
-    try { await navigator.share({ title: 'LogicaMente', text, url: 'https://logica-mente.vercel.app' }); return }
+    try { await navigator.share({ title: 'MalhaMente', text, url: 'https://malha-mente.vercel.app' }); return }
     catch { /* cancelado */ }
   }
   try { await navigator.clipboard.writeText(text) } catch { /* silencioso */ }

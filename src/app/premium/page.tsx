@@ -216,7 +216,7 @@ function PremiumContent() {
     <div className="max-w-2xl mx-auto py-12 space-y-10">
       <div className="text-center space-y-3">
         <div className="text-5xl">⚡</div>
-        <h1 className="text-4xl font-black text-gray-900 dark:text-white">LogicaMente Premium</h1>
+        <h1 className="text-4xl font-black text-gray-900 dark:text-white">MalhaMente Premium</h1>
         <p className="text-gray-500 text-lg">Treine sem limites. Evolua mais rápido.</p>
       </div>
 

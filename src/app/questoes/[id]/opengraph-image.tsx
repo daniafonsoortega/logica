@@ -36,7 +36,7 @@ export default async function Image({ params }: { params: { id: string } }) {
         {/* Logo */}
         <div style={{ display:'flex', alignItems:'center', gap:16, marginBottom:24 }}>
           <div style={{ width:56, height:56, borderRadius:'50%', background:'rgba(255,255,255,0.15)', border:'2px solid rgba(255,255,255,0.3)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:30 }}>🧠</div>
-          <span style={{ fontSize:28, fontWeight:800, color:'white', letterSpacing:'-0.02em' }}>LogicaMente</span>
+          <span style={{ fontSize:28, fontWeight:800, color:'white', letterSpacing:'-0.02em' }}>MalhaMente</span>
         </div>
 
         {/* Label "Questão de Concurso" */}
@@ -61,7 +61,7 @@ export default async function Image({ params }: { params: { id: string } }) {
 
         {/* URL */}
         <div style={{ position:'absolute', bottom:36, fontSize:15, color:'#a5b4fc', letterSpacing:'0.05em', display:'flex' }}>
-          logica-mente.vercel.app
+          malha-mente.vercel.app
         </div>
       </div>
     ),

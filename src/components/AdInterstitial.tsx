@@ -62,7 +62,7 @@ export default function AdInterstitial({ onContinue }: Props) {
         <div className="text-center space-y-1">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wider">Pausa rápida</p>
           <p className="text-sm text-gray-500">
-            Um anúncio mantém o LogicaMente gratuito. 🙏
+            Um anúncio mantém o MalhaMente gratuito. 🙏
           </p>
         </div>
 

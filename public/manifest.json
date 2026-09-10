@@ -1,6 +1,6 @@
 {
-  "name": "LogicaMente",
-  "short_name": "LogicaMente",
+  "name": "MalhaMente",
+  "short_name": "MalhaMente",
   "description": "Treine raciocínio lógico com puzzles e questões de concurso",
   "start_url": "/",
   "display": "standalone",

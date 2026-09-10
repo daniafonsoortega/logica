@@ -28,7 +28,7 @@ export async function generateMetadata(
 
   const tipo  = puzzle.tipo ?? 'grade'
   const nivel = NIVEL_LABELS[puzzle.nivel] ?? puzzle.nivel
-  const title = `${puzzle.tema} — LogicaMente`
+  const title = `${puzzle.tema} — MalhaMente`
   const desc  = `${TIPO_LABELS[tipo] ?? tipo} · Nível ${nivel}. Resolva este puzzle de lógica e treine seu raciocínio!`
 
   return {
@@ -37,8 +37,8 @@ export async function generateMetadata(
     openGraph: {
       title,
       description: desc,
-      url: `https://logica-mente.vercel.app/puzzles/${id}`,
-      siteName: 'LogicaMente',
+      url: `https://malha-mente.vercel.app/puzzles/${id}`,
+      siteName: 'MalhaMente',
       locale: 'pt_BR',
       type: 'website',
     },

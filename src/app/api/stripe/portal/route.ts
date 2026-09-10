@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return NextResponse.json({ error: 'Não autenticado' }, { status: 401 })
 
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://logica-mente.vercel.app'
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://malha-mente.vercel.app'
 
     // Buscar stripe_customer_id do perfil
     const { data: profile } = await supabaseAdmin

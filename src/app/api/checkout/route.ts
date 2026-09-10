@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
 
     const supabase = await createServerSupabaseClient()
     const { data: { user } } = await supabase.auth.getUser()
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://logica-mente.vercel.app'
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://malha-mente.vercel.app'
 
     // Se cupom %, criar Stripe coupon
     let stripeCouponId: string | null = null
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
         const sc = await stripePost('/coupons', [
           ['percent_off', String(coupon.discount_percent)],
           ['duration', 'once'],
-          ['name', `LogicaMente ${coupon_code.toUpperCase()}`],
+          ['name', `MalhaMente ${coupon_code.toUpperCase()}`],
         ])
         if (sc.id) stripeCouponId = sc.id
       }

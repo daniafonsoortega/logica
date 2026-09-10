@@ -94,7 +94,7 @@ export default async function Image({ params }: { params: { id: string } }) {
             color: 'white',
             letterSpacing: '-0.02em',
           }}>
-            LogicaMente
+            MalhaMente
           </span>
         </div>
 
@@ -147,7 +147,7 @@ export default async function Image({ params }: { params: { id: string } }) {
           letterSpacing: '0.05em',
           display: 'flex',
         }}>
-          logica-mente.vercel.app
+          malha-mente.vercel.app
         </div>
       </div>
     ),

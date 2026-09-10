@@ -59,7 +59,7 @@ export default function Home() {
             🎲 Jogar agora — é grátis
           </RandomButton>
           <a
-            href="https://play.google.com/store/apps/details?id=app.vercel.logica_mente.twa"
+            href="https://play.google.com/store/apps/details?id=app.vercel.malha_mente.twa"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 px-6 py-4 rounded-2xl font-bold text-base hover:border-gray-300 dark:hover:border-gray-600 active:scale-95 transition-all"
@@ -210,7 +210,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://play.google.com/store/apps/details?id=app.vercel.logica_mente.twa"
+            href="https://play.google.com/store/apps/details?id=app.vercel.malha_mente.twa"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-white text-gray-900 px-6 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-colors"
@@ -223,7 +223,7 @@ export default function Home() {
             App Store — em breve
           </div>
         </div>
-        <p className="text-xs text-gray-500">Ou use directamente no browser em logica-mente.vercel.app</p>
+        <p className="text-xs text-gray-500">Ou use directamente no browser em malha-mente.vercel.app</p>
       </section>
 
       {/* ── FINAL CTA ── */}

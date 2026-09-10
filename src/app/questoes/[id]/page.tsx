@@ -19,7 +19,7 @@ export async function generateMetadata(
   const q = getQuestaoById(id)
   if (!q) return {}
 
-  const title = `${q.orgao} ${q.ano} (${q.banca}) — LogicaMente`
+  const title = `${q.orgao} ${q.ano} (${q.banca}) — MalhaMente`
   const desc  = `Questão de ${q.banca} · ${NIVEL_LABELS[q.nivel]} · Resolva e treine raciocínio lógico para concursos.`
 
   return {
@@ -28,8 +28,8 @@ export async function generateMetadata(
     openGraph: {
       title,
       description: desc,
-      url: `https://logica-mente.vercel.app/questoes/${id}`,
-      siteName: 'LogicaMente',
+      url: `https://malha-mente.vercel.app/questoes/${id}`,
+      siteName: 'MalhaMente',
       locale: 'pt_BR',
       type: 'website',
     },

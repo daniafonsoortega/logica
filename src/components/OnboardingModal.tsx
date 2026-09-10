@@ -8,7 +8,7 @@ const STORAGE_KEY = 'lm_onboarded'
 const STEPS = [
   {
     emoji: '🧠',
-    title: 'Bem-vindo ao LogicaMente!',
+    title: 'Bem-vindo ao MalhaMente!',
     desc: 'O lugar para treinar o seu raciocínio lógico todos os dias — puzzles de dedução, sequências, códigos e muito mais.',
   },
   {

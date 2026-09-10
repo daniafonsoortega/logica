@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/', '/auth/'],
     },
-    sitemap: 'https://logica-mente.vercel.app/sitemap.xml',
+    sitemap: 'https://malha-mente.vercel.app/sitemap.xml',
   }
 }

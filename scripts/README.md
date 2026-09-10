@@ -1,6 +1,6 @@
 # Puzzle Generator Agent
 
-Script para gerar novos puzzles do LogicaMente e criar um PR no GitHub automaticamente.
+Script para gerar novos puzzles do MalhaMente e criar um PR no GitHub automaticamente.
 
 ## Uso
 

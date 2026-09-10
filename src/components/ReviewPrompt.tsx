@@ -34,8 +34,8 @@ export default function ReviewPrompt() {
 
   if (!open) return null
 
-  const url  = 'https://logica-mente.vercel.app'
-  const text = 'Estou treinando raciocínio lógico no LogicaMente! 🧠 Experimenta:'
+  const url  = 'https://malha-mente.vercel.app'
+  const text = 'Estou treinando raciocínio lógico no MalhaMente! 🧠 Experimenta:'
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4 animate-fade-in">
@@ -53,7 +53,7 @@ export default function ReviewPrompt() {
             <div className="text-center mb-4">
               <div className="text-5xl mb-3">🧠</div>
               <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-                Está gostando do LogicaMente?
+                Está gostando do MalhaMente?
               </h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 Você já resolveu 5 puzzles! O que está achando?

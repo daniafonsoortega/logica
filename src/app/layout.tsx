@@ -15,15 +15,15 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'LogicaMente — Treine Raciocínio Lógico',
+  title: 'MalhaMente — Treine Raciocínio Lógico',
   description: 'Puzzles de lógica, grades, sequências, código e detetive. Treine sua mente todos os dias.',
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'LogicaMente',
+    title: 'MalhaMente',
     description: 'Treine raciocínio lógico com puzzles e questões de concurso',
-    url: 'https://logica-mente.vercel.app',
-    siteName: 'LogicaMente',
+    url: 'https://malha-mente.vercel.app',
+    siteName: 'MalhaMente',
     locale: 'pt_BR',
     type: 'website',
   },
@@ -51,9 +51,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 group">
-              <Image src="/logo.svg" alt="LogicaMente" width={28} height={28} className="rounded-full" priority />
+              <Image src="/logo.svg" alt="MalhaMente" width={28} height={28} className="rounded-full" priority />
               <span className="font-bold text-xl text-blue-700 dark:text-blue-400 tracking-tight">
-                LogicaMente
+                MalhaMente
               </span>
             </Link>
             <div className="flex items-center gap-3">
@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <Image src="/logo.svg" alt="" width={16} height={16} className="opacity-50" />
-              <span>LogicaMente · Treine sua mente todos os dias</span>
+              <span>MalhaMente · Treine sua mente todos os dias</span>
             </div>
             <div className="flex items-center gap-4">
               <Link href="/sobre"       className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Sobre</Link>
